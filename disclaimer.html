@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+                    MG Jwellers
+            </title>
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	    <meta content="jewellers, jewelry, mg jewellers" name="keywords">
+    <meta content="Best jewellery shop" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/ecomm/logos/1755865437532699141.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/ecomm/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/ecomm/css/style.css" rel="stylesheet">
+    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
+    <link href="assets/ecomm/css/style2.css" rel="stylesheet">
+    <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
+
+    
+<style>
+    #disclaimer_section_page .disclaimer-card {
+        background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+        border: 1px solid rgba(217, 181, 102, 0.35);
+        border-radius: 18px;
+        padding: 36px 40px;
+        box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
+        position: relative;
+        overflow: hidden;
+    }
+    #disclaimer_section_page .disclaimer-card::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; height: 4px;
+        background: linear-gradient(90deg, transparent, var(--mg-gold-2), var(--mg-gold-3), var(--mg-gold-2), transparent);
+        background-size: 200% 100%;
+        animation: mg-shimmer 6s linear infinite;
+    }
+   #disclaimer_section_page .disclaimer-card p {
+    color: #495057;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+#disclaimer_section_page .disclaimer-card p:hover {
+    color: var(--mg-gold-1);
+}
+    
+    @media (max-width: 767.98px) {
+        #disclaimer_section_page .disclaimer-card {
+            padding: 24px 22px;
+        }
+    }
+</style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+
+<div id="header-placeholder"></div>
+
+<!-- Navbar End -->
+
+
+
+<!-- Disclaimer Start -->
+<div class="container-fluid pt-3" id="disclaimer_section_page">
+  <div class="text-center mb-2">
+    <h2 class="cstm-section-title px-5 mb-2"><span class="">Disclaimer</span></h2>
+  </div>
+  <div class="row px-xl-5">
+    <div class="col-lg-12 mb-5">
+      <div class="disclaimer-card">
+        <p>
+          The content, images, and product details on this website are provided by
+          MG Jwellers for general information purposes only. While we strive to keep
+          all product descriptions, pricing, and gold/silver rates accurate and up to
+          date, actual weight, purity, size, and design of jewellery pieces may vary
+          slightly from what is displayed due to the handcrafted nature of our products.
+        </p>
+        <p>
+          Product images are for representation purposes only. Due to differences in
+          screen displays, lighting, and photography, the actual color, shine, and
+          finish of a piece may appear slightly different in person. Gold and silver
+          rates shown on this website are indicative and subject to daily market
+          fluctuations; final pricing will be confirmed at the time of purchase at
+          our store.
+        </p>
+        <p>
+          Scheme details, offers, and promotional terms mentioned on this website are
+          subject to change without prior notice. Please visit our store or contact
+          us directly to confirm current rates, scheme terms, and product availability
+          before making any purchase decision.
+        </p>
+        <p class="mb-0">
+          MG Jwellers shall not be held liable for any loss or damage arising from
+          reliance on the information provided on this website. By using this site,
+          you agree that all purchases are subject to our store's terms and
+          conditions applicable at the time of transaction.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Disclaimer End -->
+   
+<!-- Footer  -->
+
+
+<div id="footer-placeholder"></div>
+
+<!-- Back to Top -->
+
+<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!------------------INDEX PAGE JS---------------------------------------------------->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/ecomm/lib/easing/easing.min.js" defer></script>
+    <script src="assets/ecomm/lib/owlcarousel/owl.carousel.min.js" defer></script>
+
+    <!-- Contact Javascript File -->
+    <!--<script src="assets/ecomm/mail/jqBootstrapValidation.min.js"></script>
+    <script src="assets/ecomm/mail/contact.js"></script>-->
+
+    <!-- Template Javascript -->
+    <!------------------END INDEX PAGE JS------------------------------------------------>
+    	
+    <script src="assets/ecomm/js/main.js" defer></script>
+    <script src="assets/ecomm/js/include.js" defer></script>
+    <script src="assets/ecomm/js/theme-animations.js" defer></script>
+    	
+	<script>
+		
+		
+		function checkOrientation() {
+			if (window.orientation === 0 || $(window).width() < $(window).height()) {
+				if(window.innerWidth <= 768){
+					var header_block_height = $('div.top_header').outerHeight(); 
+					$('div#header_seprator').css('height',header_block_height+"px");
+				}
+			}else{
+				$('div#header_seprator').css('height','');
+			}
+		}
+        $(document).ready(function(){
+			
+			$(window).on('resize orientationchange', checkOrientation);
+			checkOrientation(); // Check on page load
+			
+            getshoppinglistcount();
+            $(".remove_from_kart,.remove_from_wishlist,.move_to_cart").click(function(e){
+                e.preventDefault();
+				var q = false;
+				if(!$(this).hasClass('move_to_cart')){
+					q = confirm("Sure to Remove ?");
+				}else{
+					q=true;
+				}
+                const tr = $(this).parent('td').parent('tr');
+				const tr_count = $('tbody > tr').length;
+				const qnt_actn = tr.hasClass('genuine')?false:true
+				const sum_unit_rate = $("#total_unit_price").text();
+				const sum_lbr_chrg = $("#total_sum_labour").text();
+				const sum_total_rate = $("#total_sum_price").text();
+				const final_quant = $("#final_quantity").text();
+				const final_rate = $("#final_subtotal").text();
+				const payable = $("#final_amount").text();
+                if(q==true){
+                    const url = $(this).attr('href');
+                    $.get(url,"",function(response){
+                        alert(response.msg);
+                        if(response.status){
+                            const data_arr = (response.data).split("#");
+                            const type_arr = ["wishlist","kart"];
+                            $("#"+(type_arr[data_arr[0]])+"_count").text(data_arr[1]);
+							const qnt = (!qnt_actn)?1:tr.find('.unit_qnt').text();
+							const lbr = tr.find('.unit_labour').text();
+							const price = tr.find('.unit_price').text();
+							const sub_price = tr.find('.sub_price').text();
+							
+							var new_qnt = final_quant-qnt;
+							$("#final_quantity").empty().text(new_qnt);
+							
+							var new_unit_price = sum_unit_rate-price;
+							$("#total_unit_price").empty().text(new_unit_price.toFixed(2));
+							
+							var new_lbr_chrg = sum_lbr_chrg-lbr;
+							$("#total_sum_labour").empty().text(new_lbr_chrg.toFixed(2));
+							
+							var new_ttl_price = sum_total_rate-sub_price;
+							$("#total_sum_price").empty().text(new_ttl_price.toFixed(2));
+							
+							var new_final_cost = final_rate-sub_price;
+							$("#final_subtotal").empty().text(new_final_cost.toFixed(2));
+							
+							var new_payable_cost = payable-sub_price;
+							$("#final_amount").empty().text(new_payable_cost.toFixed(2));
+							if(tr_count==1){
+								const check_btn = '<button type="button" class="btn btn-block btn-primary my-3 py-3 text-white" onclick="alert(\'Your Cart is Empty !\');">Checkout ?</button>';
+								$('[name="checkout"]').replaceWith(check_btn);
+							}
+                            tr.remove();
+                            getshoppinglistcount();
+                        }
+                    });
+                }
+            });
+            /*$(".move_to_cart").click(function(e){
+                e.preventDefault();
+                const tr = $(this).parent('td').parent('tr');
+                $.get($(this).attr('href'),"",function(response){
+                    alert(response.msg);
+                    if(response.status){
+                        tr.remove();
+                        getshoppinglistcount();
+                    }
+                })
+            });*/
+            function getshoppinglistcount(){
+                $.get("https://justudhari.com/soppinglistcount","",function(response){
+					$("#wishlist_count").empty().text(response.wish_list);
+					$("#kart_count").empty().text(response.kart_list);
+				});
+            }
+            
+			$.get('https://justudhari.com#',"",function(response){
+                if(response.rates_arr){
+                    const rates = response.rates_arr;
+                    if(rates.gold){
+                        $.each(rates.gold,function(i,v){
+							
+                            $(`#rate_gold_${i}`).text((v)?(Math.round(v * 10)).toLocaleString("en-IN"):'-');
+                        });
+                    }
+                    if(rates.silver){
+                        $.each(rates.silver,function(i,v){
+                            $(`#rate_silver_${i}`).text((v)?(Math.round(v)).toLocaleString("en-IN"):'-');
+                        });
+                    }
+					if(rates.date){
+						$(`#rate_update`).text(rates.date);
+					}
+                }
+            });
+			
+            $("#state").change(function(){
+                const state_code = $(this).val();
+                if(state_code!=""){
+                    const data = {state:state_code};
+                    $.get("https://justudhari.com/get-districts",data,function(response){
+                        if(response.length > 0){
+                            option='<option value="">Select District !</option>';
+                            $.each(response,function(i,v){
+                                option+='<option value="'+(v.code)+'">'+(v.name)+'</option>';
+                            });
+                        }else{
+                            option='<option value="">No District !</option>';
+                        }
+                        $("#dist").empty().append(option);
+                    });
+                }
+            });
+
+            $("#ship_state").change(function(){
+                const state_code = $(this).val();
+                if(state_code!=""){
+                    const data = {state:state_code};
+                    $.get("https://justudhari.com/get-districts",data,function(response){
+                        if(response.length > 0){
+                            option='<option value="">Select District !</option>';
+                            $.each(response,function(i,v){
+                                option+='<option value="'+(v.code)+'">'+(v.name)+'</option>';
+                            });
+                        }else{
+                            option='<option value="">No District !</option>';
+                        }
+                        $("#ship_dist").empty().append(option);
+                    });
+                }
+            });
+            $('.addr_state').change(function(){
+                const state_code = $(this).val();
+                if(state_code!=""){
+                    const target = $(this).attr('data-target');
+                    $("#"+target).empty().append('<option>Loading...</option>');
+                    const data = {state:state_code};
+                    $.get("https://justudhari.com/get-districts",data,function(response){
+                        if(response.length > 0){
+                            option='<option value="">Select District !</option>';
+                            $.each(response,function(i,v){
+                                option+='<option value="'+(v.code)+'">'+(v.name)+'</option>';
+                            });
+                        }else{
+                            option='<option value="">No District !</option>';
+                        }
+                        $("#"+target).empty().append(option);
+                    });
+                }
+            })
+            $("#page_await").hide();
+        });
+		function digitonly(event,num){
+            let inputValue = event.target.value;
+
+                // Allow only digits using regex
+                inputValue = inputValue.replace(/[^0-9]/g, '');  // Remove anything that's not a digit
+
+                // Ensure that the input has exactly 10 digits
+                if (inputValue.length > num) {
+                    inputValue = inputValue.slice(0, 10);  // Trim to 10 digits
+                }
+
+                // Update the input field with the valid input
+                event.target.value = inputValue;
+        }
+  </script>
+  
+
+</body>
+
+</html>

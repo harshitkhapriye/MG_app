@@ -1,0 +1,102 @@
+/* ================================================================
+   SCHEME DETAILS PAGE — shared/common styles
+   Used by ALL scheme-details-*.html pages (8 pages, same structure,
+   only the enquiry-modal scheme ID differs per page).
+   ================================================================ */
+
+#scheme_details_page {
+    background: transparent;
+}
+
+/* ---------- "Get Scheme Started" CTA button ---------- */
+#scheme_details_page .scheme-cta-btn {
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1)) !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 12px 34px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.30);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#scheme_details_page .scheme-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 30px rgba(212, 175, 55, 0.42);
+}
+
+/* ---------- Scheme brochure image gallery ---------- */
+#scheme_details_page .scheme-gallery-item {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(217, 181, 102, 0.35);
+    box-shadow: 0 15px 30px rgba(14, 25, 50, 0.10);
+    margin-bottom: 30px;
+    transition: transform 0.4s cubic-bezier(.22, .9, .32, 1), box-shadow 0.4s ease;
+}
+
+#scheme_details_page .scheme-gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 36px rgba(212, 175, 55, 0.22);
+}
+
+#scheme_details_page .scheme-gallery-item img {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- Enquiry modal ---------- */
+#exampleModal .modal-content {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(217, 181, 102, 0.4);
+}
+
+#exampleModal .modal-header {
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3));
+    border-bottom: none;
+}
+
+#exampleModal .modal-title {
+    color: var(--mg-ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+#exampleModal .close {
+    color: var(--mg-ink);
+    opacity: 0.8;
+}
+
+#exampleModal .modal-body {
+    padding: 28px;
+}
+
+#exampleModal .modal-body .fa-spinner {
+    color: var(--mg-gold-2);
+}
+
+#exampleModal .modal-body .form-control {
+    border: 1.5px solid rgba(14, 25, 50, 0.15);
+    border-radius: 12px;
+    padding: 11px 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#exampleModal .modal-body .form-control:focus {
+    border-color: var(--mg-gold-2);
+    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    outline: none;
+}
+
+#exampleModal .modal-body .btn-primary {
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+    #scheme_details_page .scheme-gallery-item {
+        border-radius: 12px;
+    }
+}

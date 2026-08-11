@@ -1,0 +1,218 @@
+
+.text-primary{
+	color:#db8e00!important;
+}
+.bg-secondary{
+	background:#f9d89b !important;
+}
+.bg-primary{
+	background:#d78e06 !important;
+}
+a.btn.bg-primary > h6,a.btn.bg-primary > i{
+	color:#6c4e15!important;
+}
+a.btn.bg-primary:hover,a.btn.bg-primary:active,a.btn.bg-primary:focus{
+	background:#cc8d18  !important;
+	h6,i{
+		color:white !important;
+	}
+}
+#head_search_bar {
+    background: #FFF
+}
+.top_header,.top_menue_bar{
+	background:#d28a04   !important;
+}
+a.nav-link{
+	color:white!important;
+}
+a.nav-link:hover{
+	color:#6c4e15  !important;
+}
+a.nav-link.active{
+	text-shadow:1px 2px 3px white;
+	color:#6c4e15  !important;
+}
+.product_detail_nav {
+	border-bottom:1px solid #a87411!important;
+	a.nav-link{
+		color:#d0ab84  !important;
+		border:1px solid #e3cbb2 ;
+		border-bottom:1px solid #a87411;
+	}
+	a.nav-link:hover{
+		color:#a87411   !important;
+		border:1px solid #a87411;
+		border-bottom:none;
+		/*color:#6c4e15  !important;*/
+		/*color:#6c4e15  !important;*/
+	}
+	a.nav-link.active{
+		text-shadow:1px 2px 3px #bf6617;
+		color:#a87411   !important;
+		border:1px solid #a87411;
+		border-bottom:none;
+	}
+}
+.category_dropdown{
+	border:1px solid #b5790b !important;
+}
+.category_dropdown > div > a.nav-link,.category_dropdown > div > div > a.nav-link{
+	color:#b5790b   !important;;
+}
+.category_dropdown > div > a.nav-link:hover,.category_dropdown > div > div > a.nav-link:hover{
+	background:#e1d2b6 !important;
+}
+.text-dark{
+	color:#b36e16 !important;
+}
+.text-muted{
+	color:#cab577!important ;
+}
+.input-group,.dropdown > #triggerId{
+	border:1px solid #d07f16!important;
+}
+.control-group > .form-control,
+.control-group > .custom-select,
+.form-group > .form-control,
+.form-group > .custom-select{
+	border:1px solid #d07f16;
+}
+.control-group > .form-control:focus,
+.control-group > .custom-select:focus,
+.form-group > .form-control:focus,
+.form-group > .custom-select:focus{
+	border:1px solid #d07f16;
+	box-shadow:2px 2px 3px orange;
+}
+.btn-light{
+	background:transparent;
+}
+.btn-light:hover{
+	background:#C1791C;
+	color:white;
+}
+.btn-primary{
+	color: #212529;
+	background-color: #C1791C !important;
+	border-color: #8A5F0C;	
+}
+.btn-outline-primary{
+	color: #212529;
+	border-color: #8A5F0C;
+}
+.btn-outline-primary:hover{
+	background-color: #8A5F0C !important;
+	color:white!important;
+}
+.custom-control-label::before,.custom-control-label::after{
+	border-color: #a23b09;
+}
+.custom-control-input:checked ~ .custom-control-label::before{
+	color: #fff;
+	border-color: #a23b09;
+	background-color: #ca8809;
+}
+.filter_side_bar{
+	border:1px dashed #91610b;
+}
+.border-bottom{
+	border-bottom:1px dotted #91610b!important;
+}
+.filter_side_bar > div > h5{
+	color:#91610b;
+}
+.cat-item{
+	background:#ffecc9;
+}
+.cat-item > p{
+	/*color:white;*/
+}
+.product-item{
+	background:#ffecc9!important;
+}
+.product-item > .card-footer{
+	background:#fbe0b0 !important;
+}
+.product-item > .card-footer > a.text-dark{
+	/*color:gray !important;*/
+}
+
+.product-item > .card-footer > a.text-dark:hover{
+	color:#754200!important;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #C18410;
+  background-color: #fff;
+  border: 1px solid #d0b88b;
+}
+.page-link:hover{
+	background:#e6c68a;
+	border-color:orange;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #E3841F;
+  border-color: #C18410;
+}
+.page-item.disabled .page-link {
+  color: #e8bb8b;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #d0b88b;
+}
+.breadcrump_link_main{
+	color:#e69500;
+}
+.breadcrump_link_main:hover{
+	color:#c88305;
+}
+.product_share_social > p,.product_detail_feature>p{
+	color:#8a5511  !important;
+}
+.product_share_social > div > a{
+	color:#cc9730  !important;;
+}
+
+.filter_product_separator{
+	border-color:#c17a74;
+}
+.about_bottom_section{
+	background:#f9e8ca;
+}
+.dropdown-menu>.dropdown-item:hover {
+	background-color: #d28a04 !important;
+	color: white;
+}
+
+.custo_entry_block_right {
+	border-left: 1px dotted #d28a04;
+}
+
+.custo_entry_block_left {
+	border-right: 1px dotted #d28a04;
+}
+
+.today_rate_block {
+	border: 1px solid #d28a04;
+	background: #f9d89b;
+}
+.today_rate_block>a {
+	color: white;
+}
+#my_rate_block>li>h6 {
+	color: #d28a04;
+}
+
+@media only screen and (max-width: 600px) {
+ .category_dropdown_mob{
+	 background-color:#ffecc9 !important;
+ }
+}

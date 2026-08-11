@@ -1,0 +1,132 @@
+/* ================================================================
+   WISHLIST PAGE — page-specific styles
+   Same visual language as cart.html, plus styling for the extra
+   "Add to Cart" column and the table's own totals footer row.
+   ================================================================ */
+
+#wishlist_section_page .table {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
+}
+
+
+#wishlist_section_page .table thead.bg-secondary::after,
+#wishlist_section_page .table thead.bg-secondary::before {
+    display: none !important;
+}
+
+#wishlist_section_page .table thead th {
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 14px;
+}
+
+#wishlist_section_page .table tbody tr {
+    transition: background 0.25s ease;
+}
+
+#wishlist_section_page .table tbody tr:hover {
+    background: rgba(217, 181, 102, 0.08);
+}
+
+#wishlist_section_page .table td {
+    vertical-align: middle;
+    border-color: rgba(217, 181, 102, 0.25);
+}
+
+#wishlist_section_page .table td p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    text-align: left;
+}
+
+#wishlist_section_page .table td img {
+    border-radius: 10px;
+    border: 1px solid rgba(217, 181, 102, 0.4);
+}
+
+/* ---------- Quantity stepper ---------- */
+#wishlist_section_page .quantity .btn-minus,
+#wishlist_section_page .quantity .btn-plus {
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3)) !important;
+    border: none !important;
+    color: var(--mg-ink) !important;
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease;
+}
+
+#wishlist_section_page .quantity .btn-minus:hover,
+#wishlist_section_page .quantity .btn-plus:hover {
+    transform: scale(1.1);
+}
+
+#wishlist_section_page .quantity input {
+    border: 1.5px solid rgba(217, 181, 102, 0.35) !important;
+    background: #fff !important;
+    font-weight: 600;
+}
+
+/* ---------- Remove (x) button ---------- */
+#wishlist_section_page td .btn-sm.btn-primary:has(.fa-times) {
+    background: transparent !important;
+    color: #c0505c !important;
+    border: 1.5px solid #c0505c !important;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: all 0.25s ease;
+}
+
+#wishlist_section_page td .btn-sm.btn-primary:has(.fa-times):hover {
+    background: #c0505c !important;
+    color: #fff !important;
+    transform: rotate(90deg);
+}
+
+/* ---------- "Add to Cart" button (wishlist-only column) ---------- */
+#wishlist_section_page td .btn-sm.btn-primary:has(.fa-cart-plus) {
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3)) !important;
+    border: none !important;
+    color: var(--mg-ink) !important;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: all 0.25s ease;
+}
+
+#wishlist_section_page td .btn-sm.btn-primary:has(.fa-cart-plus):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.4);
+}
+
+/* ---------- Totals footer row (built into the table) ---------- */
+#wishlist_section_page tfoot tr {
+    background: linear-gradient(160deg, #577e89 0%, #70afc2 100%) !important;
+}
+
+#wishlist_section_page tfoot td {
+    color: #fff;
+    font-weight: 700;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767.98px) {
+    #wishlist_section_page .table th,
+    #wishlist_section_page .table td {
+        padding: 8px 6px;
+        font-size: 0.85rem;
+    }
+    #wishlist_section_page .table td img {
+        width: 44px !important;
+    }
+}

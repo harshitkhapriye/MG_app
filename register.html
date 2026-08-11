@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        MG Jwellers
+    </title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="jewellers, jewelry, mg jewellers" name="keywords">
+    <meta content="Best jewellery shop" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/ecomm/logos/1755865437532699141.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/ecomm/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/ecomm/css/style.css" rel="stylesheet">
+    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
+    <link href="assets/ecomm/css/style2.css" rel="stylesheet">
+    <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
+    <link href="ecom/each_css/register-style.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+    <div id="header-placeholder"></div>
+
+    <!-- Navbar End -->
+
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid pt-3">
+        <div class="text-center mb-2">
+            <h2 class="cstm-section-title px-5 mb-2"><span class="">Customer Registration</span></h2>
+        </div>
+        <div class="row px-xl-5">
+
+
+            <div class="col-lg-7 mb-5">
+                <div class="customer_in_ui">
+                    <form id="RegisterForm" action="https://justudhari.com/register" method="post">
+
+                        <input type="hidden" name="_token" value="" autocomplete="off">
+                        <div class="row" id="registration_step">
+
+                            <div class="form-group col-md-6">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Your Full Name">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="mobile">Mobile</label>
+                                <input type="text" class="form-control" id="mobile" name="mobile"
+                                    placeholder="Your Mobile Number" />
+                            </div>
+
+                            <div class="form-group col-12">
+                                <label for="address">Address</label>
+                                <textarea class="form-control" rows="" id="address" name="address"
+                                    placeholder="Address"></textarea>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <button type="submit" class="btn btn-outline-primary py-2 px-4"> Register </button>
+                            </div>
+
+                        </div>
+
+                        <div class="varify_step" id="varify_step" style="display:none;">
+
+                            <a href="#registration_step" id="back_to_reg" class="btn btn-default btn-circle btn-sm"
+                                style="position:absolute;margin:8rem 0;z-index: 3;left:0;"><i
+                                    class="fa fa-angle-left"></i>&nbsp;</a>
+
+                            <div class="col-md-6" style="margin:auto;">
+
+                                <h4 class="text-center">Verify Mobile Number</h4>
+
+                                <hr>
+
+                                <div class="row" id="verification_form">
+
+
+                                    <div class="form-group col-md-12">
+                                        <label for="">Enter OTP</label>
+                                        <input type="text" class="form-control" id="otp" name="otp"
+                                            placeholder="Enter OTP" />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="">Create Password</label>
+                                        <input type="text" class="form-control" id="password" name="password"
+                                            placeholder="Create a Password" />
+                                    </div>
+
+                                    <div class="form-group col-12">
+                                        <button class="btn btn-outline-primary py-2 px-4 " type="submit">Verify &
+                                            Register</button>
+                                        <button class="btn btn-outline-primary py-2 px-4 button_anchor" type="submit"
+                                            id="SendOTP"> Resend OTP ?</button>
+                                        <input type="hidden" name="progress_step" id="progress_step" value="1">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div id="progressBarContainer" class="progress mt-1" style="height: 30px; display: none;">
+                    <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        0%
+                    </div>
+                </div>
+                <div class="alert alert-success mt-1" role="alert" style="display: none;" id="success-alert">
+                    <!-- Success message will be displayed here -->
+                </div>
+
+                <div class="alert alert-danger mt-1" role="alert" style="display: none;" id="error-alert">
+                    <!-- error message will be displayed here -->
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 mb-5 custo_entry_block_right">
+                <h2 class="font-weight-semi-bold mb-3">Store Name</h2>
+                <p style="font-size:25px;"> </p>
+                <div class="d-flex flex-column mb-3">
+                    <h5 class="font-weight-semi-bold mb-3">Contact & Address</h5>
+                    <p class="mb-2 d-flex"><i class="fa fa-map-marker-alt text-primary mr-3"></i> Address 1 -- Shop No.
+                        5,Saagar Homes -111, A-Sector, Sarvdhaam, Kolar Road BHOPAL
+                    <p class="col-12 text-center mb-0">&#10094;&#10094;&#10094;&#10094; <b>MG Tower
+                        </b>&#10095;&#10095;&#10095;&#10095; </p> Address 2 --27 A, Sarvadharma Colony, Opposite Triveni
+                    Flour Mill, Kolar Road, Bhopal </p>
+                    <p class="mb-2 d-flex"><i class="fa fa-envelope text-primary mr-3"></i> mgjewellers.bpl@gmail.com
+                    </p>
+                    <p class="mb-2 d-flex"><i class="fa fa-phone-alt text-primary mr-3"></i> +91-7974488285</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <!-- Back to Top -->
+
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!------------------INDEX PAGE JS---------------------------------------------------->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/ecomm/lib/easing/easing.min.js" defer></script>
+    <script src="assets/ecomm/lib/owlcarousel/owl.carousel.min.js" defer></script>
+
+    <!-- Contact Javascript File -->
+    <!--<script src="assets/ecomm/mail/jqBootstrapValidation.min.js"></script>
+    <script src="assets/ecomm/mail/contact.js"></script>-->
+
+    <!-- Template Javascript -->
+    <!------------------END INDEX PAGE JS------------------------------------------------>
+
+    <script src="assets/ecomm/js/main.js" defer></script>
+    <script src="assets/ecomm/js/include.js" defer></script>
+    <script src="assets/ecomm/js/theme-animations.js" defer></script>
+
+    <script>
+
+        $("#SendOTP").click(function (e) {
+
+            $('#progress_step').val(1);
+
+        })
+
+        $(document).ready(function () {
+
+            // Define the updateProgressBar function
+            function updateProgressBar(percent) {
+                $('#progressBar').css('width', percent + '%').attr('aria-valuenow', percent).text(percent + '%');
+            }
+
+            $('#RegisterForm').submit(function (e) {
+                e.preventDefault();
+                $('#progressBarContainer').show();
+                updateProgressBar(0);
+                $('.submit-btn').prop('disabled', true);
+                var formData = new FormData(this);
+                var action = $(this).attr('action');
+                var progress_step = $('#progress_step').val();
+
+                $.ajax({
+                    url: action, // Your form action URL
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    xhr: function () {
+                        var xhr = new window.XMLHttpRequest();
+                        // Upload progress
+                        xhr.upload.addEventListener("progress", function (evt) {
+                            if (evt.lengthComputable) {
+                                var percentComplete = evt.loaded / evt.total;
+                                updateProgressBar(Math.round(percentComplete * 100));
+                            }
+                        }, false);
+                        return xhr;
+                    },
+                    success: function (response) {
+
+                        updateProgressBar(100);
+
+                        if (response.errors) {
+
+                            $('#error-alert').text(response.errors).show();
+                            $('#success-alert').hide();
+
+                        } else {
+
+                            $('#error-alert').hide();
+                            progress_step++;
+
+                            if (progress_step == 2) {
+
+                                $("#registration_step").hide();
+                                $("#varify_step").show();
+
+                            }
+
+                            var sucsMsg = `${response.success}`;
+                            $('#success-alert').text(response.success).show();
+                            $('#progress_step').val(progress_step);
+
+                            if (progress_step > 2) {
+                                //window.location.href = "https://justudhari.com/login";
+                                window.location.href = "https://justudhari.com/dashboard";
+                            }
+
+                        }
+                    },
+                    error: function (response) {
+                        if (response.status === 422) {
+
+                            $('.invalid-feedback').remove();
+                            $('.is-invalid').removeClass('is-invalid').css('border-color', '');
+                            $('.is-valid').removeClass('is-valid').css('border-color', '');
+
+                            var errors = response.responseJSON.errors;
+                            for (var field in errors) {
+                                var input = $('[name="' + field + '"]');
+                                input.addClass('is-invalid').css('border-color', 'red');
+                                input.after('<div class="invalid-feedback">' + errors[field][0] + '</div>');
+                            }
+                        } else {
+
+                            $('#error-alert').text('An error occurred. Please try again.').show();
+
+                        }
+                    },
+                    complete: function () {
+                        // Re-enable the submit button after the request is complete
+                        $('.submit-btn').prop('disabled', false);
+                        setTimeout(function () {
+                            $('#progressBarContainer').hide();
+                            updateProgressBar(0); // Reset progress bar to 0% for future requests
+                        }, 1000);
+                    }
+                });
+            });
+
+            $("#back_to_reg").click(function (e) {
+
+                e.preventDefault();
+                $(this).parent('div').hide();
+                $($(this).attr('href')).show();
+                $("#otp,#password").val("");
+                $('#progress_step').val(1);
+            });
+
+        });
+
+    </script>
+
+
+    <script>
+
+
+        function checkOrientation() {
+            if (window.orientation === 0 || $(window).width() < $(window).height()) {
+                if (window.innerWidth <= 768) {
+                    var header_block_height = $('div.top_header').outerHeight();
+                    $('div#header_seprator').css('height', header_block_height + "px");
+                }
+            } else {
+                $('div#header_seprator').css('height', '');
+            }
+        }
+        $(document).ready(function () {
+
+            $(window).on('resize orientationchange', checkOrientation);
+            checkOrientation(); // Check on page load
+
+            getshoppinglistcount();
+            $(".remove_from_kart,.remove_from_wishlist,.move_to_cart").click(function (e) {
+                e.preventDefault();
+                var q = false;
+                if (!$(this).hasClass('move_to_cart')) {
+                    q = confirm("Sure to Remove ?");
+                } else {
+                    q = true;
+                }
+                const tr = $(this).parent('td').parent('tr');
+                const tr_count = $('tbody > tr').length;
+                const qnt_actn = tr.hasClass('genuine') ? false : true
+                const sum_unit_rate = $("#total_unit_price").text();
+                const sum_lbr_chrg = $("#total_sum_labour").text();
+                const sum_total_rate = $("#total_sum_price").text();
+                const final_quant = $("#final_quantity").text();
+                const final_rate = $("#final_subtotal").text();
+                const payable = $("#final_amount").text();
+                if (q == true) {
+                    const url = $(this).attr('href');
+                    $.get(url, "", function (response) {
+                        alert(response.msg);
+                        if (response.status) {
+                            const data_arr = (response.data).split("#");
+                            const type_arr = ["wishlist", "kart"];
+                            $("#" + (type_arr[data_arr[0]]) + "_count").text(data_arr[1]);
+                            const qnt = (!qnt_actn) ? 1 : tr.find('.unit_qnt').text();
+                            const lbr = tr.find('.unit_labour').text();
+                            const price = tr.find('.unit_price').text();
+                            const sub_price = tr.find('.sub_price').text();
+
+                            var new_qnt = final_quant - qnt;
+                            $("#final_quantity").empty().text(new_qnt);
+
+                            var new_unit_price = sum_unit_rate - price;
+                            $("#total_unit_price").empty().text(new_unit_price.toFixed(2));
+
+                            var new_lbr_chrg = sum_lbr_chrg - lbr;
+                            $("#total_sum_labour").empty().text(new_lbr_chrg.toFixed(2));
+
+                            var new_ttl_price = sum_total_rate - sub_price;
+                            $("#total_sum_price").empty().text(new_ttl_price.toFixed(2));
+
+                            var new_final_cost = final_rate - sub_price;
+                            $("#final_subtotal").empty().text(new_final_cost.toFixed(2));
+
+                            var new_payable_cost = payable - sub_price;
+                            $("#final_amount").empty().text(new_payable_cost.toFixed(2));
+                            if (tr_count == 1) {
+                                const check_btn = '<button type="button" class="btn btn-block btn-primary my-3 py-3 text-white" onclick="alert(\'Your Cart is Empty !\');">Checkout ?</button>';
+                                $('[name="checkout"]').replaceWith(check_btn);
+                            }
+                            tr.remove();
+                            getshoppinglistcount();
+                        }
+                    });
+                }
+            });
+            /*$(".move_to_cart").click(function(e){
+                e.preventDefault();
+                const tr = $(this).parent('td').parent('tr');
+                $.get($(this).attr('href'),"",function(response){
+                    alert(response.msg);
+                    if(response.status){
+                        tr.remove();
+                        getshoppinglistcount();
+                    }
+                })
+            });*/
+            function getshoppinglistcount() {
+                $.get("https://justudhari.com/soppinglistcount", "", function (response) {
+                    $("#wishlist_count").empty().text(response.wish_list);
+                    $("#kart_count").empty().text(response.kart_list);
+                });
+            }
+
+            $.get('https://justudhari.com#', "", function (response) {
+                if (response.rates_arr) {
+                    const rates = response.rates_arr;
+                    if (rates.gold) {
+                        $.each(rates.gold, function (i, v) {
+
+                            $(`#rate_gold_${i}`).text((v) ? (Math.round(v * 10)).toLocaleString("en-IN") : '-');
+                        });
+                    }
+                    if (rates.silver) {
+                        $.each(rates.silver, function (i, v) {
+                            $(`#rate_silver_${i}`).text((v) ? (Math.round(v)).toLocaleString("en-IN") : '-');
+                        });
+                    }
+                    if (rates.date) {
+                        $(`#rate_update`).text(rates.date);
+                    }
+                }
+            });
+
+            $("#state").change(function () {
+                const state_code = $(this).val();
+                if (state_code != "") {
+                    const data = { state: state_code };
+                    $.get("https://justudhari.com/get-districts", data, function (response) {
+                        if (response.length > 0) {
+                            option = '<option value="">Select District !</option>';
+                            $.each(response, function (i, v) {
+                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
+                            });
+                        } else {
+                            option = '<option value="">No District !</option>';
+                        }
+                        $("#dist").empty().append(option);
+                    });
+                }
+            });
+
+            $("#ship_state").change(function () {
+                const state_code = $(this).val();
+                if (state_code != "") {
+                    const data = { state: state_code };
+                    $.get("https://justudhari.com/get-districts", data, function (response) {
+                        if (response.length > 0) {
+                            option = '<option value="">Select District !</option>';
+                            $.each(response, function (i, v) {
+                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
+                            });
+                        } else {
+                            option = '<option value="">No District !</option>';
+                        }
+                        $("#ship_dist").empty().append(option);
+                    });
+                }
+            });
+            $('.addr_state').change(function () {
+                const state_code = $(this).val();
+                if (state_code != "") {
+                    const target = $(this).attr('data-target');
+                    $("#" + target).empty().append('<option>Loading...</option>');
+                    const data = { state: state_code };
+                    $.get("https://justudhari.com/get-districts", data, function (response) {
+                        if (response.length > 0) {
+                            option = '<option value="">Select District !</option>';
+                            $.each(response, function (i, v) {
+                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
+                            });
+                        } else {
+                            option = '<option value="">No District !</option>';
+                        }
+                        $("#" + target).empty().append(option);
+                    });
+                }
+            })
+            $("#page_await").hide();
+        });
+        function digitonly(event, num) {
+            let inputValue = event.target.value;
+
+            // Allow only digits using regex
+            inputValue = inputValue.replace(/[^0-9]/g, '');  // Remove anything that's not a digit
+
+            // Ensure that the input has exactly 10 digits
+            if (inputValue.length > num) {
+                inputValue = inputValue.slice(0, 10);  // Trim to 10 digits
+            }
+
+            // Update the input field with the valid input
+            event.target.value = inputValue;
+        }
+    </script>
+
+
+
+</body>
+
+</html>

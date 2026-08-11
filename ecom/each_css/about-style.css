@@ -1,0 +1,173 @@
+/* ================================================================
+   ABOUT PAGE — page-specific styles
+   Only loaded on about.html. Uses the shared color variables
+   (--mg-gold-1, --mg-gold-2, --mg-gold-3, --mg-ivory, --mg-ink, etc.)
+   already defined in theme-style.css, so it stays visually
+   consistent with the rest of the site.
+   ================================================================ */
+
+
+
+/* ---------- About Us intro (image + story) ---------- */
+#about_section_page {
+    background: transparent;
+}
+
+#about_section_page .about-img-frame {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+#about_section_page .about-img {
+    border-radius: 30% 0;
+    border: 3px solid rgba(217, 181, 102, 0.5);
+    box-shadow: 0 20px 40px rgba(14, 25, 50, 0.15);
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(.22, .9, .32, 1);
+}
+
+#about_section_page .about-img-frame:hover .about-img {
+    transform: scale(1.02);
+}
+
+#about_section_page .about-img-badge {
+    position: absolute;
+    bottom: -18px;
+    right: 12px;
+    background: linear-gradient(135deg, var(--mg-gold-3), var(--mg-gold-2));
+    color: var(--mg-ink);
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 24px rgba(14, 25, 50, 0.25);
+    border: 3px solid #fff;
+}
+
+#about_section_page .about-img-badge span {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#about_section_page .about-img-badge strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+#about_section_page .about-content-card {
+    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.25) 100%);
+    border: 1px solid rgba(217, 181, 102, 0.35);
+    border-radius: 0 5rem 0 5rem;
+    box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+    padding: 45px 50px;
+    position: relative;
+}
+
+#about_section_page .about-content-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px dashed rgba(217, 181, 102, 0.4);
+    border-radius: 0 4.5rem 0 4.5rem;
+    pointer-events: none;
+}
+
+#about_section_page .about-text {
+    color: var(--mg-ink);
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.9;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+#about_section_page .about-contact-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--mg-gold-2);
+    border: 2px solid var(--mg-gold-2);
+    background: transparent;
+    transition: all 0.35s ease;
+}
+
+#about_section_page .about-contact-btn:hover {
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3));
+    color: var(--mg-ink) !important;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.35);
+}
+
+@media (max-width: 767.98px) {
+    #about_section_page .about-content-card {
+        padding: 32px 24px;
+        border-radius: 0 2.5rem 0 2.5rem;
+        margin-top: 20px;
+    }
+    #about_section_page .about-content-card::before {
+        border-radius: 0 2rem 0 2rem;
+    }
+    #about_section_page .about-text {
+        text-align: left;
+    }
+}
+
+/* ---------- Why Choose Us ---------- */
+#why_choose_us .why-card {
+    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.35) 100%);
+    border: 1px solid rgba(217, 181, 102, 0.35);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 8px 20px rgba(14, 25, 50, 0.08);
+    transition: transform 0.4s cubic-bezier(.22, .9, .32, 1), box-shadow 0.4s ease;
+}
+
+#why_choose_us .why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 34px rgba(212, 175, 55, 0.25);
+}
+
+#why_choose_us .why-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--mg-gold-3), var(--mg-gold-2) 45%, var(--mg-gold-1) 100%);
+    margin: 0 auto 20px;
+    font-size: 1.7rem;
+    color: #fff;
+    transition: transform 0.5s cubic-bezier(.22, .9, .32, 1);
+}
+
+#why_choose_us .why-card:hover .why-icon {
+    transform: rotate(8deg) scale(1.08);
+}
+
+#why_choose_us .why-card h5 {
+    font-weight: 700;
+    color: var(--mg-ink);
+    margin-bottom: 12px;
+}
+
+#why_choose_us .why-card p {
+    color: #6c757d;
+    font-size: 0.92rem;
+    margin-bottom: 0;
+}

@@ -1,0 +1,138 @@
+/* ================================================================
+   CHECKOUT PAGE — page-specific styles
+   Only loaded on checkout.html. Uses the shared color variables
+   (--mg-gold-1, --mg-gold-2, --mg-gold-3, --mg-ivory, --mg-ink, etc.)
+   already defined in theme-style.css.
+   ================================================================ */
+
+#checkout_section_page {
+    background: transparent;
+}
+
+/* ---------- Section headings (Billing/Shipping Address) ---------- */
+#checkout_section_page h4.font-weight-semi-bold {
+    color: var(--mg-ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700 !important;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#checkout_section_page > .row > .col-lg-8 h4.font-weight-semi-bold::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--mg-gold-2), var(--mg-gold-3));
+}
+
+/* ---------- Form fields ---------- */
+#checkout_section_page label {
+    font-weight: 600;
+    color: var(--mg-ink);
+    font-size: 0.9rem;
+}
+
+#checkout_section_page .form-control,
+#checkout_section_page .custom-select {
+    border: 1.5px solid rgba(14, 25, 50, 0.15);
+    border-radius: 12px;
+    padding: 11px 14px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#checkout_section_page .form-control:focus,
+#checkout_section_page .custom-select:focus {
+    border-color: var(--mg-gold-2);
+    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* ---------- Order Total & Payment cards ---------- */
+#checkout_section_page .card.border-secondary {
+    border: 1px solid rgba(217, 181, 102, 0.4) !important;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
+    position: relative;
+}
+
+#checkout_section_page .card.border-secondary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--mg-gold-2), var(--mg-gold-3), var(--mg-gold-2), transparent);
+    background-size: 200% 100%;
+    animation: mg-shimmer 6s linear infinite;
+    z-index: 1;
+}
+
+#checkout_section_page .card-header.bg-secondary h4 {
+    color: #fff !important;
+}
+
+#checkout_section_page .card-body h5 {
+    color: var(--mg-ink);
+}
+
+#checkout_section_page .card-body p,
+#checkout_section_page .card-body h6 {
+    color: #6c757d;
+}
+
+#checkout_section_page .card-body hr {
+    border-top: 1px dashed rgba(217, 181, 102, 0.4);
+}
+
+#checkout_section_page .card-footer {
+    border-top: 1px dashed rgba(217, 181, 102, 0.4) !important;
+    background: rgba(242, 221, 154, 0.10);
+}
+
+#checkout_section_page .card-footer h5 {
+    color: var(--mg-ink);
+}
+
+/* ---------- Payment radio options ---------- */
+#checkout_section_page .custom-radio {
+    padding: 10px 12px 10px 36px;
+    border-radius: 12px;
+    transition: background 0.25s ease;
+}
+
+#checkout_section_page .custom-radio:hover {
+    background: rgba(217, 181, 102, 0.10);
+}
+
+#checkout_section_page .custom-control-label {
+    font-weight: 500;
+    color: var(--mg-ink);
+    cursor: pointer;
+}
+
+/* ---------- Place Order button ---------- */
+#checkout_section_page .card-footer .btn-primary {
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#checkout_section_page .card-footer .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 767.98px) {
+    #checkout_section_page .card-body,
+    #checkout_section_page .card-header,
+    #checkout_section_page .card-footer {
+        padding: 18px 16px;
+    }
+}

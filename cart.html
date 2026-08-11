@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        MG Jwellers
+    </title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="jewellers, jewelry, mg jewellers" name="keywords">
+    <meta content="Best jewellery shop" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/ecomm/logos/1755865437532699141.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/ecomm/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/ecomm/css/style.css" rel="stylesheet">
+    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
+    <link href="assets/ecomm/css/style2.css" rel="stylesheet">
+    <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
+
+
+
+    <style>
+        /* ================================================================
+           CART PAGE — inline styles (small enough to keep in-page)
+           ================================================================ */
+
+
+        #cart_section_page .table thead.bg-secondary::after,
+        #cart_section_page .table thead.bg-secondary::before {
+            display: none !important;
+        }
+
+
+        #cart_section_page .table {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
+        }
+
+        #cart_section_page .table thead tr {
+            background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1)) !important;
+        }
+
+        #cart_section_page .table thead th {
+            color: #fff !important;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 14px;
+        }
+
+        #cart_section_page .table tbody tr {
+            transition: background 0.25s ease;
+        }
+
+        #cart_section_page .table tbody tr:hover {
+            background: rgba(217, 181, 102, 0.08);
+        }
+
+        #cart_section_page .table td {
+            vertical-align: middle;
+            border-color: rgba(217, 181, 102, 0.25);
+        }
+
+        #cart_section_page .table td p {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0;
+            text-align: left;
+        }
+
+        #cart_section_page .table td img {
+            border-radius: 10px;
+            border: 1px solid rgba(217, 181, 102, 0.4);
+        }
+
+        #cart_section_page .quantity .btn-minus,
+        #cart_section_page .quantity .btn-plus {
+            background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3)) !important;
+            border: none !important;
+            color: var(--mg-ink) !important;
+            border-radius: 50% !important;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.25s ease;
+        }
+
+        #cart_section_page .quantity .btn-minus:hover,
+        #cart_section_page .quantity .btn-plus:hover {
+            transform: scale(1.1);
+        }
+
+        #cart_section_page .quantity input {
+            border: 1.5px solid rgba(217, 181, 102, 0.35) !important;
+            background: #fff !important;
+            font-weight: 600;
+        }
+
+        #cart_section_page td .btn-sm.btn-primary {
+            background: transparent !important;
+            color: #c0505c !important;
+            border: 1.5px solid #c0505c !important;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            transition: all 0.25s ease;
+        }
+
+        #cart_section_page td .btn-sm.btn-primary:hover {
+            background: #c0505c !important;
+            color: #fff !important;
+            transform: rotate(90deg);
+        }
+
+        /* ---------- Cart summary card ---------- */
+        #cart_section_page .card.border-secondary {
+            border: 1px solid rgba(217, 181, 102, 0.4) !important;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
+            position: relative;
+        }
+
+        #cart_section_page .card.border-secondary::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--mg-gold-2), var(--mg-gold-3), var(--mg-gold-2), transparent);
+            background-size: 200% 100%;
+            animation: mg-shimmer 6s linear infinite;
+        }
+
+        #cart_section_page .card-header.bg-secondary {
+            background: linear-gradient(160deg, #577e89 0%, #70afc2 100%) !important;
+        }
+
+        #cart_section_page .card-header h4 {
+            color: #fff !important;
+        }
+
+        #cart_section_page .card-footer {
+            border-top: 1px dashed rgba(217, 181, 102, 0.4) !important;
+        }
+
+        #cart_section_page .card-footer h5 {
+            color: var(--mg-ink);
+        }
+
+        #cart_section_page .card-footer .btn-primary {
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #cart_section_page .card-footer .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+        }
+
+        @media (max-width: 767.98px) {
+
+            #cart_section_page .table th,
+            #cart_section_page .table td {
+                padding: 8px 6px;
+                font-size: 0.85rem;
+            }
+
+            #cart_section_page .table td img {
+                width: 44px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+    <div id="header-placeholder"></div>
+    <!-- Navbar End -->
+
+
+    <!-- Cart Start -->
+    <div class="container-fluid pt-5" id="cart_section_page">
+
+        <div class="row px-xl-5">
+            <div class="col-lg-8 table-responsive mb-5">
+                <table class="table table-bordered text-center mb-0">
+                    <thead class="bg-secondary text-dark">
+                        <tr>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td class="align-middle">
+                                <p><img src="assets/ecomm/products/rings/ring_1.webp" alt="" style="width: 60px;"
+                                        style="float:left;"> Colorful Stylish Shirt</p>
+                            </td>
+                            <td class="align-middle">Rs. 150/-</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center"
+                                        value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">Rs. 150/-</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i
+                                        class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <p><img src="assets/ecomm/products/rings/ring_1.webp" alt="" style="width: 60px;
+                                        float:left;"> Colorful Stylish Shirt</p>
+                            </td>
+                            <td class="align-middle base_price">Rs. <span class="unit_price">150</span>/-</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text"
+                                        class="form-control form-control-sm bg-secondary text-center quantity"
+                                        value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle final_price">Rs. <span class="sum_price">150</span>/-</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i
+                                        class="fa fa-times"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <!-- <form class="mb-5" action="">
+                <div class="input-group">
+                    <input type="text" class="form-control p-4" placeholder="Coupon Code">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">Apply Coupon</button>
+                    </div>
+                </div>
+            </form> -->
+                <div class="card border-secondary mb-5">
+                    <div class="card-header bg-secondary border-0">
+                        <h4 class="font-weight-semi-bold m-0">Cart Summary</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3 pt-1">
+                            <h6 class="font-weight-medium">Subtotal</h6>
+                            <h6 class="font-weight-medium">$150</h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-medium">Shipping</h6>
+                            <h6 class="font-weight-medium">$10</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer border-secondary bg-transparent">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h5 class="font-weight-bold">Total</h5>
+                            <h5 class="font-weight-bold">$160</h5>
+                        </div>
+                        <a href="checkout.html" class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart End -->
+
+
+    <!-- footer -->
+
+    <div id="footer-placeholder"></div>
+
+    <!-- footer end-->
+
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!------------------INDEX PAGE JS---------------------------------------------------->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/ecomm/lib/easing/easing.min.js" defer></script>
+    <script src="assets/ecomm/lib/owlcarousel/owl.carousel.min.js" defer></script>
+
+    <!-- Contact Javascript File -->
+    <!--<script src="assets/ecomm/mail/jqBootstrapValidation.min.js"></script>
+    <script src="assets/ecomm/mail/contact.js"></script>-->
+
+    <!-- Template Javascript -->
+    <!------------------END INDEX PAGE JS------------------------------------------------>
+
+    <script src="assets/ecomm/js/main.js" defer></script>
+    <script src="assets/ecomm/js/include.js" defer></script>
+    <script src="assets/ecomm/js/theme-animations.js" defer></script>
+
+    <script>
+
+
+        function checkOrientation() {
+            if (window.orientation === 0 || $(window).width() < $(window).height()) {
+                if (window.innerWidth <= 768) {
+                    var header_block_height = $('div.top_header').outerHeight();
+                    $('div#header_seprator').css('height', header_block_height + "px");
+                }
+            } else {
+                $('div#header_seprator').css('height', '');
+            }
+        }
+        $(document).ready(function () {
+
+            $(window).on('resize orientationchange', checkOrientation);
+            checkOrientation(); // Check on page load
+
+            getshoppinglistcount();
+            $(".remove_from_kart,.remove_from_wishlist,.move_to_cart").click(function (e) {
+                e.preventDefault();
+                var q = false;
+                if (!$(this).hasClass('move_to_cart')) {
+                    q = confirm("Sure to Remove ?");
+                } else {
+                    q = true;
+                }
+                const tr = $(this).parent('td').parent('tr');
+                const tr_count = $('tbody > tr').length;
+                const qnt_actn = tr.hasClass('genuine') ? false : true
+                const sum_unit_rate = $("#total_unit_price").text();
+                const sum_lbr_chrg = $("#total_sum_labour").text();
+                const sum_total_rate = $("#total_sum_price").text();
+                const final_quant = $("#final_quantity").text();
+                const final_rate = $("#final_subtotal").text();
+                const payable = $("#final_amount").text();
+                if (q == true) {
+                    const url = $(this).attr('href');
+                    $.get(url, "", function (response) {
+                        alert(response.msg);
+                        if (response.status) {
+                            const data_arr = (response.data).split("#");
+                            const type_arr = ["wishlist", "kart"];
+                            $("#" + (type_arr[data_arr[0]]) + "_count").text(data_arr[1]);
+                            const qnt = (!qnt_actn) ? 1 : tr.find('.unit_qnt').text();
+                            const lbr = tr.find('.unit_labour').text();
+                            const price = tr.find('.unit_price').text();
+                            const sub_price = tr.find('.sub_price').text();
+
+                            var new_qnt = final_quant - qnt;
+                            $("#final_quantity").empty().text(new_qnt);
+
+                            var new_unit_price = sum_unit_rate - price;
+                            $("#total_unit_price").empty().text(new_unit_price.toFixed(2));
+
+                            var new_lbr_chrg = sum_lbr_chrg - lbr;
+                            $("#total_sum_labour").empty().text(new_lbr_chrg.toFixed(2));
+
+                            var new_ttl_price = sum_total_rate - sub_price;
+                            $("#total_sum_price").empty().text(new_ttl_price.toFixed(2));
+
+                            var new_final_cost = final_rate - sub_price;
+                            $("#final_subtotal").empty().text(new_final_cost.toFixed(2));
+
+                            var new_payable_cost = payable - sub_price;
+                            $("#final_amount").empty().text(new_payable_cost.toFixed(2));
+                            if (tr_count == 1) {
+                                const check_btn = '<button type="button" class="btn btn-block btn-primary my-3 py-3 text-white" onclick="alert(\'Your Cart is Empty !\');">Checkout ?</button>';
+                                $('[name="checkout"]').replaceWith(check_btn);
+                            }
+                            tr.remove();
+                            getshoppinglistcount();
+                        }
+                    });
+                }
+            });
+            /*$(".move_to_cart").click(function(e){
+                e.preventDefault();
+                const tr = $(this).parent('td').parent('tr');
+                $.get($(this).attr('href'),"",function(response){
+                    alert(response.msg);
+                    if(response.status){
+                        tr.remove();
+                        getshoppinglistcount();
+                    }
+                })
+            });*/
+            function getshoppinglistcount() {
+                $.get("https://justudhari.com/soppinglistcount", "", function (response) {
+                    $("#wishlist_count").empty().text(response.wish_list);
+                    $("#kart_count").empty().text(response.kart_list);
+                });
+            }
+
+            $.get('https://justudhari.com#', "", function (response) {
+                if (response.rates_arr) {
+                    const rates = response.rates_arr;
+                    if (rates.gold) {
+                        $.each(rates.gold, function (i, v) {
+
+                            $(`#rate_gold_${i}`).text((v) ? (Math.round(v * 10)).toLocaleString("en-IN") : '-');
+                        });
+                    }
+                    if (rates.silver) {
+                        $.each(rates.silver, function (i, v) {
+                            $(`#rate_silver_${i}`).text((v) ? (Math.round(v)).toLocaleString("en-IN") : '-');
+                        });
+                    }
+                    if (rates.date) {
+                        $(`#rate_update`).text(rates.date);
+                    }
+                }
+            });
+
+            $("#state").change(function () {
+                const state_code = $(this).val();
+                if (state_code != "") {
+                    const data = { state: state_code };
+                    $.get("https://justudhari.com/get-districts", data, function (response) {
+                        if (response.length > 0) {
+                            option = '<option value="">Select District !</option>';
+                            $.each(response, function (i, v) {
+                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
+                            });
+                        } else {
+                            option = '<option value="">No District !</option>';
+                        }
+                        $("#dist").empty().append(option);
+                    });
+                }
+            });
+
+            $("#ship_state").change(function () {
+                const state_code = $(this).val();
+                if (state_code != "") {
+                    const data = { state: state_code };
+                    $.get("https://justudhari.com/get-districts", data, function (response) {
+                        if (response.length > 0) {
+                            option = '<option value="">Select District !</option>';
+                            $.each(response, function (i, v) {
+                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
+                            });
+                        } else {
+                            option = '<option value="">No District !</option>';
+                        }
+                        $("#ship_dist").empty().append(option);
+                    });
+                }
+            });
+            $('.addr_state').change(function () {
+                const state_code = $(this).val();
+                if (state_code != "") {
+                    const target = $(this).attr('data-target');
+                    $("#" + target).empty().append('<option>Loading...</option>');
+                    const data = { state: state_code };
+                    $.get("https://justudhari.com/get-districts", data, function (response) {
+                        if (response.length > 0) {
+                            option = '<option value="">Select District !</option>';
+                            $.each(response, function (i, v) {
+                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
+                            });
+                        } else {
+                            option = '<option value="">No District !</option>';
+                        }
+                        $("#" + target).empty().append(option);
+                    });
+                }
+            })
+            $("#page_await").hide();
+        });
+        function digitonly(event, num) {
+            let inputValue = event.target.value;
+
+            // Allow only digits using regex
+            inputValue = inputValue.replace(/[^0-9]/g, '');  // Remove anything that's not a digit
+
+            // Ensure that the input has exactly 10 digits
+            if (inputValue.length > num) {
+                inputValue = inputValue.slice(0, 10);  // Trim to 10 digits
+            }
+
+            // Update the input field with the valid input
+            event.target.value = inputValue;
+        }
+    </script>
+
+
+</body>
+
+</html>
