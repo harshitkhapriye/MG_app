@@ -8,8 +8,7 @@
    slider, and videos will simply do nothing on pages that don't
    have that content (e.g. about.html).
    ================================================================ */
-
-document.addEventListener("headerFooterReady", function () {
+(function () {
 
     /* ---------- Auto-highlight the current page's nav link ----------
        The header is now shared across every page, so it can no longer
@@ -932,4 +931,6 @@ document.addEventListener("headerFooterReady", function () {
         })(window.jQuery);
     }
 
-});
+})();
+
+

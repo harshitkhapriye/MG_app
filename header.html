@@ -752,7 +752,7 @@
         </div>
 
     </div>
-    <div id="header_seprator" class="container-fluid">
+    <div id="header_seprator" class="container-fluid" style="height: 0px;">
     </div>
 
 
@@ -782,6 +782,7 @@
     </div>
 </div>
 
+
 <div class="mg-rate-float-widget" id="rate_ticker_toggle_area">
     <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false">
         <i class="fa fa-angle-down mg-rate-chevron"></i> Todays Rate
@@ -790,21 +791,21 @@
         <div class="mg-rate-col">
             <h6>GOLD <small>(10Gm)</small></h6>
             <ul>
-                <li><b>24K</b> <span>₹<span class="rate-gold-24k">-</span></span></li>
-                <li><b>22K</b> <span>₹<span class="rate-gold-22k">-</span></span></li>
-                <li><b>20K</b> <span>₹<span class="rate-gold-20k">-</span></span></li>
-                <li><b>18K</b> <span>₹<span class="rate-gold-18k">-</span></span></li>
+                <li><b>24K</b> <span>₹<span id="rate_gold_24k_panel">-</span></span></li>
+                <li><b>22K</b> <span>₹<span id="rate_gold_22k_panel">-</span></span></li>
+                <li><b>20K</b> <span>₹<span id="rate_gold_20k_panel">-</span></span></li>
+                <li><b>18K</b> <span>₹<span id="rate_gold_18k_panel">-</span></span></li>
             </ul>
         </div>
         <div class="mg-rate-col">
             <h6>SILVER</h6>
             <ul>
-                <li><b>1Kg</b> <span>₹<span class="rate-silver-1kg">-</span></span></li>
-                <li><b>10Gm</b> <span>₹<span class="rate-silver-10g">-</span></span></li>
-                <li><b>1Gm</b> <span>₹<span class="rate-silver-1g">-</span></span></li>
+                <li><b>1Kg</b> <span>₹<span id="rate_silver_1kg_panel">-</span></span></li>
+                <li><b>10Gm</b> <span>₹<span id="rate_silver_10g_panel">-</span></span></li>
+                <li><b>1Gm</b> <span>₹<span id="rate_silver_1g_panel">-</span></span></li>
             </ul>
         </div>
-        <div class="mg-rate-updated">Update: <i class="rate-update">--/--/----</i></div>
+        <div class="mg-rate-updated">Update: <i id="rate_update_panel">--/--/----</i></div>
     </div>
 </div>
 
