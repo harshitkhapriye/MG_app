@@ -1,0 +1,154 @@
+/* ================================================================
+   OUR-LEGACY PAGE — full dedicated page styles
+   Loaded only on our-legacy.html.
+   ================================================================ */
+
+/* Full-page blurred background — sits behind everything, fixed so it
+   stays put while the page scrolls. The ::after adds an ivory tint on
+   top of the blur so the text content stays easily readable. */
+#our_legacy_page {
+    position: relative;
+}
+
+#our_legacy_page::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIqE3ciG4pSt0HEj8wXMfh1jVlvH2upTy2AONGTS7Ag&s=10');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+#our_legacy_page::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* background: rgba(212, 177, 107, 0.9); */
+    z-index: -1;
+}
+
+/* Close (X) button — takes user back to the teaser section on index.html */
+#our_legacy_page .legacy-close-btn {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 1040;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1));
+    color: #fff !important;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our_legacy_page .legacy-close-btn:hover {
+    transform: rotate(90deg) scale(1.08);
+    box-shadow: 0 14px 28px rgba(212, 175, 55, 0.5);
+    color: #fff !important;
+}
+
+#our_legacy_page .legacy-hero {
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 15px 30px rgba(14, 25, 50, 0.15);
+    max-height: 280px;
+}
+
+#our_legacy_page .legacy-hero img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Alternating image + text blocks, each on its own translucent card
+   so text stays readable over the blurred background */
+#our_legacy_page .legacy-block {
+    background: rgba(227, 211, 177, 0.9);
+    border: 1px solid rgba(217, 181, 102, 0.35);
+    border-radius: 18px;
+    padding: 26px;
+    margin-bottom: 22px;
+    box-shadow: 0 15px 30px rgba(14, 25, 50, 0.12);
+}
+
+#our_legacy_page .legacy-block-img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 10px 22px rgba(14, 25, 50, 0.15);
+    display: block;
+}
+
+#our_legacy_page .legacy-block h4 {
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+#our_legacy_page .legacy-block h4:first-child {
+    margin-top: 0;
+}
+
+#our_legacy_page .legacy-block p {
+    color: rgb(56, 56, 54);
+    line-height: 1.75;
+    text-align: justify;
+    font-size: 0.92rem;
+    margin-bottom: 0; 
+}
+
+#our_legacy_page .legacy-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1)) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.30);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our_legacy_page .legacy-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 30px rgba(212, 175, 55, 0.42);
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    #our_legacy_page::before {
+        filter: blur(6px);
+    }
+    #our_legacy_page .legacy-hero {
+        max-height: 180px;
+    }
+    #our_legacy_page .legacy-hero img {
+        height: 180px;
+    }
+    #our_legacy_page .legacy-block {
+        padding: 20px;
+    }
+    #our_legacy_page .legacy-block-img {
+        margin-bottom: 16px;
+    }
+    #our_legacy_page .legacy-close-btn {
+        top: 80px;
+        right: 14px;
+        width: 38px;
+        height: 38px;
+    }
+}
