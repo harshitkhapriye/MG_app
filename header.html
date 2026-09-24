@@ -37,6 +37,9 @@
 
 
 
+
+
+
                 <div class="mg-search-overlay" id="mg_search_overlay"></div>
                 <div class="mg-search-suggestions" id="mg_search_suggestions">
                     <div class="mg-suggest-section">
@@ -76,6 +79,11 @@
                     <a href="cart.html" class="card-wish">
                         <i class="fas fa-shopping-cart text-primary"></i>
                         <span class="badge" id="kart_count">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="card-wish" title="My Profile" id="head_profile_icon">
+                        <i class="fas fa-user text-primary"></i>
                     </a>
                 </li>
 
@@ -381,40 +389,48 @@
                         height="40" alt="MG Jwellers">
                 </a>
 
+
+
                 <ul style="display:inline-flex;list-style:none;padding:0;" id="head_shop_list"
-                    class="mbl d-lg-none m-0">
-                    <li id="mob_search_btn"><a href="#mob_search_bar" id="mob_search_toggle"><i
-                                class="fa fa-search"></i></a></li>
+                    class="mbl d-lg-none m-0 align-items-center">
+                    <!-- Mobile Search Bar Toggle Button (Replaces old location icon) -->
+                    <li id="mob_search_btn_item">
+                        <button type="button" class="card-wish card-wish-mbl border-0 p-0" id="mob_search_toggle_btn" onclick="window.toggleMobileSearch && window.toggleMobileSearch(event)" title="Search" aria-label="Toggle Search" aria-expanded="false" data-search-state="closed">
+                            <i class="fa fa-search" id="mob_search_toggle_icon"></i>
+                        </button>
+                    </li>
                     <li>
-                        <a href="wishlist.html" class="card-wish card-wish-mbl">
-                            <i class="fas fa-heart text-primary"></i>
+                        <a href="wishlist.html" class="card-wish card-wish-mbl" title="Wishlist">
+                            <i class="far fa-heart text-primary"></i>
                             <span class="badge" id="wishlist_count">0</span>
                         </a>
                     </li>
                     <li>
-                        <a href="cart.html" class="card-wish card-wish-mbl">
-                            <i class="fas fa-shopping-cart text-primary"></i>
+                        <a href="cart.html" class="card-wish card-wish-mbl" title="Shopping Bag">
+                            <i class="fas fa-shopping-bag text-primary"></i>
                             <span class="badge" id="kart_count">0</span>
                         </a>
                     </li>
-
                 </ul>
-                <div class="col-12 text-left d-lg-none mob_disappear py-1 px-0" id="mob_search_bar">
-                    <form action="https://justudhari.com/shop" method="post">
-                        <div class="input-group" id="top-search-field">
-                            <input type="hidden" name="_token" value="" autocomplete="off"> <input type="text"
-                                class="form-control" placeholder="Search for products" name="mob_search_term"
-                                id="mob_search_input" autocomplete="off">
-                            <div class="input-group-append">
-                                <span class="input-group-text  text-primary p-0">
-                                    <!-- <button type="submit" id="btn-top-search" class="" name="search" > 
-										<i class="fa fa-search"></i>
-									</button> -->
 
-                                    <button type="button" id="mob_search_close" class="" name="search">
-                                        <i class="fa fa-times"></i>
-                                    </button>
+                <!-- Native App Search Bar (Expandable via header search icon) -->
+                <div class="col-12 text-left py-2 px-3 mg-app-search-container d-lg-none" id="mob_search_bar">
+                    <form action="cateloge.html" method="get">
+                        <div class="input-group mg-app-search-pill" id="top-search-field">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-transparent border-0 text-muted pl-3 pr-2">
+                                    <i class="fa fa-search"></i>
                                 </span>
+                            </div>
+                            <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for jewellery on MG Jewellers" name="search_term"
+                                id="mob_search_input" autocomplete="off">
+                            <div class="input-group-append pr-2 align-items-center">
+                                <button type="button" class="btn btn-link text-muted p-1 mg-search-cam-btn" title="Search by camera">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                                <button type="button" class="btn btn-link text-muted p-1 mg-search-mic-btn" title="Voice search">
+                                    <i class="fas fa-microphone"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -423,12 +439,12 @@
                         <div class="mg-suggest-section" id="mob_suggest_default">
                             <h6>Popular Categories</h6>
                             <div class="mg-suggest-chips">
-                                <a href="https://justudhari.com/shop/gold">Gold</a>
-                                <a href="https://justudhari.com/shop/silver">Silver</a>
-                                <a href="https://justudhari.com/shop/rings">Rings</a>
-                                <a href="https://justudhari.com/shop/necklaces">Necklaces</a>
-                                <a href="https://justudhari.com/shop/earrings">Earrings</a>
-                                <a href="https://justudhari.com/shop/bridal-collection">Bridal Collection</a>
+                                <a href="shop.html">Gold</a>
+                                <a href="shop.html">Silver</a>
+                                <a href="shop.html">Rings</a>
+                                <a href="shop.html">Necklaces</a>
+                                <a href="shop.html">Earrings</a>
+                                <a href="shop.html">Bridal Collection</a>
                             </div>
                         </div>
                         <div class="mg-suggest-section" id="mob_suggest_results" style="display:none;">
@@ -437,271 +453,108 @@
                         </div>
                     </div>
                 </div>
-                <!--------test code ---->
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" role="navigation">
-                    <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
-                    <ul class="menu-list">
-                        <li>
-                            <a href="index.html" class="active">
-                                <i class="fa fa-home"></i> <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="">
-                                <i class="fa fa-info-circle"></i> <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="scheme.html" class="">
-                                <i class="fa fa-gift"></i> <span>Scheme</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="shop.html" class="">
-                                <i class="fa fa-shopping-cart"></i> <span>Online Shop</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="cateloge.html" class="">
-                                <i class="fa fa-book"></i> <span>Catalogue</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="">
-                                <i class="fa fa-envelope"></i> <span>Contact</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="shop-location.html" class="{{ @$shop_location }}">
-                                <i class="fa fa-location-arrow"></i> <span>Shop Location</span>
-                            </a>
-                        </li>
-
-
-
-
-
-                        <!-- Category Section -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle mob_cat" href="#" data-toggle="collapse"
-                                data-target="#mobileCategories">
-                                Categories <i class="fa fa-angle-down float-right mt-1"></i>
-                            </a>
-                            <div class="collapse" id="mobileCategories">
-                                <div class="navbar-nav w-100 overflow-hidden" style="max-height: 410px;">
-
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link" data-toggle="dropdown">
-                                            Collection <i class="fa fa-angle-down float-right mt-1"></i>
-                                        </a>
-                                        <div class="dropdown-menu position-static border-0 rounded-0 w-100 m-0">
-                                            <a href="https://justudhari.com/shopmens" class="dropdown-item">Mens</a>
-                                            <a href="https://justudhari.com/shopwomens" class="dropdown-item">Womens</a>
-                                            <a href="https://justudhari.com/shopbridal-collection"
-                                                class="dropdown-item">Bridal Collection</a>
-                                            <a href="https://justudhari.com/shopeveryday-wear"
-                                                class="dropdown-item">Everyday Wear </a>
-                                            <a href="https://justudhari.com/shopoffice-wear"
-                                                class="dropdown-item">Office Wear</a>
-                                            <a href="https://justudhari.com/shopgifts-anniversary"
-                                                class="dropdown-item">Gifts &amp; Anniversary</a>
-                                            <a href="https://justudhari.com/shopparty-evening-wear"
-                                                class="dropdown-item">Party &amp; Evening Wear</a>
-                                            <a href="https://justudhari.com/shoptraditional"
-                                                class="dropdown-item">Traditional</a>
-                                            <a href="https://justudhari.com/shopcontemporary"
-                                                class="dropdown-item">Contemporary</a>
-                                            <a href="https://justudhari.com/shopminimalist"
-                                                class="dropdown-item">Minimalist</a>
-                                            <a href="https://justudhari.com/shopvintage"
-                                                class="dropdown-item">Vintage</a>
-                                            <a href="https://justudhari.com/shopbohemian"
-                                                class="dropdown-item">Bohemian</a>
-                                            <a href="https://justudhari.com/shopluxury" class="dropdown-item">Luxury</a>
-                                            <a href="https://justudhari.com/shopfestive-collection"
-                                                class="dropdown-item">Festive Collection</a>
-                                            <a href="https://justudhari.com/shopruby" class="dropdown-item">Ruby
-                                                (माणिक-Manik)</a>
-                                            <a href="https://justudhari.com/shoppearl"
-                                                class="dropdown-item">Pearl(मोती-Moti)</a>
-                                            <a href="https://justudhari.com/shopcoral" class="dropdown-item">Coral
-                                                (मूंगा-Moonga)</a>
-                                            <a href="https://justudhari.com/shopemerald" class="dropdown-item">Emerald
-                                                (पन्ना-Panna)</a>
-                                            <a href="https://justudhari.com/shopyellow_sapphire"
-                                                class="dropdown-item">Yellow Sapphire (पुखराज-Pukhraj)</a>
-                                            <a href="https://justudhari.com/shopdiamond" class="dropdown-item">Diamond
-                                                हीरा (Heera)</a>
-                                            <a href="https://justudhari.com/shopblue_sapphire"
-                                                class="dropdown-item">Blue Sapphire(नीलम-Neelam)</a>
-                                            <a href="https://justudhari.com/shopcat^s_eye"
-                                                class="dropdown-item">Cat&#039;s Eye(लहसुनिया-Lahsunia)</a>
-                                            <a href="https://justudhari.com/shophessonite"
-                                                class="dropdown-item">Hessonite (गोमेद-Gomed)</a>
-                                        </div>
+                <!-- Slide-in Drawer Menu (Tanishq Reference Image 2) -->
+                <nav class="mobile-menu mg-app-drawer" id="mobileMenu" aria-hidden="true" role="navigation">
+                    <!-- Drawer Header: User Avatar, Greeting, Redeem Points, Currency -->
+                    <div class="mg-drawer-header p-3 border-bottom bg-white">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="mg-drawer-avatar mr-2">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div>
+                                    <h5 class="m-0 font-weight-bold mg-drawer-name" id="mg_drawer_greeting">Hi Harshit!</h5>
+                                    <div class="mg-currency-toggle mt-1">
+                                        <button type="button" class="mg-currency-btn active">₹</button>
+                                        <button type="button" class="mg-currency-btn">$</button>
                                     </div>
-
-                                    <a href="https://justudhari.com/shop/payal" class="nav-item nav-link">PAYAL123</a>
-                                    <a href="https://justudhari.com/shop/chains" class="nav-item nav-link">Chains</a>
-                                    <a href="https://justudhari.com/shop/necklaces"
-                                        class="nav-item nav-link">Necklaces</a>
-                                    <a href="https://justudhari.com/shop/rings" class="nav-item nav-link">RINGS</a>
-                                    <a href="https://justudhari.com/shop/bracelets"
-                                        class="nav-item nav-link">Bracelets</a>
-                                    <a href="https://justudhari.com/shop/earrings"
-                                        class="nav-item nav-link">Earrings</a>
-                                    <a href="https://justudhari.com/shop/pendants"
-                                        class="nav-item nav-link">Pendants</a>
-                                    <a href="https://justudhari.com/shop/anklets" class="nav-item nav-link">Anklets</a>
-                                    <a href="https://justudhari.com/shop/necklace-and-earring-sets"
-                                        class="nav-item nav-link">Necklace and Earring Sets</a>
-                                    <a href="https://justudhari.com/shop/bracelet-and-ring-sets"
-                                        class="nav-item nav-link">Bracelet and Ring Sets</a>
-                                    <a href="https://justudhari.com/shop/mangalsutra"
-                                        class="nav-item nav-link">Mangalsutra</a>
-                                    <a href="https://justudhari.com/shop/bangle" class="nav-item nav-link">Bangle</a>
-                                    <a href="https://justudhari.com/shop/watches" class="nav-item nav-link">Watches</a>
-                                    <a href="https://justudhari.com/shop/nosepins"
-                                        class="nav-item nav-link">Nosepins</a>
-                                    <a href="https://justudhari.com/shop/pendants-set"
-                                        class="nav-item nav-link">Pendants set</a>
-                                    <a href="https://justudhari.com/shop/tika" class="nav-item nav-link">TIKA</a>
-                                    <a href="https://justudhari.com/shop/devotional"
-                                        class="nav-item nav-link">Devotional</a>
-                                    <a href="https://justudhari.com/shop/kitchenware"
-                                        class="nav-item nav-link">Kitchenware</a>
-                                    <a href="https://justudhari.com/shop/neelam" class="nav-item nav-link">NEELAM</a>
-                                    <a href="https://justudhari.com/shop/black-pearl" class="nav-item nav-link">BLACK
-                                        PEARL</a>
-                                    <a href="https://justudhari.com/shop/firoza" class="nav-item nav-link">FIROZA</a>
-                                    <a href="https://justudhari.com/shop/gomed" class="nav-item nav-link">GOMED</a>
-                                    <a href="https://justudhari.com/shop/hakik" class="nav-item nav-link">HAKIK</a>
-                                    <a href="https://justudhari.com/shop/jamuniya"
-                                        class="nav-item nav-link">JAMUNIYA</a>
-                                    <a href="https://justudhari.com/shop/lahsuniya"
-                                        class="nav-item nav-link">LAHSUNIYA</a>
-                                    <a href="https://justudhari.com/shop/lazwat" class="nav-item nav-link">LAZWAT</a>
-                                    <a href="https://justudhari.com/shop/magnet" class="nav-item nav-link">MAGNET</a>
-                                    <a href="https://justudhari.com/shop/manik" class="nav-item nav-link">MANIK</a>
-                                    <a href="https://justudhari.com/shop/monga" class="nav-item nav-link">MONGA</a>
-                                    <a href="https://justudhari.com/shop/moon-stone" class="nav-item nav-link">MOON
-                                        STONE</a>
-                                    <a href="https://justudhari.com/shop/moti" class="nav-item nav-link">MOTI</a>
-                                    <a href="https://justudhari.com/shop/neeli" class="nav-item nav-link">NEELI</a>
-                                    <a href="https://justudhari.com/shop/grrfdfgfdg"
-                                        class="nav-item nav-link">Grrfdfgfdg</a>
-                                    <a href="https://justudhari.com/shop/fgfdgfdgfdg"
-                                        class="nav-item nav-link">Fgfdgfdgfdg</a>
-                                    <a href="https://justudhari.com/shop/coins" class="nav-item nav-link">Coins</a>
-                                    <a href="https://justudhari.com/shop/cat-eye" class="nav-item nav-link">CAT EYE</a>
-                                    <a href="https://justudhari.com/shop/opal" class="nav-item nav-link">OPAL</a>
-                                    <a href="https://justudhari.com/shop/white-monga" class="nav-item nav-link">WHITE
-                                        MONGA</a>
-                                    <a href="https://justudhari.com/shop/sun-stone" class="nav-item nav-link">SUN
-                                        STONE</a>
-                                    <a href="https://justudhari.com/shop/tourmaline"
-                                        class="nav-item nav-link">TOURMALINE</a>
-                                    <a href="https://justudhari.com/shop/tiger-eye" class="nav-item nav-link">TIGER
-                                        EYE</a>
-                                    <a href="https://justudhari.com/shop/rani-haar-chain" class="nav-item nav-link">RANI
-                                        HAAR CHAIN</a>
-                                    <a href="https://justudhari.com/shop/panna" class="nav-item nav-link">PANNA</a>
-                                    <a href="https://justudhari.com/shop/peridot" class="nav-item nav-link">PERIDOT</a>
-                                    <a href="https://justudhari.com/shop/pukhraj" class="nav-item nav-link">PUKHRAJ</a>
-                                    <a href="https://justudhari.com/shop/sunhela" class="nav-item nav-link">SUNHELA</a>
-                                    <a href="https://justudhari.com/shop/rubi" class="nav-item nav-link">Rubi</a>
-                                    <a href="https://justudhari.com/shop/test" class="nav-item nav-link">Test</a>
-                                    <a href="https://justudhari.com/shop/ghoonghroo"
-                                        class="nav-item nav-link">Ghoonghroo</a>
-                                    <a href="https://justudhari.com/shop/chain-tulsi" class="nav-item nav-link">new
-                                        CHAIN</a>
-                                    <a href="https://justudhari.com/shop/gold" class="nav-item nav-link">Gold</a>
-                                    <a href="https://justudhari.com/shop/hallmark"
-                                        class="nav-item nav-link">Hallmark</a>
-                                    <a href="https://justudhari.com/shop/gold-chain-24-k" class="nav-item nav-link">Gold
-                                        chain 24 k</a>
-                                    <a href="https://justudhari.com/shop/artficial"
-                                        class="nav-item nav-link">Artficial</a>
-                                    <a href="https://justudhari.com/shop/earing" class="nav-item nav-link">Earing</a>
-                                    <a href="https://justudhari.com/shop/fancy-ring" class="nav-item nav-link">Fancy
-                                        ring</a>
-                                    <a href="https://justudhari.com/shop/waist-chain" class="nav-item nav-link">Waist
-                                        chain</a>
-                                    <a href="https://justudhari.com/shop/jhumka" class="nav-item nav-link">Jhumka</a>
-                                    <a href="https://justudhari.com/shop/ring-18k" class="nav-item nav-link">RING
-                                        18K</a>
-                                    <a href="https://justudhari.com/shop/havy-ring" class="nav-item nav-link">Havy
-                                        ring</a>
-                                    <a href="https://justudhari.com/shop/heavy-ring" class="nav-item nav-link">Heavy
-                                        ring</a>
-                                    <a href="https://justudhari.com/shop/heavy-ring1" class="nav-item nav-link">Heavy
-                                        ring1</a>
-                                    <a href="https://justudhari.com/shop/heavy-ring-2" class="nav-item nav-link">Heavy
-                                        ring 2</a>
-                                    <a href="https://justudhari.com/shop/ruby-stone" class="nav-item nav-link">Ruby
-                                        stone</a>
-                                    <a href="https://justudhari.com/shop/franchise"
-                                        class="nav-item nav-link">Franchise</a>
-                                    <a href="shop.html" class="nav-item nav-link">Rings</a>
-                                    <a href="https://justudhari.com/shop/new-tests" class="nav-item nav-link">New
-                                        tests</a>
-                                    <a href="https://justudhari.com/shop/haar" class="nav-item nav-link">Haar</a>
-                                    <a href="https://justudhari.com/shop/baali" class="nav-item nav-link">Baali</a>
-                                    <a href="https://justudhari.com/shop/ryuby" class="nav-item nav-link">Ryuby</a>
-                                    <a href="https://justudhari.com/shop/mens-ring" class="nav-item nav-link">Mens
-                                        ring</a>
-                                    <a href="shop.html" class="nav-item nav-link">RINGS10</a>
-                                    <a href="https://justudhari.com/shop/murti" class="nav-item nav-link">Murti</a>
-                                    <a href="shop.html" class="nav-item nav-link">Shiny franchise</a>
-                                    <a href="shop.html" class="nav-item nav-link">Murti</a>
-                                    <a href="shop.html" class="nav-item nav-link">rings</a>
-                                    <a href="shop.html" class="nav-item nav-link">Murti</a>
-                                    <a href="shop.html" class="nav-item nav-link">Ruby stone</a>
-                                    <a href="https://justudhari.com/shop/gungroo" class="nav-item nav-link">Gungroo</a>
-                                    <a href="https://justudhari.com/shop/diamond-rings"
-                                        class="nav-item nav-link">Diamond rings</a>
-                                    <a href="https://justudhari.com/shop/kalyan" class="nav-item nav-link">Kalyan</a>
-                                    <a href="https://justudhari.com/shop/matha-pati" class="nav-item nav-link">Matha
-                                        pati</a>
-                                    <a href="https://justudhari.com/shop/think" class="nav-item nav-link">Think</a>
-                                    <a href="https://justudhari.com/shop/nosering"
-                                        class="nav-item nav-link">Nosering</a>
-                                    <a href="https://justudhari.com/shop/expensive"
-                                        class="nav-item nav-link">Expensive</a>
-                                    <a href="https://justudhari.com/shop/qa-tester" class="nav-item nav-link">Qa
-                                        tester</a>
-                                    <a href="https://justudhari.com/shop/filigree"
-                                        class="nav-item nav-link">Filigree</a>
-                                    <a href="https://justudhari.com/shop/group" class="nav-item nav-link">Group</a>
-
                                 </div>
                             </div>
-                        </li>
+                            <div class="d-flex align-items-center">
+                                <div class="mg-redeem-circle mr-2" title="Redeem points">
+                                    <span>Redeem<br>points</span>
+                                </div>
+                                <button class="menu-close mg-drawer-close" id="menuClose" aria-label="Close menu">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Drawer Scrollable Content -->
+                    <div class="mg-drawer-body p-3">
+                        <!-- Top Quick Action Card -->
+                        <div class="mg-drawer-card mb-3">
+                            <a href="profile.html" class="mg-drawer-row">
+                                <span class="font-weight-bold">My Profile</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge mr-2 mg-badge-new">New</span>
+                                    <i class="fa fa-chevron-right text-muted"></i>
+                                </div>
+                            </a>
+                            <a href="profile.html" class="mg-drawer-row">
+                                <span class="font-weight-bold">Order History</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                        </div>
 
+                        <!-- Section: Shop By -->
+                        <div class="mg-drawer-group-title">Shop By</div>
+                        <div class="mg-drawer-card mb-3">
+                            <a href="cateloge.html" class="mg-drawer-row">
+                                <span>All Jewellery</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="shop.html" class="mg-drawer-row">
+                                <span>Gold</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="shop.html" class="mg-drawer-row">
+                                <span>Diamond</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="shop.html" class="mg-drawer-row">
+                                <span>Daily Wear</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="cateloge.html" class="mg-drawer-row">
+                                <span>Collections</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="shop.html" class="mg-drawer-row">
+                                <span>Gold Coin</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                        </div>
 
-                        <ul class="d-lg-none text-center row p-0" style="list-style:none;" id="mob_user_sign">
-                            <li class="col-12">
-                                <hr>
-                            </li>
+                        <!-- Section: Shop For -->
+                        <div class="mg-drawer-group-title">Shop For</div>
+                        <div class="mg-drawer-card mb-3">
+                            <a href="shop.html" class="mg-drawer-row">
+                                <span>Men</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="shop.html" class="mg-drawer-row">
+                                <span>Kids</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                            <a href="scheme.html" class="mg-drawer-row">
+                                <span>Jewellery Plans</span>
+                                <i class="fa fa-chevron-right text-muted"></i>
+                            </a>
+                        </div>
 
-                            <li class="col-6 px-1">
-                                <a href="login.html" class="btn btn-secondary col-12 ">
-                                    <i class="fa fa-sign-in-alt"></i> Login
-                                </a>
-                            </li>
-
-                            <li class="col-6 px-1">
-                                <a href="register.html" class="btn btn-secondary col-12 ">
-                                    <i class="fa fa-user-plus"></i> Register
-                                </a>
-                            </li>
-
-                        </ul>
-                    </ul>
+                        <!-- Drawer Footer Account Links -->
+                        <div class="d-flex justify-content-between pt-3 border-top mt-2">
+                            <a href="login.html" class="btn btn-outline-primary btn-sm flex-fill mr-2 py-2" id="mg_drawer_login_btn">
+                                <i class="fa fa-sign-in-alt mr-1"></i> Login
+                            </a>
+                            <a href="register.html" class="btn btn-secondary btn-sm flex-fill py-2" id="mg_drawer_reg_btn">
+                                <i class="fa fa-user-plus mr-1"></i> Register
+                            </a>
+                        </div>
+                    </div>
                 </nav>
 
                 <div class="menu-backdrop" id="menuBackdrop" tabindex="-1" aria-hidden="true"></div>
@@ -722,7 +575,9 @@
 
                         <a href="contact.html" class="nav-item nav-link ">Contact</a>
 
-                        <a href="shop-location.html" class="nav-item nav-link {{  @$shop_location }}"> Shop Location
+                        <a href="shop-location.html" class="nav-item nav-link"> Shop Location
+                        </a>
+                        <a href="profile.html" class="nav-item nav-link" id="nav_profile_link"> Profile
                         </a>
 
                     </div>
@@ -783,9 +638,10 @@
 </div>
 
 
-<div class="mg-rate-float-widget" id="rate_ticker_toggle_area">
-    <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false">
-        <i class="fa fa-angle-down mg-rate-chevron"></i> Todays Rate
+<!-- Floating Rate Badge (Desktop: constant right-side position; Mobile: animated entrance when rate ticker scrolls out of view) -->
+<div class="mg-rate-float-widget" id="rate_ticker_toggle_area" data-mobile-trigger="ticker-out-of-view">
+    <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false" aria-label="Toggle Today's Gold and Silver Rates">
+        <i class="fa fa-angle-down mg-rate-chevron"></i> Today's Rate
     </button>
     <div class="mg-rate-panel" id="mg_rate_panel">
         <div class="mg-rate-col">

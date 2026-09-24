@@ -47,14 +47,14 @@
 #checkout_section_page .form-control:focus,
 #checkout_section_page .custom-select:focus {
     border-color: var(--mg-gold-2);
-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
     transform: translateY(-2px);
     outline: none;
 }
 
 /* ---------- Order Total & Payment cards ---------- */
 #checkout_section_page .card.border-secondary {
-    border: 1px solid rgba(217, 181, 102, 0.4) !important;
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
@@ -88,12 +88,12 @@
 }
 
 #checkout_section_page .card-body hr {
-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
+    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
 }
 
 #checkout_section_page .card-footer {
-    border-top: 1px dashed rgba(217, 181, 102, 0.4) !important;
-    background: rgba(242, 221, 154, 0.10);
+    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
+    background: rgba(var(--mg-gold-3-rgb), 0.10);
 }
 
 #checkout_section_page .card-footer h5 {
@@ -108,7 +108,7 @@
 }
 
 #checkout_section_page .custom-radio:hover {
-    background: rgba(217, 181, 102, 0.10);
+    background: rgba(var(--mg-gold-champagne-rgb), 0.10);
 }
 
 #checkout_section_page .custom-control-label {
@@ -126,7 +126,7 @@
 
 #checkout_section_page .card-footer .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 14px 28px rgba(var(--mg-gold-2-rgb), 0.4);
 }
 
 @media (max-width: 767.98px) {

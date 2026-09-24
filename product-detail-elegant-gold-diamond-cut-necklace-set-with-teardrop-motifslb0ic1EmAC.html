@@ -35,7 +35,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="assets/ecomm/css/style.css" rel="stylesheet">
-    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
     <link href="assets/ecomm/css/style2.css" rel="stylesheet">
     <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
     <link href="ecom/each_css/product-detail-style.css" rel="stylesheet">
@@ -145,10 +144,7 @@
 
 <div id="footer-placeholder"></div>
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-    <!------------------INDEX PAGE JS---------------------------------------------------->
+<!------------------INDEX PAGE JS---------------------------------------------------->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -270,193 +266,7 @@
     }
 	
   </script>
-	
-	<script>
-		
-		
-		function checkOrientation() {
-			if (window.orientation === 0 || $(window).width() < $(window).height()) {
-				if(window.innerWidth <= 768){
-					var header_block_height = $('div.top_header').outerHeight(); 
-					$('div#header_seprator').css('height',header_block_height+"px");
-				}
-			}else{
-				$('div#header_seprator').css('height','');
-			}
-		}
-        $(document).ready(function(){
-			
-			$(window).on('resize orientationchange', checkOrientation);
-			checkOrientation(); // Check on page load
-			
-            getshoppinglistcount();
-            $(".remove_from_kart,.remove_from_wishlist,.move_to_cart").click(function(e){
-                e.preventDefault();
-				var q = false;
-				if(!$(this).hasClass('move_to_cart')){
-					q = confirm("Sure to Remove ?");
-				}else{
-					q=true;
-				}
-                const tr = $(this).parent('td').parent('tr');
-				const tr_count = $('tbody > tr').length;
-				const qnt_actn = tr.hasClass('genuine')?false:true
-				const sum_unit_rate = $("#total_unit_price").text();
-				const sum_lbr_chrg = $("#total_sum_labour").text();
-				const sum_total_rate = $("#total_sum_price").text();
-				const final_quant = $("#final_quantity").text();
-				const final_rate = $("#final_subtotal").text();
-				const payable = $("#final_amount").text();
-                if(q==true){
-                    const url = $(this).attr('href');
-                    $.get(url,"",function(response){
-                        alert(response.msg);
-                        if(response.status){
-                            const data_arr = (response.data).split("#");
-                            const type_arr = ["wishlist","kart"];
-                            $("#"+(type_arr[data_arr[0]])+"_count").text(data_arr[1]);
-							const qnt = (!qnt_actn)?1:tr.find('.unit_qnt').text();
-							const lbr = tr.find('.unit_labour').text();
-							const price = tr.find('.unit_price').text();
-							const sub_price = tr.find('.sub_price').text();
-							
-							var new_qnt = final_quant-qnt;
-							$("#final_quantity").empty().text(new_qnt);
-							
-							var new_unit_price = sum_unit_rate-price;
-							$("#total_unit_price").empty().text(new_unit_price.toFixed(2));
-							
-							var new_lbr_chrg = sum_lbr_chrg-lbr;
-							$("#total_sum_labour").empty().text(new_lbr_chrg.toFixed(2));
-							
-							var new_ttl_price = sum_total_rate-sub_price;
-							$("#total_sum_price").empty().text(new_ttl_price.toFixed(2));
-							
-							var new_final_cost = final_rate-sub_price;
-							$("#final_subtotal").empty().text(new_final_cost.toFixed(2));
-							
-							var new_payable_cost = payable-sub_price;
-							$("#final_amount").empty().text(new_payable_cost.toFixed(2));
-							if(tr_count==1){
-								const check_btn = '<button type="button" class="btn btn-block btn-primary my-3 py-3 text-white" onclick="alert(\'Your Cart is Empty !\');">Checkout ?</button>';
-								$('[name="checkout"]').replaceWith(check_btn);
-							}
-                            tr.remove();
-                            getshoppinglistcount();
-                        }
-                    });
-                }
-            });
-            /*$(".move_to_cart").click(function(e){
-                e.preventDefault();
-                const tr = $(this).parent('td').parent('tr');
-                $.get($(this).attr('href'),"",function(response){
-                    alert(response.msg);
-                    if(response.status){
-                        tr.remove();
-                        getshoppinglistcount();
-                    }
-                })
-            });*/
-            function getshoppinglistcount(){
-                $.get("https://justudhari.com/soppinglistcount","",function(response){
-					$("#wishlist_count").empty().text(response.wish_list);
-					$("#kart_count").empty().text(response.kart_list);
-				});
-            }
-            
-			$.get('https://justudhari.com#',"",function(response){
-                if(response.rates_arr){
-                    const rates = response.rates_arr;
-                    if(rates.gold){
-                        $.each(rates.gold,function(i,v){
-							
-                            $(`#rate_gold_${i}`).text((v)?(Math.round(v * 10)).toLocaleString("en-IN"):'-');
-                        });
-                    }
-                    if(rates.silver){
-                        $.each(rates.silver,function(i,v){
-                            $(`#rate_silver_${i}`).text((v)?(Math.round(v)).toLocaleString("en-IN"):'-');
-                        });
-                    }
-					if(rates.date){
-						$(`#rate_update`).text(rates.date);
-					}
-                }
-            });
-			
-            $("#state").change(function(){
-                const state_code = $(this).val();
-                if(state_code!=""){
-                    const data = {state:state_code};
-                    $.get("https://justudhari.com/get-districts",data,function(response){
-                        if(response.length > 0){
-                            option='<option value="">Select District !</option>';
-                            $.each(response,function(i,v){
-                                option+='<option value="'+(v.code)+'">'+(v.name)+'</option>';
-                            });
-                        }else{
-                            option='<option value="">No District !</option>';
-                        }
-                        $("#dist").empty().append(option);
-                    });
-                }
-            });
 
-            $("#ship_state").change(function(){
-                const state_code = $(this).val();
-                if(state_code!=""){
-                    const data = {state:state_code};
-                    $.get("https://justudhari.com/get-districts",data,function(response){
-                        if(response.length > 0){
-                            option='<option value="">Select District !</option>';
-                            $.each(response,function(i,v){
-                                option+='<option value="'+(v.code)+'">'+(v.name)+'</option>';
-                            });
-                        }else{
-                            option='<option value="">No District !</option>';
-                        }
-                        $("#ship_dist").empty().append(option);
-                    });
-                }
-            });
-            $('.addr_state').change(function(){
-                const state_code = $(this).val();
-                if(state_code!=""){
-                    const target = $(this).attr('data-target');
-                    $("#"+target).empty().append('<option>Loading...</option>');
-                    const data = {state:state_code};
-                    $.get("https://justudhari.com/get-districts",data,function(response){
-                        if(response.length > 0){
-                            option='<option value="">Select District !</option>';
-                            $.each(response,function(i,v){
-                                option+='<option value="'+(v.code)+'">'+(v.name)+'</option>';
-                            });
-                        }else{
-                            option='<option value="">No District !</option>';
-                        }
-                        $("#"+target).empty().append(option);
-                    });
-                }
-            })
-            $("#page_await").hide();
-        });
-		function digitonly(event,num){
-            let inputValue = event.target.value;
-
-                // Allow only digits using regex
-                inputValue = inputValue.replace(/[^0-9]/g, '');  // Remove anything that's not a digit
-
-                // Ensure that the input has exactly 10 digits
-                if (inputValue.length > num) {
-                    inputValue = inputValue.slice(0, 10);  // Trim to 10 digits
-                }
-
-                // Update the input field with the valid input
-                event.target.value = inputValue;
-        }
-  </script>
- 
-    </body>
+</body>
 
 </html>

@@ -131,6 +131,13 @@
 })(jQuery);
 
 $(document).ready(function(){
+    // =========================================================================
+    // MOBILE SCOPING: On mobile (<992px), Our Catalogue uses a dedicated smooth
+    // cross-fade controller in theme-animations.js. Disable abrupt legacy interval.
+    // =========================================================================
+    if (window.innerWidth <= 991.98) {
+        return;
+    }
     
     $slider = $('ul.catalog.slides');
     var li_count = $slider.children().length;

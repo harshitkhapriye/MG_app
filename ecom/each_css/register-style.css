@@ -64,8 +64,8 @@ button.button_anchor:active {
 
 /* ---------- Registration form card ---------- */
 .customer_in_ui {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 40px 36px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
@@ -104,7 +104,7 @@ button.button_anchor:active {
 
 .customer_in_ui .form-control:focus {
     border-color: var(--mg-gold-2);
-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
     transform: translateY(-2px);
     outline: none;
 }
@@ -124,7 +124,7 @@ button.button_anchor:active {
     color: var(--mg-ink) !important;
     border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 /* ---------- OTP verification step ---------- */
@@ -135,7 +135,7 @@ button.button_anchor:active {
 }
 
 .varify_step hr {
-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
+    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
 }
 
 #back_to_reg {
@@ -147,7 +147,7 @@ button.button_anchor:active {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: 0 6px 14px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 6px 14px rgba(var(--mg-gold-2-rgb), 0.35);
     transition: transform 0.3s ease;
 }
 
@@ -160,7 +160,7 @@ button.button_anchor:active {
 #progressBarContainer {
     border-radius: 30px;
     overflow: hidden;
-    background: rgba(217, 181, 102, 0.15);
+    background: rgba(var(--mg-gold-champagne-rgb), 0.15);
 }
 
 #progressBar {
@@ -170,9 +170,9 @@ button.button_anchor:active {
 
 /* ---------- Success / Error alerts ---------- */
 #success-alert {
-    background: rgba(212, 175, 55, 0.15);
+    background: rgba(var(--mg-gold-2-rgb), 0.15);
     color: var(--mg-gold-1);
-    border: 1px solid rgba(217, 181, 102, 0.4);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
     border-radius: 12px;
 }
 
@@ -185,8 +185,8 @@ button.button_anchor:active {
 
 /* ---------- Store info panel (right side) ---------- */
 .custo_entry_block_right {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 36px 32px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);

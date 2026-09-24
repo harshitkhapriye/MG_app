@@ -7,8 +7,8 @@
 
 /* ---------- Filter sidebar: fixed page-height, scrolls internally ---------- */
 .filter_side_bar {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 16px;
     padding: 24px 22px;
     box-shadow: 0 10px 30px rgba(14, 25, 50, 0.08);
@@ -47,7 +47,7 @@
 }
 
 .filter_side_bar .border-bottom {
-    border-bottom: 1px dashed rgba(217, 181, 102, 0.4) !important;
+    border-bottom: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
 }
 
 .filter_side_bar .custom-control-label {
@@ -75,7 +75,7 @@
 
 .filter_side_bar .cat_block_toggle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 8px 16px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 .filter_toggle_btn {
@@ -100,20 +100,20 @@
 
 .shop_keyword_filter:focus-within {
     border-color: var(--mg-gold-2) !important;
-    box-shadow: 0 0 0 3px rgba(217, 181, 102, 0.2);
+    box-shadow: 0 0 0 3px rgba(var(--mg-gold-champagne-rgb), 0.2);
 }
 
 /* ---------- Product cards ---------- */
 #shop_data .product-item {
     border-radius: 14px !important;
     overflow: hidden;
-    border-color: rgba(217, 181, 102, 0.35) !important;
+    border-color: rgba(var(--mg-gold-champagne-rgb), 0.35) !important;
     transition: transform 0.35s cubic-bezier(.22, .9, .32, 1), box-shadow 0.35s ease;
 }
 
 #shop_data .product-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 30px rgba(212, 175, 55, 0.22);
+    box-shadow: 0 18px 30px rgba(var(--mg-gold-2-rgb), 0.22);
 }
 
 #shop_data .product-item .card-body h6 {
@@ -130,7 +130,7 @@
     font-size: 0.95rem;
     font-weight: 700;
     margin-top: 8px;
-    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 10px rgba(var(--mg-gold-2-rgb), 0.3);
 }
 
 #shop_data .product-item .product-img {
@@ -184,7 +184,7 @@
 
 .pagination .page-link {
     border-radius: 10px !important;
-    border: 1px solid rgba(217, 181, 102, 0.4);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
     color: var(--mg-ink);
     font-weight: 600;
     min-width: 42px;
@@ -202,7 +202,7 @@
 }
 
 .pagination .page-link:hover {
-    background: rgba(217, 181, 102, 0.15);
+    background: rgba(var(--mg-gold-champagne-rgb), 0.15);
 }
 
 /* ---------- Filter: collapsible lists (5-6 by default, then "More") ---------- */
@@ -247,11 +247,259 @@
         max-height: none;
         overflow-y: visible;
     }
+
+    .shop_cost_filter {
+        font-size: 0.82rem !important;
+        padding: 6px 12px !important;
+        min-height: 40px !important;
+        background-color: #fff !important;
+        border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.45) !important;
+        border-radius: 20px !important;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--mg-ink) !important;
+        box-shadow: 0 2px 6px rgba(14, 25, 50, 0.05);
+    }
+
+    .shop_keyword_filter {
+        border-radius: 20px !important;
+        border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.45) !important;
+        background-color: #fff !important;
+        min-height: 40px !important;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(14, 25, 50, 0.05);
+    }
+
+    .shop_keyword_filter input#term {
+        font-size: 0.85rem !important;
+        padding-left: 14px !important;
+        height: 38px !important;
+        border: none !important;
+        background: transparent !important;
+    }
+
+    .shop_keyword_filter .input-group-append .input-group-text {
+        background: transparent !important;
+        border: none !important;
+        color: var(--mg-gold-1) !important;
+        padding-right: 14px !important;
+    }
+
+    /* Hide social share icons bar from product cards in mobile view */
+    #shop_data #shop_social_share,
+    .product-item #shop_social_share {
+        display: none !important;
+    }
+
+    /* Clean bottom border rounding on product actions when share bar is hidden */
+    .product-item .product_action_div {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+/* ==========================================================================
+   Shimmering Animated Page Heading ("Shop Products")
+   Overrides legacy text-shadow blur & applies luminous animated gold shimmer
+   ========================================================================== */
+.cstm-section-title {
+    text-shadow: none !important;
+    position: relative;
+    font-family: "Cormorant Garamond", "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.cstm-section-title span {
+    text-shadow: none !important;
+    background: linear-gradient(100deg,
+        var(--mg-gold-1, #b8860b) 0%,
+        var(--mg-gold-2, #d4af37) 22%,
+        #fff3b0 45%,
+        var(--mg-gold-2, #d4af37) 68%,
+        #fff9db 85%,
+        var(--mg-gold-1, #b8860b) 100%) !important;
+    background-size: 220% 100% !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: var(--mg-gold-1, #b8860b) !important;
+    display: inline-block;
+    animation: mg-shimmer 4.5s ease-in-out infinite !important;
+    filter: drop-shadow(0 1px 2px rgba(var(--mg-gold-2-rgb), 0.2));
+}
+
+.cstm-section-title > span::before,
+.cstm-section-title > span::after {
+    display: none !important;
+}
+
+@keyframes mg-shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (max-width: 767.98px) {
     .filter_side_bar {
         border-radius: 12px;
         padding: 18px 16px;
+    }
+}
+
+/* ==========================================================================
+   Empty State UI & Reset Filters CTA (Sub-step 3.4)
+   Consistent with MG theme tokens: --mg-gold-1, --mg-gold-2, --mg-ink
+   ========================================================================== */
+.mg-empty-state {
+    width: 100%;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mgFadeIn 0.35s ease-in-out;
+}
+
+@keyframes mgFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mg-empty-state-card {
+    max-width: 520px;
+    background: #ffffff;
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.3);
+    border-radius: 16px;
+    padding: 40px 28px;
+    box-shadow: 0 8px 24px rgba(14, 25, 50, 0.06);
+}
+
+.mg-empty-illustration-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.mg-empty-icon-circle {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(var(--mg-gold-champagne-rgb), 0.15) 0%, rgba(14, 25, 50, 0.04) 100%);
+    border: 2px dashed rgba(var(--mg-gold-champagne-rgb), 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mg-empty-search-icon {
+    font-size: 32px;
+    color: var(--mg-gold-1);
+    opacity: 0.85;
+}
+
+.mg-empty-gem-badge {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--mg-gold-2) 0%, var(--mg-gold-1) 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(var(--mg-gold-champagne-rgb), 0.4);
+}
+
+.mg-empty-title {
+    font-size: 1.35rem;
+    color: var(--mg-ink);
+    letter-spacing: -0.01em;
+}
+
+.mg-empty-desc {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #6c757d;
+    max-width: 400px;
+}
+
+.mg-btn-reset-filters {
+    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1));
+    color: var(--mg-ink) !important;
+    font-weight: 600;
+    font-size: 0.92rem;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(var(--mg-gold-champagne-rgb), 0.3);
+    cursor: pointer;
+}
+
+.mg-btn-reset-filters:hover {
+    background: linear-gradient(120deg, var(--mg-gold-1), var(--mg-gold-2));
+    color: #000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(var(--mg-gold-champagne-rgb), 0.45);
+}
+
+.mg-btn-reset-filters:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 991.98px) {
+    .mg-empty-state {
+        min-height: 300px;
+        padding: 30px 15px;
+    }
+
+    .mg-empty-state-card {
+        padding: 28px 16px;
+        border-radius: 12px;
+    }
+
+    .mg-empty-icon-circle {
+        width: 76px;
+        height: 76px;
+    }
+
+    .mg-empty-search-icon {
+        font-size: 28px;
+    }
+
+    .mg-empty-gem-badge {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .mg-empty-title {
+        font-size: 1.2rem;
+    }
+
+    .mg-empty-desc {
+        font-size: 0.85rem;
+    }
+
+    .mg-btn-reset-filters {
+        font-size: 0.85rem;
+        padding: 8px 20px !important;
     }
 }

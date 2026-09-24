@@ -10,8 +10,8 @@
 
 /* ---------- Left intro panel ---------- */
 #catalogue_gallery_page .gallery-intro-card {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.25) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.25) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 36px 32px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
@@ -76,7 +76,7 @@
     color: var(--mg-ink) !important;
     border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 /* ---------- Image grid (2 columns) ---------- */
@@ -84,7 +84,7 @@
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     box-shadow: 0 12px 26px rgba(14, 25, 50, 0.10);
     transition: transform 0.4s cubic-bezier(.22, .9, .32, 1), box-shadow 0.4s ease;
     aspect-ratio: 4 / 3;
@@ -92,7 +92,7 @@
 
 #catalogue_gallery_page .gallery-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 34px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 20px 34px rgba(var(--mg-gold-2-rgb), 0.25);
 }
 
 #catalogue_gallery_page .gallery-item img {

@@ -17,20 +17,20 @@
     padding: 12px 34px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.30);
+    box-shadow: 0 10px 22px rgba(var(--mg-gold-2-rgb), 0.30);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #scheme_details_page .scheme-cta-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 16px 30px rgba(212, 175, 55, 0.42);
+    box-shadow: 0 16px 30px rgba(var(--mg-gold-2-rgb), 0.42);
 }
 
 /* ---------- Scheme brochure image gallery ---------- */
 #scheme_details_page .scheme-gallery-item {
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     box-shadow: 0 15px 30px rgba(14, 25, 50, 0.10);
     margin-bottom: 30px;
     transition: transform 0.4s cubic-bezier(.22, .9, .32, 1), box-shadow 0.4s ease;
@@ -38,7 +38,7 @@
 
 #scheme_details_page .scheme-gallery-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 36px rgba(212, 175, 55, 0.22);
+    box-shadow: 0 20px 36px rgba(var(--mg-gold-2-rgb), 0.22);
 }
 
 #scheme_details_page .scheme-gallery-item img {
@@ -50,7 +50,7 @@
 #exampleModal .modal-content {
     border-radius: 18px;
     overflow: hidden;
-    border: 1px solid rgba(217, 181, 102, 0.4);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
 }
 
 #exampleModal .modal-header {
@@ -86,7 +86,7 @@
 
 #exampleModal .modal-body .form-control:focus {
     border-color: var(--mg-gold-2);
-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
     outline: none;
 }
 

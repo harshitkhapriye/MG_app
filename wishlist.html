@@ -27,7 +27,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="assets/ecomm/css/style.css" rel="stylesheet">
-    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
     <link href="assets/ecomm/css/style2.css" rel="stylesheet">
     <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
     <link href="ecom/each_css/wishlist-style.css" rel="stylesheet">
@@ -45,7 +44,8 @@
     <!-- Wishlist Start -->
     <div class="container-fluid pt-5" id="wishlist_section_page">
         <div class="row px-xl-5">
-            <div class="col-lg-12 table-responsive mb-5">
+            <!-- Desktop Table View -->
+            <div class="col-lg-12 table-responsive mb-5 d-none d-md-block">
                 <table class="table table-bordered text-center mb-0 table-striped">
                     <thead class="bg-secondary text-dark">
                         <tr>
@@ -61,9 +61,9 @@
                         <tr>
                             <td class="align-middle">
                                 <p><img src="assets/ecomm/products/rings/ring_1.webp" alt=""
-                                        style="width: 60px; float:left;"> Colorful Stylish Shirt</p>
+                                        style="width: 60px; float:left;"> 22K Royal Gold Filigree Ring</p>
                             </td>
-                            <td class="align-middle">Rs. 150/-</td>
+                            <td class="align-middle">Rs. 24,500/-</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
@@ -80,21 +80,21 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">Rs. 150/-</td>
+                            <td class="align-middle">Rs. 24,500/-</td>
                             <td class="align-middle"><button class="btn btn-sm btn-primary"><i
                                         class="fa fa-times"></i></button></td>
                             <td class="align-middle">
-                                <a href="index.html" class="btn btn-sm btn-primary text-white">
+                                <a href="cart.html" class="btn btn-sm btn-primary text-white">
                                     <i class="fa fa-cart-plus"></i>
                                 </a>
                             </td>
                         </tr>
                         <tr>
                             <td class="align-middle">
-                                <p><img src="assets/ecomm/products/rings/ring_1.webp" alt=""
-                                        style="width: 60px; float:left;"> Colorful Stylish Shirt</p>
+                                <p><img src="assets/ecomm/products/bangels/bangels_1.webp" alt=""
+                                        style="width: 60px; float:left;"> Pure 22K Gold Handcrafted Bangles</p>
                             </td>
-                            <td class="align-middle base_price">Rs. <span class="unit_price">150</span>/-</td>
+                            <td class="align-middle base_price">Rs. <span class="unit_price">78,200</span>/-</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
@@ -112,11 +112,11 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle final_price">Rs. <span class="sum_price">150</span>/-</td>
+                            <td class="align-middle final_price">Rs. <span class="sum_price">78,200</span>/-</td>
                             <td class="align-middle"><button class="btn btn-sm btn-primary"><i
                                         class="fa fa-times"></i></button></td>
                             <td class="align-middle">
-                                <a href="index.html" class="btn btn-sm btn-primary text-white">
+                                <a href="cart.html" class="btn btn-sm btn-primary text-white">
                                     <i class="fa fa-cart-plus"></i>
                                 </a>
                             </td>
@@ -125,26 +125,118 @@
                     <tfoot class="bg-secondary">
                         <tr>
                             <td></td>
-                            <td class="total_base_price">Rs. <span class="total_unit_price">1000</span>/-</td>
-                            <td class="total_quantity">100</td>
-                            <td class="total_final_price">Rs. <span class="total_sum_price">2000</span>/-</td>
+                            <td class="total_base_price">Rs. <span class="total_unit_price">1,02,700</span>/-</td>
+                            <td class="total_quantity">2</td>
+                            <td class="total_final_price">Rs. <span class="total_sum_price">1,02,700</span>/-</td>
                             <td></td>
                             <td></td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
+
+            <!-- Mobile View: Luxury Wishlist Cards (Scoped to mobile) -->
+            <div class="col-12 d-block d-md-none" id="mg_mobile_wishlist_container">
+                <!-- Mobile Wishlist Top Header -->
+                <div class="mg-mobile-wishlist-header">
+                    <h2 class="mg-mobile-wishlist-title">
+                        <i class="fas fa-heart"></i> My Wishlist
+                    </h2>
+                    <span class="mg-wishlist-count-badge" id="mg_wishlist_items_count">3 Items</span>
+                </div>
+
+                <!-- Wishlist Cards List -->
+                <div id="mg_wishlist_cards_list">
+                    <!-- Card 1 -->
+                    <div class="mg-wishlist-card" id="mg_wish_card_1" data-category="rings" data-price="24500">
+                        <div class="mg-wishlist-card-top">
+                            <div class="mg-wishlist-thumb-wrap">
+                                <img src="assets/ecomm/products/rings/ring_1.webp" alt="22K Royal Gold Filigree Ring" class="mg-wishlist-thumb">
+                            </div>
+                            <div class="mg-wishlist-info">
+                                <span class="mg-wishlist-category">Rings • 22K Gold</span>
+                                <h3 class="mg-wishlist-title">22K Royal Gold Filigree Ring</h3>
+                                <div class="mg-wishlist-price-wrap">
+                                    <span class="mg-wishlist-current-price">₹24,500</span>
+                                </div>
+                            </div>
+                            <button type="button" class="mg-wishlist-remove-btn" title="Remove from Wishlist" onclick="removeWishlistItem('mg_wish_card_1', '22K Royal Gold Filigree Ring')">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="mg-wishlist-card-actions">
+                            <button type="button" class="btn mg-btn-move-to-cart" id="btn_move_1" onclick="moveToCart('mg_wish_card_1', '22K Royal Gold Filigree Ring', '₹24,500')">
+                                <i class="fa fa-shopping-bag mr-2"></i>Move to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="mg-wishlist-card" id="mg_wish_card_2" data-category="bangles" data-price="78200">
+                        <div class="mg-wishlist-card-top">
+                            <div class="mg-wishlist-thumb-wrap">
+                                <img src="assets/ecomm/products/bangels/bangels_1.webp" alt="Pure 22K Gold Handcrafted Bangles" class="mg-wishlist-thumb">
+                            </div>
+                            <div class="mg-wishlist-info">
+                                <span class="mg-wishlist-category">Bangles • Traditional</span>
+                                <h3 class="mg-wishlist-title">Pure 22K Gold Handcrafted Bangles</h3>
+                                <div class="mg-wishlist-price-wrap">
+                                    <span class="mg-wishlist-current-price">₹78,200</span>
+                                </div>
+                            </div>
+                            <button type="button" class="mg-wishlist-remove-btn" title="Remove from Wishlist" onclick="removeWishlistItem('mg_wish_card_2', 'Pure 22K Gold Handcrafted Bangles')">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="mg-wishlist-card-actions">
+                            <button type="button" class="btn mg-btn-move-to-cart" id="btn_move_2" onclick="moveToCart('mg_wish_card_2', 'Pure 22K Gold Handcrafted Bangles', '₹78,200')">
+                                <i class="fa fa-shopping-bag mr-2"></i>Move to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="mg-wishlist-card" id="mg_wish_card_3" data-category="necklaces" data-price="145000">
+                        <div class="mg-wishlist-card-top">
+                            <div class="mg-wishlist-thumb-wrap">
+                                <img src="assets/ecomm/products/nackles_set/necklace_1.webp" alt="Traditional Temple Choker Necklace" class="mg-wishlist-thumb">
+                            </div>
+                            <div class="mg-wishlist-info">
+                                <span class="mg-wishlist-category">Necklaces • Temple Set</span>
+                                <h3 class="mg-wishlist-title">Traditional Temple Choker Necklace</h3>
+                                <div class="mg-wishlist-price-wrap">
+                                    <span class="mg-wishlist-current-price">₹1,45,000</span>
+                                </div>
+                            </div>
+                            <button type="button" class="mg-wishlist-remove-btn" title="Remove from Wishlist" onclick="removeWishlistItem('mg_wish_card_3', 'Traditional Temple Choker Necklace')">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="mg-wishlist-card-actions">
+                            <button type="button" class="btn mg-btn-move-to-cart" id="btn_move_3" onclick="moveToCart('mg_wish_card_3', 'Traditional Temple Choker Necklace', '₹1,45,000')">
+                                <i class="fa fa-shopping-bag mr-2"></i>Move to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Wishlist End -->
 
+    <!-- Floating Toast Notification -->
+    <div id="mg_wishlist_toast" class="mg-wishlist-toast" role="alert" aria-live="assertive">
+        <i class="fa fa-check-circle mg-toast-icon"></i>
+        <div class="mg-toast-content">
+            <strong id="mg_toast_title">Moved to Cart!</strong>
+            <span id="mg_toast_desc" style="display:block; font-size:0.75rem; opacity:0.9;">Item added to your shopping cart.</span>
+        </div>
+        <a href="cart.html" class="mg-toast-btn">View Cart</a>
+    </div>
+
     <div id="footer-placeholder"></div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!------------------INDEX PAGE JS---------------------------------------------------->
+<!------------------INDEX PAGE JS---------------------------------------------------->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -152,201 +244,99 @@
     <script src="assets/ecomm/lib/easing/easing.min.js" defer></script>
     <script src="assets/ecomm/lib/owlcarousel/owl.carousel.min.js" defer></script>
 
-    <!-- Contact Javascript File -->
-    <!--<script src="assets/ecomm/mail/jqBootstrapValidation.min.js"></script>
-    <script src="assets/ecomm/mail/contact.js"></script>-->
-
     <!-- Template Javascript -->
     <!------------------END INDEX PAGE JS------------------------------------------------>
-
-    <script src="assets/ecomm/js/main.js" defer></script>
-    <script src="assets/ecomm/js/include.js" defer></script>
+    <script src="assets/ecomm/js/include.js"></script>
     <script src="assets/ecomm/js/theme-animations.js" defer></script>
 
+    <!-- Wishlist Interactive Logic -->
     <script>
+        var mgToastTimeout = null;
 
+        function showWishlistToast(title, desc) {
+            var toast = document.getElementById('mg_wishlist_toast');
+            if (!toast) return;
+            document.getElementById('mg_toast_title').textContent = title;
+            document.getElementById('mg_toast_desc').textContent = desc;
 
-        function checkOrientation() {
-            if (window.orientation === 0 || $(window).width() < $(window).height()) {
-                if (window.innerWidth <= 768) {
-                    var header_block_height = $('div.top_header').outerHeight();
-                    $('div#header_seprator').css('height', header_block_height + "px");
-                }
-            } else {
-                $('div#header_seprator').css('height', '');
+            toast.classList.add('show');
+            if (mgToastTimeout) clearTimeout(mgToastTimeout);
+            mgToastTimeout = setTimeout(function () {
+                toast.classList.remove('show');
+            }, 3200);
+        }
+
+        function updateWishlistBadgeCount() {
+            var remainingCards = document.querySelectorAll('#mg_wishlist_cards_list .mg-wishlist-card:not([style*="display: none"])');
+            var count = remainingCards.length;
+            var countBadge = document.getElementById('mg_wishlist_items_count');
+            if (countBadge) {
+                countBadge.textContent = count + (count === 1 ? ' Item' : ' Items');
+            }
+
+            // Sync with header wishlist badge
+            var headerWishlist = document.getElementById('wishlist_count');
+            if (headerWishlist) {
+                headerWishlist.textContent = count;
             }
         }
-        $(document).ready(function () {
 
-            $(window).on('resize orientationchange', checkOrientation);
-            checkOrientation(); // Check on page load
+        function moveToCart(cardId, itemName, price) {
+            var card = document.getElementById(cardId);
+            if (!card) return;
 
-            getshoppinglistcount();
-            $(".remove_from_kart,.remove_from_wishlist,.move_to_cart").click(function (e) {
-                e.preventDefault();
-                var q = false;
-                if (!$(this).hasClass('move_to_cart')) {
-                    q = confirm("Sure to Remove ?");
-                } else {
-                    q = true;
-                }
-                const tr = $(this).parent('td').parent('tr');
-                const tr_count = $('tbody > tr').length;
-                const qnt_actn = tr.hasClass('genuine') ? false : true
-                const sum_unit_rate = $("#total_unit_price").text();
-                const sum_lbr_chrg = $("#total_sum_labour").text();
-                const sum_total_rate = $("#total_sum_price").text();
-                const final_quant = $("#final_quantity").text();
-                const final_rate = $("#final_subtotal").text();
-                const payable = $("#final_amount").text();
-                if (q == true) {
-                    const url = $(this).attr('href');
-                    $.get(url, "", function (response) {
-                        alert(response.msg);
-                        if (response.status) {
-                            const data_arr = (response.data).split("#");
-                            const type_arr = ["wishlist", "kart"];
-                            $("#" + (type_arr[data_arr[0]]) + "_count").text(data_arr[1]);
-                            const qnt = (!qnt_actn) ? 1 : tr.find('.unit_qnt').text();
-                            const lbr = tr.find('.unit_labour').text();
-                            const price = tr.find('.unit_price').text();
-                            const sub_price = tr.find('.sub_price').text();
-
-                            var new_qnt = final_quant - qnt;
-                            $("#final_quantity").empty().text(new_qnt);
-
-                            var new_unit_price = sum_unit_rate - price;
-                            $("#total_unit_price").empty().text(new_unit_price.toFixed(2));
-
-                            var new_lbr_chrg = sum_lbr_chrg - lbr;
-                            $("#total_sum_labour").empty().text(new_lbr_chrg.toFixed(2));
-
-                            var new_ttl_price = sum_total_rate - sub_price;
-                            $("#total_sum_price").empty().text(new_ttl_price.toFixed(2));
-
-                            var new_final_cost = final_rate - sub_price;
-                            $("#final_subtotal").empty().text(new_final_cost.toFixed(2));
-
-                            var new_payable_cost = payable - sub_price;
-                            $("#final_amount").empty().text(new_payable_cost.toFixed(2));
-                            if (tr_count == 1) {
-                                const check_btn = '<button type="button" class="btn btn-block btn-primary my-3 py-3 text-white" onclick="alert(\'Your Cart is Empty !\');">Checkout ?</button>';
-                                $('[name="checkout"]').replaceWith(check_btn);
-                            }
-                            tr.remove();
-                            getshoppinglistcount();
-                        }
-                    });
-                }
-            });
-            /*$(".move_to_cart").click(function(e){
-                e.preventDefault();
-                const tr = $(this).parent('td').parent('tr');
-                $.get($(this).attr('href'),"",function(response){
-                    alert(response.msg);
-                    if(response.status){
-                        tr.remove();
-                        getshoppinglistcount();
-                    }
-                })
-            });*/
-            function getshoppinglistcount() {
-                $.get("https://justudhari.com/soppinglistcount", "", function (response) {
-                    $("#wishlist_count").empty().text(response.wish_list);
-                    $("#kart_count").empty().text(response.kart_list);
-                });
+            var btn = card.querySelector('.mg-btn-move-to-cart');
+            if (btn) {
+                btn.classList.add('added');
+                btn.innerHTML = '<i class="fa fa-check mr-2"></i>Added to Cart!';
             }
 
-            $.get('https://justudhari.com#', "", function (response) {
-                if (response.rates_arr) {
-                    const rates = response.rates_arr;
-                    if (rates.gold) {
-                        $.each(rates.gold, function (i, v) {
-
-                            $(`#rate_gold_${i}`).text((v) ? (Math.round(v * 10)).toLocaleString("en-IN") : '-');
-                        });
-                    }
-                    if (rates.silver) {
-                        $.each(rates.silver, function (i, v) {
-                            $(`#rate_silver_${i}`).text((v) ? (Math.round(v)).toLocaleString("en-IN") : '-');
-                        });
-                    }
-                    if (rates.date) {
-                        $(`#rate_update`).text(rates.date);
-                    }
-                }
-            });
-
-            $("#state").change(function () {
-                const state_code = $(this).val();
-                if (state_code != "") {
-                    const data = { state: state_code };
-                    $.get("https://justudhari.com/get-districts", data, function (response) {
-                        if (response.length > 0) {
-                            option = '<option value="">Select District !</option>';
-                            $.each(response, function (i, v) {
-                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
-                            });
-                        } else {
-                            option = '<option value="">No District !</option>';
-                        }
-                        $("#dist").empty().append(option);
-                    });
-                }
-            });
-
-            $("#ship_state").change(function () {
-                const state_code = $(this).val();
-                if (state_code != "") {
-                    const data = { state: state_code };
-                    $.get("https://justudhari.com/get-districts", data, function (response) {
-                        if (response.length > 0) {
-                            option = '<option value="">Select District !</option>';
-                            $.each(response, function (i, v) {
-                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
-                            });
-                        } else {
-                            option = '<option value="">No District !</option>';
-                        }
-                        $("#ship_dist").empty().append(option);
-                    });
-                }
-            });
-            $('.addr_state').change(function () {
-                const state_code = $(this).val();
-                if (state_code != "") {
-                    const target = $(this).attr('data-target');
-                    $("#" + target).empty().append('<option>Loading...</option>');
-                    const data = { state: state_code };
-                    $.get("https://justudhari.com/get-districts", data, function (response) {
-                        if (response.length > 0) {
-                            option = '<option value="">Select District !</option>';
-                            $.each(response, function (i, v) {
-                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
-                            });
-                        } else {
-                            option = '<option value="">No District !</option>';
-                        }
-                        $("#" + target).empty().append(option);
-                    });
-                }
-            })
-            $("#page_await").hide();
-        });
-        function digitonly(event, num) {
-            let inputValue = event.target.value;
-
-            // Allow only digits using regex
-            inputValue = inputValue.replace(/[^0-9]/g, '');  // Remove anything that's not a digit
-
-            // Ensure that the input has exactly 10 digits
-            if (inputValue.length > num) {
-                inputValue = inputValue.slice(0, 10);  // Trim to 10 digits
+            // Increment header cart count
+            var headerCart = document.getElementById('kart_count');
+            if (headerCart) {
+                var currentCartCount = parseInt(headerCart.textContent, 10) || 0;
+                headerCart.textContent = currentCartCount + 1;
             }
 
-            // Update the input field with the valid input
-            event.target.value = inputValue;
+            // Show confirmation toast
+            showWishlistToast('Moved to Cart!', itemName + ' added to your shopping cart.');
+
+            // Smoothly transfer out of active wishlist after short acknowledgement
+            setTimeout(function () {
+                card.style.transition = 'all 0.35s ease';
+                card.style.opacity = '0';
+                card.style.transform = 'translateX(40px)';
+                setTimeout(function () {
+                    card.style.display = 'none';
+                    updateWishlistBadgeCount();
+                }, 350);
+            }, 600);
         }
+
+        function removeWishlistItem(cardId, itemName) {
+            var card = document.getElementById(cardId);
+            if (!card) return;
+
+            card.style.transition = 'all 0.3s ease';
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            setTimeout(function () {
+                card.style.display = 'none';
+                updateWishlistBadgeCount();
+                showWishlistToast('Removed', itemName + ' removed from your wishlist.');
+            }, 300);
+        }
+
+        // Initialize header counts on load and when headerFooterReady fires
+        function syncHeaderCounts() {
+            var headerWishlist = document.getElementById('wishlist_count');
+            if (headerWishlist) {
+                headerWishlist.textContent = '3';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', syncHeaderCounts);
+        document.addEventListener('headerFooterReady', syncHeaderCounts);
     </script>
 
 </body>

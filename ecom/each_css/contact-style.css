@@ -11,8 +11,8 @@
 
 /* ---------- Contact form card ---------- */
 #contact_section_page .contact-form {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 40px 36px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
@@ -47,7 +47,7 @@
 
 #contact_section_page .form-control:focus {
     border-color: var(--mg-gold-2);
-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
     transform: translateY(-2px);
     outline: none;
 }
@@ -78,7 +78,7 @@
     color: var(--mg-ink) !important;
     border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 #contact_section_page #success .alert {
@@ -87,8 +87,8 @@
 
 /* ---------- Contact info card ---------- */
 #contact_info_area {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 36px 32px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
@@ -154,7 +154,7 @@
 
 /* Store block spacing */
 #contact_info_area .d-flex.flex-column {
-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
+    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
     padding-top: 20px;
     margin-top: 6px;
 }

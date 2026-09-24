@@ -19,7 +19,7 @@
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.12);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
 }
 
 #product-carousel .carousel-inner {
@@ -76,7 +76,7 @@
     height: 68px;
     border-radius: 10px;
     overflow: hidden;
-    border: 2px solid rgba(217, 181, 102, 0.35);
+    border: 2px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
@@ -96,7 +96,7 @@
 #pd_thumbnails .pd-thumb.active {
     opacity: 1;
     border-color: var(--mg-gold-2);
-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 4px 12px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 /* ---------- Product info panel ---------- */
@@ -116,7 +116,7 @@
 }
 
 #product_detail_page .pd-info hr {
-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
+    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
 }
 
 /* Price box */
@@ -183,7 +183,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 4px;
-    border-bottom: 1px dashed rgba(217, 181, 102, 0.3);
+    border-bottom: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.3);
     color: #6c757d;
     font-weight: 500;
 }
@@ -205,7 +205,7 @@
 #product_detail_page .pd-quantity {
     display: inline-flex;
     align-items: center;
-    border: 1.5px solid rgba(217, 181, 102, 0.4);
+    border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
     border-radius: 30px;
     overflow: hidden;
     margin: 0 8px 8px 0;
@@ -223,15 +223,15 @@
 }
 
 #product_detail_page .pd-quantity .quant_btn:hover {
-    background: rgba(217, 181, 102, 0.15);
+    background: rgba(var(--mg-gold-champagne-rgb), 0.15);
 }
 
 #product_detail_page .pd-quantity input {
     width: 44px;
     text-align: center;
     border: none;
-    border-left: 1.5px solid rgba(217, 181, 102, 0.3);
-    border-right: 1.5px solid rgba(217, 181, 102, 0.3);
+    border-left: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.3);
+    border-right: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.3);
     font-weight: 700;
     color: var(--mg-ink);
     background: #fff;
@@ -251,7 +251,7 @@
 #product_detail_page #addtowishlist:hover,
 #product_detail_page #addtokart:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 22px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 22px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 #product_detail_page #addtowishlist {
@@ -308,8 +308,8 @@
 
 #product_detail_page .pd-labour-note {
     display: inline-block;
-    border: 1px dashed rgba(217, 181, 102, 0.5);
-    background: rgba(242, 221, 154, 0.15);
+    border: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.5);
+    background: rgba(var(--mg-gold-3-rgb), 0.15);
     color: var(--mg-gold-1);
     padding: 4px 12px;
     border-radius: 20px;

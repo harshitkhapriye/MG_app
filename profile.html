@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Profile - MG Jwellers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="jewellers, jewelry, mg jewellers, profile, account" name="keywords">
+    <meta content="Customer profile and account settings at MG Jewellers" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/ecomm/logos/1755865437532699141.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/ecomm/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/ecomm/css/style.css" rel="stylesheet">
+    <link href="assets/ecomm/css/style2.css" rel="stylesheet">
+    <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Title -->
+    <div class="container-fluid pt-4">
+        <div class="text-center mb-4">
+            <h2 class="cstm-section-title px-5 mb-2"><span class="">My Profile</span></h2>
+            <p class="text-muted small">Manage your account, orders, and jewellery preferences</p>
+        </div>
+    </div>
+
+    <!-- Main Profile Section -->
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+
+                <!-- 1. GUEST USER STATE (Shown when exploring without login) -->
+                <div id="mg_profile_guest_view" class="mg-profile-guest-card p-4 p-md-5 text-center mb-4">
+                    <div class="mg-profile-avatar-wrap">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="mg-profile-stat-badge mb-2">
+                        <i class="fa fa-info-circle mr-1"></i> Guest / Browse Mode
+                    </span>
+                    <h3 class="font-weight-semi-bold mt-2 mb-2">Welcome, Guest!</h3>
+                    <p class="text-muted mx-auto mb-4" style="max-width: 500px;">
+                        You are currently exploring MG Jewellers in guest mode. Log in to your account anytime to track
+                        orders, access your gold schemes, and save your jewellery collection across devices.
+                    </p>
+
+                    <!-- Prominent Login Button for Guest User -->
+                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center mb-3" style="gap: 12px;">
+                        <a href="login.html" class="btn btn-primary py-2 px-5 font-weight-bold" id="mg_profile_login_btn">
+                            <i class="fas fa-sign-in-alt mr-2"></i> Login to Account
+                        </a>
+                        <a href="register.html" class="btn btn-outline-primary py-2 px-4" id="mg_profile_register_btn">
+                            <i class="fas fa-user-plus mr-1"></i> Register New
+                        </a>
+                    </div>
+                    <small class="text-muted">
+                        Already have an account? <a href="login.html" class="text-primary font-weight-bold"><u>Sign In Here</u></a>
+                    </small>
+                </div>
+
+                <!-- 2. AUTHENTICATED USER STATE (Shown when logged in) -->
+                <div id="mg_profile_user_view" class="mg-profile-card p-4 p-md-5 text-center mb-4" style="display: none;">
+                    <div class="mg-profile-avatar-wrap">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <span class="badge badge-success mb-2 px-3 py-1">
+                        <i class="fa fa-check-circle mr-1"></i> Logged In
+                    </span>
+                    <h3 class="font-weight-semi-bold mt-2 mb-1" id="mg_user_name">Customer Account</h3>
+                    <p class="text-muted mb-3" id="mg_user_phone">+91-7974488285</p>
+
+                    <div class="d-flex justify-content-center mb-3">
+                        <button type="button" class="btn btn-outline-danger btn-sm px-4" id="mg_profile_logout_btn">
+                            <i class="fas fa-sign-out-alt mr-1"></i> Logout
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. QUICK NAVIGATION CARDS -->
+                <div class="mg-profile-card mb-4">
+                    <div class="p-3 bg-light border-bottom">
+                        <h6 class="m-0 font-weight-bold"><i class="fa fa-th-large text-primary mr-2"></i> Account Dashboard</h6>
+                    </div>
+                    <div class="p-0">
+                        <a href="wishlist.html" class="mg-profile-nav-item">
+                            <span>
+                                <i class="fas fa-heart mg-icon-left"></i>
+                                <strong>My Wishlist</strong>
+                                <small class="d-block text-muted">View and manage saved jewellery</small>
+                            </span>
+                            <i class="fa fa-chevron-right text-muted"></i>
+                        </a>
+                        <a href="cart.html" class="mg-profile-nav-item">
+                            <span>
+                                <i class="fas fa-shopping-cart mg-icon-left"></i>
+                                <strong>Shopping Cart</strong>
+                                <small class="d-block text-muted">Review items and proceed to checkout</small>
+                            </span>
+                            <i class="fa fa-chevron-right text-muted"></i>
+                        </a>
+                        <a href="scheme.html" class="mg-profile-nav-item">
+                            <span>
+                                <i class="fas fa-coins mg-icon-left"></i>
+                                <strong>Gold & Silver Schemes</strong>
+                                <small class="d-block text-muted">Explore monthly savings schemes and benefits</small>
+                            </span>
+                            <i class="fa fa-chevron-right text-muted"></i>
+                        </a>
+                        <a href="cateloge.html" class="mg-profile-nav-item">
+                            <span>
+                                <i class="fas fa-book-open mg-icon-left"></i>
+                                <strong>Jewellery Catalogue</strong>
+                                <small class="d-block text-muted">Browse design collections with filters</small>
+                            </span>
+                            <i class="fa fa-chevron-right text-muted"></i>
+                        </a>
+                        <a href="shop-location.html" class="mg-profile-nav-item">
+                            <span>
+                                <i class="fas fa-map-marked-alt mg-icon-left"></i>
+                                <strong>Showroom Locations</strong>
+                                <small class="d-block text-muted">Find nearby MG Jewellers stores</small>
+                            </span>
+                            <i class="fa fa-chevron-right text-muted"></i>
+                        </a>
+                        <a href="contact.html" class="mg-profile-nav-item">
+                            <span>
+                                <i class="fas fa-headset mg-icon-left"></i>
+                                <strong>Customer Support</strong>
+                                <small class="d-block text-muted">Reach our showroom team via call or WhatsApp</small>
+                            </span>
+                            <i class="fa fa-chevron-right text-muted"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Back to Home Action -->
+                <div class="text-center">
+                    <a href="index.html" class="btn btn-outline-primary py-2 px-4">
+                        <i class="fa fa-home mr-1"></i> Return to Home
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+<!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/ecomm/lib/easing/easing.min.js" defer></script>
+    <script src="assets/ecomm/lib/owlcarousel/owl.carousel.min.js" defer></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/ecomm/js/include.js"></script>
+    <script src="assets/ecomm/js/theme-animations.js" defer></script>
+
+    <!-- Profile View State Toggle Script -->
+    <script>
+        (function () {
+            var isUserLogged = sessionStorage.getItem('mg_user_logged') === 'true';
+            var guestView = document.getElementById('mg_profile_guest_view');
+            var userView = document.getElementById('mg_profile_user_view');
+            var logoutBtn = document.getElementById('mg_profile_logout_btn');
+
+            if (isUserLogged) {
+                if (guestView) guestView.style.display = 'none';
+                if (userView) userView.style.display = 'block';
+            } else {
+                if (guestView) guestView.style.display = 'block';
+                if (userView) userView.style.display = 'none';
+            }
+
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function () {
+                    sessionStorage.removeItem('mg_user_logged');
+                    sessionStorage.setItem('mg_guest_mode', 'true');
+                    window.location.href = 'login.html';
+                });
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

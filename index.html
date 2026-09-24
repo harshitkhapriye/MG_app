@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script>
+        // Direct first-time launch to Login screen unless user is in guest mode or logged in
+        if (!sessionStorage.getItem('mg_guest_mode') && !sessionStorage.getItem('mg_user_logged')) {
+            window.location.replace('login.html');
+        }
+    </script>
     <meta charset="utf-8">
     <title>
 
@@ -29,7 +35,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="assets/ecomm/css/style.css" rel="stylesheet">
-    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
     <link href="assets/ecomm/css/style2.css" rel="stylesheet">
     <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
     <link href="ecom/each_css/teaser-style.css" rel="stylesheet">
@@ -42,14 +47,58 @@
 
     <!-- Topbar Start -->
 
+    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
+    <!-- 1. Horizontal Scrollable Category Cards (Tanishq Reference Image 1) -->
+    <div class="mg-quick-cat-scroll-wrap py-2 px-3 d-block d-lg-none">
+        <div class="mg-quick-cat-track">
+            <a href="shop.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="ecom/products/17401217391996961692.jpg" alt="Sub 30K">
+                </div>
+                <span class="mg-quick-cat-title">Sub 30K</span>
+            </a>
+            <a href="shop.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="ecom/products/17401325061200865613.jpg" alt="Diamond">
+                </div>
+                <span class="mg-quick-cat-title">Diamond</span>
+            </a>
+            <a href="shop.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="assets/ecomm/images/gold_coins.webp" alt="Gold Coins">
+                </div>
+                <span class="mg-quick-cat-title">Gold Coins</span>
+            </a>
+            <a href="shop.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="ecom/products/17401334792081403700.jpg" alt="Earrings">
+                </div>
+                <span class="mg-quick-cat-title">Earrings</span>
+            </a>
+            <a href="shop.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="ecom/products/17401322651052103057.jpg" alt="Rings">
+                </div>
+                <span class="mg-quick-cat-title">Rings</span>
+            </a>
+            <a href="cateloge.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="ecom/products/1740122848901485459.jpg" alt="Chains">
+                </div>
+                <span class="mg-quick-cat-title">Chains</span>
+            </a>
+            <a href="cateloge.html" class="mg-quick-cat-card">
+                <div class="mg-quick-cat-img-box">
+                    <img src="ecom/products/17401369251491548904.jpg" alt="Bridal">
+                </div>
+                <span class="mg-quick-cat-title">Bridal</span>
+            </a>
+        </div>
+    </div>
 
-
-    <!-- Navbar End -->
-
-
-
+    <!-- Main Hero Image Slider / Carousel -->
     <div class="row">
         <div class="col-md-12">
             <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
@@ -104,8 +153,59 @@
         </div>
     </div>
 
+    <!-- 3. 2x2 Image Campaign Grid Section (Tanishq Reference Image 3) -->
+    <div class="mg-campaign-section mb-4 px-2 d-block d-lg-none">
+        <div class="text-center mb-3 mt-1">
+            <h2 class="cstm-section-title px-4 mb-0"><span>Shop By Categories</span></h2>
+        </div>
+        <div class="mg-campaign-2x2-grid">
+            <a href="shop.html" class="mg-campaign-cell">
+                <img src="ecom/products/17400513551934096853.jpg" alt="Rings">
+                <span class="mg-campaign-label">Rings</span>
+            </a>
+            <a href="shop.html" class="mg-campaign-cell">
+                <img src="ecom/products/1740125364316255900.jpg" alt="Bangles">
+                <span class="mg-campaign-label">Bangles</span>
+            </a>
+            <a href="shop.html" class="mg-campaign-cell">
+                <img src="ecom/products/17401354321760572244.jpg" alt="Necklaces">
+                <span class="mg-campaign-label">Necklaces</span>
+            </a>
+            <a href="shop.html" class="mg-campaign-cell">
+                <img src="ecom/products/1740135726115621763.jpg" alt="Bridal Sets">
+                <span class="mg-campaign-label">Bridal Sets</span>
+            </a>
+        </div>
+        <!-- Campaign Text Card -->
+        <div class="mg-campaign-card text-center p-3">
+            <p class="mg-campaign-italic mb-1">For marriages crafted by you</p>
+            <h3 class="mg-campaign-title mb-1">MG VIVAAH</h3>
+            <p class="mg-campaign-subtitle text-muted mb-3">Wedding Signatures & Hallmark Heritage</p>
+            <a href="shop.html" class="btn mg-campaign-explore-btn">EXPLORE NOW</a>
+        </div>
+    </div>
 
-    <div class="container-fluid offer pt-5">
+    <!-- 4. Recently Viewed Section (Personalization - Mobile Only) -->
+    <!-- ========================================================================= -->
+    <!-- BACKEND INTEGRATION POINT: Replace client-side render with user history -->
+    <!-- Target Endpoint: GET /api/v1/user/recently-viewed -->
+    <!-- ========================================================================= -->
+    <div class="mg-recent-section mb-4 px-2 d-block d-lg-none" id="mg_recently_viewed_section"
+        style="display: none !important;">
+        <div class="d-flex align-items-center justify-content-between px-2 mb-2">
+            <div>
+                <h4 class="mg-section-heading mb-0">Recently Viewed</h4>
+                <small class="text-muted">Pick up where you left off</small>
+            </div>
+            <button type="button" class="btn btn-link p-0 text-muted mg-clear-recent-btn" id="mg_clear_recent_btn"
+                title="Clear recently viewed">Clear</button>
+        </div>
+        <div class="mg-recent-scroll-track" id="mg_recently_viewed_track">
+            <!-- Dynamically populated from localStorage 'mg_recently_viewed' -->
+        </div>
+    </div>
+
+    <div class="container-fluid offer pt-5 d-none d-lg-block">
         <div class="text-center mb-4">
             <!--<h2 class="section-title px-5"><span class="px-2">Shop By Category</span></h2>-->
             <h2 class="cstm-section-title px-5 mb-3"><span class="">Schemes</span></h2>
@@ -222,35 +322,35 @@
 
 
 
-   <!-- Shop Brochure Teaser Start -->
-<div class="container-fluid pt-5" id="shop_brochure_teaser_section">
-    <div class="text-center mb-4">
-        <h2 class="cstm-section-title px-5 mb-3"><span class="">Our Legacy</span></h2>
-    </div>
-    <div class="row px-xl-5">
-        <div class="col-12">
-            <div class="shop-brochure-teaser-wrap row align-items-center">
-                <div class="col-md-5 mb-3 mb-md-0 mg-reveal-auto">
-                    <div class="shop-brochure-teaser-img">
-                        <img src="assets/ecomm/images/about/about_img_1740983782.jpg" alt="MG Jwellers Legacy"
-                            class="img-fluid" loading="lazy">
+    <!-- Shop Brochure Teaser Start -->
+    <div class="container-fluid pt-5" id="shop_brochure_teaser_section">
+        <div class="text-center mb-4">
+            <h2 class="cstm-section-title px-5 mb-3"><span class="">Our Legacy</span></h2>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <div class="shop-brochure-teaser-wrap row align-items-center">
+                    <div class="col-md-5 mb-3 mb-md-0 mg-reveal-auto">
+                        <div class="shop-brochure-teaser-img">
+                            <img src="assets/ecomm/images/about/about_img_1740983782.jpg" alt="MG Jwellers Legacy"
+                                class="img-fluid" loading="lazy">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7 mg-reveal-auto">
-                    <div class="shop-brochure-teaser-content">
-                        <h2>Five Decades of Trust &amp; Craftsmanship</h2>
-                        <p>
-                            From a small workshop in 1973 to becoming Bhopal's most trusted name in gold
-                            and silver jewellery — discover the story behind every piece we craft.
-                        </p>
-                        <a href="our-legacy.html" class="btn shop-brochure-cta">Discover More</a>
+                    <div class="col-md-7 mg-reveal-auto">
+                        <div class="shop-brochure-teaser-content">
+                            <h2>Five Decades of Trust &amp; Craftsmanship</h2>
+                            <p>
+                                From a small workshop in 1973 to becoming Bhopal's most trusted name in gold
+                                and silver jewellery — discover the story behind every piece we craft.
+                            </p>
+                            <a href="our-legacy.html" class="btn shop-brochure-cta">Discover More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Shop Brochure Teaser End -->
+    <!-- Shop Brochure Teaser End -->
 
 
 
@@ -352,51 +452,58 @@
             <!-- <h2 class="section-title px-5"><span class="px-2">Shop By Matterial</span></h2> -->
             <h2 class="cstm-section-title px-5 mb-3"><span class="">Shop By Material</span></h2>
         </div>
-        <div class="row px-xl-5 p-5 content">
+        <div class="row px-xl-5 p-lg-5 content" id="shop_by_metal_grid">
 
-            <div class="col-lg-3 col-md-6 pb-1 col-6 m-auto text-center">
-                <div class="cat-item d-flex flex-column border mb-4 matterial_block"
-                    style="background: linear-gradient(160deg, #fff 0%, #D4AF37 100%) !important;">
-                    <!-- <p class="text-right">15 Products</p> -->
-                    <a href="https://justudhari.com/shop/gold" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/gold_metal.png" alt="" loading="lazy">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Gold</h5>
-                </div>
+            <div class="col-lg-3 col-md-6 pb-1 col-6 text-center" data-category="gold">
+                <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
+                    id="mg_mat_card_gold" data-material="gold">
+                    <div class="cat-img position-relative overflow-hidden mb-3">
+                        <img class="img-fluid" src="ecom/products/1740135726115621763.jpg" alt="Gold Jewellery"
+                            loading="lazy">
+                    </div>
+                    <div class="mg-mat-overlay">
+                        <h5 class="font-weight-semi-bold m-0">Gold</h5>
+                    </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 pb-1 col-6 m-auto text-center">
-                <div class="cat-item d-flex flex-column border mb-4 matterial_block"
-                    style="background: linear-gradient(160deg, #fff 0%, #D4AF37 100%) !important;">
-                    <!-- <p class="text-right">15 Products</p> -->
-                    <a href="https://justudhari.com/shop/silver" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/silver_metal.png" alt="" loading="lazy">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Silver</h5>
-                </div>
+            <div class="col-lg-3 col-md-6 pb-1 col-6 text-center" data-category="silver">
+                <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
+                    id="mg_mat_card_silver" data-material="silver">
+                    <div class="cat-img position-relative overflow-hidden mb-3">
+                        <img class="img-fluid" src="ecom/products/1740122848901485459.jpg" alt="Silver Jewellery"
+                            loading="lazy">
+                    </div>
+                    <div class="mg-mat-overlay">
+                        <h5 class="font-weight-semi-bold m-0">Silver</h5>
+                    </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 pb-1 col-6 m-auto text-center">
-                <div class="cat-item d-flex flex-column border mb-4 matterial_block"
-                    style="background: linear-gradient(160deg, #fff 0%, #D4AF37 100%) !important;">
-                    <!-- <p class="text-right">15 Products</p> -->
-                    <a href="https://justudhari.com/shop/artificial"
-                        class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/artificial_metal.png" alt="" loading="lazy">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Artificial</h5>
-                </div>
+            <div class="col-lg-3 col-md-6 pb-1 col-6 text-center" data-category="artificial">
+                <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
+                    id="mg_mat_card_artificial" data-material="artificial">
+                    <div class="cat-img position-relative overflow-hidden mb-3">
+                        <img class="img-fluid" src="ecom/products/17401354321760572244.jpg" alt="Artificial Jewellery"
+                            loading="lazy">
+                    </div>
+                    <div class="mg-mat-overlay">
+                        <h5 class="font-weight-semi-bold m-0">Artificial</h5>
+                    </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 pb-1 col-6 m-auto text-center">
-                <div class="cat-item d-flex flex-column border mb-4 matterial_block"
-                    style="background: linear-gradient(160deg, #fff 0%, #D4AF37 100%) !important;">
-                    <!-- <p class="text-right">15 Products</p> -->
-                    <a href="https://justudhari.com/shop/stone" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/stone_metal.png" alt="" loading="lazy">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Stone</h5>
-                </div>
+            <div class="col-lg-3 col-md-6 pb-1 col-6 text-center" data-category="stone">
+                <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
+                    id="mg_mat_card_stone" data-material="stone">
+                    <div class="cat-img position-relative overflow-hidden mb-3">
+                        <img class="img-fluid" src="ecom/products/17400513551934096853.jpg" alt="Stone Jewellery"
+                            loading="lazy">
+                    </div>
+                    <div class="mg-mat-overlay">
+                        <h5 class="font-weight-semi-bold m-0">Stone</h5>
+                    </div>
+                </a>
             </div>
 
             <!-- <div class="col-lg-3 col-md-6 pb-1 col-6 m-auto text-center">
@@ -474,7 +581,7 @@
                     <ul class="catalog slides p-0"
                         style="list-style: none;display: inline-flex;position: relative;width: 100%;overflow:hidden;justify-content: center;">
 
-                        <li class="catalog slide col-md-4 col-6">
+                        <li class="catalog slide col-md-4 col-6 mg-slide-active">
                             <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVbc8B7hz9qGk39PXgL2titbKEgUw65gV6GsNNPRZHg&s=10" alt="Catalogue item 1" class="img-thumbnail img-responsive" style="height:200px;min-height:auto;">    -->
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7VDZZ4n5_NHDroUHHDqbthXL0nZEbhKtwWTHfC-CF0w&s=10"
                                 alt="Catalogue item 1" class="img-thumbnail img-responsive"
@@ -618,10 +725,6 @@
 
     <!-- Footer End -->
 
-    <!-- Back to Top -->
-
-    <a href="#" class="btn btn-primary back-to-top"
-        onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"><i class="fa fa-angle-double-up"></i></a>
     <!------------------INDEX PAGE JS---------------------------------------------------->
 
     <!-- JavaScript Libraries -->
@@ -630,1082 +733,9 @@
     <script src="assets/ecomm/lib/easing/easing.min.js" defer></script>
     <script src="assets/ecomm/lib/owlcarousel/owl.carousel.min.js" defer></script>
 
-    <!-- Contact Javascript File -->
-    <!--<script src="assets/ecomm/mail/jqBootstrapValidation.min.js"></script>
-    <script src="assets/ecomm/mail/contact.js"></script>-->
-
     <!-- Template Javascript -->
-    <!------------------END INDEX PAGE JS------------------------------------------------>
-
-    <script src="assets/ecomm/js/main.js" defer></script>
-    <script src="assets/ecomm/js/include.js" defer></script>
+    <script src="assets/ecomm/js/include.js"></script>
     <script src="assets/ecomm/js/theme-animations.js" defer></script>
-
-    <script>
-
-
-        function checkOrientation() {
-            if (window.innerWidth <= 767) return; // mobile: fixheader() already owns header_seprator, don't fight it
-            if (window.orientation === 0 || $(window).width() < $(window).height()) {
-                var header_block_height = $('div.top_header').outerHeight();
-                $('div#header_seprator').css('height', header_block_height + "px");
-            } else {
-                $('div#header_seprator').css('height', '');
-            }
-        }
-        $(document).ready(function () {
-
-            $(window).on('resize orientationchange', checkOrientation);
-            checkOrientation(); // Check on page load
-
-            getshoppinglistcount();
-            $(".remove_from_kart,.remove_from_wishlist,.move_to_cart").click(function (e) {
-                e.preventDefault();
-                var q = false;
-                if (!$(this).hasClass('move_to_cart')) {
-                    q = confirm("Sure to Remove ?");
-                } else {
-                    q = true;
-                }
-                const tr = $(this).parent('td').parent('tr');
-                const tr_count = $('tbody > tr').length;
-                const qnt_actn = tr.hasClass('genuine') ? false : true
-                const sum_unit_rate = $("#total_unit_price").text();
-                const sum_lbr_chrg = $("#total_sum_labour").text();
-                const sum_total_rate = $("#total_sum_price").text();
-                const final_quant = $("#final_quantity").text();
-                const final_rate = $("#final_subtotal").text();
-                const payable = $("#final_amount").text();
-                if (q == true) {
-                    const url = $(this).attr('href');
-                    $.get(url, "", function (response) {
-                        alert(response.msg);
-                        if (response.status) {
-                            const data_arr = (response.data).split("#");
-                            const type_arr = ["wishlist", "kart"];
-                            $("#" + (type_arr[data_arr[0]]) + "_count").text(data_arr[1]);
-                            const qnt = (!qnt_actn) ? 1 : tr.find('.unit_qnt').text();
-                            const lbr = tr.find('.unit_labour').text();
-                            const price = tr.find('.unit_price').text();
-                            const sub_price = tr.find('.sub_price').text();
-
-                            var new_qnt = final_quant - qnt;
-                            $("#final_quantity").empty().text(new_qnt);
-
-                            var new_unit_price = sum_unit_rate - price;
-                            $("#total_unit_price").empty().text(new_unit_price.toFixed(2));
-
-                            var new_lbr_chrg = sum_lbr_chrg - lbr;
-                            $("#total_sum_labour").empty().text(new_lbr_chrg.toFixed(2));
-
-                            var new_ttl_price = sum_total_rate - sub_price;
-                            $("#total_sum_price").empty().text(new_ttl_price.toFixed(2));
-
-                            var new_final_cost = final_rate - sub_price;
-                            $("#final_subtotal").empty().text(new_final_cost.toFixed(2));
-
-                            var new_payable_cost = payable - sub_price;
-                            $("#final_amount").empty().text(new_payable_cost.toFixed(2));
-                            if (tr_count == 1) {
-                                const check_btn = '<button type="button" class="btn btn-block btn-primary my-3 py-3 text-white" onclick="alert(\'Your Cart is Empty !\');">Checkout ?</button>';
-                                $('[name="checkout"]').replaceWith(check_btn);
-                            }
-                            tr.remove();
-                            getshoppinglistcount();
-                        }
-                    });
-                }
-            });
-            /*$(".move_to_cart").click(function(e){
-                e.preventDefault();
-                const tr = $(this).parent('td').parent('tr');
-                $.get($(this).attr('href'),"",function(response){
-                    alert(response.msg);
-                    if(response.status){
-                        tr.remove();
-                        getshoppinglistcount();
-                    }
-                })
-            });*/
-            function getshoppinglistcount() {
-                $.get("https://justudhari.com/soppinglistcount", "", function (response) {
-                    $("#wishlist_count, #wishlist_count_mob").text(response.wish_list);
-                    $("#kart_count, #kart_count_mob").text(response.kart_list);
-                });
-            }
-
-            $.get('https://justudhari.com#', "", function (response) {
-                if (response.rates_arr) {
-                    const rates = response.rates_arr;
-                    if (rates.gold) {
-                        $.each(rates.gold, function (i, v) {
-
-                            $(`#rate_gold_${i}`).text((v) ? (Math.round(v * 10)).toLocaleString("en-IN") : '-');
-                        });
-                    }
-                    if (rates.silver) {
-                        $.each(rates.silver, function (i, v) {
-                            $(`#rate_silver_${i}`).text((v) ? (Math.round(v)).toLocaleString("en-IN") : '-');
-                        });
-                    }
-                    if (rates.date) {
-                        $(`#rate_update`).text(rates.date);
-                    }
-                }
-            });
-
-            $("#state").change(function () {
-                const state_code = $(this).val();
-                if (state_code != "") {
-                    const data = { state: state_code };
-                    $.get("https://justudhari.com/get-districts", data, function (response) {
-                        if (response.length > 0) {
-                            option = '<option value="">Select District !</option>';
-                            $.each(response, function (i, v) {
-                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
-                            });
-                        } else {
-                            option = '<option value="">No District !</option>';
-                        }
-                        $("#dist").empty().append(option);
-                    });
-                }
-            });
-
-            $("#ship_state").change(function () {
-                const state_code = $(this).val();
-                if (state_code != "") {
-                    const data = { state: state_code };
-                    $.get("https://justudhari.com/get-districts", data, function (response) {
-                        if (response.length > 0) {
-                            option = '<option value="">Select District !</option>';
-                            $.each(response, function (i, v) {
-                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
-                            });
-                        } else {
-                            option = '<option value="">No District !</option>';
-                        }
-                        $("#ship_dist").empty().append(option);
-                    });
-                }
-            });
-            $('.addr_state').change(function () {
-                const state_code = $(this).val();
-                if (state_code != "") {
-                    const target = $(this).attr('data-target');
-                    $("#" + target).empty().append('<option>Loading...</option>');
-                    const data = { state: state_code };
-                    $.get("https://justudhari.com/get-districts", data, function (response) {
-                        if (response.length > 0) {
-                            option = '<option value="">Select District !</option>';
-                            $.each(response, function (i, v) {
-                                option += '<option value="' + (v.code) + '">' + (v.name) + '</option>';
-                            });
-                        } else {
-                            option = '<option value="">No District !</option>';
-                        }
-                        $("#" + target).empty().append(option);
-                    });
-                }
-            })
-            $("#page_await").hide();
-        });
-        function digitonly(event, num) {
-            let inputValue = event.target.value;
-
-            // Allow only digits using regex
-            inputValue = inputValue.replace(/[^0-9]/g, '');  // Remove anything that's not a digit
-
-            // Ensure that the input has exactly 10 digits
-            if (inputValue.length > num) {
-                inputValue = inputValue.slice(0, 10);  // Trim to 10 digits
-            }
-
-            // Update the input field with the valid input
-            event.target.value = inputValue;
-        }
-    </script>
-
-
-    <!--Divyanshu's Coder--->
-    <script>
-        $('#top-search-field > input[name="search_term"]').focus(function () {
-            $(this).parent("div#top-search-field").removeClass('minimul').addClass('normal');
-        });
-        $('#top-search-field > input[name="search_term"]').on('blur', function () {
-            $(this).parent("div#top-search-field").removeClass('normal').addClass('minimul');
-        });
-
-
-    </script>
-
-    <script>
-        (function () {
-            const hamburger = document.getElementById('hamburger');
-            const menu = document.getElementById('mobileMenu');
-            const backdrop = document.getElementById('menuBackdrop');
-            const closeBtn = document.getElementById('menuClose');
-
-            function openMenu() {
-                menu.classList.add('open');
-                backdrop.classList.add('visible');
-                menu.setAttribute('aria-hidden', 'false');
-                hamburger.setAttribute('aria-expanded', 'true');
-                backdrop.setAttribute('aria-hidden', 'false');
-                // Move focus inside the menu (to close button)
-                closeBtn.focus();
-                // prevent body scroll while open
-                document.documentElement.style.overflow = 'hidden';
-            }
-
-            function closeMenu() {
-                menu.classList.remove('open');
-                backdrop.classList.remove('visible');
-                menu.setAttribute('aria-hidden', 'true');
-                hamburger.setAttribute('aria-expanded', 'false');
-                backdrop.setAttribute('aria-hidden', 'true');
-                // restore focus to hamburger
-                hamburger.focus();
-                document.documentElement.style.overflow = '';
-            }
-
-            hamburger.addEventListener('click', function (e) {
-                if (menu.classList.contains('open')) closeMenu();
-                else openMenu();
-            });
-
-            closeBtn.addEventListener('click', closeMenu);
-            backdrop.addEventListener('click', closeMenu);
-
-            // Close on Escape key
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && menu.classList.contains('open')) {
-                    closeMenu();
-                }
-            });
-
-            // ✅ Close only if link is outside Categories section
-            // Optional: support swipe to close on touch devices
-            (function addSwipeClose() {
-                let startX = null;
-                let startY = null;
-                menu.addEventListener('touchstart', (e) => {
-                    startX = e.touches[0].clientX;
-                    startY = e.touches[0].clientY;
-                });
-                menu.addEventListener('touchmove', (e) => {
-                    if (startX === null || startY === null) return;
-                    const currentX = e.touches[0].clientX;
-                    const currentY = e.touches[0].clientY;
-                    const dx = currentX - startX;
-                    const dy = Math.abs(currentY - startY);
-                    // Only close on a clearly horizontal left-to-right swipe —
-                    // require dx to dominate over vertical movement so scrolling
-                    // the menu list doesn't accidentally trigger a close.
-                    if (dx > 40 && dx > dy * 1.5) {
-                        closeMenu();
-                        startX = null;
-                        startY = null;
-                    }
-                });
-                menu.addEventListener('touchend', () => {
-                    startX = null;
-                    startY = null;
-                });
-            })();
-        })();
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const catLink = document.querySelector(".mob_cat");
-
-            if (catLink) {
-                catLink.addEventListener("click", function (e) {
-                    e.preventDefault(); // Bootstrap ka default collapse behavior stop
-                    e.stopPropagation();
-
-                    const targetId = catLink.getAttribute("data-target");
-                    const target = document.querySelector(targetId);
-
-                    if (target.classList.contains("show")) {
-                        target.classList.remove("show");
-                    } else {
-                        target.classList.add("show");
-                    }
-                });
-            }
-        });
-    </script>
-
-
-    <script>
-        document.getElementById('hamburger').addEventListener('click', function () {
-            const menu = document.getElementById('mobileMenu');
-            // On open, reflow icons so CSS animation restarts reliably
-            if (!menu.classList.contains('open')) {
-                // open is added by your existing script — wait microtick then force reflow
-                setTimeout(() => { void menu.offsetWidth; }, 20);
-            }
-        });
-    </script>
-
-    <!--mobile search button-->
-
-
-    <script>
-        (function () {
-            var openBtn = document.getElementById('mob_search_toggle');
-            var closeBtn = document.getElementById('mob_search_close');
-            var headerIcon = document.getElementById('mob_search_btn');
-            var bar = document.getElementById('mob_search_bar');
-            if (!openBtn || !closeBtn || !headerIcon || !bar) return;
-
-            openBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                bar.classList.remove('mob_disappear');
-                bar.classList.add('mob_appear');
-                headerIcon.style.display = 'none';
-            });
-
-            closeBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                bar.classList.remove('mob_appear');
-                bar.classList.add('mob_disappear');
-                headerIcon.style.display = '';
-            });
-        })();
-    </script>
-
-    <script>
-        // Remove + and - and spaces from number
-        var phone = "+91-7974488285".replace(/\D/g, ''); // keep only digits
-
-        // Pre-filled message
-        var message = encodeURIComponent("Hello, I want more details about your services.");
-
-        // Detect device
-        var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-        var whatsappLink = document.getElementById("whatsapp_out");
-
-        if (isMobile) {
-            whatsappLink.href = "https://wa.me/" + phone + "?text=" + message;
-        } else {
-            whatsappLink.href = "https://web.whatsapp.com/send?phone=" + phone + "&text=" + message;
-        }
-    </script>
-
-    <!-- Scroll-reveal: purely visual, adds/removes classes at runtime only — no section names, ids or markup are changed -->
-
-
-    <script>
-        (function () {
-            var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-            var groups = [
-                {
-                    els: document.querySelectorAll(
-                        '.scheme-card, #shop_by_metal .matterial_block, ' +
-                        '#home_collection_shop .product-item, ' +
-                        '.bg-secondary .row.pt-5 > .col-lg-6'
-                    )
-                },
-                {
-                    className: 'mg-reveal-title',
-                    els: document.querySelectorAll('.cstm-section-title')
-                },
-                {
-                    className: 'mg-reveal-left',
-                    els: document.querySelectorAll(
-                        '.bg-secondary .row.pt-5 > .col-lg-3:not(.footer_info_sec), ' +
-                        '#home_category_shop .row.content > div:nth-child(1) .product-item, ' +
-                        '#home_category_shop .row.content > div:nth-child(2) .product-item'
-                    )
-                },
-                {
-                    className: 'mg-reveal-right',
-                    els: document.querySelectorAll(
-                        '.bg-secondary .footer_info_sec, ' +
-                        '#home_category_shop .row.content > div:nth-child(3) .product-item, ' +
-                        '#home_category_shop .row.content > div:nth-child(4) .product-item, ' +
-                        '#catelog_area .catalog.slideshow-container'
-                    )
-                }
-            ];
-
-            var allTargets = [];
-            groups.forEach(function (group) {
-                group.els.forEach(function (el) { allTargets.push({ el: el, className: group.className }); });
-            });
-
-            if (prefersReduced || !('IntersectionObserver' in window)) {
-                allTargets.forEach(function (t) { t.el.classList.add('mg-in'); });
-                return;
-            }
-
-            allTargets.forEach(function (t, i) {
-                t.el.classList.add(t.className);
-                t.el.style.transitionDelay = (Math.min(i % 4, 3) * 0.08) + 's';
-            });
-
-            var io = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('mg-in');
-                        io.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.7, rootMargin: '0px 0px -10% 0px' });
-
-            allTargets.forEach(function (t) { io.observe(t.el); });
-
-            // Safety net: only forces reveal for items still invisible after
-            // a generous wait — long enough that it won't interfere with the
-            // real scroll-triggered animation, just catches genuine misses.
-            setTimeout(function () {
-                allTargets.forEach(function (t) {
-                    if (!t.el.classList.contains('mg-in')) {
-                        var rect = t.el.getBoundingClientRect();
-                        var inView = rect.top < window.innerHeight && rect.bottom > 0;
-                        if (inView) t.el.classList.add('mg-in');
-                    }
-                });
-            }, 4000);
-
-            window.addEventListener('pageshow', function (e) {
-                if (e.persisted) {
-                    allTargets.forEach(function (t) { t.el.classList.add('mg-in'); });
-                }
-            });
-        })();
-    </script>
-
-
-
-
-    <script>
-
-        (function () {
-            var cards = document.querySelectorAll('#shop_by_metal .row.content > .col-lg-3 .matterial_block');
-            if (!cards.length) return;
-            var active = 0;
-            var timer;
-
-            function update() {
-                cards.forEach(function (c, i) {
-                    c.classList.remove('mg-mat-active', 'mg-mat-adjacent', 'mg-mat-far');
-                    var isAdjacent = (i === (active + 1) % cards.length) || (i === (active - 1 + cards.length) % cards.length);
-                    if (i === active) c.classList.add('mg-mat-active');
-                    else if (isAdjacent) c.classList.add('mg-mat-adjacent');
-                    else c.classList.add('mg-mat-far');
-                });
-            }
-
-            function start() {
-                timer = setInterval(function () {
-                    active = (active + 1) % cards.length;
-                    update();
-                }, 1500);
-            }
-
-            update();
-            if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
-                start();
-                var wrap = document.querySelector('#shop_by_metal .row.content');
-                wrap.addEventListener('mouseenter', function () { clearInterval(timer); });
-                wrap.addEventListener('mouseleave', start);
-            }
-        })();
-    </script>
-
-    <script>
-        /* our catalauge card swap */
-        (function () {
-            var track = document.querySelector('#catelog_area .catalog.slides');
-            if (!track) return;
-
-            function itemOffset() {
-                var first = track.firstElementChild;
-                var style = getComputedStyle(track);
-                var gap = parseFloat(style.columnGap || style.gap || 0) || 0;
-                return first.offsetWidth + gap;
-            }
-
-            function slide(direction) {
-                if (track.dataset.sliding === '1') return;
-                track.dataset.sliding = '1';
-
-                var offset = itemOffset();
-                var distance = (direction === 'next') ? -offset : offset;
-
-                track.style.transition = 'transform 0.6s cubic-bezier(.22,.9,.32,1)';
-                track.style.transform = 'translateX(' + distance + 'px)';
-
-                track.addEventListener('transitionend', function handler() {
-                    track.removeEventListener('transitionend', handler);
-
-                    if (direction === 'next') {
-                        track.appendChild(track.firstElementChild);
-                    } else {
-                        track.insertBefore(track.lastElementChild, track.firstElementChild);
-                    }
-
-                    track.style.transition = 'none';
-                    track.style.transform = 'translateX(0)';
-                    void track.offsetWidth;
-                    track.dataset.sliding = '0';
-                }, { once: true });
-            }
-
-            var rightBtn = document.getElementById('catalog-slide-right');
-            var leftBtn = document.getElementById('catalog-slide-left');
-            if (rightBtn) rightBtn.addEventListener('click', function () { slide('next'); });
-            if (leftBtn) leftBtn.addEventListener('click', function () { slide('prev'); });
-            var touchStartX = 0;
-            var touchEndX = 0;
-
-            track.addEventListener('touchstart', function (e) {
-                if (window.innerWidth > 767) return;
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-
-            track.addEventListener('touchend', function (e) {
-                if (window.innerWidth > 767) return;
-                touchEndX = e.changedTouches[0].screenX;
-                var diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 40) {
-                    if (diff > 0) slide('next');
-                    else slide('prev');
-                }
-            }, { passive: true });
-        })();
-
-    </script>
-
-
-    <script>
-        (function () {
-            var cards = document.querySelectorAll(
-                '#home_category_shop .product-item, #home_collection_shop .product-item'
-            );
-
-            cards.forEach(function (card) {
-                var link = card.querySelector('.btn-default-alt');
-                if (!link) return;
-
-                var href = link.getAttribute('href');
-                var footer = link.closest('.card-footer');
-                if (footer) footer.remove(); // removes the "Explore Now" button entirely
-
-                card.style.cursor = 'pointer';
-                card.addEventListener('click', function () {
-                    window.location.href = href;
-                });
-            });
-        })();
-    </script>
-
-    <script>
-        (function () {
-            var btn = document.querySelector('.back-to-top');
-            if (!btn) return;
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        })();
-    </script>
-
-    <script>
-        (function () {
-            var selector =
-                '#catelog_area .catalog.slide img, ' +
-                '#home_category_shop .product-img img, ' +
-                '#home_collection_shop .product-img img';
-
-            document.querySelectorAll(selector).forEach(function (img) {
-                // If the image already failed before this script ran, fix it immediately
-                if (img.complete && img.naturalWidth === 0) {
-                    img.src = 'https://placehold.co/400x300/f2dd9a/2b2118?text=Image+Unavailable';
-                }
-                img.addEventListener('error', function () {
-                    this.src = 'https://placehold.co/400x300/f2dd9a/2b2118?text=Image+Unavailable';
-                }, { once: true });
-            });
-        })();
-    </script>
-    <script>
-        $(window).on('scroll', function () {
-            fixheader();
-        });
-        fixheader();
-        function fixheader() {
-            if (window.innerWidth >= 768) {
-                var scrollTop = $(this).scrollTop();
-                var header = $('#head_search_bar');
-                var headheight = header.outerHeight();
-                var menu_div = $('.top_header');
-                var menu_div_height = menu_div.outerHeight();
-                var to_menu_cntnr_hgt = headheight + menu_div_height;
-                if (scrollTop > 50) {
-                    header.addClass('fixed').css({
-                        position: 'fixed', top: '0px', left: '0px', right: '0px', zIndex: 1031,
-                        marginLeft: '0px', marginRight: '0px'
-                    });
-                    menu_div.addClass('fixed').css({
-                        position: 'fixed', top: headheight + 'px', left: '0px', right: '0px', zIndex: 1030,
-                        marginLeft: '0px', marginRight: '0px'
-                    });
-                    $("#header_seprator").css('height', to_menu_cntnr_hgt + 'px');
-                } else {
-                    header.removeClass('fixed').css({ position: '', top: '', left: '', right: '', zIndex: '', marginLeft: '', marginRight: '' });
-                    menu_div.removeClass('fixed').css({ position: '', top: '', left: '', right: '', zIndex: '', marginLeft: '', marginRight: '' });
-                    $("#header_seprator").css('height', 'inherit');
-                }
-            } else {
-                $('#head_search_bar').removeClass('fixed').css({ position: '', top: '', left: '', right: '', zIndex: '', marginLeft: '', marginRight: '' });
-                $('.top_header').removeClass('fixed').css({ position: '', top: '', left: '', right: '', zIndex: '', marginLeft: '', marginRight: '' });
-                $("#header_seprator").css('height', '0px');
-            }
-        }
-    </script>
-    <!-- category dropdown hover -->
-    <script>
-        (function () {
-            var trigger = document.querySelector('.top_header .col-lg-3');
-            var panel = document.getElementById('navbar-vertical');
-            if (!trigger || !panel) return;
-            var hideTimeout;
-
-            panel.classList.remove('collapse'); // stop Bootstrap's JS from managing this element at all
-
-            function open() {
-                clearTimeout(hideTimeout);
-                var headerRow = document.querySelector('.top_header');
-                if (headerRow) {
-                    panel.style.top = headerRow.getBoundingClientRect().bottom + 'px';
-                }
-                panel.classList.add('mg-mega-open');
-            }
-            window.addEventListener('scroll', function () {
-                if (panel.classList.contains('mg-mega-open')) {
-                    var headerRow = document.querySelector('.top_header');
-                    if (headerRow) panel.style.top = headerRow.getBoundingClientRect().bottom + 'px';
-                }
-            });
-            function scheduleClose() {
-                hideTimeout = setTimeout(function () {
-                    panel.classList.remove('mg-mega-open');
-                }, 200);
-            }
-
-            trigger.addEventListener('mouseenter', open);
-            trigger.addEventListener('mouseleave', scheduleClose);
-            panel.addEventListener('mouseenter', open);
-            panel.addEventListener('mouseleave', scheduleClose);
-        })();
-    </script>
-
-    <script>
-        (function () {
-            var wrapperItem = document.querySelector('.category_dropdown .nav-item.dropdown');
-            var trigger = document.querySelector('.category_dropdown .nav-item.dropdown > a.nav-link');
-            var collectionMenu = document.querySelector('.category_dropdown .dropdown-menu');
-            var megaMenu = document.getElementById('navbar-vertical');
-            if (!wrapperItem || !trigger || !collectionMenu || !megaMenu) return;
-
-            trigger.removeAttribute('data-toggle');
-            trigger.addEventListener('click', function (e) { e.preventDefault(); });
-
-            var closeTimer;
-            function openCollection() {
-                clearTimeout(closeTimer);
-                megaMenu.classList.add('mg-collection-active');
-                collectionMenu.classList.add('mg-collection-show');
-            }
-            function scheduleClose() {
-                closeTimer = setTimeout(function () {
-                    megaMenu.classList.remove('mg-collection-active');
-                    collectionMenu.classList.remove('mg-collection-show');
-                }, 200);
-            }
-
-            wrapperItem.addEventListener('mouseenter', openCollection);
-            wrapperItem.addEventListener('mouseleave', scheduleClose);
-            collectionMenu.addEventListener('mouseenter', openCollection);
-            collectionMenu.addEventListener('mouseleave', scheduleClose);
-        })();
-    </script>
-
-    <!-- search bar suggestion card -->
-
-    <script>
-        (function () {
-            var wrap = document.getElementById('mg_search_wrap');
-            var input = document.getElementById('mg_search_input');
-            var panel = document.getElementById('mg_search_suggestions');
-            var overlay = document.getElementById('mg_search_overlay');
-            var chipsBox = panel ? panel.querySelector('.mg-suggest-chips') : null;
-            if (!wrap || !input || !panel || !overlay || !chipsBox) return;
-
-            // Remember the original "Popular Categories" chips so we can restore
-            // them when the search box is cleared.
-            var defaultChipsHTML = chipsBox.innerHTML;
-
-            var sourceLinks = document.querySelectorAll('.category_dropdown a.nav-link, .category_dropdown a.dropdown-item');
-            var catalog = [];
-            var seen = {};
-            sourceLinks.forEach(function (a) {
-                var name = a.textContent.trim();
-                var href = a.getAttribute('href');
-                if (name && href && !seen[name]) {
-                    seen[name] = true;
-                    catalog.push({ name: name, href: href });
-                }
-            });
-
-            function renderMatches(query) {
-                var q = query.trim().toLowerCase();
-                if (!q) {
-                    chipsBox.innerHTML = defaultChipsHTML;
-                    return;
-                }
-                var matches = catalog.filter(function (item) {
-                    return item.name.toLowerCase().indexOf(q) !== -1;
-                }).slice(0, 10);
-
-                if (matches.length === 0) {
-                    chipsBox.innerHTML = '<span class="mg-suggest-none">No matching products found</span>';
-                    return;
-                }
-
-                chipsBox.innerHTML = matches.map(function (item) {
-                    return '<a href="' + item.href + '">' + item.name + '</a>';
-                }).join('');
-            }
-
-            function openSearch() {
-                panel.classList.add('mg-search-open');
-                overlay.classList.add('mg-search-open');
-            }
-            function closeSearch() {
-                panel.classList.remove('mg-search-open');
-                overlay.classList.remove('mg-search-open');
-            }
-
-            input.addEventListener('focus', openSearch);
-            input.addEventListener('click', openSearch);
-            input.addEventListener('input', function () { renderMatches(input.value); });
-            overlay.addEventListener('click', closeSearch);
-
-            document.addEventListener('click', function (e) {
-                if (!wrap.contains(e.target)) {
-                    closeSearch();
-                }
-            });
-        })();
-
-
-
-
-        (function () {
-            var input = document.getElementById('mob_search_input');
-            var panel = document.getElementById('mob_search_suggestions');
-            var overlay = document.getElementById('mob_search_overlay');
-            var defaultSection = document.getElementById('mob_suggest_default');
-            var resultsSection = document.getElementById('mob_suggest_results');
-            var resultsList = document.getElementById('mob_suggest_results_list');
-            if (!input || !panel || !overlay) return;
-
-            // Build a searchable list from the site's own category/collection links
-            var sourceLinks = document.querySelectorAll('#mobileCategories a, .category_dropdown a.nav-link, .category_dropdown a.dropdown-item');
-            var catalog = [];
-            var seen = {};
-            sourceLinks.forEach(function (a) {
-                var name = a.textContent.trim();
-                var href = a.getAttribute('href');
-                if (name && href && !seen[name]) {
-                    seen[name] = true;
-                    catalog.push({ name: name, href: href });
-                }
-            });
-
-            var searchBarWrap = document.getElementById('mob_search_bar');
-
-            function openPanel() {
-                if (searchBarWrap) searchBarWrap.classList.add('mg-suggest-active');
-                panel.classList.add('mg-search-open');
-                overlay.classList.add('mg-search-open');
-            }
-            function closePanel() {
-                if (searchBarWrap) searchBarWrap.classList.remove('mg-suggest-active');
-                panel.classList.remove('mg-search-open');
-                overlay.classList.remove('mg-search-open');
-            }
-
-            function renderResults(query) {
-                var q = query.trim().toLowerCase();
-                if (!q) {
-                    defaultSection.style.display = '';
-                    resultsSection.style.display = 'none';
-                    return;
-                }
-                var matches = catalog.filter(function (item) {
-                    return item.name.toLowerCase().indexOf(q) !== -1;
-                }).slice(0, 8);
-
-                defaultSection.style.display = 'none';
-                resultsSection.style.display = '';
-                resultsList.innerHTML = '';
-
-                if (matches.length === 0) {
-                    var none = document.createElement('span');
-                    none.className = 'mg-suggest-none';
-                    none.textContent = 'No matching products found';
-                    resultsList.appendChild(none);
-                    return;
-                }
-
-                matches.forEach(function (item) {
-                    var a = document.createElement('a');
-                    a.href = item.href;
-                    a.innerHTML = '<i class="fa fa-gem"></i> ' + item.name;
-                    resultsList.appendChild(a);
-                });
-            }
-
-            input.addEventListener('focus', openPanel);
-            input.addEventListener('click', openPanel);
-            input.addEventListener('input', function () { renderResults(input.value); });
-            overlay.addEventListener('click', closePanel);
-
-
-            document.addEventListener('click', function (e) {
-                if (!panel.contains(e.target) && e.target !== input && !overlay.contains(e.target)) {
-                    closePanel();
-                }
-            });
-        })();
-
-
-
-
-        // <!-- todays rate block -->
-
-        (function () {
-            var btn = document.getElementById('mg_rate_toggle_btn');
-            var panel = document.getElementById('mg_rate_panel');
-            if (!btn || !panel) return;
-
-            btn.addEventListener('click', function () {
-                var isOpen = panel.classList.toggle('mg-rate-open');
-                btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            });
-        })();
-
-
-        // <!-- videos script -->
-
-
-
-        (function () {
-            document.querySelectorAll('#home_videos_shop .mg-video-card').forEach(function (card) {
-                var video = card.querySelector('.mg-video-el');
-                var btn = card.querySelector('.mg-video-play');
-                if (!video || !btn) return;
-
-                btn.addEventListener('click', function () {
-                    if (video.paused) {
-                        video.play();
-                        card.classList.add('mg-video-playing');
-                    } else {
-                        video.pause();
-                        card.classList.remove('mg-video-playing');
-                    }
-                });
-            });
-        })();
-
-
-
-        (function () {
-            var track = document.getElementById('mg_video_track');
-            if (!track) return;
-
-            function pauseAllVideos() {
-                track.querySelectorAll('video').forEach(function (v) {
-                    v.pause();
-                    var card = v.closest('.mg-video-card');
-                    if (card) card.classList.remove('mg-video-playing');
-                });
-            }
-
-            function itemOffset() {
-                var first = track.firstElementChild;
-                return first.getBoundingClientRect().width;
-            }
-
-            function slide(direction) {
-                if (window.innerWidth > 767) return;
-                if (track.dataset.sliding === '1') return;
-                track.dataset.sliding = '1';
-
-                pauseAllVideos();
-                var offset = itemOffset();
-                var distance = (direction === 'next') ? -offset : offset;
-
-                track.style.transition = 'transform 0.5s cubic-bezier(.22,.9,.32,1)';
-                track.style.transform = 'translateX(' + distance + 'px)';
-
-                track.addEventListener('transitionend', function handler() {
-                    track.removeEventListener('transitionend', handler);
-                    if (direction === 'next') {
-                        track.appendChild(track.firstElementChild);
-                    } else {
-                        track.insertBefore(track.lastElementChild, track.firstElementChild);
-                    }
-                    track.style.transition = 'none';
-                    track.style.transform = 'translateX(0)';
-                    void track.offsetWidth;
-                    track.dataset.sliding = '0';
-                }, { once: true });
-            }
-
-            var rightBtn = document.getElementById('video-slide-right');
-            var leftBtn = document.getElementById('video-slide-left');
-            if (rightBtn) rightBtn.addEventListener('click', function () { slide('next'); });
-            if (leftBtn) leftBtn.addEventListener('click', function () { slide('prev'); });
-            window.mgVideoSlideNext = function () { slide('next'); };
-
-            var touchStartX = 0, touchEndX = 0;
-            track.addEventListener('touchstart', function (e) {
-                if (window.innerWidth > 767) return;
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-            track.addEventListener('touchend', function (e) {
-                if (window.innerWidth > 767) return;
-                touchEndX = e.changedTouches[0].screenX;
-                var diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 40) {
-                    if (diff > 0) slide('next');
-                    else slide('prev');
-                }
-            }, { passive: true });
-        })();
-
-
-
-
-        (function () {
-            var track = document.getElementById('mg_video_track');
-            if (!track) return;
-
-            function rotateDesktop() {
-                // Same DOM reordering as mobile's slide('next'), but instant (no transform animation)
-                // since desktop uses a static 3-across layout, not a sliding track.
-                track.appendChild(track.firstElementChild);
-            }
-
-            function onVideoEnded(e) {
-                var video = e.target;
-                var card = video.closest('.mg-video-card');
-                if (card) card.classList.remove('mg-video-playing');
-
-                if (window.innerWidth > 767) {
-                    rotateDesktop();
-                } else if (typeof window.mgVideoSlideNext === 'function') {
-                    window.mgVideoSlideNext();
-                }
-
-                // Auto-play whichever video is now in the "current" position
-                setTimeout(function () {
-                    var current = window.innerWidth > 767
-                        ? track.children[1] // middle column on desktop
-                        : track.children[0]; // first (only visible) card on mobile
-                    var v = current ? current.querySelector('video') : null;
-                    if (v) {
-                        v.play();
-                        var c = v.closest('.mg-video-card');
-                        if (c) c.classList.add('mg-video-playing');
-                    }
-                }, 550);
-            }
-
-            track.querySelectorAll('video').forEach(function (v) {
-                v.addEventListener('ended', onVideoEnded);
-            });
-        })();
-
-
-
-        (function () {
-            var track = document.getElementById('mg_video_track');
-            var section = document.getElementById('home_videos_shop');
-            if (!track || !section) return;
-
-            function pauseAll() {
-                track.querySelectorAll('video').forEach(function (v) {
-                    v.pause();
-                    var c = v.closest('.mg-video-card');
-                    if (c) c.classList.remove('mg-video-playing');
-                });
-            }
-
-            function playCurrent() {
-                var current = window.innerWidth > 767 ? track.children[1] : track.children[0];
-                if (!current) return;
-                var v = current.querySelector('video');
-                var c = current.querySelector('.mg-video-card');
-                if (v) {
-                    v.play().catch(function () { /* ignore autoplay rejection */ });
-                    if (c) c.classList.add('mg-video-playing');
-                }
-            }
-
-            // Autoplay the current video once the section scrolls into view (first time only)
-            if ('IntersectionObserver' in window) {
-                var played = false;
-                var io = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting && !played) {
-                            played = true;
-                            playCurrent();
-                            io.unobserve(section);
-                        }
-                    });
-                }, { threshold: 0.4 });
-                io.observe(section);
-            }
-
-            // Desktop: clicking a side (peek) video brings it to center and plays it
-            track.addEventListener('click', function (e) {
-                if (window.innerWidth <= 767) return;
-
-                var card = e.target.closest('.mg-video-card');
-                if (!card) return;
-                var col = card.closest('.col-lg-4');
-                var children = Array.prototype.slice.call(track.children);
-                var idx = children.indexOf(col);
-
-                if (idx === 1 || idx === -1) return; // already centered, let normal play button work
-
-                e.preventDefault();
-                e.stopPropagation();
-
-                pauseAll();
-                if (idx === 0) {
-                    track.insertBefore(track.lastElementChild, track.firstElementChild);
-                } else {
-                    track.appendChild(track.firstElementChild);
-                }
-                playCurrent();
-            }, true);
-        })();
-
-
-
-    </script>
-
 
 </body>
 

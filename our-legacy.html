@@ -12,7 +12,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <link href="assets/ecomm/css/style.css" rel="stylesheet">
-    <link href="assets/ecomm/css/own_custom_black.css" rel="stylesheet">
     <link href="assets/ecomm/css/style2.css" rel="stylesheet">
     <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
     <link href="ecom/each_css/legacy-page-style.css" rel="stylesheet">
@@ -27,106 +26,189 @@
     <div id="our_legacy_page">
 
         <!-- Close button — takes the user back to the small teaser section on the homepage -->
-        <a href="index.html#shop_brochure_teaser_section" class="legacy-close-btn" aria-label="Close">
+        <a href="index.html#shop_brochure_teaser_section" class="legacy-close-btn" aria-label="Close" title="Return to Home">
             <i class="fa fa-times"></i>
         </a>
 
-        <div class="container-fluid pt-3">
-        <div class="text-center mb-2">
-            <h2 class="cstm-section-title px-5 mb-2"><span class="">Our Legacy</span></h2>
-        </div>
-
-
-        <div class="row px-xl-5 mb-5">
-            <div class="col-lg-12">
-
-                <!--  Replace image URLs + text below with the admin's real PDF content/photos -->
-
-                <div class="row align-items-center legacy-block mg-reveal-auto">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXLfXcIehiIy2AhOYVatmwuxwgbIOvQwRZ828ZWKumg&s=10"
-                            class="legacy-block-img" alt="Where it all began" loading="lazy">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>Where It All Began</h4>
-                        <p>
-                            In 1973, MG Jwellers opened its doors in the heart of Bhopal with a simple
-                            promise — to craft jewellery of unmatched purity and timeless beauty. What
-                            started as a small family workshop has grown into one of the city's most
-                            trusted names in fine jewellery, serving thousands of families across
-                            generations.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row align-items-center legacy-block flex-md-row-reverse mg-reveal-auto">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXLfXcIehiIy2AhOYVatmwuxwgbIOvQwRZ828ZWKumg&s=10"
-                            class="legacy-block-img" alt="Craftsmanship that speaks" loading="lazy">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>Craftsmanship That Speaks</h4>
-                        <p>
-                            Every piece that leaves our workshop carries decades of expertise passed
-                            down through generations of skilled artisans. From intricate filigree work
-                            to bold contemporary designs, our craftsmen blend traditional techniques
-                            with modern sensibilities to create pieces that are as unique as the people
-                            who wear them.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row align-items-center legacy-block mg-reveal-auto">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXLfXcIehiIy2AhOYVatmwuxwgbIOvQwRZ828ZWKumg&s=10"
-                            class="legacy-block-img" alt="Our promise" loading="lazy">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>Our Promise</h4>
-                        <p>
-                            Hallmark-certified purity, transparent pricing, and honest craftsmanship
-                            are the pillars our business is built on. We believe jewellery is not just
-                            an ornament — it's a keepsake of life's most precious moments, and we take
-                            that responsibility seriously with every piece we create.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row align-items-center legacy-block flex-md-row-reverse mg-reveal-auto">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <img src="https://placehold.co/600x400/f2dd9a/2b2118?text=Looking+Ahead"
-                            class="legacy-block-img" alt="Looking ahead" loading="lazy">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>Looking Ahead</h4>
-                        <p>
-                            As we continue to grow, our commitment to quality and customer trust
-                            remains unchanged. Whether you're selecting a piece for a wedding, a
-                            festival, or simply to celebrate yourself, MG Jwellers is honoured to be
-                            part of your story.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-4">
-                    <a href="assets/ecomm/docs/mg-jewellers-brochure.pdf" class="btn legacy-download-btn" target="_blank">
-                        <i class="fa fa-file-pdf"></i> Download Full Brochure (PDF)
-                    </a>
-                </div>
-
+        <div class="container-fluid pt-4 pb-4">
+            <!-- Header Section -->
+            <div class="text-center mb-4 mg-reveal-auto">
+                <span class="legacy-era-badge mb-2"><i class="fa fa-history mr-1"></i> SINCE 1973</span>
+                <h1 class="cstm-section-title px-3 mb-2"><span>Our Legacy</span></h1>
+                <p class="legacy-lead-subtext text-muted">Over five decades of handcrafted elegance, trust, and timeless heritage</p>
             </div>
-        </div>
+
+            <!-- =========================================================================
+                 BACKEND INTEGRATION POINT: Replace story cards and PDF brochure below
+                 Target Data: CMS Legacy Story Model / Story Blocks API
+                 ========================================================================= -->
+            <div class="row px-xl-5">
+                <div class="col-lg-12">
+
+                    <!-- Block 1: Where It All Began (1973 Workshop) -->
+                    <div class="row align-items-center legacy-block mg-reveal-auto" id="legacy_block_1" data-era="1973">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <div class="legacy-img-frame">
+                                <img src="assets/ecomm/images/about/about_img_1740983782.jpg"
+                                    class="legacy-block-img" alt="Where it all began - MG Jwellers 1973 workshop" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="legacy-era-badge"><i class="fa fa-landmark mr-1"></i> EST. 1973</span>
+                            <h4>Where It All Began</h4>
+                            <p>
+                                In 1973, MG Jwellers opened its doors in the heart of Bhopal with a simple
+                                promise — to craft jewellery of unmatched purity and timeless beauty. What
+                                started as a small family workshop has grown into one of the city's most
+                                trusted names in fine jewellery, serving thousands of families across
+                                generations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Block 2: Craftsmanship That Speaks (Heritage Artisans) -->
+                    <div class="row align-items-center legacy-block flex-md-row-reverse mg-reveal-auto" id="legacy_block_2" data-era="craftsmanship">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <div class="legacy-img-frame">
+                                <img src="ecom/products/1740122848901485459.jpg"
+                                    class="legacy-block-img" alt="Craftsmanship that speaks - Heritage Artisans" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="legacy-era-badge"><i class="fa fa-gem mr-1"></i> HERITAGE ARTISANS</span>
+                            <h4>Craftsmanship That Speaks</h4>
+                            <p>
+                                Every piece that leaves our workshop carries decades of expertise passed
+                                down through generations of skilled artisans. From intricate filigree work
+                                to bold contemporary designs, our craftsmen blend traditional techniques
+                                with modern sensibilities to create pieces that are as unique as the people
+                                who wear them.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Block 3: Our Promise (Hallmark Purity) -->
+                    <div class="row align-items-center legacy-block mg-reveal-auto" id="legacy_block_3" data-era="promise">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <div class="legacy-img-frame">
+                                <img src="assets/ecomm/images/about/about_img_1743579985.jpg"
+                                    class="legacy-block-img" alt="Our promise - Hallmark certified purity" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="legacy-era-badge"><i class="fa fa-certificate mr-1"></i> HALLMARK PURITY</span>
+                            <h4>Our Promise</h4>
+                            <p>
+                                Hallmark-certified purity, transparent pricing, and honest craftsmanship
+                                are the pillars our business is built on. We believe jewellery is not just
+                                an ornament — it's a keepsake of life's most precious moments, and we take
+                                that responsibility seriously with every piece we create.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Block 4: Looking Ahead (Celebrations & Bridal) -->
+                    <div class="row align-items-center legacy-block flex-md-row-reverse mg-reveal-auto" id="legacy_block_4" data-era="future">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <div class="legacy-img-frame">
+                                <img src="ecom/products/17401369251491548904.jpg"
+                                    class="legacy-block-img" alt="Looking ahead - Timeless Celebrations" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="legacy-era-badge"><i class="fa fa-crown mr-1"></i> LOOKING AHEAD</span>
+                            <h4>Looking Ahead</h4>
+                            <p>
+                                As we continue to grow, our commitment to quality and customer trust
+                                remains unchanged. Whether you're selecting a piece for a wedding, a
+                                festival, or simply to celebrate yourself, MG Jwellers is honoured to be
+                                part of your story.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Brochure Download CTA -->
+                    <div class="text-center my-4 legacy-download-wrap mg-reveal-auto">
+                        <a href="assets/ecomm/docs/mg-jewellers-brochure.pdf" class="btn legacy-download-btn" target="_blank" rel="noopener" data-action="download-brochure">
+                            <i class="fa fa-file-pdf mr-2"></i> Download Full Heritage Brochure (PDF)
+                        </a>
+                        <p class="legacy-download-subtext text-muted mt-2">Explore our 50-year retrospective, hallmarking credentials &amp; mastercraft signatures</p>
+                    </div>
+
+                    <!-- =========================================================================
+                         BACKEND INTEGRATION POINT: Dynamic links and recommendations
+                         Target Data: Navigational Feature Flags / Curated Destination Links
+                         ========================================================================= -->
+                    <!-- Discover More Section (2x2 Grid) -->
+                    <div class="legacy-discover-section mt-5 pt-4 pb-2" id="legacy_discover_more">
+                        <div class="text-center mb-4 mg-reveal-auto">
+                            <span class="legacy-discover-kicker">CONTINUE THE JOURNEY</span>
+                            <h3 class="cstm-section-title px-3 mb-2"><span>Discover More</span></h3>
+                            <p class="legacy-discover-subheading text-muted">Immerse yourself deeper into the bespoke craftsmanship of MG Jwellers</p>
+                        </div>
+
+                        <div class="row px-xl-3 legacy-discover-grid">
+                            <!-- Card 1: Exclusive Collections -->
+                            <div class="col-6 col-md-3 mb-3">
+                                <a href="shop.html" class="legacy-discover-card mg-reveal-auto" id="legacy_discover_shop" data-destination="shop" data-action="navigate">
+                                    <div class="legacy-discover-icon-wrap">
+                                        <i class="fa fa-gem"></i>
+                                    </div>
+                                    <h5 class="legacy-discover-title">Exclusive Collections</h5>
+                                    <p class="legacy-discover-desc">Handcrafted Gold &amp; Diamond Jewellery</p>
+                                    <span class="legacy-discover-arrow">Explore <i class="fa fa-arrow-right ml-1"></i></span>
+                                </a>
+                            </div>
+
+                            <!-- Card 2: Golden Schemes -->
+                            <div class="col-6 col-md-3 mb-3">
+                                <a href="scheme.html" class="legacy-discover-card mg-reveal-auto" id="legacy_discover_scheme" data-destination="scheme" data-action="navigate">
+                                    <div class="legacy-discover-icon-wrap">
+                                        <i class="fa fa-coins"></i>
+                                    </div>
+                                    <h5 class="legacy-discover-title">Golden Schemes</h5>
+                                    <p class="legacy-discover-desc">Smart Monthly Gold Investment Plans</p>
+                                    <span class="legacy-discover-arrow">View Plans <i class="fa fa-arrow-right ml-1"></i></span>
+                                </a>
+                            </div>
+
+                            <!-- Card 3: Curated Lookbook -->
+                            <div class="col-6 col-md-3 mb-3">
+                                <a href="cateloge.html" class="legacy-discover-card mg-reveal-auto" id="legacy_discover_catalogue" data-destination="catalogue" data-action="navigate">
+                                    <div class="legacy-discover-icon-wrap">
+                                        <i class="fa fa-book-open"></i>
+                                    </div>
+                                    <h5 class="legacy-discover-title">Curated Lookbook</h5>
+                                    <p class="legacy-discover-desc">Seasonal Edits &amp; Bridal Signatures</p>
+                                    <span class="legacy-discover-arrow">Browse <i class="fa fa-arrow-right ml-1"></i></span>
+                                </a>
+                            </div>
+
+                            <!-- Card 4: Store Boutiques -->
+                            <div class="col-6 col-md-3 mb-3">
+                                <a href="shop-location.html" class="legacy-discover-card mg-reveal-auto" id="legacy_discover_stores" data-destination="stores" data-action="navigate">
+                                    <div class="legacy-discover-icon-wrap">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                    </div>
+                                    <h5 class="legacy-discover-title">Visit Boutiques</h5>
+                                    <p class="legacy-discover-desc">Bhopal Showroom &amp; In-Store Experience</p>
+                                    <span class="legacy-discover-arrow">Locate Store <i class="fa fa-arrow-right ml-1"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </div>
 
     <div id="footer-placeholder"></div>
 
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/ecomm/js/main.js" defer></script>
+    <script src="assets/ecomm/js/include.js"></script>
     <script src="assets/ecomm/js/theme-animations.js" defer></script>
 
 </body>

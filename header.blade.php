@@ -183,8 +183,12 @@
                     <img src="{{ asset($logo) }}" class="img-responsive logo_image" width="120" height="40" alt="{{ $web_title ?? 'Logo' }}">
                 </a>
                 @if(Auth::guard('custo')->check())
-                <ul style="display:inline-flex;list-style:none;padding:0;" class="d-lg-none">
-                    <li id="mob_search_btn"><a href="#mob_search_bar" onclick="event.preventDefault();$($(this).attr('href')).toggleClass('mob_appear mob_disappear')"><i class="fa fa-search"></i></a></li>
+                <ul style="display:inline-flex;list-style:none;padding:0;" class="d-lg-none align-items-center">
+                    <li id="mob_search_btn_item">
+                        <button type="button" class="card-wish card-wish-mbl border-0 p-0" id="mob_search_toggle_btn" onclick="window.toggleMobileSearch && window.toggleMobileSearch(event)" title="Search" aria-label="Toggle Search" aria-expanded="false" data-search-state="closed">
+                            <i class="fa fa-search" id="mob_search_toggle_icon"></i>
+                        </button>
+                    </li>
                     <li>
                         <a href="#mob_custo_menu_sub" class="" id="mob_custo_main"><i class="fa fa-user"></i> 
                         <span class="fa fa-angle-down"></span></a>
@@ -206,8 +210,12 @@
                     </li>
                 </ul>
 				@else 
-					<ul style="display:inline-flex;list-style:none;padding:0;" id="head_shop_list" class="mbl d-lg-none m-0">
-                        <li id="mob_search_btn"><a href="#mob_search_bar" onclick="event.preventDefault();$($(this).attr('href')).toggleClass('mob_appear mob_disappear')"><i class="fa fa-search"></i></a></li>
+					<ul style="display:inline-flex;list-style:none;padding:0;" id="head_shop_list" class="mbl d-lg-none m-0 align-items-center">
+                        <li id="mob_search_btn_item">
+                            <button type="button" class="card-wish card-wish-mbl border-0 p-0" id="mob_search_toggle_btn" onclick="window.toggleMobileSearch && window.toggleMobileSearch(event)" title="Search" aria-label="Toggle Search" aria-expanded="false" data-search-state="closed">
+                                <i class="fa fa-search" id="mob_search_toggle_icon"></i>
+                            </button>
+                        </li>
 						<li>
 							<a href="https://mgjewellers.com/wishlist" class="card-wish card-wish-mbl">
 								<i class="fas fa-heart text-primary"></i>

@@ -17,7 +17,7 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 14px 28px rgba(14, 25, 50, 0.15);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     max-height: 320px;
 }
 
@@ -65,7 +65,7 @@
     color: var(--mg-ink) !important;
     border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 @media (max-width: 767.98px) {

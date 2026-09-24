@@ -1,19 +1,18 @@
-<div class="container-fluid bg-secondary text-dark pt-0">
+<!-- ==========================================
+     1. DESKTOP WEBSITE FOOTER (>= 992px)
+     Restored exactly as before for desktop view
+     ========================================== -->
+<div class="container-fluid bg-secondary text-dark pt-0 d-none d-lg-block" id="desktop_footer">
     <div class="row px-xl-5 pt-5">
-
         <div class="col-lg-3 col-md-12 mb-5 pr-3 pr-xl-5">
-
             <a href="index.html" class="text-decoration-none d-block">
                 <img src="MG logo.png" class="img-responsive logo_image footer-logo"
                     width="160" height="60" alt="MG Jwellers" loading="lazy">
             </a>
-
         </div>
 
         <div class="col-lg-6 col-md-12">
-
             <div class="row">
-
                 <div class="col-md-6 mb-5 col-6">
                     <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
                     <div class="d-flex flex-column justify-content-start">
@@ -73,7 +72,6 @@
                     +91-7974488285
                 </a>
             </p>
-
         </div>
     </div>
 
@@ -90,90 +88,174 @@
             <img class="img-fluid" src="assets/ecomm/img/payments.png" alt="Payments" width="280" height="30"
                 loading="lazy">
         </div>
-
     </div>
 </div>
 
-<!-- Footer End -->
-
-<!-- Help Widget -->
-<div id="help-widget">
+<!-- Desktop Help Widget -->
+<div id="help-widget" class="d-none d-lg-block">
     <div class="help-icon">
         <i class="fas fa-headset"></i>
     </div>
     <div class="help-options">
-        <a target="_blank" id="whatsapp_out">
+        <a target="_blank" id="whatsapp_out_desktop" href="https://web.whatsapp.com/send?phone=917974488285&text=Hello,%20I%20want%20more%20details%20about%20your%20services.">
             <i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp
         </a>
         <a href="tel:+91-7974488285">
             <i class="fas fa-phone-alt" style="color:#34B7F1;"></i> Call
         </a>
-        <a href="mailto:mgjewellers.bpl@gmail.com?subject=Inquiry&body=Hello, I want more details.">
+        <a href="mailto:mgjewellers.bpl@gmail.com?subject=Inquiry&body=Hello,%20I%20want%20more%20details.">
             <i class="fas fa-envelope" style="color:#EA4335;"></i> Email
         </a>
+    </div>
+</div>
 
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary back-to-top" id="back_to_top_btn" aria-label="Back to Top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- ==========================================
+     2. MOBILE NATIVE APP BAR & WIDGETS (< 992px)
+     Active on mobile, completely hidden on desktop
+     ========================================== -->
+
+<!-- Native Mobile App Bottom Navigation Bar (Tanishq Style) -->
+<nav class="mg-bottom-nav d-flex d-lg-none" id="mg_bottom_nav_bar" aria-label="Bottom Navigation">
+    <a href="index.html" class="mg-bottom-nav-item" id="mg_bottom_nav_home">
+        <div class="mg-bottom-nav-icon">
+            <i class="fa fa-home"></i>
+        </div>
+        <span class="mg-bottom-nav-label">Home</span>
+    </a>
+
+    <a href="scheme.html" class="mg-bottom-nav-item" id="mg_bottom_nav_plans">
+        <div class="mg-bottom-nav-icon">
+            <i class="fas fa-gem"></i>
+        </div>
+        <span class="mg-bottom-nav-label">Scheme</span>
+    </a>
+
+    <a href="cateloge.html" class="mg-bottom-nav-item" id="mg_bottom_nav_catalogue">
+        <div class="mg-bottom-nav-icon">
+            <i class="fas fa-book-open"></i>
+        </div>
+        <span class="mg-bottom-nav-label">Catalogue</span>
+    </a>
+
+    <a href="categories.html" class="mg-bottom-nav-item" id="mg_bottom_nav_categories">
+        <div class="mg-bottom-nav-icon">
+            <i class="fas fa-th-large"></i>
+        </div>
+        <span class="mg-bottom-nav-label">Categories</span>
+    </a>
+
+    <a href="shop.html" class="mg-bottom-nav-item" id="mg_bottom_nav_shop">
+        <div class="mg-bottom-nav-icon">
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+        <span class="mg-bottom-nav-label">Online Shop</span>
+    </a>
+</nav>
+
+
+<!-- Docked Vertical LiveChat Tab on Screen Edge (Tanishq Image 1 Reference - Mobile Only) -->
+<div class="mg-docked-chat-tab d-lg-none" id="mg_docked_chat_tab" role="button" aria-label="Open Live Chat" title="Open Live Chat">
+    <div class="mg-docked-chat-tab-inner">
+        <i class="fas fa-comment-dots mg-docked-chat-icon"></i>
+        <span class="mg-docked-chat-label">LiveChat</span>
+    </div>
+</div>
+
+<!-- LiveChat Popup & Pre-Chat Form Modal (Tanishq Image 2 Reference - Mobile Only) -->
+<div class="mg-livechat-modal-backdrop d-lg-none" id="mg_livechat_modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mg-livechat-sheet">
+        <!-- Top Controls Bar -->
+        <div class="mg-livechat-topbar">
+            <button type="button" class="mg-livechat-icon-btn" id="mg_livechat_options_btn" aria-label="Chat Options" title="Options">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <div class="mg-livechat-top-actions">
+                <button type="button" class="mg-livechat-icon-btn" id="mg_livechat_minimize_btn" aria-label="Minimize Chat" title="Minimize">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="mg-livechat-icon-btn" id="mg_livechat_close_btn" aria-label="Close Chat" title="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Floating Agent Badge Pill -->
+        <div class="mg-livechat-agent-badge">
+            <div class="mg-livechat-agent-avatar">
+                <div class="mg-livechat-avatar-circle">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                <span class="mg-livechat-status-dot" title="Online"></span>
+            </div>
+            <div class="mg-livechat-agent-meta">
+                <div class="mg-livechat-agent-name">MEERA</div>
+                <div class="mg-livechat-agent-title">Jewellery Expert</div>
+            </div>
+        </div>
+
+        <!-- Scrollable Body / Main Form Card -->
+        <div class="mg-livechat-body">
+            <div class="mg-livechat-card-wrap">
+                <!-- Left User Icon Indicator -->
+                <div class="mg-livechat-left-indicator">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+
+                <!-- Form Card -->
+                <div class="mg-livechat-card">
+                    <p class="mg-livechat-welcome">
+                        Welcome to MG Jewellers! Please fill in the form below before starting the chat.
+                    </p>
+
+                    <form id="mg_livechat_form" novalidate>
+                        <div class="mg-livechat-form-group">
+                            <label for="mg_chat_input_name" class="mg-livechat-label">Name: <span class="mg-required-star">*</span></label>
+                            <input type="text" id="mg_chat_input_name" name="name" class="mg-livechat-input" placeholder="Your full name" required data-field="name" autocomplete="name">
+                        </div>
+
+                        <div class="mg-livechat-form-group">
+                            <label for="mg_chat_input_mobile" class="mg-livechat-label">Mobile: <span class="mg-required-star">*</span></label>
+                            <input type="tel" id="mg_chat_input_mobile" name="mobile" class="mg-livechat-input" placeholder="10-digit mobile number" required data-field="mobile" autocomplete="tel">
+                        </div>
+
+                        <div class="mg-livechat-form-group">
+                            <label for="mg_chat_input_email" class="mg-livechat-label">E-mail: <span class="mg-required-star">*</span></label>
+                            <input type="email" id="mg_chat_input_email" name="email" class="mg-livechat-input" placeholder="name@example.com" required data-field="email" autocomplete="email">
+                        </div>
+
+                        <!-- Feedback Notification Area -->
+                        <div id="mg_chat_form_feedback" class="mg-livechat-feedback" style="display: none;"></div>
+
+                        <button type="submit" id="mg_chat_start_btn" class="mg-livechat-submit-btn">
+                            <span>Start the chat</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mg-livechat-footer">
+            <span>Powered by <strong class="mg-livechat-brand-name"><i class="fas fa-comment text-warning"></i> LiveChat</strong></span>
+        </div>
     </div>
 </div>
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
-<style>
-    #msgpopupmodal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .msgpopupmodal_modal-content {
-        background-color: #fff;
-        margin: 45vh auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 300px;
-        border-radius: 5px;
-        text-align: center;
-        position: relative;
-    }
-
-    #msgpopupmodalclose {
-        color: #aaa;
-        font-size: 20px;
-        cursor: pointer;
-        position: absolute;
-        border: 1px solid pink;
-        color: pink;
-        right: -5px;
-        top: -5px;
-        border-radius: 50%;
-        padding: 0 10px;
-        background: white;
-        opacity: 1;
-        font-weight: bold;
-    }
-
-    #msgpopupmodalclose:hover {
-        border: red;
-        background: red;
-        color: white;
-        opacity: 1;
-    }
-</style>
-<div id="msgpopupmodal" class="modal">
+<!-- Modal Popup Container -->
+<div id="msgpopupmodal" class="modal" style="display:none;">
     <div class="msgpopupmodal_modal-content">
         <span id="msgpopupmodalclose">&times;</span>
         <p id="msgpopupmodalmessage">This is your popup message!</p>
     </div>
 </div>
 
-<!-- Back to Top -->
-
-<a href="#" class="btn btn-primary back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"><i
-        class="fa fa-angle-double-up"></i></a>
+<!-- Note: All interactive handlers (bottom nav active state, live chat modal, tooltip docking)
+     are centralized in assets/ecomm/js/theme-animations.js and run on the 'headerFooterReady' event.
+     Do not add <script> tags here because footer.html is injected dynamically via innerHTML in include.js. -->

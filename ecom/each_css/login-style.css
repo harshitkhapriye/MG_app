@@ -36,8 +36,8 @@
 
 /* ---------- Login form card ---------- */
 .customer_in_ui {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 40px 36px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
@@ -76,7 +76,7 @@
 
 .customer_in_ui .form-control:focus {
     border-color: var(--mg-gold-2);
-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
+    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
     transform: translateY(-2px);
     outline: none;
 }
@@ -91,9 +91,9 @@
 }
 
 #action_response.alert-success {
-    background: rgba(212, 175, 55, 0.15);
+    background: rgba(var(--mg-gold-2-rgb), 0.15);
     color: var(--mg-gold-1);
-    border: 1px solid rgba(217, 181, 102, 0.4);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
 }
 
 #action_response.alert-danger {
@@ -117,7 +117,7 @@
     color: var(--mg-ink) !important;
     border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
 }
 
 .customer_in_ui a {
@@ -131,8 +131,8 @@
 
 /* ---------- Store info panel (right side) ---------- */
 .custo_entry_block_right {
-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
-    border: 1px solid rgba(217, 181, 102, 0.35);
+    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
     border-radius: 20px;
     padding: 36px 32px;
     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
