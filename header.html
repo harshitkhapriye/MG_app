@@ -395,7 +395,9 @@
                     class="mbl d-lg-none m-0 align-items-center">
                     <!-- Mobile Search Bar Toggle Button (Replaces old location icon) -->
                     <li id="mob_search_btn_item">
-                        <button type="button" class="card-wish card-wish-mbl border-0 p-0" id="mob_search_toggle_btn" onclick="window.toggleMobileSearch && window.toggleMobileSearch(event)" title="Search" aria-label="Toggle Search" aria-expanded="false" data-search-state="closed">
+                        <button type="button" class="card-wish card-wish-mbl border-0 p-0" id="mob_search_toggle_btn"
+                            onclick="window.toggleMobileSearch && window.toggleMobileSearch(event)" title="Search"
+                            aria-label="Toggle Search" aria-expanded="false" data-search-state="closed">
                             <i class="fa fa-search" id="mob_search_toggle_icon"></i>
                         </button>
                     </li>
@@ -422,13 +424,16 @@
                                     <i class="fa fa-search"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for jewellery on MG Jewellers" name="search_term"
+                            <input type="text" class="form-control border-0 bg-transparent"
+                                placeholder="Search for jewellery on MG Jewellers" name="search_term"
                                 id="mob_search_input" autocomplete="off">
                             <div class="input-group-append pr-2 align-items-center">
-                                <button type="button" class="btn btn-link text-muted p-1 mg-search-cam-btn" title="Search by camera">
+                                <button type="button" class="btn btn-link text-muted p-1 mg-search-cam-btn"
+                                    title="Search by camera">
                                     <i class="fas fa-camera"></i>
                                 </button>
-                                <button type="button" class="btn btn-link text-muted p-1 mg-search-mic-btn" title="Voice search">
+                                <button type="button" class="btn btn-link text-muted p-1 mg-search-mic-btn"
+                                    title="Voice search">
                                     <i class="fas fa-microphone"></i>
                                 </button>
                             </div>
@@ -454,106 +459,219 @@
                     </div>
                 </div>
 
-                <!-- Slide-in Drawer Menu (Tanishq Reference Image 2) -->
+                <!-- Slide-in Drawer Menu (Tanishq Reference Image 2 - Restructured & Polished) -->
                 <nav class="mobile-menu mg-app-drawer" id="mobileMenu" aria-hidden="true" role="navigation">
-                    <!-- Drawer Header: User Avatar, Greeting, Redeem Points, Currency -->
-                    <div class="mg-drawer-header p-3 border-bottom bg-white">
+                    <!-- Drawer Header: User Avatar & Greeting (No underline mark, No redeem circle) -->
+                    <div class="mg-drawer-header p-3 border-bottom">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <div class="mg-drawer-avatar mr-2">
                                     <i class="fas fa-user-circle"></i>
                                 </div>
-                                <div>
-                                    <h5 class="m-0 font-weight-bold mg-drawer-name" id="mg_drawer_greeting">Hi Harshit!</h5>
-                                    <div class="mg-currency-toggle mt-1">
-                                        <button type="button" class="mg-currency-btn active">₹</button>
-                                        <button type="button" class="mg-currency-btn">$</button>
-                                    </div>
+                                <div class="mg-drawer-user-info">
+                                    <h5 class="m-0 font-weight-bold mg-drawer-name" id="mg_drawer_greeting">Hi Harshit!
+                                    </h5>
+                                    <span class="mg-drawer-member-tag"><i class="fas fa-crown mr-1"></i> MG Privileged
+                                        Member</span>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center">
-                                <div class="mg-redeem-circle mr-2" title="Redeem points">
-                                    <span>Redeem<br>points</span>
-                                </div>
-                                <button class="menu-close mg-drawer-close" id="menuClose" aria-label="Close menu">
-                                    <i class="fas fa-arrow-left"></i>
-                                </button>
-                            </div>
+                            <button class="menu-close mg-drawer-close" id="menuClose" aria-label="Close menu">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
                         </div>
                     </div>
 
                     <!-- Drawer Scrollable Content -->
                     <div class="mg-drawer-body p-3">
-                        <!-- Top Quick Action Card -->
+
+                        <!-- Section 1: Account Quick Links -->
+                        <div class="mg-drawer-group-title">My Account</div>
                         <div class="mg-drawer-card mb-3">
                             <a href="profile.html" class="mg-drawer-row">
-                                <span class="font-weight-bold">My Profile</span>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-user-circle mg-drawer-icon mr-2"></i>
+                                    <span class="font-weight-600">My Profile</span>
+                                </div>
                                 <div class="d-flex align-items-center">
                                     <span class="badge mr-2 mg-badge-new">New</span>
-                                    <i class="fa fa-chevron-right text-muted"></i>
+                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
                                 </div>
                             </a>
                             <a href="profile.html" class="mg-drawer-row">
-                                <span class="font-weight-bold">Order History</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-history mg-drawer-icon mr-2"></i>
+                                    <span class="font-weight-600">Order History</span>
+                                </div>
+                                <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
                             </a>
                         </div>
 
-                        <!-- Section: Shop By -->
-                        <div class="mg-drawer-group-title">Shop By</div>
+                        <!-- Section 2: Shop & Collections (Collapsible) -->
+                        <div class="mg-drawer-group-title">Shop & Collections</div>
                         <div class="mg-drawer-card mb-3">
-                            <a href="cateloge.html" class="mg-drawer-row">
-                                <span>All Jewellery</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
+                            <!-- Collapsible 1: Categories -->
+                            <a href="javascript:void(0)" class="mg-drawer-row mg-drawer-row-toggle"
+                                id="mg_drawer_categories_btn" role="button" aria-expanded="false"
+                                aria-controls="mg_drawer_categories_collapse">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-th-large mg-drawer-icon mr-2"></i>
+                                    <span class="font-weight-bold">Categories</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="mg-drawer-sub-count mr-2">6 Collections</span>
+                                    <i class="fa fa-chevron-down text-muted mg-drawer-chevron"></i>
+                                </div>
                             </a>
-                            <a href="shop.html" class="mg-drawer-row">
-                                <span>Gold</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
+                            <!-- Categories Sub-items (Dropdown) -->
+                            <div class="mg-drawer-collapse-content" id="mg_drawer_categories_collapse">
+                                <a href="cateloge.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-sparkles mg-sub-bullet mr-2"></i>
+                                    <span>All Jewellery</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-circle mg-sub-bullet mr-2 text-warning"></i>
+                                    <span>Gold</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-gem mg-sub-bullet mr-2 text-info"></i>
+                                    <span>Diamond</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-sun mg-sub-bullet mr-2"></i>
+                                    <span>Daily Wear</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="cateloge.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-book-open mg-sub-bullet mr-2 text-primary"></i>
+                                    <span>Curated Lookbooks</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-coins mg-sub-bullet mr-2 text-warning"></i>
+                                    <span>24K Gold Coins</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                            </div>
+
+                            <!-- Collapsible 2: Shop For -->
+                            <a href="javascript:void(0)" class="mg-drawer-row mg-drawer-row-toggle"
+                                id="mg_drawer_shop_for_btn" role="button" aria-expanded="false"
+                                aria-controls="mg_drawer_shop_for_collapse">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-user-friends mg-drawer-icon mr-2"></i>
+                                    <span class="font-weight-bold">Shop For</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="mg-drawer-sub-count mr-2">Curated By Style</span>
+                                    <i class="fa fa-chevron-down text-muted mg-drawer-chevron"></i>
+                                </div>
                             </a>
-                            <a href="shop.html" class="mg-drawer-row">
-                                <span>Diamond</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
-                            </a>
-                            <a href="shop.html" class="mg-drawer-row">
-                                <span>Daily Wear</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
-                            </a>
-                            <a href="cateloge.html" class="mg-drawer-row">
-                                <span>Collections</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
-                            </a>
-                            <a href="shop.html" class="mg-drawer-row">
-                                <span>Gold Coin</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
-                            </a>
+                            <!-- Shop For Sub-items (Dropdown) -->
+                            <div class="mg-drawer-collapse-content" id="mg_drawer_shop_for_collapse">
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-female mg-sub-bullet mr-2"></i>
+                                    <span>Women</span>
+                                    <span class="badge ml-auto mg-badge-sub-pill">Popular</span>
+                                </a>
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-male mg-sub-bullet mr-2"></i>
+                                    <span>Men</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="shop.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-child mg-sub-bullet mr-2"></i>
+                                    <span>Kids</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                                <a href="scheme.html" class="mg-drawer-subrow">
+                                    <i class="fas fa-calendar-alt mg-sub-bullet mr-2 text-warning"></i>
+                                    <span>Jewellery Plans & Scheme</span>
+                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
+                                </a>
+                            </div>
                         </div>
 
-                        <!-- Section: Shop For -->
-                        <div class="mg-drawer-group-title">Shop For</div>
+                        <!-- Section 3: Shopping & Essentials -->
+                        <div class="mg-drawer-group-title">Shopping & Essentials</div>
                         <div class="mg-drawer-card mb-3">
-                            <a href="shop.html" class="mg-drawer-row">
-                                <span>Men</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
+                            <a href="javascript:void(0)" class="mg-drawer-row" id="mg_drawer_rates_link">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-chart-line mg-drawer-icon mr-2"></i>
+                                    <span> Metal Rates</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge mg-badge-live mr-2"><i class="fas fa-circle mr-1"></i>Live</span>
+                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                                </div>
                             </a>
-                            <a href="shop.html" class="mg-drawer-row">
-                                <span>Kids</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
+                            <a href="wishlist.html" class="mg-drawer-row">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-heart mg-drawer-icon mr-2 text-danger"></i>
+                                    <span>My Wishlist</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge mg-badge-count mr-2" id="mg_drawer_wishlist_count">0</span>
+                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                                </div>
                             </a>
-                            <a href="scheme.html" class="mg-drawer-row">
-                                <span>Jewellery Plans</span>
-                                <i class="fa fa-chevron-right text-muted"></i>
+                            <a href="cart.html" class="mg-drawer-row">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-shopping-bag mg-drawer-icon mr-2"></i>
+                                    <span>My Shopping Bag</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge mg-badge-count mr-2" id="mg_drawer_cart_count">0</span>
+                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                                </div>
                             </a>
                         </div>
 
-                        <!-- Drawer Footer Account Links -->
+                        <!-- Section 4: About & Assistance -->
+                        <div class="mg-drawer-group-title">About & Support</div>
+                        <div class="mg-drawer-card mb-3">
+                            <a href="our-legacy.html" class="mg-drawer-row">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-landmark mg-drawer-icon mr-2"></i>
+                                    <span>Our Legacy & Heritage</span>
+                                </div>
+                                <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                            </a>
+                            <a href="shop-location.html" class="mg-drawer-row">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marked-alt mg-drawer-icon mr-2"></i>
+                                    <span>Visit Our Store</span>
+                                </div>
+                                <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="mg-drawer-row" id="mg_drawer_chat_link">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-comments mg-drawer-icon mr-2 text-warning"></i>
+                                    <span>Help & Live Chat</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge mg-badge-chat-online mr-2">Online</span>
+                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Drawer Footer Account Links (Kept as requested) -->
                         <div class="d-flex justify-content-between pt-3 border-top mt-2">
-                            <a href="login.html" class="btn btn-outline-primary btn-sm flex-fill mr-2 py-2" id="mg_drawer_login_btn">
+                            <a href="login.html"
+                                class="btn btn-outline-primary btn-sm flex-fill mr-2 py-2 font-weight-bold"
+                                id="mg_drawer_login_btn">
                                 <i class="fa fa-sign-in-alt mr-1"></i> Login
                             </a>
-                            <a href="register.html" class="btn btn-secondary btn-sm flex-fill py-2" id="mg_drawer_reg_btn">
+                            <a href="register.html"
+                                class="btn btn-secondary btn-sm flex-fill py-2 font-weight-bold text-dark"
+                                id="mg_drawer_reg_btn">
                                 <i class="fa fa-user-plus mr-1"></i> Register
                             </a>
                         </div>
+
                     </div>
                 </nav>
 
@@ -640,7 +758,8 @@
 
 <!-- Floating Rate Badge (Desktop: constant right-side position; Mobile: animated entrance when rate ticker scrolls out of view) -->
 <div class="mg-rate-float-widget" id="rate_ticker_toggle_area" data-mobile-trigger="ticker-out-of-view">
-    <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false" aria-label="Toggle Today's Gold and Silver Rates">
+    <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false"
+        aria-label="Toggle Today's Gold and Silver Rates">
         <i class="fa fa-angle-down mg-rate-chevron"></i> Today's Rate
     </button>
     <div class="mg-rate-panel" id="mg_rate_panel">

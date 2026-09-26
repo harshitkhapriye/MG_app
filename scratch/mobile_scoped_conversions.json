@@ -1,0 +1,387 @@
+[
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 1968,
+    "code": "color: var(--mg-gold-3) !important;",
+    "selector": ".mg-video-arrow",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 2680,
+    "code": "background: var(--mg-gold-2) !important;",
+    "selector": "#head_shop_list.mbl #mob_search_toggle_btn",
+    "media": "(max-width: 575.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 2942,
+    "code": "background: linear-gradient(150deg, var(--mg-gold-2, #d4af37), var(--mg-gold-1, #a8802a)) !important;",
+    "selector": ".mg-rate-float-btn",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 2962,
+    "code": "box-shadow: 0 6px 18px rgba(var(--mg-gold-1-rgb), 0.4) !important;",
+    "selector": "#rate_ticker_toggle_area .mg-rate-float-btn:active",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3025,
+    "code": "background: linear-gradient(135deg, var(--mg-gold-1, #a8802a), var(--mg-gold-2, #d4af37)) !important;",
+    "selector": ".back-to-top",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3041,
+    "code": "box-shadow: 0 6px 18px rgba(var(--mg-gold-1-rgb), 0.4) !important;",
+    "selector": ".back-to-top:active",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3321,
+    "code": "background: linear-gradient(135deg, var(--mg-gold-1, #a8802a), var(--mg-gold-2, #d4af37)) !important;",
+    "selector": ".mg-docked-chat-tab",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3325,
+    "code": "box-shadow: -3px 4px 18px rgba(var(--mg-gold-1-rgb), 0.42) !important;",
+    "selector": ".mg-docked-chat-tab",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3477,
+    "code": "background: linear-gradient(135deg, var(--mg-gold-1, #a8802a), var(--mg-gold-2, #d4af37)) !important;",
+    "selector": ".mg-livechat-avatar-circle",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3483,
+    "code": "box-shadow: 0 2px 8px rgba(var(--mg-gold-1-rgb), 0.3) !important;",
+    "selector": ".mg-livechat-avatar-circle",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3596,
+    "code": "border-color: var(--mg-gold-1, #a8802a) !important;",
+    "selector": ".mg-livechat-input:focus",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3597,
+    "code": "box-shadow: 0 0 0 3px rgba(var(--mg-gold-1-rgb), 0.18) !important;",
+    "selector": ".mg-livechat-input:focus",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3604,
+    "code": "background: linear-gradient(135deg, var(--mg-gold-1, #a8802a), var(--mg-gold-2, #d4af37)) !important;",
+    "selector": ".mg-livechat-submit-btn",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3612,
+    "code": "box-shadow: 0 4px 14px rgba(var(--mg-gold-1-rgb), 0.32) !important;",
+    "selector": ".mg-livechat-submit-btn",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3711,
+    "code": "color: var(--mg-gold-2) !important;",
+    "selector": ".mobile-menu .menu-list>li>a i",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3716,
+    "code": "color: var(--mg-gold-1) !important;",
+    "selector": ".mobile-menu .menu-list>li>a.active",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3717,
+    "code": "background: rgba(var(--mg-gold-2-rgb), 0.12) !important;",
+    "selector": ".mobile-menu .menu-list>li>a.active",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3721,
+    "code": "color: var(--mg-gold-2) !important;",
+    "selector": ".mob_cat",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3725,
+    "code": "background: rgba(var(--mg-gold-2-rgb), 0.15) !important;",
+    "selector": ".mobile-menu .menu-close",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3726,
+    "code": "color: var(--mg-gold-2) !important;",
+    "selector": ".mobile-menu .menu-close",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3727,
+    "code": "border-color: rgba(var(--mg-gold-2-rgb), 0.4) !important;",
+    "selector": ".mobile-menu .menu-close",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3807,
+    "code": "color: var(--mg-gold-2) !important;",
+    "selector": ".mobile-menu .menu-list>li>a.active",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3808,
+    "code": "background: rgba(var(--mg-gold-2-rgb), 0.14) !important;",
+    "selector": ".mobile-menu .menu-list>li>a.active",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3954,
+    "code": "color: var(--mg-gold-2);",
+    "selector": "#mobileCategories .nav-item.nav-link::before",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3967,
+    "code": "color: var(--mg-gold-2) !important;",
+    "selector": "#mobileCategories .dropdown-item:hover",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 3968,
+    "code": "background: rgba(var(--mg-gold-2-rgb), 0.1) !important;",
+    "selector": "#mobileCategories .dropdown-item:hover",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4489,
+    "code": "border: 1px solid rgba(var(--mg-gold-2-rgb), 0.28) !important;",
+    "selector": "#shop_by_metal a.matterial_block",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4615,
+    "code": "background: var(--mg-gold-2);",
+    "selector": "#mob_search_btn a",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4638,
+    "code": "border-bottom: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.25) !important;",
+    "selector": "#mob_search_bar",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4804,
+    "code": "border: 1px solid rgba(var(--mg-gold-2-rgb), 0.45) !important;",
+    "selector": ".mg-cart-toast",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4833,
+    "code": "background: linear-gradient(135deg, var(--mg-gold-2, #d4af37), var(--mg-gold-1, #a8802a)) !important;",
+    "selector": ".mg-cart-toast-icon",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4887,
+    "code": "background: var(--mg-gold-1, #a8802a) !important;",
+    "selector": ".mg-btn-added-state",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4889,
+    "code": "border-color: var(--mg-gold-1, #a8802a) !important;",
+    "selector": ".mg-btn-added-state",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4912,
+    "code": "color: var(--mg-gold-1, #a8802a) !important;",
+    "selector": ".mg-clear-recent-btn",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4917,
+    "code": "color: var(--mg-gold-2, #d4af37) !important;",
+    "selector": ".mg-clear-recent-btn:hover",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 4940,
+    "code": "border: 1px solid rgba(var(--mg-gold-2-rgb), 0.25) !important;",
+    "selector": ".mg-recent-card",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "assets/ecomm/css/theme-style.css",
+    "lineNo": 5007,
+    "code": "color: var(--mg-gold-1, #a8802a) !important;",
+    "selector": ".mg-recent-price",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "ecom/each_css/shop-style.css",
+    "lineNo": 256,
+    "code": "border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.45) !important;",
+    "selector": ".shop_cost_filter",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "ecom/each_css/shop-style.css",
+    "lineNo": 266,
+    "code": "border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.45) !important;",
+    "selector": ".shop_keyword_filter",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "ecom/each_css/shop-style.css",
+    "lineNo": 284,
+    "code": "color: var(--mg-gold-1) !important;",
+    "selector": ".shop_keyword_filter .input-group-append .input-group-text",
+    "media": "(max-width: 991.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 162,
+    "code": "color: var(--mg-gold-2);",
+    "selector": ".mg-mobile-wishlist-title i",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 167,
+    "code": "background: rgba(var(--mg-gold-2-rgb), 0.15);",
+    "selector": ".mg-wishlist-count-badge",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 168,
+    "code": "color: var(--mg-gold-1);",
+    "selector": ".mg-wishlist-count-badge",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 173,
+    "code": "border: 1px solid rgba(var(--mg-gold-2-rgb), 0.35);",
+    "selector": ".mg-wishlist-count-badge",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 179,
+    "code": "border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);",
+    "selector": ".mg-wishlist-card",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 204,
+    "code": "border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);",
+    "selector": ".mg-wishlist-thumb-wrap",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 228,
+    "code": "color: var(--mg-gold-1);",
+    "selector": ".mg-wishlist-category",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 288,
+    "code": "border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.3);",
+    "selector": ".mg-wishlist-card-actions",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 292,
+    "code": "background: linear-gradient(120deg, var(--mg-gold-1), var(--mg-gold-2)) !important;",
+    "selector": ".mg-btn-move-to-cart",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 299,
+    "code": "box-shadow: 0 4px 14px rgba(var(--mg-gold-2-rgb), 0.3) !important;",
+    "selector": ".mg-btn-move-to-cart",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 311,
+    "code": "box-shadow: 0 2px 8px rgba(var(--mg-gold-2-rgb), 0.3) !important;",
+    "selector": ".mg-btn-move-to-cart:active",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 327,
+    "code": "border: 1px solid var(--mg-gold-2);",
+    "selector": ".mg-wishlist-toast",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 350,
+    "code": "color: var(--mg-gold-3);",
+    "selector": ".mg-wishlist-toast .mg-toast-icon",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/wishlist-style.css",
+    "lineNo": 355,
+    "code": "background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3));",
+    "selector": ".mg-wishlist-toast .mg-toast-btn",
+    "media": "(max-width: 767.98px)"
+  },
+  {
+    "file": "ecom/each_css/catalogue-style.css",
+    "lineNo": 214,
+    "code": "background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1));",
+    "selector": "#shop_data .product-item .card-body",
+    "media": "(max-width: 991.98px)"
+  }
+]

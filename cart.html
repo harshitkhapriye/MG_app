@@ -466,9 +466,40 @@
                 text-decoration: none;
                 white-space: nowrap;
                 margin-left: 6px;
+        }
+
+        /* ============================================================
+           MOBILE SCOPED STYLES (Scope: <= 991.98px)
+           Restyles Cart Summary card header to match gold/ivory theme
+           and eliminates legacy teal/blue overlay and pseudo-elements.
+           ============================================================ */
+        @media (max-width: 991.98px) {
+            #cart_section_page .card-header.bg-secondary {
+                background: linear-gradient(135deg, rgba(var(--mg-gold-champagne-rgb, 217, 181, 102), 0.16) 0%, rgba(var(--mg-gold-3-rgb, 242, 221, 154), 0.28) 100%) !important;
+                border-bottom: 1px solid rgba(var(--mg-gold-champagne-rgb, 217, 181, 102), 0.35) !important;
+                padding: 16px 20px !important;
+            }
+
+            #cart_section_page .card-header.bg-secondary::before,
+            #cart_section_page .card-header.bg-secondary::after {
+                display: none !important;
+            }
+
+            #cart_section_page .card-header.bg-secondary h4 {
+                color: var(--mg-ink) !important;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.15rem;
+                font-weight: 700 !important;
+                letter-spacing: 0.3px;
+                position: relative;
+                z-index: 2;
+                margin: 0;
             }
         }
     </style>
+    <!-- Multi-Vendor Theming Engine -->
+    <script src="assets/ecomm/js/vendor-config.js"></script>
+    <script src="assets/ecomm/js/theme-injector.js"></script>
 </head>
 
 <body>

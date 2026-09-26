@@ -18,7 +18,7 @@
         var currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
         var navLinkGroups = document.querySelectorAll(
-            '.navbar-collapse .nav-link, .mobile-menu .menu-list > li > a, .footer_info_sec ~ * a, .bg-secondary a.text-white'
+            '.navbar-collapse .nav-link, .mobile-menu .menu-list > li > a, .footer_info_sec ~ * a, .bg-secondary a.text-white, .mg-bottom-nav-item'
         );
 
         navLinkGroups.forEach(function (link) {
@@ -1338,6 +1338,20 @@
         if (hamburger.dataset.drawerBound === '1') return;
         hamburger.dataset.drawerBound = '1';
 
+        function syncDrawerBadges() {
+            var kartBadge = document.getElementById('kart_count');
+            var drawerCart = document.getElementById('mg_drawer_cart_count');
+            if (kartBadge && drawerCart) {
+                drawerCart.textContent = kartBadge.textContent.trim() || '0';
+            }
+
+            var wishBadge = document.getElementById('wish_count') || document.querySelector('.badge[href*="wishlist"]');
+            var drawerWish = document.getElementById('mg_drawer_wishlist_count');
+            if (wishBadge && drawerWish) {
+                drawerWish.textContent = wishBadge.textContent.trim() || '0';
+            }
+        }
+
         function openMenu() {
             menu.classList.add('open');
             backdrop.classList.add('visible');
@@ -1347,6 +1361,7 @@
             closeBtn.focus();
             document.documentElement.style.overflow = 'hidden';
             document.body.classList.add('mg-drawer-open');
+            syncDrawerBadges();
 
             // Senior Developer Note: Completely hide bottom navigation footer and floating widgets while side drawer is open
             var bottomNav = document.getElementById('mg_bottom_nav_bar') || document.querySelector('.mg-bottom-nav');
@@ -1421,10 +1436,78 @@
         });
 
         menu.addEventListener('click', function (e) {
+            if (e.target.closest('.mg-drawer-row-toggle')) return;
             if (e.target.tagName === 'A' && !e.target.closest('#mobileCategories')) {
                 closeMenu();
             }
         });
+
+        // Collapsible Drawer Sections (Categories & Shop For)
+        var toggleButtons = menu.querySelectorAll('.mg-drawer-row-toggle');
+        toggleButtons.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var targetId = btn.getAttribute('aria-controls');
+                var content = targetId ? document.getElementById(targetId) : null;
+                if (!content) return;
+
+                var isExpanded = btn.classList.contains('active');
+                if (isExpanded) {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                    content.style.maxHeight = null;
+                    content.classList.remove('show');
+                } else {
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-expanded', 'true');
+                    content.classList.add('show');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Quick Link: Today's Metal Rates
+        var ratesLink = document.getElementById('mg_drawer_rates_link');
+        if (ratesLink) {
+            ratesLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                closeMenu();
+                setTimeout(function () {
+                    var rateToggle = document.getElementById('rate_ticker_toggle_area');
+                    if (rateToggle) {
+                        rateToggle.click();
+                    } else {
+                        var rateBar = document.querySelector('.mg-rate-ticker');
+                        if (rateBar) {
+                            rateBar.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                            window.location.href = 'index.html#rate_ticker_toggle_area';
+                        }
+                    }
+                }, 200);
+            });
+        }
+
+        // Quick Link: Help & Live Chat
+        var chatLink = document.getElementById('mg_drawer_chat_link');
+        if (chatLink) {
+            chatLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                closeMenu();
+                setTimeout(function () {
+                    var liveChatTab = document.getElementById('mg_docked_chat_tab');
+                    var liveChatModal = document.getElementById('mg_livechat_modal');
+                    if (liveChatTab) {
+                        liveChatTab.click();
+                    } else if (liveChatModal) {
+                        liveChatModal.classList.add('mg-show');
+                    } else {
+                        window.location.href = 'contact.html';
+                    }
+                }, 300);
+            });
+        }
 
         (function addSwipeClose() {
             var startX = null;
@@ -1576,7 +1659,7 @@
 
     window.updateCartBadgeCount = function (increment) {
         var addCount = parseInt(increment, 10) || 1;
-        var badges = document.querySelectorAll('#kart_count, .badge#kart_count');
+        var badges = document.querySelectorAll('#kart_count, .badge#kart_count, #mg_drawer_cart_count');
         badges.forEach(function (badge) {
             var current = parseInt(badge.textContent, 10) || 0;
             badge.textContent = current + addCount;

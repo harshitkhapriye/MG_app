@@ -1,3 +1,5 @@
+
+
 const fs = require('fs');
 const path = require('path');
 
@@ -21,7 +23,7 @@ const targetFiles = [
 
 function isGoldHue(str) {
   str = str.trim().toLowerCase();
-  
+
   const goldHexes = [
     '#d4af37', '#a8802a', '#f2dd9a', '#b8912b', '#c7a32f',
     '#d9b566', '#d8b26e', '#c59b27', '#e2c275', '#dfb75c',

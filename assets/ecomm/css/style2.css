@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 768px) {
 
     .logo_image {
@@ -6,13 +5,13 @@
         /* margin-right: 100px; */
     }
 
-    .navbar .input-group{
+    .navbar .input-group {
 
-        margin-bottom: 10px ;
+        margin-bottom: 10px;
 
     }
 
-    .category_drop_btn_mob { 
+    .category_drop_btn_mob {
 
         margin-top: -1px;
         padding: 0 30px;
@@ -31,7 +30,7 @@
 
     }
 
-    .carousel-caption .btn { 
+    .carousel-caption .btn {
 
         color: #FFF;
         border-radius: 10px;
@@ -39,16 +38,17 @@
     }
 
     .btn {
-        
+
         border-radius: 10px;
 
     }
 
-    .mb-5, .my-5 {
+    .mb-5,
+    .my-5 {
         margin-bottom: 1rem !important;
     }
 
-    .product-item  .card-body {
+    .product-item .card-body {
 
         margin-bottom: 0px !important;
         padding: 0% !important;
@@ -60,7 +60,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         padding: 10px;
-        margin-bottom: 5px !important ;
+        margin-bottom: 5px !important;
     }
 
     .btn-outline-primary {
@@ -73,26 +73,31 @@
         color: #000 !important;
     }
 
-	.carousel-control-prev >.btn.btn-dark,.carousel-control-next >.btn.btn-dark{
-		  display:none!important;
-		  background:transparent!important;
-	}
-	div:has(ul.mob_breadcrumb)
-	/*,div:has(div#header-carousel)*/
-	{
-		margin-top:10px!important;
-	}
-	nav.top_menue_bar {
-		padding:0 10px;
-	}
-	#filter_side_bar{
-		max-height:50vh;
-		height:auto;
-		overflow-y:scroll;
-	}
+    .carousel-control-prev>.btn.btn-dark,
+    .carousel-control-next>.btn.btn-dark {
+        display: none !important;
+        background: transparent !important;
+    }
+
+    div:has(ul.mob_breadcrumb)
+
+    /*,div:has(div#header-carousel)*/
+        {
+        margin-top: 10px !important;
+    }
+
+    nav.top_menue_bar {
+        padding: 0 10px;
+    }
+
+    #filter_side_bar {
+        max-height: 50vh;
+        height: auto;
+        overflow-y: scroll;
+    }
 }
 
-.mg-rate-ticker{
+.mg-rate-ticker {
     border-top: none !important;
     max-height: 60px;
     overflow: hidden;

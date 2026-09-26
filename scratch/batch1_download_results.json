@@ -1,0 +1,72 @@
+[
+  {
+    "filename": "material_gold.jpg",
+    "section": "Shop By Material -> Gold",
+    "description": "Stack of ornate traditional gold bangles with warm gold reflections",
+    "sizeKb": "75 KB",
+    "path": "assets/ecomm/images/unsplash/material_gold.jpg"
+  },
+  {
+    "filename": "material_silver.jpg",
+    "section": "Shop By Material -> Silver",
+    "description": "Handcrafted sterling silver rings with brilliant metallic luster",
+    "sizeKb": "107 KB",
+    "path": "assets/ecomm/images/unsplash/material_silver.jpg"
+  },
+  {
+    "filename": "material_artificial.jpg",
+    "section": "Shop By Material -> Artificial",
+    "description": "Traditional handcrafted Kundan/Polki gold-plated statement jewellery",
+    "sizeKb": "67 KB",
+    "path": "assets/ecomm/images/unsplash/material_artificial.jpg"
+  },
+  {
+    "filename": "material_stone.jpg",
+    "section": "Shop By Material -> Stone",
+    "description": "Precious colored gemstone ring with emerald/ruby in fine gold setting",
+    "sizeKb": "65 KB",
+    "path": "assets/ecomm/images/unsplash/material_stone.jpg"
+  },
+  {
+    "filename": "legacy_story_1973.jpg",
+    "section": "Our Legacy -> Block 1 (Where It All Began - 1973)",
+    "description": "Traditional goldsmith workshop tools, anvil, and artisan workbench",
+    "sizeKb": "70 KB",
+    "path": "assets/ecomm/images/unsplash/legacy_story_1973.jpg"
+  },
+  {
+    "filename": "legacy_story_craftsmanship.jpg",
+    "section": "Our Legacy -> Block 2 (Craftsmanship That Speaks)",
+    "description": "Master artisan jeweler meticulously handcrafting and setting jewelry",
+    "sizeKb": "98 KB",
+    "path": "assets/ecomm/images/unsplash/legacy_story_craftsmanship.jpg"
+  },
+  {
+    "filename": "legacy_story_purity.jpg",
+    "section": "Our Legacy -> Block 3 (Our Promise - Hallmark Purity)",
+    "description": "Certified pure hallmark gold bullion coins and bars",
+    "sizeKb": "121 KB",
+    "path": "assets/ecomm/images/unsplash/legacy_story_purity.jpg"
+  },
+  {
+    "filename": "legacy_story_celebrations.jpg",
+    "section": "Our Legacy -> Block 4 (Looking Ahead - Celebrations)",
+    "description": "Royal Indian bride wearing heirloom bridal jewellery in an opulent setting",
+    "sizeKb": "90 KB",
+    "path": "assets/ecomm/images/unsplash/legacy_story_celebrations.jpg"
+  },
+  {
+    "filename": "hero_slide_bridal.jpg",
+    "section": "Hero Carousel -> Slide 2 (Bridal Collection 2025)",
+    "description": "Cinematic royal bridal necklace and earrings ensemble panoramic banner",
+    "sizeKb": "257 KB",
+    "path": "assets/ecomm/images/unsplash/hero_slide_bridal.jpg"
+  },
+  {
+    "filename": "hero_slide_gold.jpg",
+    "section": "Hero Carousel -> Slide 3 (Certified Hallmark - Gold You Can Trust)",
+    "description": "Luxury gold jewellery collection on warm ivory silk background",
+    "sizeKb": "208 KB",
+    "path": "assets/ecomm/images/unsplash/hero_slide_gold.jpg"
+  }
+]

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60">
+  <defs>
+    <linearGradient id="sapphireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8d5f8" />
+      <stop offset="45%" stop-color="#1b5fb8" />
+      <stop offset="100%" stop-color="#0c2444" />
+    </linearGradient>
+    <linearGradient id="facetLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+  <!-- Diamond / Sapphire Emblem -->
+  <g transform="translate(10, 10)">
+    <polygon points="20,2 36,15 20,38 4,15" fill="url(#sapphireGrad)" stroke="#0c2444" stroke-width="1.2" />
+    <!-- Brilliant cut facets -->
+    <polygon points="20,2 28,15 20,38 12,15" fill="url(#facetLight)" />
+    <polygon points="12,15 20,2 28,15" fill="#ffffff" opacity="0.35" />
+    <line x1="4" y1="15" x2="36" y2="15" stroke="#ffffff" stroke-width="0.8" opacity="0.6" />
+    <!-- Sparkle star -->
+    <circle cx="20" cy="18" r="1.5" fill="#ffffff" opacity="0.9" />
+  </g>
+  <!-- Typography -->
+  <text x="58" y="28" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="18.5" font-weight="700" letter-spacing="1.2" fill="#0c2444">
+    BLUE DIAMONDS
+  </text>
+  <text x="60" y="44" font-family="'Poppins', sans-serif" font-size="8" font-weight="500" letter-spacing="3.2" fill="#14467d">
+    JEWELLERS &amp; SOLITAIRES
+  </text>
+</svg>

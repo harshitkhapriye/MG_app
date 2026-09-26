@@ -39,7 +39,9 @@
     <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
     <link href="ecom/each_css/teaser-style.css" rel="stylesheet">
 
-
+    <!-- Multi-Vendor Theming Engine (Proof of Concept) -->
+    <script src="assets/ecomm/js/vendor-config.js"></script>
+    <script src="assets/ecomm/js/theme-injector.js"></script>
 
 </head>
 
@@ -116,8 +118,8 @@
                     </div>
                     <div class="carousel-item">
                         <img class="img-fluid"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxAM_Api1yRNdei0XydUB2Vyw_NoqPjqeikyhtnZgNaQ&s=10"
-                            alt="Slide 2" width="1920" height="1080">
+                            src="assets/ecomm/images/unsplash/hero_slide_bridal.jpg"
+                            alt="Slide 2 - Bridal Collection 2025" width="1920" height="1080">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h4 class="text-light text-uppercase font-weight-medium mb-3">New Arrivals</h4>
@@ -128,8 +130,8 @@
                     </div>
                     <div class="carousel-item">
                         <img class="img-fluid"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvTi_ZtDHguRFIhvnnlCUlW_NoginzvAkGxneUQPJJA&s=10"
-                            alt="Slide 3" width="1920" height="1080">
+                            src="assets/ecomm/images/unsplash/hero_slide_gold.jpg"
+                            alt="Slide 3 - Certified Hallmark Gold" width="1920" height="1080">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h4 class="text-light text-uppercase font-weight-medium mb-3">Certified Hallmark</h4>
@@ -182,26 +184,6 @@
             <h3 class="mg-campaign-title mb-1">MG VIVAAH</h3>
             <p class="mg-campaign-subtitle text-muted mb-3">Wedding Signatures & Hallmark Heritage</p>
             <a href="shop.html" class="btn mg-campaign-explore-btn">EXPLORE NOW</a>
-        </div>
-    </div>
-
-    <!-- 4. Recently Viewed Section (Personalization - Mobile Only) -->
-    <!-- ========================================================================= -->
-    <!-- BACKEND INTEGRATION POINT: Replace client-side render with user history -->
-    <!-- Target Endpoint: GET /api/v1/user/recently-viewed -->
-    <!-- ========================================================================= -->
-    <div class="mg-recent-section mb-4 px-2 d-block d-lg-none" id="mg_recently_viewed_section"
-        style="display: none !important;">
-        <div class="d-flex align-items-center justify-content-between px-2 mb-2">
-            <div>
-                <h4 class="mg-section-heading mb-0">Recently Viewed</h4>
-                <small class="text-muted">Pick up where you left off</small>
-            </div>
-            <button type="button" class="btn btn-link p-0 text-muted mg-clear-recent-btn" id="mg_clear_recent_btn"
-                title="Clear recently viewed">Clear</button>
-        </div>
-        <div class="mg-recent-scroll-track" id="mg_recently_viewed_track">
-            <!-- Dynamically populated from localStorage 'mg_recently_viewed' -->
         </div>
     </div>
 
@@ -458,7 +440,7 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_gold" data-material="gold">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="ecom/products/1740135726115621763.jpg" alt="Gold Jewellery"
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_gold.jpg" alt="Gold Jewellery"
                             loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">
@@ -471,7 +453,7 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_silver" data-material="silver">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="ecom/products/1740122848901485459.jpg" alt="Silver Jewellery"
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_silver.jpg" alt="Silver Jewellery"
                             loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">
@@ -484,7 +466,7 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_artificial" data-material="artificial">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="ecom/products/17401354321760572244.jpg" alt="Artificial Jewellery"
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_artificial.jpg" alt="Artificial Jewellery"
                             loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">
@@ -497,7 +479,7 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_stone" data-material="stone">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="ecom/products/17400513551934096853.jpg" alt="Stone Jewellery"
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_stone.jpg" alt="Stone Jewellery"
                             loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">

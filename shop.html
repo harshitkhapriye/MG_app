@@ -32,6 +32,9 @@
     <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
     <link href="ecom/each_css/shop-style.css" rel="stylesheet">
 
+    <!-- Multi-Vendor Theming Engine -->
+    <script src="assets/ecomm/js/vendor-config.js"></script>
+    <script src="assets/ecomm/js/theme-injector.js"></script>
 </head>
 
 <body>
@@ -932,6 +935,27 @@
             <!-- Shop Product Start -->
 
             <div class="col-lg-9 col-md-12 shop_product_block">
+
+                <!-- Recently Viewed Section (Personalization - Desktop & Mobile) -->
+                <!-- ========================================================================= -->
+                <!-- BACKEND INTEGRATION POINT: Replace client-side render with user history -->
+                <!-- Target Endpoint: GET /api/v1/user/recently-viewed -->
+                <!-- ========================================================================= -->
+                <div class="col-12 px-0 mb-3" id="mg_recently_viewed_wrapper">
+                    <div class="mg-recent-section" id="mg_recently_viewed_section" style="display: none !important;">
+                        <div class="d-flex align-items-center justify-content-between px-1 mb-2">
+                            <div>
+                                <h4 class="mg-section-heading mb-0">Recently Viewed</h4>
+                                <small class="text-muted">Pick up where you left off</small>
+                            </div>
+                            <button type="button" class="btn btn-link p-0 text-muted mg-clear-recent-btn" id="mg_clear_recent_btn"
+                                title="Clear recently viewed">Clear</button>
+                        </div>
+                        <div class="mg-recent-scroll-track" id="mg_recently_viewed_track">
+                            <!-- Dynamically populated from localStorage 'mg_recently_viewed' -->
+                        </div>
+                    </div>
+                </div>
                 <div class="col-12 px-0 py-2">
                     <form action="" id="sortlist_form">
                         <div class="d-flex align-items-center justify-content-between">

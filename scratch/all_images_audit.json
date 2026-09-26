@@ -1,0 +1,1892 @@
+[
+  {
+    "file": "about.html",
+    "line": 52,
+    "src": "assets/ecomm/images/about/about_img_1740983782.jpg",
+    "alt": "MG Jwellers",
+    "id": "",
+    "className": "img-fluid about-img",
+    "raw": "<img src=\"assets/ecomm/images/about/about_img_1740983782.jpg\" alt=\"MG Jwellers\"\n                        class=\"img-fluid about-img\" loading=\"lazy\">"
+  },
+  {
+    "file": "cart.html",
+    "line": 503,
+    "src": "assets/ecomm/products/rings/ring_1.webp",
+    "alt": "",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"\" style=\"width: 60px; float:left;\">"
+  },
+  {
+    "file": "cart.html",
+    "line": 528,
+    "src": "assets/ecomm/products/bangels/bangels_1.webp",
+    "alt": "",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/products/bangels/bangels_1.webp\" alt=\"\" style=\"width: 60px; float:left;\">"
+  },
+  {
+    "file": "cart.html",
+    "line": 572,
+    "src": "assets/ecomm/products/rings/ring_1.webp",
+    "alt": "22K Royal Gold Filigree Ring",
+    "id": "",
+    "className": "mg-cart-thumb",
+    "raw": "<img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"22K Royal Gold Filigree Ring\" class=\"mg-cart-thumb\">"
+  },
+  {
+    "file": "cart.html",
+    "line": 607,
+    "src": "assets/ecomm/products/bangels/bangels_1.webp",
+    "alt": "Pure 22K Gold Handcrafted Bangles",
+    "id": "",
+    "className": "mg-cart-thumb",
+    "raw": "<img src=\"assets/ecomm/products/bangels/bangels_1.webp\" alt=\"Pure 22K Gold Handcrafted Bangles\" class=\"mg-cart-thumb\">"
+  },
+  {
+    "file": "catalog-gallery-67c692ddcf1531741066973.html",
+    "line": 68,
+    "src": "assets/ecomm/img/cat-1.jpg",
+    "alt": "Bridal Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-1.jpg\" alt=\"Bridal Collection\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67c692ddcf1531741066973.html",
+    "line": 76,
+    "src": "assets/ecomm/img/cat-2.jpg",
+    "alt": "Necklace Sets",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-2.jpg\" alt=\"Necklace Sets\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67c692ddcf1531741066973.html",
+    "line": 84,
+    "src": "assets/ecomm/img/cat-3.jpg",
+    "alt": "Gold Bangles",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-3.jpg\" alt=\"Gold Bangles\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67c692ddcf1531741066973.html",
+    "line": 92,
+    "src": "assets/ecomm/img/cat-4.jpg",
+    "alt": "Everyday Wear",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-4.jpg\" alt=\"Everyday Wear\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67c692ddcf1531741066973.html",
+    "line": 100,
+    "src": "assets/ecomm/img/cat-5.jpg",
+    "alt": "Rings Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-5.jpg\" alt=\"Rings Collection\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67c692ddcf1531741066973.html",
+    "line": 108,
+    "src": "assets/ecomm/img/cat-6.jpg",
+    "alt": "Earrings",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-6.jpg\" alt=\"Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67d955aea73101742296494.html",
+    "line": 73,
+    "src": "assets/ecomm/img/cat-1.jpg",
+    "alt": "Bridal Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-1.jpg\" alt=\"Bridal Collection\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67d955aea73101742296494.html",
+    "line": 81,
+    "src": "assets/ecomm/img/cat-2.jpg",
+    "alt": "Necklace Sets",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-2.jpg\" alt=\"Necklace Sets\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67d955aea73101742296494.html",
+    "line": 89,
+    "src": "assets/ecomm/img/cat-3.jpg",
+    "alt": "Gold Bangles",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-3.jpg\" alt=\"Gold Bangles\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67d955aea73101742296494.html",
+    "line": 97,
+    "src": "assets/ecomm/img/cat-4.jpg",
+    "alt": "Everyday Wear",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-4.jpg\" alt=\"Everyday Wear\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67d955aea73101742296494.html",
+    "line": 105,
+    "src": "assets/ecomm/img/cat-5.jpg",
+    "alt": "Rings Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-5.jpg\" alt=\"Rings Collection\" loading=\"lazy\">"
+  },
+  {
+    "file": "catalog-gallery-67d955aea73101742296494.html",
+    "line": 113,
+    "src": "assets/ecomm/img/cat-6.jpg",
+    "alt": "Earrings",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/img/cat-6.jpg\" alt=\"Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 53,
+    "src": "ecom/products/17401369251491548904.jpg",
+    "alt": "All Jewellery",
+    "id": "",
+    "className": "card-img-top",
+    "raw": "<img src=\"ecom/products/17401369251491548904.jpg\" class=\"card-img-top\" style=\"height:250px; object-fit:cover;\" alt=\"All Jewellery\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 64,
+    "src": "ecom/products/17401334792081403700.jpg",
+    "alt": "Earrings",
+    "id": "",
+    "className": "card-img-top",
+    "raw": "<img src=\"ecom/products/17401334792081403700.jpg\" class=\"card-img-top\" style=\"height:250px; object-fit:cover;\" alt=\"Earrings\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 75,
+    "src": "ecom/products/17401322651052103057.jpg",
+    "alt": "Rings",
+    "id": "",
+    "className": "card-img-top",
+    "raw": "<img src=\"ecom/products/17401322651052103057.jpg\" class=\"card-img-top\" style=\"height:250px; object-fit:cover;\" alt=\"Rings\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 86,
+    "src": "ecom/products/17401217391996961692.jpg",
+    "alt": "Pendants",
+    "id": "",
+    "className": "card-img-top",
+    "raw": "<img src=\"ecom/products/17401217391996961692.jpg\" class=\"card-img-top\" style=\"height:250px; object-fit:cover;\" alt=\"Pendants\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 97,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Daily Wear",
+    "id": "",
+    "className": "card-img-top",
+    "raw": "<img src=\"ecom/products/1740122848901485459.jpg\" class=\"card-img-top\" style=\"height:250px; object-fit:cover;\" alt=\"Daily Wear\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 108,
+    "src": "assets/ecomm/images/gold_coins.webp",
+    "alt": "Gold Coins",
+    "id": "",
+    "className": "card-img-top",
+    "raw": "<img src=\"assets/ecomm/images/gold_coins.webp\" class=\"card-img-top\" style=\"height:250px; object-fit:cover;\" alt=\"Gold Coins\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 150,
+    "src": "ecom/products/17401369251491548904.jpg",
+    "alt": "All Jewellery Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401369251491548904.jpg\" alt=\"All Jewellery Collection\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 160,
+    "src": "ecom/products/17401334792081403700.jpg",
+    "alt": "Earrings Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401334792081403700.jpg\" alt=\"Earrings Collection\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 170,
+    "src": "ecom/products/17401322651052103057.jpg",
+    "alt": "Rings Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401322651052103057.jpg\" alt=\"Rings Collection\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 180,
+    "src": "ecom/products/17401217391996961692.jpg",
+    "alt": "Pendants Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401217391996961692.jpg\" alt=\"Pendants Collection\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 190,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Daily Wear Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/1740122848901485459.jpg\" alt=\"Daily Wear Collection\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 200,
+    "src": "assets/ecomm/images/gold_coins.webp",
+    "alt": "Gold Coins Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/images/gold_coins.webp\" alt=\"Gold Coins Collection\">"
+  },
+  {
+    "file": "categories.html",
+    "line": 210,
+    "src": "ecom/products/17401354321760572244.jpg",
+    "alt": "Bridal Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401354321760572244.jpg\" alt=\"Bridal Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 799,
+    "src": "assets/ecomm/images/about/about_img_1723115094.webp",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 819,
+    "src": "assets/ecomm/images/about/about_img_1723115094.webp",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 840,
+    "src": "assets/ecomm/images/about/about_img_1723115094.webp",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 861,
+    "src": "assets/ecomm/images/about/about_img_1723115094.webp",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 882,
+    "src": "assets/ecomm/images/about/about_img_1723115094.webp",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 979,
+    "src": "ecom/products/17401369251491548904.jpg",
+    "alt": "All Jewellery Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401369251491548904.jpg\" alt=\"All Jewellery Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 989,
+    "src": "ecom/products/17401334792081403700.jpg",
+    "alt": "Earrings Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401334792081403700.jpg\" alt=\"Earrings Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 999,
+    "src": "ecom/products/17401322651052103057.jpg",
+    "alt": "Rings Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401322651052103057.jpg\" alt=\"Rings Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 1009,
+    "src": "ecom/products/17401217391996961692.jpg",
+    "alt": "Pendants Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401217391996961692.jpg\" alt=\"Pendants Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 1019,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Daily Wear Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/1740122848901485459.jpg\" alt=\"Daily Wear Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 1029,
+    "src": "assets/ecomm/images/gold_coins.webp",
+    "alt": "Gold Coins Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/images/gold_coins.webp\" alt=\"Gold Coins Collection\">"
+  },
+  {
+    "file": "cateloge.html",
+    "line": 1039,
+    "src": "ecom/products/17401354321760572244.jpg",
+    "alt": "Bridal Collection",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401354321760572244.jpg\" alt=\"Bridal Collection\">"
+  },
+  {
+    "file": "footer.html",
+    "line": 9,
+    "src": "MG logo.png",
+    "alt": "MG Jwellers",
+    "id": "",
+    "className": "img-responsive logo_image footer-logo",
+    "raw": "<img src=\"MG logo.png\" class=\"img-responsive logo_image footer-logo\"\n                    width=\"160\" height=\"60\" alt=\"MG Jwellers\" loading=\"lazy\">"
+  },
+  {
+    "file": "footer.html",
+    "line": 88,
+    "src": "assets/ecomm/img/payments.png",
+    "alt": "Payments",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\" src=\"assets/ecomm/img/payments.png\" alt=\"Payments\" width=\"280\" height=\"30\"\n                loading=\"lazy\">"
+  },
+  {
+    "file": "header.html",
+    "line": 7,
+    "src": "assets/ecomm/logos/1755865437532699141.png",
+    "alt": "MG Jwellers",
+    "id": "",
+    "className": "img-responsive logo_image",
+    "raw": "<img src=\"assets/ecomm/logos/1755865437532699141.png\" class=\"img-responsive logo_image\" width=\"160\"\n                    height=\"60\" alt=\"MG Jwellers\">"
+  },
+  {
+    "file": "header.html",
+    "line": 388,
+    "src": "assets/ecomm/logos/1755865437532699141.png",
+    "alt": "MG Jwellers",
+    "id": "",
+    "className": "img-responsive logo_image",
+    "raw": "<img src=\"assets/ecomm/logos/1755865437532699141.png\" class=\"img-responsive logo_image\" width=\"120\"\n                        height=\"40\" alt=\"MG Jwellers\">"
+  },
+  {
+    "file": "index.html",
+    "line": 60,
+    "src": "ecom/products/17401217391996961692.jpg",
+    "alt": "Sub 30K",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401217391996961692.jpg\" alt=\"Sub 30K\">"
+  },
+  {
+    "file": "index.html",
+    "line": 66,
+    "src": "ecom/products/17401325061200865613.jpg",
+    "alt": "Diamond",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401325061200865613.jpg\" alt=\"Diamond\">"
+  },
+  {
+    "file": "index.html",
+    "line": 72,
+    "src": "assets/ecomm/images/gold_coins.webp",
+    "alt": "Gold Coins",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/images/gold_coins.webp\" alt=\"Gold Coins\">"
+  },
+  {
+    "file": "index.html",
+    "line": 78,
+    "src": "ecom/products/17401334792081403700.jpg",
+    "alt": "Earrings",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401334792081403700.jpg\" alt=\"Earrings\">"
+  },
+  {
+    "file": "index.html",
+    "line": 84,
+    "src": "ecom/products/17401322651052103057.jpg",
+    "alt": "Rings",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401322651052103057.jpg\" alt=\"Rings\">"
+  },
+  {
+    "file": "index.html",
+    "line": 90,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Chains",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/1740122848901485459.jpg\" alt=\"Chains\">"
+  },
+  {
+    "file": "index.html",
+    "line": 96,
+    "src": "ecom/products/17401369251491548904.jpg",
+    "alt": "Bridal",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401369251491548904.jpg\" alt=\"Bridal\">"
+  },
+  {
+    "file": "index.html",
+    "line": 109,
+    "src": "assets/ecomm/images/slider/slider_img_1757486819934088830.webp",
+    "alt": "Slide 1",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\" src=\"assets/ecomm/images/slider/slider_img_1757486819934088830.webp\"\r\n                            alt=\"Slide 1\" width=\"1920\" height=\"1080\" fetchpriority=high>"
+  },
+  {
+    "file": "index.html",
+    "line": 120,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxAM_Api1yRNdei0XydUB2Vyw_NoqPjqeikyhtnZgNaQ&s=10",
+    "alt": "Slide 2",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxAM_Api1yRNdei0XydUB2Vyw_NoqPjqeikyhtnZgNaQ&s=10\"\r\n                            alt=\"Slide 2\" width=\"1920\" height=\"1080\">"
+  },
+  {
+    "file": "index.html",
+    "line": 132,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvTi_ZtDHguRFIhvnnlCUlW_NoginzvAkGxneUQPJJA&s=10",
+    "alt": "Slide 3",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvTi_ZtDHguRFIhvnnlCUlW_NoginzvAkGxneUQPJJA&s=10\"\r\n                            alt=\"Slide 3\" width=\"1920\" height=\"1080\">"
+  },
+  {
+    "file": "index.html",
+    "line": 165,
+    "src": "ecom/products/17400513551934096853.jpg",
+    "alt": "Rings",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17400513551934096853.jpg\" alt=\"Rings\">"
+  },
+  {
+    "file": "index.html",
+    "line": 169,
+    "src": "ecom/products/1740125364316255900.jpg",
+    "alt": "Bangles",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/1740125364316255900.jpg\" alt=\"Bangles\">"
+  },
+  {
+    "file": "index.html",
+    "line": 173,
+    "src": "ecom/products/17401354321760572244.jpg",
+    "alt": "Necklaces",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/17401354321760572244.jpg\" alt=\"Necklaces\">"
+  },
+  {
+    "file": "index.html",
+    "line": 177,
+    "src": "ecom/products/1740135726115621763.jpg",
+    "alt": "Bridal Sets",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"ecom/products/1740135726115621763.jpg\" alt=\"Bridal Sets\">"
+  },
+  {
+    "file": "index.html",
+    "line": 317,
+    "src": "assets/ecomm/images/about/about_img_1740983782.jpg",
+    "alt": "MG Jwellers Legacy",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/about/about_img_1740983782.jpg\" alt=\"MG Jwellers Legacy\"\r\n                                class=\"img-fluid\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 351,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoe8E_vVcT7JtQWsOy29651ipQfgpL1BqiYiuCOgFNQ&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoe8E_vVcT7JtQWsOy29651ipQfgpL1BqiYiuCOgFNQ&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 369,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPr-w--F8q3z7J7pWpLwIdu7VLp3B5nAGqoYRDQnDLg&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPr-w--F8q3z7J7pWpLwIdu7VLp3B5nAGqoYRDQnDLg&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 387,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoe8E_vVcT7JtQWsOy29651ipQfgpL1BqiYiuCOgFNQ&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoe8E_vVcT7JtQWsOy29651ipQfgpL1BqiYiuCOgFNQ&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 405,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nuZUMprnN3d9WNRQf9upPhCV6gMD_rnXxYKH7eoxIg&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nuZUMprnN3d9WNRQf9upPhCV6gMD_rnXxYKH7eoxIg&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 443,
+    "src": "ecom/products/1740135726115621763.jpg",
+    "alt": "Gold Jewellery",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\" src=\"ecom/products/1740135726115621763.jpg\" alt=\"Gold Jewellery\"\r\n                            loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 456,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Silver Jewellery",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\" src=\"ecom/products/1740122848901485459.jpg\" alt=\"Silver Jewellery\"\r\n                            loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 469,
+    "src": "ecom/products/17401354321760572244.jpg",
+    "alt": "Artificial Jewellery",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\" src=\"ecom/products/17401354321760572244.jpg\" alt=\"Artificial Jewellery\"\r\n                            loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 482,
+    "src": "ecom/products/17400513551934096853.jpg",
+    "alt": "Stone Jewellery",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img class=\"img-fluid\" src=\"ecom/products/17400513551934096853.jpg\" alt=\"Stone Jewellery\"\r\n                            loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 567,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVbc8B7hz9qGk39PXgL2titbKEgUw65gV6GsNNPRZHg&s=10",
+    "alt": "Catalogue item 1",
+    "id": "",
+    "className": "img-thumbnail img-responsive",
+    "raw": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVbc8B7hz9qGk39PXgL2titbKEgUw65gV6GsNNPRZHg&s=10\" alt=\"Catalogue item 1\" class=\"img-thumbnail img-responsive\" style=\"height:200px;min-height:auto;\">"
+  },
+  {
+    "file": "index.html",
+    "line": 568,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7VDZZ4n5_NHDroUHHDqbthXL0nZEbhKtwWTHfC-CF0w&s=10",
+    "alt": "Catalogue item 1",
+    "id": "",
+    "className": "img-thumbnail img-responsive",
+    "raw": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7VDZZ4n5_NHDroUHHDqbthXL0nZEbhKtwWTHfC-CF0w&s=10\"\r\n                                alt=\"Catalogue item 1\" class=\"img-thumbnail img-responsive\"\r\n                                style=\"height:200px;min-height:auto;\">"
+  },
+  {
+    "file": "index.html",
+    "line": 574,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV67ZWr0smhOFdgWvV3IUxEY71iQYhxJbWcySUwk6Khw&s=10",
+    "alt": "Catalogue item 2",
+    "id": "",
+    "className": "img-thumbnail img-responsive",
+    "raw": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV67ZWr0smhOFdgWvV3IUxEY71iQYhxJbWcySUwk6Khw&s=10\" alt=\"Catalogue item 2\" class=\"img-thumbnail img-responsive\" style=\"height:200px;min-height:auto;\">"
+  },
+  {
+    "file": "index.html",
+    "line": 575,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvTi_ZtDHguRFIhvnnlCUlW_NoginzvAkGxneUQPJJA&s=10",
+    "alt": "Catalogue item 2",
+    "id": "",
+    "className": "img-thumbnail img-responsive",
+    "raw": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvTi_ZtDHguRFIhvnnlCUlW_NoginzvAkGxneUQPJJA&s=10\"\r\n                                alt=\"Catalogue item 2\" class=\"img-thumbnail img-responsive\"\r\n                                style=\"height:200px;min-height:auto;\">"
+  },
+  {
+    "file": "index.html",
+    "line": 581,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIWyR2Y6I_zRhdapbCEIbzlNVjPGp4v5xVIey6TCBEg&s=10",
+    "alt": "Catalogue item 3",
+    "id": "",
+    "className": "img-thumbnail img-responsive",
+    "raw": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIWyR2Y6I_zRhdapbCEIbzlNVjPGp4v5xVIey6TCBEg&s=10\" alt=\"Catalogue item 3\" class=\"img-thumbnail img-responsive\" style=\"height:200px;min-height:auto;\">"
+  },
+  {
+    "file": "index.html",
+    "line": 582,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoe8E_vVcT7JtQWsOy29651ipQfgpL1BqiYiuCOgFNQ&s=10",
+    "alt": "Catalogue item 3",
+    "id": "",
+    "className": "img-thumbnail img-responsive",
+    "raw": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoe8E_vVcT7JtQWsOy29651ipQfgpL1BqiYiuCOgFNQ&s=10\"\r\n                                alt=\"Catalogue item 3\" class=\"img-thumbnail img-responsive\"\r\n                                style=\"height:200px;min-height:auto;\">"
+  },
+  {
+    "file": "index.html",
+    "line": 613,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQhdgmEczGHnJM-dk_eWMb5cOs37BvgfnbWVPIqZl4w&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQhdgmEczGHnJM-dk_eWMb5cOs37BvgfnbWVPIqZl4w&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 637,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgD-UAHxl5QHHrkX7U6ZVPs7AfOM-Nmn5mmwwD3d7jdQ&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgD-UAHxl5QHHrkX7U6ZVPs7AfOM-Nmn5mmwwD3d7jdQ&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 661,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ZmrQcRP9yDZQU2ftlVkM2lgq5P_bmb26anLyVz3PHQ&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ZmrQcRP9yDZQU2ftlVkM2lgq5P_bmb26anLyVz3PHQ&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "index.html",
+    "line": 685,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxVEUAh2gvi7INqSSCan13vdxElYvnpR356wktGsH2Xg&s=10",
+    "alt": "",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                            src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxVEUAh2gvi7INqSSCan13vdxElYvnpR356wktGsH2Xg&s=10\"\r\n                            alt=\"\" loading=\"lazy\">"
+  },
+  {
+    "file": "our-legacy.html",
+    "line": 55,
+    "src": "assets/ecomm/images/about/about_img_1740983782.jpg",
+    "alt": "Where it all began - MG Jwellers 1973 workshop",
+    "id": "",
+    "className": "legacy-block-img",
+    "raw": "<img src=\"assets/ecomm/images/about/about_img_1740983782.jpg\"\r\n                                    class=\"legacy-block-img\" alt=\"Where it all began - MG Jwellers 1973 workshop\" loading=\"lazy\">"
+  },
+  {
+    "file": "our-legacy.html",
+    "line": 76,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Craftsmanship that speaks - Heritage Artisans",
+    "id": "",
+    "className": "legacy-block-img",
+    "raw": "<img src=\"ecom/products/1740122848901485459.jpg\"\r\n                                    class=\"legacy-block-img\" alt=\"Craftsmanship that speaks - Heritage Artisans\" loading=\"lazy\">"
+  },
+  {
+    "file": "our-legacy.html",
+    "line": 97,
+    "src": "assets/ecomm/images/about/about_img_1743579985.jpg",
+    "alt": "Our promise - Hallmark certified purity",
+    "id": "",
+    "className": "legacy-block-img",
+    "raw": "<img src=\"assets/ecomm/images/about/about_img_1743579985.jpg\"\r\n                                    class=\"legacy-block-img\" alt=\"Our promise - Hallmark certified purity\" loading=\"lazy\">"
+  },
+  {
+    "file": "our-legacy.html",
+    "line": 117,
+    "src": "ecom/products/17401369251491548904.jpg",
+    "alt": "Looking ahead - Timeless Celebrations",
+    "id": "",
+    "className": "legacy-block-img",
+    "raw": "<img src=\"ecom/products/17401369251491548904.jpg\"\r\n                                    class=\"legacy-block-img\" alt=\"Looking ahead - Timeless Celebrations\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-filigree-bangles-with-dual-tone-detailingaQXSjRikrT.html",
+    "line": 70,
+    "src": "https://justudhari.com/ecom/products/1740131643523578087.jpg",
+    "alt": "22K Gold Filigree Bangles with Dual-Tone Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740131643523578087.jpg\"\n                  alt=\"22K Gold Filigree Bangles with Dual-Tone Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-filigree-bangles-with-dual-tone-detailingaQXSjRikrT.html",
+    "line": 74,
+    "src": "https://justudhari.com/ecom/products/17401316431875148035.jpg",
+    "alt": "22K Gold Filigree Bangles with Dual-Tone Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401316431875148035.jpg\"\n                  alt=\"22K Gold Filigree Bangles with Dual-Tone Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-filigree-bangles-with-intricate-cutwork-and-floral-enamel-detailing5RUNidRbpK.html",
+    "line": 70,
+    "src": "https://justudhari.com/ecom/products/1740131643523578087.jpg",
+    "alt": "22K Gold Filigree Bangles with Dual-Tone Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740131643523578087.jpg\"\n                  alt=\"22K Gold Filigree Bangles with Dual-Tone Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-filigree-bangles-with-intricate-cutwork-and-floral-enamel-detailing5RUNidRbpK.html",
+    "line": 74,
+    "src": "https://justudhari.com/ecom/products/17401316431875148035.jpg",
+    "alt": "22K Gold Filigree Bangles with Dual-Tone Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401316431875148035.jpg\"\n                  alt=\"22K Gold Filigree Bangles with Dual-Tone Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-floral-engraved-bangles-traditional-handcrafted-designgfuHy9JhMu.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/1740131352986498665.jpg",
+    "alt": "22K Gold Floral Engraved Bangles – Traditional Handcrafted Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740131352986498665.jpg\"\n                alt=\"22K Gold Floral Engraved Bangles – Traditional Handcrafted Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-floral-engraved-bangles-traditional-handcrafted-designgfuHy9JhMu.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/17401313521978346592.jpg",
+    "alt": "22K Gold Floral Engraved Bangles – Traditional Handcrafted Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401313521978346592.jpg\"\n                alt=\"22K Gold Floral Engraved Bangles – Traditional Handcrafted Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-floral-engraved-mens-ringahXHQFjwfR.html",
+    "line": 66,
+    "src": "https://justudhari.com/ecom/products/17401322651052103057.jpg",
+    "alt": "22K Gold Floral Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401322651052103057.jpg\"\n                  alt=\"22K Gold Floral Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-floral-engraved-mens-ringahXHQFjwfR.html",
+    "line": 70,
+    "src": "https://justudhari.com/ecom/products/17401322652104216964.jpg",
+    "alt": "22K Gold Floral Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401322652104216964.jpg\"\n                  alt=\"22K Gold Floral Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-swastik-engraved-mens-ringffJQd3eBXp.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/17401325061200865613.jpg",
+    "alt": "22K Gold Swastik Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401325061200865613.jpg\"\n                alt=\"22K Gold Swastik Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-swastik-engraved-mens-ringffJQd3eBXp.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/17401325061358551876.jpg",
+    "alt": "22K Gold Swastik Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401325061358551876.jpg\"\n                alt=\"22K Gold Swastik Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-swastik-engraved-mens-ringSzjqtjFATc.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/17408117271034638040.jpg",
+    "alt": "22K Gold Swastik Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17408117271034638040.jpg\"\n                  alt=\"22K Gold Swastik Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-swastik-engraved-mens-ringSzjqtjFATc.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/1740811727266876399.jpg",
+    "alt": "22K Gold Swastik Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740811727266876399.jpg\"\n                  alt=\"22K Gold Swastik Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-swastik-engraved-mens-ringSzjqtjFATc.html",
+    "line": 72,
+    "src": "https://justudhari.com/ecom/products/17408117271123636803.jpg",
+    "alt": "22K Gold Swastik Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17408117271123636803.jpg\"\n                  alt=\"22K Gold Swastik Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-traditional-engraved-mens-ringQdjTGUxBTa.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/17401319911520046093.jpg",
+    "alt": "22K Gold Traditional Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401319911520046093.jpg\"\n                alt=\"22K Gold Traditional Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-22k-gold-traditional-engraved-mens-ringQdjTGUxBTa.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/1740131991658870069.jpg",
+    "alt": "22K Gold Traditional Engraved Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740131991658870069.jpg\"\n                alt=\"22K Gold Traditional Engraved Men's Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-antique-gold-oval-filigree-ring-for-women7uztwYQBKe.html",
+    "line": 62,
+    "src": "https://justudhari.com/ecom/products/17401334792101980524.jpg",
+    "alt": "Antique Gold Oval Filigree Ring for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401334792101980524.jpg\"\n                alt=\"Antique Gold Oval Filigree Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-antique-gold-oval-filigree-ring-for-women7uztwYQBKe.html",
+    "line": 66,
+    "src": "https://justudhari.com/ecom/products/17401334792081403700.jpg",
+    "alt": "Antique Gold Oval Filigree Ring for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401334792081403700.jpg\"\n                alt=\"Antique Gold Oval Filigree Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-22k-gold-bangles-with-matte-glossy-finishLVJOT0A2Rp.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/17401263092090891444.jpg",
+    "alt": "Elegant 22K Gold Bangles with Matte &amp; Glossy Finish",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401263092090891444.jpg\"\n                  alt=\"Elegant 22K Gold Bangles with Matte &amp; Glossy Finish\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-22k-gold-bangles-with-matte-glossy-finishLVJOT0A2Rp.html",
+    "line": 71,
+    "src": "https://justudhari.com/ecom/products/1740126309649485768.jpg",
+    "alt": "Elegant 22K Gold Bangles with Matte &amp; Glossy Finish",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740126309649485768.jpg\"\n                  alt=\"Elegant 22K Gold Bangles with Matte &amp; Glossy Finish\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-22k-gold-teardrop-necklace-set-with-matching-earringsxzC4U8HVlH.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/1740124957996298748.jpg",
+    "alt": "Elegant 22K Gold Teardrop Necklace Set with Matching Earrings",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740124957996298748.jpg\"\n                  alt=\"Elegant 22K Gold Teardrop Necklace Set with Matching Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-22k-gold-teardrop-necklace-set-with-matching-earringsxzC4U8HVlH.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/1740124957226203557.jpg",
+    "alt": "Elegant 22K Gold Teardrop Necklace Set with Matching Earrings",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740124957226203557.jpg\"\n                  alt=\"Elegant 22K Gold Teardrop Necklace Set with Matching Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-22k-gold-twisted-bangles-with-dual-tone-finishoMgYQ5FA18.html",
+    "line": 66,
+    "src": "https://justudhari.com/ecom/products/1740125364397505384.jpg",
+    "alt": "Elegant 22K Gold Twisted Bangles with Dual-Tone Finish",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740125364397505384.jpg\"\n                  alt=\"Elegant 22K Gold Twisted Bangles with Dual-Tone Finish\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-22k-gold-twisted-bangles-with-dual-tone-finishoMgYQ5FA18.html",
+    "line": 70,
+    "src": "https://justudhari.com/ecom/products/1740125364316255900.jpg",
+    "alt": "Elegant 22K Gold Twisted Bangles with Dual-Tone Finish",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740125364316255900.jpg\"\n                  alt=\"Elegant 22K Gold Twisted Bangles with Dual-Tone Finish\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-floral-gold-ring-for-womenKroCz9kxLF.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/17401333231620894717.jpg",
+    "alt": "Elegant Floral Gold Ring for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401333231620894717.jpg\"\n                  alt=\"Elegant Floral Gold Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-floral-gold-ring-for-womenKroCz9kxLF.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/1740133323855086156.jpg",
+    "alt": "Elegant Floral Gold Ring for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740133323855086156.jpg\"\n                  alt=\"Elegant Floral Gold Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-gold-diamond-cut-necklace-set-with-teardrop-motifslb0ic1EmAC.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/1740135726115621763.jpg",
+    "alt": "Elegant Gold &amp; Diamond Cut Necklace Set with Teardrop Motifs",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740135726115621763.jpg\"\n                alt=\"Elegant Gold &amp; Diamond Cut Necklace Set with Teardrop Motifs\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-gold-diamond-cut-necklace-set-with-teardrop-motifslb0ic1EmAC.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/17401357262070272857.jpg",
+    "alt": "Elegant Gold &amp; Diamond Cut Necklace Set with Teardrop Motifs",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401357262070272857.jpg\"\n                alt=\"Elegant Gold &amp; Diamond Cut Necklace Set with Teardrop Motifs\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-gold-diamond-statement-ring-for-womend-cocktail-ringmrj95pqphy.html",
+    "line": 66,
+    "src": "https://justudhari.com/ecom/products/1740132762186966606.jpg",
+    "alt": "Elegant Gold &amp; Diamond Statement Ring for Women Cocktail Ring",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740132762186966606.jpg\"\n                  alt=\"Elegant Gold &amp; Diamond Statement Ring for Women Cocktail Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-gold-diamond-statement-ring-for-womend-cocktail-ringmrj95pqphy.html",
+    "line": 70,
+    "src": "https://justudhari.com/ecom/products/1740132762553823392.jpg",
+    "alt": "Elegant Gold &amp; Diamond Statement Ring for Women Cocktail Ring",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740132762553823392.jpg\"\n                  alt=\"Elegant Gold &amp; Diamond Statement Ring for Women Cocktail Ring\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-gold-floral-necklace-set-with-hanging-pendant2veaZr9ucc.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/1740134533100521072.jpg",
+    "alt": "Elegant Gold Floral Necklace Set with Hanging Pendant",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740134533100521072.jpg\"\n                alt=\"Elegant Gold Floral Necklace Set with Hanging Pendant\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-elegant-gold-floral-necklace-set-with-hanging-pendant2veaZr9ucc.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/1740134533793125991.jpg",
+    "alt": "Elegant Gold Floral Necklace Set with Hanging Pendant",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740134533793125991.jpg\"\n                alt=\"Elegant Gold Floral Necklace Set with Hanging Pendant\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-22k-gold-designer-heart-motif-necklace-for-womenTX5ufEmg1e.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/1740123453338354113.jpg",
+    "alt": "Pure 22K Gold Designer Heart Motif Necklace for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740123453338354113.jpg\"\n                  alt=\"Pure 22K Gold Designer Heart Motif Necklace for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-22k-gold-designer-heart-motif-necklace-for-womenTX5ufEmg1e.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/17401234531578961089.jpg",
+    "alt": "Pure 22K Gold Designer Heart Motif Necklace for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401234531578961089.jpg\"\n                  alt=\"Pure 22K Gold Designer Heart Motif Necklace for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-22k-gold-figaro-chain-for-menucOtwbTzus.html",
+    "line": 63,
+    "src": "ecom/products/1740122848901485459.jpg",
+    "alt": "Pure 22K Gold Figaro Chain for Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"ecom/products/1740122848901485459.jpg\"\n                  alt=\"Pure 22K Gold Figaro Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-22k-gold-figaro-chain-for-menucOtwbTzus.html",
+    "line": 67,
+    "src": "ecom/products/17401228481394741863.jpg",
+    "alt": "Pure 22K Gold Figaro Chain for Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"ecom/products/17401228481394741863.jpg\"\n                  alt=\"Pure 22K Gold Figaro Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-22k-gold-textured-oval-link-chain-for-menErucyNcP3G.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/17401217391996961692.jpg",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401217391996961692.jpg\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-22k-gold-textured-oval-link-chain-for-menErucyNcP3G.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/1740121739366729992.jpg",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740121739366729992.jpg\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-gold-multi-layered-beaded-necklacerrmJWDhYQv.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/17401363141207979315.jpg",
+    "alt": "Pure Gold Multi-Layered Beaded Necklace",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401363141207979315.jpg\"\n                alt=\"Pure Gold Multi-Layered Beaded Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-gold-multi-layered-beaded-necklacerrmJWDhYQv.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/17401363141098695203.jpg",
+    "alt": "Pure Gold Multi-Layered Beaded Necklace",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401363141098695203.jpg\"\n                alt=\"Pure Gold Multi-Layered Beaded Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-gold-traditional-temple-choker-necklacek9EqizMYwz.html",
+    "line": 66,
+    "src": "https://justudhari.com/ecom/products/1740136475959752717.jpg",
+    "alt": "Pure Gold Traditional Temple Choker Necklace",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740136475959752717.jpg\"\n                  alt=\"Pure Gold Traditional Temple Choker Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-pure-gold-traditional-temple-choker-necklacek9EqizMYwz.html",
+    "line": 70,
+    "src": "https://justudhari.com/ecom/products/17401364751018638795.jpg",
+    "alt": "Pure Gold Traditional Temple Choker Necklace",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401364751018638795.jpg\"\n                  alt=\"Pure Gold Traditional Temple Choker Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-queens-haarXsnnhY0PGf.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/17422963841141622111.jpg",
+    "alt": "Queens Haar",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17422963841141622111.jpg\"\n                  alt=\"Queens Haar\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-queens-haarXsnnhY0PGf.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/17422963841282536750.jpg",
+    "alt": "Queens Haar",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17422963841282536750.jpg\"\n                  alt=\"Queens Haar\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-royal-gold-choker-necklace-set-with-intricate-net-designCQHdUCwX4y.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/17401359551675556049.jpg",
+    "alt": "Royal Gold Choker Necklace Set with Intricate Net Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401359551675556049.jpg\"\n                  alt=\"Royal Gold Choker Necklace Set with Intricate Net Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-royal-gold-choker-necklace-set-with-intricate-net-designCQHdUCwX4y.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/17401359551378875783.jpg",
+    "alt": "Royal Gold Choker Necklace Set with Intricate Net Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401359551378875783.jpg\"\n                  alt=\"Royal Gold Choker Necklace Set with Intricate Net Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-royal-gold-choker-necklace-with-intricate-filigree-designXmBfZRDTib.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/1740135092118801409.jpg",
+    "alt": "Royal Gold Choker Necklace with Intricate Filigree Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740135092118801409.jpg\"\n                alt=\"Royal Gold Choker Necklace with Intricate Filigree Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-royal-gold-choker-necklace-with-intricate-filigree-designXmBfZRDTib.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/1740135092476480092.jpg",
+    "alt": "Royal Gold Choker Necklace with Intricate Filigree Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740135092476480092.jpg\"\n                alt=\"Royal Gold Choker Necklace with Intricate Filigree Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-stylish-gold-designer-ring-for-womennTNdbpxH4i.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/17401329911528368776.jpg",
+    "alt": "Stylish Gold Designer Ring for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401329911528368776.jpg\"\n                  alt=\"Stylish Gold Designer Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-stylish-gold-designer-ring-for-womennTNdbpxH4i.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/174013299135923142.jpg",
+    "alt": "Stylish Gold Designer Ring for Women",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/174013299135923142.jpg\"\n                  alt=\"Stylish Gold Designer Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-22k-gold-bangles-with-black-enamel-detailingI11L6dzDzg.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/1740126622972893936.jpg",
+    "alt": "Traditional 22K Gold Bangles with Black Enamel Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740126622972893936.jpg\"\n                  alt=\"Traditional 22K Gold Bangles with Black Enamel Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-22k-gold-bangles-with-black-enamel-detailingI11L6dzDzg.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/1740126622968736550.jpg",
+    "alt": "Traditional 22K Gold Bangles with Black Enamel Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740126622968736550.jpg\"\n                  alt=\"Traditional 22K Gold Bangles with Black Enamel Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-22k-gold-filigree-necklace-set-with-matching-earrings8Hbo4yUyus.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/17401239491492239894.jpg",
+    "alt": "Traditional 22K Gold Filigree Necklace Set with Matching Earrings",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401239491492239894.jpg\"\n                alt=\"Traditional 22K Gold Filigree Necklace Set with Matching Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-22k-gold-filigree-necklace-set-with-matching-earrings8Hbo4yUyus.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/1740123949979609151.jpg",
+    "alt": "Traditional 22K Gold Filigree Necklace Set with Matching Earrings",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740123949979609151.jpg\"\n                alt=\"Traditional 22K Gold Filigree Necklace Set with Matching Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-22k-gold-jhumka-earrings-with-intricate-designu1lfgVBfds.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/1740125995399443367.jpg",
+    "alt": "Traditional 22K Gold Jhumka Earrings with Intricate Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740125995399443367.jpg\"\n                alt=\"Traditional 22K Gold Jhumka Earrings with Intricate Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-22k-gold-jhumka-earrings-with-intricate-designu1lfgVBfds.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/1740125995992470325.jpg",
+    "alt": "Traditional 22K Gold Jhumka Earrings with Intricate Design",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740125995992470325.jpg\"\n                alt=\"Traditional 22K Gold Jhumka Earrings with Intricate Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-gold-bridal-choker-necklacedRp7Hy6wD5.html",
+    "line": 65,
+    "src": "https://justudhari.com/ecom/products/17401337321500918722.jpg",
+    "alt": "Traditional Gold Bridal Choker Necklace",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401337321500918722.jpg\"\n                  alt=\"Traditional Gold Bridal Choker Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-gold-bridal-choker-necklacedRp7Hy6wD5.html",
+    "line": 69,
+    "src": "https://justudhari.com/ecom/products/1740133732444578383.jpg",
+    "alt": "Traditional Gold Bridal Choker Necklace",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740133732444578383.jpg\"\n                  alt=\"Traditional Gold Bridal Choker Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-gold-jhumka-earringsNf9sqFEm6T.html",
+    "line": 63,
+    "src": "https://justudhari.com/ecom/products/1740134091727221682.jpg",
+    "alt": "Traditional Gold Jhumka Earrings",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740134091727221682.jpg\"\n                alt=\"Traditional Gold Jhumka Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-gold-jhumka-earringsNf9sqFEm6T.html",
+    "line": 67,
+    "src": "https://justudhari.com/ecom/products/17401340911759207612.jpg",
+    "alt": "Traditional Gold Jhumka Earrings",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401340911759207612.jpg\"\n                alt=\"Traditional Gold Jhumka Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-gold-red-thread-necklace-setONKb5XJRxs.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/1740134334375150559.jpg",
+    "alt": "Traditional Gold &amp; Red Thread Necklace Set",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740134334375150559.jpg\"\n                  alt=\"Traditional Gold &amp; Red Thread Necklace Set\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-gold-red-thread-necklace-setONKb5XJRxs.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/1740134334170260715.jpg",
+    "alt": "Traditional Gold &amp; Red Thread Necklace Set",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740134334170260715.jpg\"\n                  alt=\"Traditional Gold &amp; Red Thread Necklace Set\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-temple-gold-necklace-with-coin-beaded-detailingCmM7Jd8UyQ.html",
+    "line": 64,
+    "src": "https://justudhari.com/ecom/products/17401354321760572244.jpg",
+    "alt": "Traditional Temple Gold Necklace with Coin &amp; Beaded Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/17401354321760572244.jpg\"\n                alt=\"Traditional Temple Gold Necklace with Coin &amp; Beaded Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "product-detail-traditional-temple-gold-necklace-with-coin-beaded-detailingCmM7Jd8UyQ.html",
+    "line": 68,
+    "src": "https://justudhari.com/ecom/products/1740135432777800412.jpg",
+    "alt": "Traditional Temple Gold Necklace with Coin &amp; Beaded Detailing",
+    "id": "",
+    "className": "w-100 h-100",
+    "raw": "<img class=\"w-100 h-100\" src=\"https://justudhari.com/ecom/products/1740135432777800412.jpg\"\n                alt=\"Traditional Temple Gold Necklace with Coin &amp; Beaded Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "scheme-details-2DgepBernjd9q5Lk5.html",
+    "line": 58,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-2DgepBernjd9q5Lk5.html",
+    "line": 64,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-2DgepBernjd9q5Lk5.html",
+    "line": 70,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-2DgepBernjd9q5Lk5.html",
+    "line": 76,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdfe$5##545%#$#dfdsfs$%@#fdsfr.html",
+    "line": 58,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdfe$5##545%#$#dfdsfs$%@#fdsfr.html",
+    "line": 64,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdfe$5##545%#$#dfdsfs$%@#fdsfr.html",
+    "line": 70,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdfe$5##545%#$#dfdsfs$%@#fdsfr.html",
+    "line": 76,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdferer4545dfdsfs$%@#fdsfr.html",
+    "line": 59,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdferer4545dfdsfs$%@#fdsfr.html",
+    "line": 65,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdferer4545dfdsfs$%@#fdsfr.html",
+    "line": 71,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-asdferer4545dfdsfs$%@#fdsfr.html",
+    "line": 77,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-fdfdgfdg5454654_es.html",
+    "line": 58,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-fdfdgfdg5454654_es.html",
+    "line": 64,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-fdfdgfdg5454654_es.html",
+    "line": 70,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-fdfdgfdg5454654_es.html",
+    "line": 76,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-UxdaopsuEv9mN3s70.html",
+    "line": 59,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-UxdaopsuEv9mN3s70.html",
+    "line": 65,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-UxdaopsuEv9mN3s70.html",
+    "line": 71,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-UxdaopsuEv9mN3s70.html",
+    "line": 77,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-W9dtIeyIclSoGtTw1.html",
+    "line": 61,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-W9dtIeyIclSoGtTw1.html",
+    "line": 67,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-W9dtIeyIclSoGtTw1.html",
+    "line": 73,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-W9dtIeyIclSoGtTw1.html",
+    "line": 79,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-wsQiJ6D5I0sxzweX.html",
+    "line": 59,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-wsQiJ6D5I0sxzweX.html",
+    "line": 65,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-wsQiJ6D5I0sxzweX.html",
+    "line": 71,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-wsQiJ6D5I0sxzweX.html",
+    "line": 77,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-Xri07y4Kky3RmRdj.html",
+    "line": 60,
+    "src": "assets/ecomm/images/schemes/Mg_page-0001.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0001.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-Xri07y4Kky3RmRdj.html",
+    "line": 66,
+    "src": "assets/ecomm/images/schemes/Mg_page-0002.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0002.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-Xri07y4Kky3RmRdj.html",
+    "line": 72,
+    "src": "assets/ecomm/images/schemes/Mg_page-0003.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0003.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "scheme-details-Xri07y4Kky3RmRdj.html",
+    "line": 78,
+    "src": "assets/ecomm/images/schemes/Mg_page-0004.jpg",
+    "alt": "Scheme Details",
+    "id": "",
+    "className": "img-fluid",
+    "raw": "<img src=\"assets/ecomm/images/schemes/Mg_page-0004.jpg\" class=\"img-fluid\" alt=\"Scheme Details\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 996,
+    "src": "assets/ecomm/images/about/about_img_1723115094.webp",
+    "alt": "Pure 22K Gold Textured Oval Link Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\r\n                                        alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1060,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Pure 22K Gold Figaro Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Pure 22K Gold Figaro Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1124,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Pure 22K Gold Designer Heart Motif Necklace for Women",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Pure 22K Gold Designer Heart Motif Necklace for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1189,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional 22K Gold Filigree Necklace Set with Matching Earrings",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional 22K Gold Filigree Necklace Set with Matching Earrings\"\r\n                                        loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1255,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant 22K Gold Teardrop Necklace Set with Matching Earrings",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant 22K Gold Teardrop Necklace Set with Matching Earrings\"\r\n                                        loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1321,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant 22K Gold Twisted Bangles with Dual-Tone Finish",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant 22K Gold Twisted Bangles with Dual-Tone Finish\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1386,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional 22K Gold Jhumka Earrings with Intricate Design",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional 22K Gold Jhumka Earrings with Intricate Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1445,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant 22K Gold Bangles with Matte &amp; Glossy Finish",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant 22K Gold Bangles with Matte &amp; Glossy Finish\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1504,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional 22K Gold Bangles with Black Enamel Detailing",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional 22K Gold Bangles with Black Enamel Detailing\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1569,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant Gold &amp; Diamond Statement Ring for Womend Cocktail Ring",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant Gold &amp; Diamond Statement Ring for Womend Cocktail Ring\"\r\n                                        loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1635,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Stylish Gold Designer Ring for Women",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Stylish Gold Designer Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1699,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant Floral Gold Ring for Women",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant Floral Gold Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1763,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Antique Gold Oval Filigree Ring for Women",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Antique Gold Oval Filigree Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1827,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional Gold Bridal Choker Necklace",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional Gold Bridal Choker Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1890,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional Gold Jhumka Earrings",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional Gold Jhumka Earrings\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 1954,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional Gold &amp; Red Thread Necklace Set",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional Gold &amp; Red Thread Necklace Set\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2018,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant Gold Floral Necklace Set with Hanging Pendant",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant Gold Floral Necklace Set with Hanging Pendant\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2083,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Traditional Temple Gold Necklace with Coin &amp; Beaded Detailing",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Traditional Temple Gold Necklace with Coin &amp; Beaded Detailing\"\r\n                                        loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2149,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Elegant Gold &amp; Diamond Cut Necklace Set with Teardrop Motifs",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Elegant Gold &amp; Diamond Cut Necklace Set with Teardrop Motifs\"\r\n                                        loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2215,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Royal Gold Choker Necklace Set with Intricate Net Design",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Royal Gold Choker Necklace Set with Intricate Net Design\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2280,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Pure Gold Multi-Layered Beaded Necklace",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\"\r\n                                        alt=\"Pure Gold Multi-Layered Beaded Necklace\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2344,
+    "src": "assets/ecomm/images/about/about_img_1723178850.webp",
+    "alt": "Queens Haar",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\"\r\n                                        src=\"assets/ecomm/images/about/about_img_1723178850.webp\" alt=\"Queens Haar\"\r\n                                        loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2417,
+    "src": "assets/ecomm/images/newarrived/chain_2.jpg",
+    "alt": "Pure 925 Sterling Silver Curb Chain for Men",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/newarrived/chain_2.jpg\" alt=\"Pure 925 Sterling Silver Curb Chain for Men\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2449,
+    "src": "assets/ecomm/images/newarrived/ring_7.webp",
+    "alt": "Elegant 925 Silver Solitaire Ring for Women",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/newarrived/ring_7.webp\" alt=\"Elegant 925 Silver Solitaire Ring for Women\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2481,
+    "src": "assets/ecomm/images/newarrived/nkls_12.webp",
+    "alt": "Handcrafted Artificial Kundan Choker Necklace Set",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/newarrived/nkls_12.webp\" alt=\"Handcrafted Artificial Kundan Choker Necklace Set\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2513,
+    "src": "assets/ecomm/images/newarrived/bngl_17.webp",
+    "alt": "Designer Artificial Gold-Plated Traditional Bangles Set",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/newarrived/bngl_17.webp\" alt=\"Designer Artificial Gold-Plated Traditional Bangles Set\" loading=\"lazy\">"
+  },
+  {
+    "file": "shop.html",
+    "line": 2545,
+    "src": "assets/ecomm/images/stone_metal_.png",
+    "alt": "Natural Ruby Gemstone Gold Ring (माणिक-Manik)",
+    "id": "",
+    "className": "img-fluid w-100",
+    "raw": "<img class=\"img-fluid w-100\" src=\"assets/ecomm/images/stone_metal_.png\" alt=\"Natural Ruby Gemstone Gold Ring (माणिक-Manik)\" loading=\"lazy\">"
+  },
+  {
+    "file": "wishlist.html",
+    "line": 66,
+    "src": "assets/ecomm/products/rings/ring_1.webp",
+    "alt": "",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"\"\n                                        style=\"width: 60px; float:left;\">"
+  },
+  {
+    "file": "wishlist.html",
+    "line": 97,
+    "src": "assets/ecomm/products/bangels/bangels_1.webp",
+    "alt": "",
+    "id": "",
+    "className": "",
+    "raw": "<img src=\"assets/ecomm/products/bangels/bangels_1.webp\" alt=\"\"\n                                        style=\"width: 60px; float:left;\">"
+  },
+  {
+    "file": "wishlist.html",
+    "line": 157,
+    "src": "assets/ecomm/products/rings/ring_1.webp",
+    "alt": "22K Royal Gold Filigree Ring",
+    "id": "",
+    "className": "mg-wishlist-thumb",
+    "raw": "<img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"22K Royal Gold Filigree Ring\" class=\"mg-wishlist-thumb\">"
+  },
+  {
+    "file": "wishlist.html",
+    "line": 181,
+    "src": "assets/ecomm/products/bangels/bangels_1.webp",
+    "alt": "Pure 22K Gold Handcrafted Bangles",
+    "id": "",
+    "className": "mg-wishlist-thumb",
+    "raw": "<img src=\"assets/ecomm/products/bangels/bangels_1.webp\" alt=\"Pure 22K Gold Handcrafted Bangles\" class=\"mg-wishlist-thumb\">"
+  },
+  {
+    "file": "wishlist.html",
+    "line": 205,
+    "src": "assets/ecomm/products/nackles_set/necklace_1.webp",
+    "alt": "Traditional Temple Choker Necklace",
+    "id": "",
+    "className": "mg-wishlist-thumb",
+    "raw": "<img src=\"assets/ecomm/products/nackles_set/necklace_1.webp\" alt=\"Traditional Temple Choker Necklace\" class=\"mg-wishlist-thumb\">"
+  }
+]

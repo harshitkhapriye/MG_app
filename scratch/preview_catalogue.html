@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Covers Preview & Verification</title>
+    <link href="../assets/ecomm/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/ecomm/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mg-gold-1: #d4af37;
+            --mg-gold-2: #aa7c11;
+            --mg-dark: #0d1117;
+            --mg-card-bg: #161b22;
+            --mg-border: rgba(212, 175, 55, 0.25);
+        }
+        body {
+            background: #0a0d12;
+            color: #e6edf3;
+            font-family: 'Montserrat', sans-serif;
+            padding-bottom: 90px;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.5px;
+        }
+        .header-box {
+            background: linear-gradient(135deg, #131920, #0a0d12);
+            border-bottom: 1px solid var(--mg-border);
+            padding: 36px 0;
+            margin-bottom: 40px;
+        }
+        .section-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--mg-gold-1);
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid var(--mg-border);
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        .catalogue-card-container {
+            background: var(--mg-card-bg);
+            border: 1px solid var(--mg-border);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .catalogue-card-container:hover {
+            border-color: var(--mg-gold-1);
+            transform: translateY(-3px);
+        }
+        .catalogue-img-box {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            background: #000;
+            overflow: hidden;
+        }
+        .catalogue-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .catalogue-card-container:hover .catalogue-img-box img {
+            transform: scale(1.04);
+        }
+        .badge-pill-catalogue {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(10, 13, 18, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            color: #d4af37;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 30px;
+        }
+        .item-count-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .card-details {
+            padding: 24px 28px;
+        }
+        .card-title-gold {
+            color: #f0e6d2;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .card-desc {
+            color: #9ba3af;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .btn-view-lookbook {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #d4af37, #aa7c11);
+            color: #0b0e14 !important;
+            font-weight: 700;
+            font-size: 12.5px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 9px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: filter 0.2s ease, transform 0.2s ease;
+        }
+        .btn-view-lookbook:hover {
+            filter: brightness(1.15);
+            transform: translateY(-1px);
+        }
+        .specs-badge {
+            font-size: 12px;
+            color: #3fb950;
+            background: rgba(46, 160, 67, 0.15);
+            border: 1px solid rgba(46, 160, 67, 0.3);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+        .mobile-simulation-wrapper {
+            max-width: 440px;
+            margin: 0 auto;
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            border-radius: 32px;
+            padding: 16px;
+            background: #11151c;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+        .mobile-header-mock {
+            text-align: center;
+            padding: 10px 0 16px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            margin-bottom: 16px;
+        }
+        .mobile-catalogue-card {
+            background: #161b22;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .mobile-card-img-wrap {
+            position: relative;
+            width: 100%;
+            height: 180px;
+        }
+        .mobile-card-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .mobile-card-content {
+            padding: 14px;
+        }
+        .mobile-card-title {
+            font-size: 15px;
+            color: #f7f2e7;
+            margin-bottom: 4px;
+            font-family: 'Cinzel', serif;
+        }
+        .mobile-card-sub {
+            font-size: 11.5px;
+            color: #8b949e;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .mobile-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .mobile-btn-lookbook {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #d4af37;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .nav-tabs-custom {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            margin-bottom: 30px;
+        }
+        .nav-tabs-custom .nav-link {
+            color: #8b949e;
+            font-weight: 600;
+            border: none;
+            padding: 12px 24px;
+            border-bottom: 3px solid transparent;
+            background: transparent;
+        }
+        .nav-tabs-custom .nav-link.active {
+            color: #d4af37;
+            border-bottom-color: #d4af37;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-box">
+        <div class="container text-center">
+            <span class="section-tag"><i class="fas fa-gem me-1"></i> MG Jewellers Lookbooks</span>
+            <h1 class="text-white mt-1 mb-2">Curated Catalogues Sourcing Preview</h1>
+            <p class="text-muted mb-0" style="max-width: 680px; margin: 0 auto; font-size: 14px;">
+                Visual verification for the 5 newly sourced catalogue cover images for <code>cateloge.html</code>.
+                Review both the high-res inspection view and the live mobile card simulation below.
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs nav-tabs-custom justify-content-center" id="previewTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="detail-tab" data-bs-toggle="tab" href="#detailView" role="tab">
+                    <i class="fas fa-images me-1"></i> Full Inspection & Metadata (5)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="mobile-tab" data-bs-toggle="tab" href="#mobileView" role="tab">
+                    <i class="fas fa-mobile-alt me-1"></i> Live Mobile Simulation (cateloge.html)
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="previewTabContent">
+            
+            <!-- DETAIL TAB -->
+            <div class="tab-pane fade show active" id="detailView" role="tabpanel">
+                <div class="row">
+                    
+                    <!-- 1. Bridal Heritage -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="catalogue-card-container" data-catalogue-id="cat_bridal_2025">
+                            <div class="catalogue-img-box">
+                                <img src="../assets/ecomm/images/catalogue/catalogue_bridal_heritage.jpg" alt="Royal Bridal Heritage 2025">
+                                <span class="badge-pill-catalogue">Bridal Edition</span>
+                                <span class="item-count-badge"><i class="fas fa-layer-group me-1"></i> 48 Designs</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="card-title-gold">1. Royal Bridal Heritage 2025</h3>
+                                <p class="card-desc">
+                                    Grand bridal jewellery suite featuring uncut Polki diamonds, hand-strung Colombian emerald beads, and Burmese rubies staged over deep royal burgundy velvet.
+                                </p>
+                                <table class="table table-dark table-borderless table-sm mb-3" style="font-size: 12.5px; background: transparent;">
+                                    <tr><td class="text-muted" style="width: 130px;">Target File:</td><td><code>catalogue_bridal_heritage.jpg</code></td></tr>
+                                    <tr><td class="text-muted">Aspect Ratio:</td><td>16:9 Widescreen (Banner Fit)</td></tr>
+                                    <tr><td class="text-muted">Visual Inspection:</td><td><span class="specs-badge"><i class="fas fa-check-circle"></i> Flawless Masterpiece</span></td></tr>
+                                </table>
+                                <div class="action-row">
+                                    <span class="text-muted" style="font-size: 12px;">ID: <code>cat_bridal_2025</code></span>
+                                    <a href="../assets/ecomm/images/catalogue/catalogue_bridal_heritage.jpg" target="_blank" class="btn-view-lookbook">
+                                        <i class="fas fa-search-plus"></i> View Full Res
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Festive Gold Edit -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="catalogue-card-container" data-catalogue-id="cat_festive_gold">
+                            <div class="catalogue-img-box">
+                                <img src="../assets/ecomm/images/catalogue/catalogue_festive_gold.jpg" alt="Festive Gold Edit">
+                                <span class="badge-pill-catalogue">Festive Edit</span>
+                                <span class="item-count-badge"><i class="fas fa-layer-group me-1"></i> 64 Designs</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="card-title-gold">2. Festive Gold Edit</h3>
+                                <p class="card-desc">
+                                    Pure 22K yellow gold filigree necklace with handcrafted tiered jhumkas and traditional bangles, styled on ivory raw silk with golden marigold petals. 100% clean photography.
+                                </p>
+                                <table class="table table-dark table-borderless table-sm mb-3" style="font-size: 12.5px; background: transparent;">
+                                    <tr><td class="text-muted" style="width: 130px;">Target File:</td><td><code>catalogue_festive_gold.jpg</code></td></tr>
+                                    <tr><td class="text-muted">Aspect Ratio:</td><td>16:9 Widescreen (Banner Fit)</td></tr>
+                                    <tr><td class="text-muted">Visual Inspection:</td><td><span class="specs-badge"><i class="fas fa-check-circle"></i> Pure Photography (No Text)</span></td></tr>
+                                </table>
+                                <div class="action-row">
+                                    <span class="text-muted" style="font-size: 12px;">ID: <code>cat_festive_gold</code></span>
+                                    <a href="../assets/ecomm/images/catalogue/catalogue_festive_gold.jpg" target="_blank" class="btn-view-lookbook">
+                                        <i class="fas fa-search-plus"></i> View Full Res
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Temple & Antique Treasures -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="catalogue-card-container" data-catalogue-id="cat_temple_antique">
+                            <div class="catalogue-img-box">
+                                <img src="../assets/ecomm/images/catalogue/catalogue_temple_antique.jpg" alt="Temple & Antique Treasures">
+                                <span class="badge-pill-catalogue">Antique & Nakshi</span>
+                                <span class="item-count-badge"><i class="fas fa-layer-group me-1"></i> 36 Designs</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="card-title-gold">3. Temple & Antique Treasures</h3>
+                                <p class="card-desc">
+                                    Authentic South Indian temple jewellery with Nakshi hand-carved Goddess Lakshmi medallion, paired with dancing peacocks, cabochon rubies, and natural pearl drops on rich crimson silk.
+                                </p>
+                                <table class="table table-dark table-borderless table-sm mb-3" style="font-size: 12.5px; background: transparent;">
+                                    <tr><td class="text-muted" style="width: 130px;">Target File:</td><td><code>catalogue_temple_antique.jpg</code></td></tr>
+                                    <tr><td class="text-muted">Aspect Ratio:</td><td>16:9 Widescreen (Banner Fit)</td></tr>
+                                    <tr><td class="text-muted">Visual Inspection:</td><td><span class="specs-badge"><i class="fas fa-check-circle"></i> Museum Grade Detailing</span></td></tr>
+                                </table>
+                                <div class="action-row">
+                                    <span class="text-muted" style="font-size: 12px;">ID: <code>cat_temple_antique</code></span>
+                                    <a href="../assets/ecomm/images/catalogue/catalogue_temple_antique.jpg" target="_blank" class="btn-view-lookbook">
+                                        <i class="fas fa-search-plus"></i> View Full Res
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Everyday Minimalist Elegance -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="catalogue-card-container" data-catalogue-id="cat_everyday_minimal">
+                            <div class="catalogue-img-box">
+                                <img src="../assets/ecomm/images/catalogue/catalogue_everyday_minimal.jpg" alt="Everyday Minimalist Elegance">
+                                <span class="badge-pill-catalogue">Pret & Daily Wear</span>
+                                <span class="item-count-badge"><i class="fas fa-layer-group me-1"></i> 52 Designs</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="card-title-gold">4. Everyday Minimalist Elegance</h3>
+                                <p class="card-desc">
+                                    Chic, featherweight 18K yellow gold layered delicate chain necklaces, solitaire diamond bezel pendant, bar pendant, stackable geometric rings, and circle studs on natural travertine stone.
+                                </p>
+                                <table class="table table-dark table-borderless table-sm mb-3" style="font-size: 12.5px; background: transparent;">
+                                    <tr><td class="text-muted" style="width: 130px;">Target File:</td><td><code>catalogue_everyday_minimal.jpg</code></td></tr>
+                                    <tr><td class="text-muted">Aspect Ratio:</td><td>16:9 Widescreen (Banner Fit)</td></tr>
+                                    <tr><td class="text-muted">Visual Inspection:</td><td><span class="specs-badge"><i class="fas fa-check-circle"></i> Ultra-Modern Aesthetic</span></td></tr>
+                                </table>
+                                <div class="action-row">
+                                    <span class="text-muted" style="font-size: 12px;">ID: <code>cat_everyday_minimal</code></span>
+                                    <a href="../assets/ecomm/images/catalogue/catalogue_everyday_minimal.jpg" target="_blank" class="btn-view-lookbook">
+                                        <i class="fas fa-search-plus"></i> View Full Res
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. The Men's Royal Edit -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="catalogue-card-container" data-catalogue-id="cat_mens_royal">
+                            <div class="row g-0">
+                                <div class="col-lg-7">
+                                    <div class="catalogue-img-box" style="height: 100%; min-height: 320px;">
+                                        <img src="../assets/ecomm/images/catalogue/catalogue_mens_royal.jpg" alt="The Men's Royal Edit">
+                                        <span class="badge-pill-catalogue">Men's Collection</span>
+                                        <span class="item-count-badge"><i class="fas fa-layer-group me-1"></i> 28 Designs</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="card-details h-100 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h3 class="card-title-gold">5. The Men's Royal Edit</h3>
+                                            <p class="card-desc">
+                                                Bold, regal men's fine 22K yellow gold collection featuring a heavy diamond-cut Cuban chain, solid lion crest signet ring with black onyx inlay, and sculpted textured kada on black Italian leather and charcoal slate.
+                                            </p>
+                                            <table class="table table-dark table-borderless table-sm mb-3" style="font-size: 12.5px; background: transparent;">
+                                                <tr><td class="text-muted" style="width: 130px;">Target File:</td><td><code>catalogue_mens_royal.jpg</code></td></tr>
+                                                <tr><td class="text-muted">Aspect Ratio:</td><td>16:9 Widescreen (Banner Fit)</td></tr>
+                                                <tr><td class="text-muted">Visual Inspection:</td><td><span class="specs-badge"><i class="fas fa-check-circle"></i> Masculine Luxury Finish</span></td></tr>
+                                            </table>
+                                        </div>
+                                        <div class="action-row">
+                                            <span class="text-muted" style="font-size: 12px;">ID: <code>cat_mens_royal</code></span>
+                                            <a href="../assets/ecomm/images/catalogue/catalogue_mens_royal.jpg" target="_blank" class="btn-view-lookbook">
+                                                <i class="fas fa-search-plus"></i> View Full Res
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MOBILE SIMULATION TAB -->
+            <div class="tab-pane fade" id="mobileView" role="tabpanel">
+                <div class="text-center mb-4">
+                    <p class="text-muted small">This is the exact UI experience users will see inside <strong>cateloge.html</strong> on mobile viewport:</p>
+                </div>
+
+                <div class="mobile-simulation-wrapper">
+                    <div class="mobile-header-mock">
+                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #d4af37; font-weight: 700;">Curated Lookbooks</div>
+                        <h4 style="margin: 3px 0 0 0; color: #fff; font-size: 18px;">Catalogues</h4>
+                    </div>
+
+                    <!-- Mobile Card 1 -->
+                    <div class="mobile-catalogue-card" data-catalogue-id="cat_bridal_2025" data-item-count="48">
+                        <div class="mobile-card-img-wrap">
+                            <img src="../assets/ecomm/images/catalogue/catalogue_bridal_heritage.jpg" alt="Royal Bridal Heritage">
+                            <span class="badge-pill-catalogue" style="top: 10px; left: 10px; font-size: 9.5px; padding: 4px 10px;">Bridal</span>
+                            <span class="item-count-badge" style="top: 10px; right: 10px; font-size: 9.5px; padding: 3px 8px;">48 Designs</span>
+                        </div>
+                        <div class="mobile-card-content">
+                            <div class="mobile-card-title">Royal Bridal Heritage 2025</div>
+                            <div class="mobile-card-sub">Polki diamond chokers, uncut rubies, and emerald bead suites for the bride.</div>
+                            <div class="mobile-card-footer">
+                                <a href="javascript:void(0)" class="mobile-btn-lookbook">Explore Lookbook <i class="fas fa-arrow-right ms-1"></i></a>
+                                <span style="font-size: 10.5px; color: #6e7681;">Updated Sep 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Card 2 -->
+                    <div class="mobile-catalogue-card" data-catalogue-id="cat_festive_gold" data-item-count="64">
+                        <div class="mobile-card-img-wrap">
+                            <img src="../assets/ecomm/images/catalogue/catalogue_festive_gold.jpg" alt="Festive Gold Edit">
+                            <span class="badge-pill-catalogue" style="top: 10px; left: 10px; font-size: 9.5px; padding: 4px 10px;">Festive</span>
+                            <span class="item-count-badge" style="top: 10px; right: 10px; font-size: 9.5px; padding: 3px 8px;">64 Designs</span>
+                        </div>
+                        <div class="mobile-card-content">
+                            <div class="mobile-card-title">Festive Gold Edit</div>
+                            <div class="mobile-card-sub">22K yellow gold filigree necklaces, tiered jhumkas & traditional kadas.</div>
+                            <div class="mobile-card-footer">
+                                <a href="javascript:void(0)" class="mobile-btn-lookbook">Explore Lookbook <i class="fas fa-arrow-right ms-1"></i></a>
+                                <span style="font-size: 10.5px; color: #6e7681;">Updated Sep 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Card 3 -->
+                    <div class="mobile-catalogue-card" data-catalogue-id="cat_temple_antique" data-item-count="36">
+                        <div class="mobile-card-img-wrap">
+                            <img src="../assets/ecomm/images/catalogue/catalogue_temple_antique.jpg" alt="Temple & Antique Treasures">
+                            <span class="badge-pill-catalogue" style="top: 10px; left: 10px; font-size: 9.5px; padding: 4px 10px;">Antique</span>
+                            <span class="item-count-badge" style="top: 10px; right: 10px; font-size: 9.5px; padding: 3px 8px;">36 Designs</span>
+                        </div>
+                        <div class="mobile-card-content">
+                            <div class="mobile-card-title">Temple & Antique Treasures</div>
+                            <div class="mobile-card-sub">Hand-carved Nakshi Goddess Lakshmi medallion necklace with natural pearls.</div>
+                            <div class="mobile-card-footer">
+                                <a href="javascript:void(0)" class="mobile-btn-lookbook">Explore Lookbook <i class="fas fa-arrow-right ms-1"></i></a>
+                                <span style="font-size: 10.5px; color: #6e7681;">Updated Sep 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Card 4 -->
+                    <div class="mobile-catalogue-card" data-catalogue-id="cat_everyday_minimal" data-item-count="52">
+                        <div class="mobile-card-img-wrap">
+                            <img src="../assets/ecomm/images/catalogue/catalogue_everyday_minimal.jpg" alt="Everyday Minimalist">
+                            <span class="badge-pill-catalogue" style="top: 10px; left: 10px; font-size: 9.5px; padding: 4px 10px;">Daily Wear</span>
+                            <span class="item-count-badge" style="top: 10px; right: 10px; font-size: 9.5px; padding: 3px 8px;">52 Designs</span>
+                        </div>
+                        <div class="mobile-card-content">
+                            <div class="mobile-card-title">Everyday Minimalist Elegance</div>
+                            <div class="mobile-card-sub">Layered lightweight gold chains, diamond solitaire pendant & stack rings.</div>
+                            <div class="mobile-card-footer">
+                                <a href="javascript:void(0)" class="mobile-btn-lookbook">Explore Lookbook <i class="fas fa-arrow-right ms-1"></i></a>
+                                <span style="font-size: 10.5px; color: #6e7681;">Updated Sep 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Card 5 -->
+                    <div class="mobile-catalogue-card" data-catalogue-id="cat_mens_royal" data-item-count="28">
+                        <div class="mobile-card-img-wrap">
+                            <img src="../assets/ecomm/images/catalogue/catalogue_mens_royal.jpg" alt="The Men's Royal Edit">
+                            <span class="badge-pill-catalogue" style="top: 10px; left: 10px; font-size: 9.5px; padding: 4px 10px;">Men's</span>
+                            <span class="item-count-badge" style="top: 10px; right: 10px; font-size: 9.5px; padding: 3px 8px;">28 Designs</span>
+                        </div>
+                        <div class="mobile-card-content">
+                            <div class="mobile-card-title">The Men's Royal Edit</div>
+                            <div class="mobile-card-sub">Heavy Cuban chains, lion crest signet ring with black onyx, and carved kadas.</div>
+                            <div class="mobile-card-footer">
+                                <a href="javascript:void(0)" class="mobile-btn-lookbook">Explore Lookbook <i class="fas fa-arrow-right ms-1"></i></a>
+                                <span style="font-size: 10.5px; color: #6e7681;">Updated Sep 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS for tabs -->
+    <script src="../assets/ecomm/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

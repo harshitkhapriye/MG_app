@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Categories - MG Jwellers</title>
+  <title>Catalogue & Lookbooks - MG Jewellers</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="jewellers, jewelry, mg jewellers, categories, catalogue" name="keywords">
   <meta content="Browse all jewellery categories at MG Jewellers" name="description">
@@ -27,6 +27,9 @@
   <link href="assets/ecomm/css/style.css" rel="stylesheet">
   <link href="assets/ecomm/css/style2.css" rel="stylesheet">
   <link href="assets/ecomm/css/theme-style.css" rel="stylesheet">
+    <!-- Multi-Vendor Theming Engine -->
+    <script src="assets/ecomm/js/vendor-config.js"></script>
+    <script src="assets/ecomm/js/theme-injector.js"></script>
 </head>
 
 <body class="mg-app-body">
@@ -945,120 +948,132 @@
 
   <!-- ==========================================
        2. MOBILE VIEW (< 992px)
-       Tanishq App Categories Screen (Reference 5)
+       Curated Lookbooks & Catalogues
        ========================================== -->
   <div class="d-block d-lg-none">
-<!-- Categories Tab Screen Content (Tanishq Reference Image 5) -->
-  <main class="mg-categories-screen pb-5">
-    
-    <!-- 1. Horizontal Pill-Style Filter Chips (Top) -->
-    <div class="mg-pill-chips-scroll px-3 py-2">
-      <div class="mg-pill-chips-track">
-        <button type="button" class="mg-pill-chip active" data-filter="all">All Jewellery</button>
-        <button type="button" class="mg-pill-chip" data-filter="earrings">Earrings</button>
-        <button type="button" class="mg-pill-chip" data-filter="rings">Rings</button>
-        <button type="button" class="mg-pill-chip" data-filter="daily-wear">Daily Wear</button>
-        <button type="button" class="mg-pill-chip" data-filter="pendants">Pendants</button>
-        <button type="button" class="mg-pill-chip" data-filter="more">More</button>
+    <main class="mg-catalogue-screen pb-5">
+      
+      <!-- Mobile Catalogue Header -->
+      <div class="mg-catalogue-header px-3 pt-3 pb-2">
+        <span class="mg-catalogue-badge-tag"><i class="fas fa-gem mr-1"></i> CURATED LOOKBOOKS</span>
+        <h1 class="mg-catalogue-main-title mt-1 mb-1">Exclusive Catalogues</h1>
+        <p class="mg-catalogue-subtitle mb-0">Discover handcrafted bridal suites, festive gold edits, and signature jewellery lookbooks.</p>
       </div>
-    </div>
 
-    <!-- 2. Vertical Stack of Split Category Cards -->
-    <div class="container px-3 mt-2">
-      <div class="mg-category-stack" id="mg_category_stack">
-
-        <!-- Card 1: All Jewellery -->
-        <a href="shop.html" class="mg-split-card" data-category="all" style="--card-bg: #ecd9c6;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">All Jewellery</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="ecom/products/17401369251491548904.jpg" alt="All Jewellery Collection">
-          </div>
-        </a>
-
-        <!-- Card 2: Earrings -->
-        <a href="shop.html" class="mg-split-card" data-category="earrings" style="--card-bg: #e8ded2;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">Earrings</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="ecom/products/17401334792081403700.jpg" alt="Earrings Collection">
-          </div>
-        </a>
-
-        <!-- Card 3: Rings -->
-        <a href="shop.html" class="mg-split-card" data-category="rings" style="--card-bg: #f4d3be;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">Rings</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="ecom/products/17401322651052103057.jpg" alt="Rings Collection">
-          </div>
-        </a>
-
-        <!-- Card 4: Pendants -->
-        <a href="shop.html" class="mg-split-card" data-category="pendants" style="--card-bg: #ede0cf;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">Pendants</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="ecom/products/17401217391996961692.jpg" alt="Pendants Collection">
-          </div>
-        </a>
-
-        <!-- Card 5: Daily Wear -->
-        <a href="shop.html" class="mg-split-card" data-category="daily-wear" style="--card-bg: #f3e9d6;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">Daily Wear</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="ecom/products/1740122848901485459.jpg" alt="Daily Wear Collection">
-          </div>
-        </a>
-
-        <!-- Card 6: Gold Coins -->
-        <a href="shop.html" class="mg-split-card" data-category="more" style="--card-bg: #f7e8ce;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">Gold Coins</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="assets/ecomm/images/gold_coins.webp" alt="Gold Coins Collection">
-          </div>
-        </a>
-
-        <!-- Card 7: Bridal Collection -->
-        <a href="shop.html" class="mg-split-card" data-category="more" style="--card-bg: #e5ded6;">
-          <div class="mg-split-label-half">
-            <h2 class="mg-split-title">Bridal Collection</h2>
-          </div>
-          <div class="mg-split-photo-half">
-            <img src="ecom/products/17401354321760572244.jpg" alt="Bridal Collection">
-          </div>
-        </a>
-
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Gallery Modal Container -->
-  <div class="modal fade" id="gallery_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="catelog-head">Catalogue Detail</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+      <!-- 1. Horizontal Filter Chips (Top) -->
+      <div class="mg-pill-chips-scroll px-3 py-2">
+        <div class="mg-pill-chips-track" id="mg_catalogue_chips">
+          <button type="button" class="mg-pill-chip active" data-filter="all">All Lookbooks</button>
+          <button type="button" class="mg-pill-chip" data-filter="bridal">Bridal</button>
+          <button type="button" class="mg-pill-chip" data-filter="festive">Festive Gold</button>
+          <button type="button" class="mg-pill-chip" data-filter="antique">Temple & Antique</button>
+          <button type="button" class="mg-pill-chip" data-filter="daily-wear">Daily Wear</button>
+          <button type="button" class="mg-pill-chip" data-filter="mens">Men's Edit</button>
         </div>
-        <div class="modal-body" id="gallery_area"></div>
       </div>
-    </div>
-  </div>
 
-  <!-- Persistent Bottom Navigation Bar & Chat Tooltip -->
-  
+      <!-- 2. Vertical Stack of Curated Catalogue Cards -->
+      <div class="container px-3 mt-2">
+        <div class="mg-catalogue-stack" id="mg_catalogue_stack">
+
+          <!-- Card 1: Royal Bridal Heritage 2025 -->
+          <div class="mg-catalogue-card" id="catalogue_card_bridal_2025" data-catalogue-id="cat_bridal_2025" data-tag="bridal" data-item-count="48">
+            <div class="mg-catalogue-cover-box">
+              <img src="assets/ecomm/images/catalogue/catalogue_bridal_heritage.jpg" alt="Royal Bridal Heritage 2025" class="mg-catalogue-cover-img" loading="lazy">
+              <span class="mg-catalogue-pill-badge">Bridal Edition</span>
+              <span class="mg-catalogue-count-badge"><i class="fas fa-layer-group mr-1"></i> 48 Designs</span>
+            </div>
+            <div class="mg-catalogue-info">
+              <h2 class="mg-catalogue-title">Royal Bridal Heritage 2025</h2>
+              <p class="mg-catalogue-desc">Polki diamond chokers, uncut rubies, and emerald bead suites crafted for timeless weddings.</p>
+              <div class="mg-catalogue-footer">
+                <a href="shop.html?collection=bridal" class="mg-catalogue-btn" onclick="openCatalogueLookbook('cat_bridal_2025'); return false;">
+                  Explore Lookbook <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+                <span class="mg-catalogue-updated">Updated Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Festive Gold Edit -->
+          <div class="mg-catalogue-card" id="catalogue_card_festive_gold" data-catalogue-id="cat_festive_gold" data-tag="festive" data-item-count="64">
+            <div class="mg-catalogue-cover-box">
+              <img src="assets/ecomm/images/catalogue/catalogue_festive_gold.jpg" alt="Festive Gold Edit" class="mg-catalogue-cover-img" loading="lazy">
+              <span class="mg-catalogue-pill-badge">Festive Edit</span>
+              <span class="mg-catalogue-count-badge"><i class="fas fa-layer-group mr-1"></i> 64 Designs</span>
+            </div>
+            <div class="mg-catalogue-info">
+              <h2 class="mg-catalogue-title">Festive Gold Edit</h2>
+              <p class="mg-catalogue-desc">22K yellow gold filigree necklaces, tiered jhumkas & traditional kadas celebrating festive luminosity.</p>
+              <div class="mg-catalogue-footer">
+                <a href="shop.html?collection=festive" class="mg-catalogue-btn" onclick="openCatalogueLookbook('cat_festive_gold'); return false;">
+                  Explore Lookbook <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+                <span class="mg-catalogue-updated">Updated Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Temple & Antique Treasures -->
+          <div class="mg-catalogue-card" id="catalogue_card_temple_antique" data-catalogue-id="cat_temple_antique" data-tag="antique" data-item-count="36">
+            <div class="mg-catalogue-cover-box">
+              <img src="assets/ecomm/images/catalogue/catalogue_temple_antique.jpg" alt="Temple & Antique Treasures" class="mg-catalogue-cover-img" loading="lazy">
+              <span class="mg-catalogue-pill-badge">Antique & Nakshi</span>
+              <span class="mg-catalogue-count-badge"><i class="fas fa-layer-group mr-1"></i> 36 Designs</span>
+            </div>
+            <div class="mg-catalogue-info">
+              <h2 class="mg-catalogue-title">Temple & Antique Treasures</h2>
+              <p class="mg-catalogue-desc">Authentic South Indian Nakshi hand-carved Goddess Lakshmi medallion necklace with natural pearls.</p>
+              <div class="mg-catalogue-footer">
+                <a href="shop.html?collection=antique" class="mg-catalogue-btn" onclick="openCatalogueLookbook('cat_temple_antique'); return false;">
+                  Explore Lookbook <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+                <span class="mg-catalogue-updated">Updated Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Everyday Minimalist Elegance -->
+          <div class="mg-catalogue-card" id="catalogue_card_everyday_minimal" data-catalogue-id="cat_everyday_minimal" data-tag="daily-wear" data-item-count="52">
+            <div class="mg-catalogue-cover-box">
+              <img src="assets/ecomm/images/catalogue/catalogue_everyday_minimal.jpg" alt="Everyday Minimalist Elegance" class="mg-catalogue-cover-img" loading="lazy">
+              <span class="mg-catalogue-pill-badge">Daily Wear</span>
+              <span class="mg-catalogue-count-badge"><i class="fas fa-layer-group mr-1"></i> 52 Designs</span>
+            </div>
+            <div class="mg-catalogue-info">
+              <h2 class="mg-catalogue-title">Everyday Minimalist Elegance</h2>
+              <p class="mg-catalogue-desc">Featherweight 18K layered chains, solitaire diamond bezel pendants, and stackable rings.</p>
+              <div class="mg-catalogue-footer">
+                <a href="shop.html?collection=minimalist" class="mg-catalogue-btn" onclick="openCatalogueLookbook('cat_everyday_minimal'); return false;">
+                  Explore Lookbook <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+                <span class="mg-catalogue-updated">Updated Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: The Men's Royal Edit -->
+          <div class="mg-catalogue-card" id="catalogue_card_mens_royal" data-catalogue-id="cat_mens_royal" data-tag="mens" data-item-count="28">
+            <div class="mg-catalogue-cover-box">
+              <img src="assets/ecomm/images/catalogue/catalogue_mens_royal.jpg" alt="The Men's Royal Edit" class="mg-catalogue-cover-img" loading="lazy">
+              <span class="mg-catalogue-pill-badge">Men's Edit</span>
+              <span class="mg-catalogue-count-badge"><i class="fas fa-layer-group mr-1"></i> 28 Designs</span>
+            </div>
+            <div class="mg-catalogue-info">
+              <h2 class="mg-catalogue-title">The Men's Royal Edit</h2>
+              <p class="mg-catalogue-desc">Heavy Cuban chains, lion crest signet ring with black onyx, and sculpted masculine gold kadas.</p>
+              <div class="mg-catalogue-footer">
+                <a href="shop.html?collection=mens" class="mg-catalogue-btn" onclick="openCatalogueLookbook('cat_mens_royal'); return false;">
+                  Explore Lookbook <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+                <span class="mg-catalogue-updated">Updated Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
   </div>
 <div id="footer-placeholder"></div>
 
@@ -1217,6 +1232,111 @@
 
     });
   </script>
+
+  <!-- =========================================================================
+       BACKEND INTEGRATION POINT: Curated Catalogues / Lookbooks Controller
+       Target Endpoint: GET /api/v1/catalogues
+       ========================================================================= -->
+  <script>
+    // Centralized Single Source of Truth for Catalogue Data
+    const MOCK_CATALOGUES = [
+      {
+        id: "cat_bridal_2025",
+        title: "Royal Bridal Heritage 2025",
+        subtitle: "Polki diamond chokers, uncut rubies, and emerald bead suites crafted for timeless weddings.",
+        coverImage: "assets/ecomm/images/catalogue/catalogue_bridal_heritage.jpg",
+        tag: "bridal",
+        badge: "Bridal Edition",
+        itemCount: 48,
+        updatedDate: "Sep 2026",
+        lookbookUrl: "shop.html?collection=bridal"
+      },
+      {
+        id: "cat_festive_gold",
+        title: "Festive Gold Edit",
+        subtitle: "22K yellow gold filigree necklaces, tiered jhumkas & traditional kadas celebrating festive luminosity.",
+        coverImage: "assets/ecomm/images/catalogue/catalogue_festive_gold.jpg",
+        tag: "festive",
+        badge: "Festive Edit",
+        itemCount: 64,
+        updatedDate: "Sep 2026",
+        lookbookUrl: "shop.html?collection=festive"
+      },
+      {
+        id: "cat_temple_antique",
+        title: "Temple & Antique Treasures",
+        subtitle: "Authentic South Indian Nakshi hand-carved Goddess Lakshmi medallion necklace with natural pearls.",
+        coverImage: "assets/ecomm/images/catalogue/catalogue_temple_antique.jpg",
+        tag: "antique",
+        badge: "Antique & Nakshi",
+        itemCount: 36,
+        updatedDate: "Sep 2026",
+        lookbookUrl: "shop.html?collection=antique"
+      },
+      {
+        id: "cat_everyday_minimal",
+        title: "Everyday Minimalist Elegance",
+        subtitle: "Featherweight 18K layered chains, solitaire diamond bezel pendants, and stackable rings.",
+        coverImage: "assets/ecomm/images/catalogue/catalogue_everyday_minimal.jpg",
+        tag: "daily-wear",
+        badge: "Daily Wear",
+        itemCount: 52,
+        updatedDate: "Sep 2026",
+        lookbookUrl: "shop.html?collection=minimalist"
+      },
+      {
+        id: "cat_mens_royal",
+        title: "The Men's Royal Edit",
+        subtitle: "Heavy Cuban chains, lion crest signet ring with black onyx, and sculpted masculine gold kadas.",
+        coverImage: "assets/ecomm/images/catalogue/catalogue_mens_royal.jpg",
+        tag: "mens",
+        badge: "Men's Edit",
+        itemCount: 28,
+        updatedDate: "Sep 2026",
+        lookbookUrl: "shop.html?collection=mens"
+      }
+    ];
+
+    /**
+     * Action Handler: Opens lookbook collection page or modal view
+     * @param {string} catalogueId - The unique identifier of the catalogue
+     */
+    function openCatalogueLookbook(catalogueId) {
+      if (!catalogueId) return;
+      const catalogue = MOCK_CATALOGUES.find(function (c) { return c.id === catalogueId; });
+      if (catalogue && catalogue.lookbookUrl) {
+        window.location.href = catalogue.lookbookUrl;
+      }
+    }
+
+    /**
+     * Filter Handler: Filters visible catalogue cards by category tag
+     * @param {string} filterTag - Tag identifier or 'all'
+     */
+    function filterCatalogues(filterTag) {
+      const cards = document.querySelectorAll('.mg-catalogue-card');
+      cards.forEach(function (card) {
+        const cardTag = card.getAttribute('data-tag');
+        if (!filterTag || filterTag === 'all' || cardTag === filterTag) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Attach chip filter event listeners once DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+      const chipButtons = document.querySelectorAll('#mg_catalogue_chips .mg-pill-chip');
+      chipButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          chipButtons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-filter');
+          filterCatalogues(filter);
+        });
+      });
+    });
 
 
 
