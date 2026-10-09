@@ -1,0 +1,134 @@
+[
+  {
+    "header": "@@ -1,114 +1,6 @@",
+    "lineCount": 117,
+    "firstLines": [
+      "-/* ---------- Hero carousel: remove Bootstrap col padding gap ---------- */",
+      "-.col-md-12:has(#header-carousel) {",
+      "-  padding-left: 0 !important;",
+      "-  padding-right: 0 !important;",
+      "-}"
+    ]
+  },
+  {
+    "header": "@@ -127,13 +19,18 @@",
+    "lineCount": 19,
+    "firstLines": [
+      "   --mg-wine: #70afc2;",
+      "   --mg-wine-soft: #70afc2;",
+      "   --mg-gold-1: #a8802a;",
+      "+  --mg-gold-1-rgb: 168, 128, 42;",
+      "   --mg-gold-2: #d4af37;"
+    ]
+  },
+  {
+    "header": "@@ -148,6 +45,80 @@ body {",
+    "lineCount": 80,
+    "firstLines": [
+      "   background: var(--mg-ivory);",
+      " }",
+      " ",
+      "+",
+      "+/* ---------- Hero carousel: remove Bootstrap col padding gap ---------- */"
+    ]
+  },
+  {
+    "header": "@@ -162,14 +133,12 @@ body {",
+    "lineCount": 20,
+    "firstLines": [
+      " ",
+      " .cstm-section-title span {",
+      "   position: relative;",
+      "-  background: linear-gradient(",
+      "-    100deg,"
+    ]
+  },
+  {
+    "header": "@@ -190,9 +159,11 @@ body {",
+    "lineCount": 11,
+    "firstLines": [
+      "   transform: translateY(-50%);",
+      "   opacity: 0.85;",
+      " }",
+      "+",
+      " .cstm-section-title::before {"
+    ]
+  },
+  {
+    "header": "@@ -201,14 +172,17 @@ body {",
+    "lineCount": 17,
+    "firstLines": [
+      "   0% {",
+      "     background-position: 0% 50%;",
+      "   }",
+      "+",
+      "   50% {"
+    ]
+  },
+  {
+    "header": "@@ -217,6 +191,7 @@ body {",
+    "lineCount": 7,
+    "firstLines": [
+      "     opacity 0.7s cubic-bezier(0.22, 0.9, 0.32, 1),",
+      "     transform 0.7s cubic-bezier(0.22, 0.9, 0.32, 1);",
+      " }",
+      "+",
+      " .mg-reveal.mg-in {"
+    ]
+  },
+  {
+    "header": "@@ -231,6 +206,7 @@ body {",
+    "lineCount": 7,
+    "firstLines": [
+      "     opacity 0.7s cubic-bezier(0.22, 0.9, 0.32, 1),",
+      "     transform 0.7s cubic-bezier(0.22, 0.9, 0.32, 1);",
+      " }",
+      "+",
+      " .mg-reveal-auto.mg-in {"
+    ]
+  },
+  {
+    "header": "@@ -244,6 +220,7 @@ body {",
+    "lineCount": 7,
+    "firstLines": [
+      "     opacity 0.8s cubic-bezier(0.22, 0.9, 0.32, 1),",
+      "     transform 0.8s cubic-bezier(0.22, 0.9, 0.32, 1);",
+      " }",
+      "+",
+      " .mg-reveal-title.mg-in {"
+    ]
+  },
+  {
+    "header": "@@ -257,6 +234,7 @@ body {",
+    "lineCount": 7,
+    "firstLines": [
+      "     opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),",
+      "     transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);",
+      " }",
+      "+",
+      " .mg-reveal-left.mg-in {"
+    ]
+  },
+  {
+    "header": "@@ -270,56 +248,56 @@ body {",
+    "lineCount": 88,
+    "firstLines": [
+      "     opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),",
+      "     transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);",
+      " }",
+      "+",
+      " .mg-reveal-right.mg-in {"
+    ]
+  },
+  {
+    "header": "@@ -327,2561 +305,5122 @@ body {",
+    "lineCount": 7234,
+    "firstLines": [
+      "   }",
+      " }",
+      " ",
+      "-/* ---------- Hero carousel ---------- */",
+      "-#header-carousel {"
+    ]
+  }
+]

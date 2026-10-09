@@ -1,0 +1,50 @@
+{
+  "cart.html": {
+    "length": 35209,
+    "lines": 790
+  },
+  "cateloge.html": {
+    "length": 49575,
+    "lines": 1082
+  },
+  "checkout.html": {
+    "length": 9121,
+    "lines": 239
+  },
+  "footer.html": {
+    "length": 11214,
+    "lines": 275
+  },
+  "header.html": {
+    "length": 45828,
+    "lines": 663
+  },
+  "index.html": {
+    "length": 220471,
+    "lines": 2460
+  },
+  "login.html": {
+    "length": 17240,
+    "lines": 345
+  },
+  "register.html": {
+    "length": 10800,
+    "lines": 244
+  },
+  "scheme.html": {
+    "length": 17503,
+    "lines": 404
+  },
+  "shop-location.html": {
+    "length": 17653,
+    "lines": 409
+  },
+  "shop.html": {
+    "length": 65644,
+    "lines": 1014
+  },
+  "wishlist.html": {
+    "length": 26084,
+    "lines": 496
+  }
+}

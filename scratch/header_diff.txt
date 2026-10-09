@@ -1,0 +1,662 @@
+diff --git a/header.html b/header.html
+index 2f53151..248d8a7 100644
+--- a/header.html
++++ b/header.html
+@@ -37,6 +37,9 @@
+ 
+ 
+ 
++
++
++
+                 <div class="mg-search-overlay" id="mg_search_overlay"></div>
+                 <div class="mg-search-suggestions" id="mg_search_suggestions">
+                     <div class="mg-suggest-section">
+@@ -78,6 +81,11 @@
+                         <span class="badge" id="kart_count">0</span>
+                     </a>
+                 </li>
++                <li>
++                    <a href="profile.html" class="card-wish" title="My Profile" id="head_profile_icon">
++                        <i class="fas fa-user text-primary"></i>
++                    </a>
++                </li>
+ 
+             </ul>
+         </div>
+@@ -381,41 +389,54 @@
+                         height="40" alt="MG Jwellers">
+                 </a>
+ 
++
++
+                 <ul style="display:inline-flex;list-style:none;padding:0;" id="head_shop_list"
+-                    class="mbl d-lg-none m-0">
+-                    <li id="mob_search_btn"><a href="#mob_search_bar" id="mob_search_toggle"><i
+-                                class="fa fa-search"></i></a></li>
++                    class="mbl d-lg-none m-0 align-items-center">
++                    <!-- Mobile Search Bar Toggle Button (Replaces old location icon) -->
++                    <li id="mob_search_btn_item">
++                        <button type="button" class="card-wish card-wish-mbl border-0 p-0" id="mob_search_toggle_btn"
++                            onclick="window.toggleMobileSearch && window.toggleMobileSearch(event)" title="Search"
++                            aria-label="Toggle Search" aria-expanded="false" data-search-state="closed">
++                            <i class="fa fa-search" id="mob_search_toggle_icon"></i>
++                        </button>
++                    </li>
+                     <li>
+-                        <a href="wishlist.html" class="card-wish card-wish-mbl">
+-                            <i class="fas fa-heart text-primary"></i>
++                        <a href="wishlist.html" class="card-wish card-wish-mbl" title="Wishlist">
++                            <i class="far fa-heart text-primary"></i>
+                             <span class="badge" id="wishlist_count">0</span>
+                         </a>
+                     </li>
+                     <li>
+-                        <a href="cart.html" class="card-wish card-wish-mbl">
+-                            <i class="fas fa-shopping-cart text-primary"></i>
++                        <a href="cart.html" class="card-wish card-wish-mbl" title="Shopping Bag">
++                            <i class="fas fa-shopping-bag text-primary"></i>
+                             <span class="badge" id="kart_count">0</span>
+                         </a>
+                     </li>
+-
+                 </ul>
+-                <div class="col-12 text-left d-lg-none mob_disappear py-1 px-0" id="mob_search_bar">
+-                    <form action="https://justudhari.com/shop" method="post">
+-                        <div class="input-group" id="top-search-field">
+-                            <input type="hidden" name="_token" value="" autocomplete="off"> <input type="text"
+-                                class="form-control" placeholder="Search for products" name="mob_search_term"
+-                                id="mob_search_input" autocomplete="off">
+-                            <div class="input-group-append">
+-                                <span class="input-group-text  text-primary p-0">
+-                                    <!-- <button type="submit" id="btn-top-search" class="" name="search" > 
+-										<i class="fa fa-search"></i>
+-									</button> -->
+-
+-                                    <button type="button" id="mob_search_close" class="" name="search">
+-                                        <i class="fa fa-times"></i>
+-                                    </button>
++
++                <!-- Native App Search Bar (Expandable via header search icon) -->
++                <div class="col-12 text-left py-2 px-3 mg-app-search-container d-lg-none" id="mob_search_bar">
++                    <form action="cateloge.html" method="get">
++                        <div class="input-group mg-app-search-pill" id="top-search-field">
++                            <div class="input-group-prepend">
++                                <span class="input-group-text bg-transparent border-0 text-muted pl-3 pr-2">
++                                    <i class="fa fa-search"></i>
+                                 </span>
+                             </div>
++                            <input type="text" class="form-control border-0 bg-transparent"
++                                placeholder="Search for jewellery on MG Jewellers" name="search_term"
++                                id="mob_search_input" autocomplete="off">
++                            <div class="input-group-append pr-2 align-items-center">
++                                <button type="button" class="btn btn-link text-muted p-1 mg-search-cam-btn"
++                                    title="Search by camera">
++                                    <i class="fas fa-camera"></i>
++                                </button>
++                                <button type="button" class="btn btn-link text-muted p-1 mg-search-mic-btn"
++                                    title="Voice search">
++                                    <i class="fas fa-microphone"></i>
++                                </button>
++                            </div>
+                         </div>
+                     </form>
+                     <div class="mg-search-overlay" id="mob_search_overlay"></div>
+@@ -423,12 +444,12 @@
+                         <div class="mg-suggest-section" id="mob_suggest_default">
+                             <h6>Popular Categories</h6>
+                             <div class="mg-suggest-chips">
+-                                <a href="https://justudhari.com/shop/gold">Gold</a>
+-                                <a href="https://justudhari.com/shop/silver">Silver</a>
+-                                <a href="https://justudhari.com/shop/rings">Rings</a>
+-                                <a href="https://justudhari.com/shop/necklaces">Necklaces</a>
+-                                <a href="https://justudhari.com/shop/earrings">Earrings</a>
+-                                <a href="https://justudhari.com/shop/bridal-collection">Bridal Collection</a>
++                                <a href="shop.html">Gold</a>
++                                <a href="shop.html">Silver</a>
++                                <a href="shop.html">Rings</a>
++                                <a href="shop.html">Necklaces</a>
++                                <a href="shop.html">Earrings</a>
++                                <a href="shop.html">Bridal Collection</a>
+                             </div>
+                         </div>
+                         <div class="mg-suggest-section" id="mob_suggest_results" style="display:none;">
+@@ -437,271 +458,221 @@
+                         </div>
+                     </div>
+                 </div>
+-                <!--------test code ---->
+-                <link rel="stylesheet"
+-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-
+-                <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" role="navigation">
+-                    <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+-                    <ul class="menu-list">
+-                        <li>
+-                            <a href="index.html" class="active">
+-                                <i class="fa fa-home"></i> <span>Home</span>
+-                            </a>
+-                        </li>
+-                        <li>
+-                            <a href="about.html" class="">
+-                                <i class="fa fa-info-circle"></i> <span>About</span>
+-                            </a>
+-                        </li>
+-                        <li>
+-                            <a href="scheme.html" class="">
+-                                <i class="fa fa-gift"></i> <span>Scheme</span>
+-                            </a>
+-                        </li>
+-                        <li>
+-                            <a href="shop.html" class="">
+-                                <i class="fa fa-shopping-cart"></i> <span>Online Shop</span>
+-                            </a>
+-                        </li>
+-                        <li>
+-                            <a href="cateloge.html" class="">
+-                                <i class="fa fa-book"></i> <span>Catalogue</span>
+-                            </a>
+-                        </li>
+-                        <li>
+-                            <a href="contact.html" class="">
+-                                <i class="fa fa-envelope"></i> <span>Contact</span>
+-                            </a>
+-                        </li>
+-                        <li>
+-                            <a href="shop-location.html" class="{{ @$shop_location }}">
+-                                <i class="fa fa-location-arrow"></i> <span>Shop Location</span>
+-                            </a>
+-                        </li>
+-
+-
+ 
++                <!-- Slide-in Drawer Menu (Tanishq Reference Image 2 - Restructured & Polished) -->
++                <nav class="mobile-menu mg-app-drawer" id="mobileMenu" aria-hidden="true" role="navigation">
++                    <!-- Drawer Header: User Avatar & Greeting (No underline mark, No redeem circle) -->
++                    <div class="mg-drawer-header p-3 border-bottom">
++                        <div class="d-flex align-items-center justify-content-between">
++                            <div class="d-flex align-items-center">
++                                <div class="mg-drawer-avatar mr-2">
++                                    <i class="fas fa-user-circle"></i>
++                                </div>
++                                <div class="mg-drawer-user-info">
++                                    <h5 class="m-0 font-weight-bold mg-drawer-name" id="mg_drawer_greeting">Hi Harshit!
++                                    </h5>
++                                    <span class="mg-drawer-member-tag"><i class="fas fa-crown mr-1"></i> MG Privileged
++                                        Member</span>
++                                </div>
++                            </div>
++                            <button class="menu-close mg-drawer-close" id="menuClose" aria-label="Close menu">
++                                <i class="fas fa-arrow-left"></i>
++                            </button>
++                        </div>
++                    </div>
+ 
++                    <!-- Drawer Scrollable Content -->
++                    <div class="mg-drawer-body p-3">
+ 
+-                        <!-- Category Section -->
+-                        <li class="nav-item dropdown">
+-                            <a class="nav-link dropdown-toggle mob_cat" href="#" data-toggle="collapse"
+-                                data-target="#mobileCategories">
+-                                Categories <i class="fa fa-angle-down float-right mt-1"></i>
++                        <!-- Section 1: Account Quick Links -->
++                        <div class="mg-drawer-group-title">My Account</div>
++                        <div class="mg-drawer-card mb-3">
++                            <a href="profile.html" class="mg-drawer-row">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-user-circle mg-drawer-icon mr-2"></i>
++                                    <span class="font-weight-600">My Profile</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="badge mr-2 mg-badge-new">New</span>
++                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                                </div>
++                            </a>
++                            <a href="profile.html" class="mg-drawer-row">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-history mg-drawer-icon mr-2"></i>
++                                    <span class="font-weight-600">Order History</span>
++                                </div>
++                                <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
+                             </a>
+-                            <div class="collapse" id="mobileCategories">
+-                                <div class="navbar-nav w-100 overflow-hidden" style="max-height: 410px;">
+-
+-                                    <div class="nav-item dropdown">
+-                                        <a href="#" class="nav-link" data-toggle="dropdown">
+-                                            Collection <i class="fa fa-angle-down float-right mt-1"></i>
+-                                        </a>
+-                                        <div class="dropdown-menu position-static border-0 rounded-0 w-100 m-0">
+-                                            <a href="https://justudhari.com/shopmens" class="dropdown-item">Mens</a>
+-                                            <a href="https://justudhari.com/shopwomens" class="dropdown-item">Womens</a>
+-                                            <a href="https://justudhari.com/shopbridal-collection"
+-                                                class="dropdown-item">Bridal Collection</a>
+-                                            <a href="https://justudhari.com/shopeveryday-wear"
+-                                                class="dropdown-item">Everyday Wear </a>
+-                                            <a href="https://justudhari.com/shopoffice-wear"
+-                                                class="dropdown-item">Office Wear</a>
+-                                            <a href="https://justudhari.com/shopgifts-anniversary"
+-                                                class="dropdown-item">Gifts &amp; Anniversary</a>
+-                                            <a href="https://justudhari.com/shopparty-evening-wear"
+-                                                class="dropdown-item">Party &amp; Evening Wear</a>
+-                                            <a href="https://justudhari.com/shoptraditional"
+-                                                class="dropdown-item">Traditional</a>
+-                                            <a href="https://justudhari.com/shopcontemporary"
+-                                                class="dropdown-item">Contemporary</a>
+-                                            <a href="https://justudhari.com/shopminimalist"
+-                                                class="dropdown-item">Minimalist</a>
+-                                            <a href="https://justudhari.com/shopvintage"
+-                                                class="dropdown-item">Vintage</a>
+-                                            <a href="https://justudhari.com/shopbohemian"
+-                                                class="dropdown-item">Bohemian</a>
+-                                            <a href="https://justudhari.com/shopluxury" class="dropdown-item">Luxury</a>
+-                                            <a href="https://justudhari.com/shopfestive-collection"
+-                                                class="dropdown-item">Festive Collection</a>
+-                                            <a href="https://justudhari.com/shopruby" class="dropdown-item">Ruby
+-                                                (माणिक-Manik)</a>
+-                                            <a href="https://justudhari.com/shoppearl"
+-                                                class="dropdown-item">Pearl(मोती-Moti)</a>
+-                                            <a href="https://justudhari.com/shopcoral" class="dropdown-item">Coral
+-                                                (मूंगा-Moonga)</a>
+-                                            <a href="https://justudhari.com/shopemerald" class="dropdown-item">Emerald
+-                                                (पन्ना-Panna)</a>
+-                                            <a href="https://justudhari.com/shopyellow_sapphire"
+-                                                class="dropdown-item">Yellow Sapphire (पुखराज-Pukhraj)</a>
+-                                            <a href="https://justudhari.com/shopdiamond" class="dropdown-item">Diamond
+-                                                हीरा (Heera)</a>
+-                                            <a href="https://justudhari.com/shopblue_sapphire"
+-                                                class="dropdown-item">Blue Sapphire(नीलम-Neelam)</a>
+-                                            <a href="https://justudhari.com/shopcat^s_eye"
+-                                                class="dropdown-item">Cat&#039;s Eye(लहसुनिया-Lahsunia)</a>
+-                                            <a href="https://justudhari.com/shophessonite"
+-                                                class="dropdown-item">Hessonite (गोमेद-Gomed)</a>
+-                                        </div>
+-                                    </div>
+-
+-                                    <a href="https://justudhari.com/shop/payal" class="nav-item nav-link">PAYAL123</a>
+-                                    <a href="https://justudhari.com/shop/chains" class="nav-item nav-link">Chains</a>
+-                                    <a href="https://justudhari.com/shop/necklaces"
+-                                        class="nav-item nav-link">Necklaces</a>
+-                                    <a href="https://justudhari.com/shop/rings" class="nav-item nav-link">RINGS</a>
+-                                    <a href="https://justudhari.com/shop/bracelets"
+-                                        class="nav-item nav-link">Bracelets</a>
+-                                    <a href="https://justudhari.com/shop/earrings"
+-                                        class="nav-item nav-link">Earrings</a>
+-                                    <a href="https://justudhari.com/shop/pendants"
+-                                        class="nav-item nav-link">Pendants</a>
+-                                    <a href="https://justudhari.com/shop/anklets" class="nav-item nav-link">Anklets</a>
+-                                    <a href="https://justudhari.com/shop/necklace-and-earring-sets"
+-                                        class="nav-item nav-link">Necklace and Earring Sets</a>
+-                                    <a href="https://justudhari.com/shop/bracelet-and-ring-sets"
+-                                        class="nav-item nav-link">Bracelet and Ring Sets</a>
+-                                    <a href="https://justudhari.com/shop/mangalsutra"
+-                                        class="nav-item nav-link">Mangalsutra</a>
+-                                    <a href="https://justudhari.com/shop/bangle" class="nav-item nav-link">Bangle</a>
+-                                    <a href="https://justudhari.com/shop/watches" class="nav-item nav-link">Watches</a>
+-                                    <a href="https://justudhari.com/shop/nosepins"
+-                                        class="nav-item nav-link">Nosepins</a>
+-                                    <a href="https://justudhari.com/shop/pendants-set"
+-                                        class="nav-item nav-link">Pendants set</a>
+-                                    <a href="https://justudhari.com/shop/tika" class="nav-item nav-link">TIKA</a>
+-                                    <a href="https://justudhari.com/shop/devotional"
+-                                        class="nav-item nav-link">Devotional</a>
+-                                    <a href="https://justudhari.com/shop/kitchenware"
+-                                        class="nav-item nav-link">Kitchenware</a>
+-                                    <a href="https://justudhari.com/shop/neelam" class="nav-item nav-link">NEELAM</a>
+-                                    <a href="https://justudhari.com/shop/black-pearl" class="nav-item nav-link">BLACK
+-                                        PEARL</a>
+-                                    <a href="https://justudhari.com/shop/firoza" class="nav-item nav-link">FIROZA</a>
+-                                    <a href="https://justudhari.com/shop/gomed" class="nav-item nav-link">GOMED</a>
+-                                    <a href="https://justudhari.com/shop/hakik" class="nav-item nav-link">HAKIK</a>
+-                                    <a href="https://justudhari.com/shop/jamuniya"
+-                                        class="nav-item nav-link">JAMUNIYA</a>
+-                                    <a href="https://justudhari.com/shop/lahsuniya"
+-                                        class="nav-item nav-link">LAHSUNIYA</a>
+-                                    <a href="https://justudhari.com/shop/lazwat" class="nav-item nav-link">LAZWAT</a>
+-                                    <a href="https://justudhari.com/shop/magnet" class="nav-item nav-link">MAGNET</a>
+-                                    <a href="https://justudhari.com/shop/manik" class="nav-item nav-link">MANIK</a>
+-                                    <a href="https://justudhari.com/shop/monga" class="nav-item nav-link">MONGA</a>
+-                                    <a href="https://justudhari.com/shop/moon-stone" class="nav-item nav-link">MOON
+-                                        STONE</a>
+-                                    <a href="https://justudhari.com/shop/moti" class="nav-item nav-link">MOTI</a>
+-                                    <a href="https://justudhari.com/shop/neeli" class="nav-item nav-link">NEELI</a>
+-                                    <a href="https://justudhari.com/shop/grrfdfgfdg"
+-                                        class="nav-item nav-link">Grrfdfgfdg</a>
+-                                    <a href="https://justudhari.com/shop/fgfdgfdgfdg"
+-                                        class="nav-item nav-link">Fgfdgfdgfdg</a>
+-                                    <a href="https://justudhari.com/shop/coins" class="nav-item nav-link">Coins</a>
+-                                    <a href="https://justudhari.com/shop/cat-eye" class="nav-item nav-link">CAT EYE</a>
+-                                    <a href="https://justudhari.com/shop/opal" class="nav-item nav-link">OPAL</a>
+-                                    <a href="https://justudhari.com/shop/white-monga" class="nav-item nav-link">WHITE
+-                                        MONGA</a>
+-                                    <a href="https://justudhari.com/shop/sun-stone" class="nav-item nav-link">SUN
+-                                        STONE</a>
+-                                    <a href="https://justudhari.com/shop/tourmaline"
+-                                        class="nav-item nav-link">TOURMALINE</a>
+-                                    <a href="https://justudhari.com/shop/tiger-eye" class="nav-item nav-link">TIGER
+-                                        EYE</a>
+-                                    <a href="https://justudhari.com/shop/rani-haar-chain" class="nav-item nav-link">RANI
+-                                        HAAR CHAIN</a>
+-                                    <a href="https://justudhari.com/shop/panna" class="nav-item nav-link">PANNA</a>
+-                                    <a href="https://justudhari.com/shop/peridot" class="nav-item nav-link">PERIDOT</a>
+-                                    <a href="https://justudhari.com/shop/pukhraj" class="nav-item nav-link">PUKHRAJ</a>
+-                                    <a href="https://justudhari.com/shop/sunhela" class="nav-item nav-link">SUNHELA</a>
+-                                    <a href="https://justudhari.com/shop/rubi" class="nav-item nav-link">Rubi</a>
+-                                    <a href="https://justudhari.com/shop/test" class="nav-item nav-link">Test</a>
+-                                    <a href="https://justudhari.com/shop/ghoonghroo"
+-                                        class="nav-item nav-link">Ghoonghroo</a>
+-                                    <a href="https://justudhari.com/shop/chain-tulsi" class="nav-item nav-link">new
+-                                        CHAIN</a>
+-                                    <a href="https://justudhari.com/shop/gold" class="nav-item nav-link">Gold</a>
+-                                    <a href="https://justudhari.com/shop/hallmark"
+-                                        class="nav-item nav-link">Hallmark</a>
+-                                    <a href="https://justudhari.com/shop/gold-chain-24-k" class="nav-item nav-link">Gold
+-                                        chain 24 k</a>
+-                                    <a href="https://justudhari.com/shop/artficial"
+-                                        class="nav-item nav-link">Artficial</a>
+-                                    <a href="https://justudhari.com/shop/earing" class="nav-item nav-link">Earing</a>
+-                                    <a href="https://justudhari.com/shop/fancy-ring" class="nav-item nav-link">Fancy
+-                                        ring</a>
+-                                    <a href="https://justudhari.com/shop/waist-chain" class="nav-item nav-link">Waist
+-                                        chain</a>
+-                                    <a href="https://justudhari.com/shop/jhumka" class="nav-item nav-link">Jhumka</a>
+-                                    <a href="https://justudhari.com/shop/ring-18k" class="nav-item nav-link">RING
+-                                        18K</a>
+-                                    <a href="https://justudhari.com/shop/havy-ring" class="nav-item nav-link">Havy
+-                                        ring</a>
+-                                    <a href="https://justudhari.com/shop/heavy-ring" class="nav-item nav-link">Heavy
+-                                        ring</a>
+-                                    <a href="https://justudhari.com/shop/heavy-ring1" class="nav-item nav-link">Heavy
+-                                        ring1</a>
+-                                    <a href="https://justudhari.com/shop/heavy-ring-2" class="nav-item nav-link">Heavy
+-                                        ring 2</a>
+-                                    <a href="https://justudhari.com/shop/ruby-stone" class="nav-item nav-link">Ruby
+-                                        stone</a>
+-                                    <a href="https://justudhari.com/shop/franchise"
+-                                        class="nav-item nav-link">Franchise</a>
+-                                    <a href="shop.html" class="nav-item nav-link">Rings</a>
+-                                    <a href="https://justudhari.com/shop/new-tests" class="nav-item nav-link">New
+-                                        tests</a>
+-                                    <a href="https://justudhari.com/shop/haar" class="nav-item nav-link">Haar</a>
+-                                    <a href="https://justudhari.com/shop/baali" class="nav-item nav-link">Baali</a>
+-                                    <a href="https://justudhari.com/shop/ryuby" class="nav-item nav-link">Ryuby</a>
+-                                    <a href="https://justudhari.com/shop/mens-ring" class="nav-item nav-link">Mens
+-                                        ring</a>
+-                                    <a href="shop.html" class="nav-item nav-link">RINGS10</a>
+-                                    <a href="https://justudhari.com/shop/murti" class="nav-item nav-link">Murti</a>
+-                                    <a href="shop.html" class="nav-item nav-link">Shiny franchise</a>
+-                                    <a href="shop.html" class="nav-item nav-link">Murti</a>
+-                                    <a href="shop.html" class="nav-item nav-link">rings</a>
+-                                    <a href="shop.html" class="nav-item nav-link">Murti</a>
+-                                    <a href="shop.html" class="nav-item nav-link">Ruby stone</a>
+-                                    <a href="https://justudhari.com/shop/gungroo" class="nav-item nav-link">Gungroo</a>
+-                                    <a href="https://justudhari.com/shop/diamond-rings"
+-                                        class="nav-item nav-link">Diamond rings</a>
+-                                    <a href="https://justudhari.com/shop/kalyan" class="nav-item nav-link">Kalyan</a>
+-                                    <a href="https://justudhari.com/shop/matha-pati" class="nav-item nav-link">Matha
+-                                        pati</a>
+-                                    <a href="https://justudhari.com/shop/think" class="nav-item nav-link">Think</a>
+-                                    <a href="https://justudhari.com/shop/nosering"
+-                                        class="nav-item nav-link">Nosering</a>
+-                                    <a href="https://justudhari.com/shop/expensive"
+-                                        class="nav-item nav-link">Expensive</a>
+-                                    <a href="https://justudhari.com/shop/qa-tester" class="nav-item nav-link">Qa
+-                                        tester</a>
+-                                    <a href="https://justudhari.com/shop/filigree"
+-                                        class="nav-item nav-link">Filigree</a>
+-                                    <a href="https://justudhari.com/shop/group" class="nav-item nav-link">Group</a>
++                        </div>
+ 
++                        <!-- Section 2: Shop & Collections (Collapsible) -->
++                        <div class="mg-drawer-group-title">Shop & Collections</div>
++                        <div class="mg-drawer-card mb-3">
++                            <!-- Collapsible 1: Categories -->
++                            <a href="javascript:void(0)" class="mg-drawer-row mg-drawer-row-toggle"
++                                id="mg_drawer_categories_btn" role="button" aria-expanded="false"
++                                aria-controls="mg_drawer_categories_collapse">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-th-large mg-drawer-icon mr-2"></i>
++                                    <span class="font-weight-bold">Categories</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="mg-drawer-sub-count mr-2">6 Collections</span>
++                                    <i class="fa fa-chevron-down text-muted mg-drawer-chevron"></i>
+                                 </div>
++                            </a>
++                            <!-- Categories Sub-items (Dropdown) -->
++                            <div class="mg-drawer-collapse-content" id="mg_drawer_categories_collapse">
++                                <a href="cateloge.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-sparkles mg-sub-bullet mr-2"></i>
++                                    <span>All Jewellery</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-circle mg-sub-bullet mr-2 text-warning"></i>
++                                    <span>Gold</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-gem mg-sub-bullet mr-2 text-info"></i>
++                                    <span>Diamond</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-sun mg-sub-bullet mr-2"></i>
++                                    <span>Daily Wear</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="cateloge.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-book-open mg-sub-bullet mr-2 text-primary"></i>
++                                    <span>Curated Lookbooks</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-coins mg-sub-bullet mr-2 text-warning"></i>
++                                    <span>24K Gold Coins</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
+                             </div>
+-                        </li>
+-
+ 
++                            <!-- Collapsible 2: Shop For -->
++                            <a href="javascript:void(0)" class="mg-drawer-row mg-drawer-row-toggle"
++                                id="mg_drawer_shop_for_btn" role="button" aria-expanded="false"
++                                aria-controls="mg_drawer_shop_for_collapse">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-user-friends mg-drawer-icon mr-2"></i>
++                                    <span class="font-weight-bold">Shop For</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="mg-drawer-sub-count mr-2">Curated By Style</span>
++                                    <i class="fa fa-chevron-down text-muted mg-drawer-chevron"></i>
++                                </div>
++                            </a>
++                            <!-- Shop For Sub-items (Dropdown) -->
++                            <div class="mg-drawer-collapse-content" id="mg_drawer_shop_for_collapse">
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-female mg-sub-bullet mr-2"></i>
++                                    <span>Women</span>
++                                    <span class="badge ml-auto mg-badge-sub-pill">Popular</span>
++                                </a>
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-male mg-sub-bullet mr-2"></i>
++                                    <span>Men</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="shop.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-child mg-sub-bullet mr-2"></i>
++                                    <span>Kids</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                                <a href="scheme.html" class="mg-drawer-subrow">
++                                    <i class="fas fa-calendar-alt mg-sub-bullet mr-2 text-warning"></i>
++                                    <span>Jewellery Plans & Scheme</span>
++                                    <i class="fa fa-angle-right text-muted ml-auto"></i>
++                                </a>
++                            </div>
++                        </div>
+ 
+-                        <ul class="d-lg-none text-center row p-0" style="list-style:none;" id="mob_user_sign">
+-                            <li class="col-12">
+-                                <hr>
+-                            </li>
++                        <!-- Section 3: Shopping & Essentials -->
++                        <div class="mg-drawer-group-title">Shopping & Essentials</div>
++                        <div class="mg-drawer-card mb-3">
++                            <a href="javascript:void(0)" class="mg-drawer-row" id="mg_drawer_rates_link">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-chart-line mg-drawer-icon mr-2"></i>
++                                    <span> Metal Rates</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="badge mg-badge-live mr-2"><i class="fas fa-circle mr-1"></i>Live</span>
++                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                                </div>
++                            </a>
++                            <a href="wishlist.html" class="mg-drawer-row">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-heart mg-drawer-icon mr-2 text-danger"></i>
++                                    <span>My Wishlist</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="badge mg-badge-count mr-2" id="mg_drawer_wishlist_count">0</span>
++                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                                </div>
++                            </a>
++                            <a href="cart.html" class="mg-drawer-row">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-shopping-bag mg-drawer-icon mr-2"></i>
++                                    <span>My Shopping Bag</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="badge mg-badge-count mr-2" id="mg_drawer_cart_count">0</span>
++                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                                </div>
++                            </a>
++                        </div>
+ 
+-                            <li class="col-6 px-1">
+-                                <a href="login.html" class="btn btn-secondary col-12 ">
+-                                    <i class="fa fa-sign-in-alt"></i> Login
+-                                </a>
+-                            </li>
++                        <!-- Section 4: About & Assistance -->
++                        <div class="mg-drawer-group-title">About & Support</div>
++                        <div class="mg-drawer-card mb-3">
++                            <a href="our-legacy.html" class="mg-drawer-row">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-landmark mg-drawer-icon mr-2"></i>
++                                    <span>Our Legacy & Heritage</span>
++                                </div>
++                                <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                            </a>
++                            <a href="shop-location.html" class="mg-drawer-row">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-map-marked-alt mg-drawer-icon mr-2"></i>
++                                    <span>Visit Our Store</span>
++                                </div>
++                                <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                            </a>
++                            <a href="javascript:void(0)" class="mg-drawer-row" id="mg_drawer_chat_link">
++                                <div class="d-flex align-items-center">
++                                    <i class="fas fa-comments mg-drawer-icon mr-2 text-warning"></i>
++                                    <span>Help & Live Chat</span>
++                                </div>
++                                <div class="d-flex align-items-center">
++                                    <span class="badge mg-badge-chat-online mr-2">Online</span>
++                                    <i class="fa fa-chevron-right text-muted mg-arrow-sm"></i>
++                                </div>
++                            </a>
++                        </div>
+ 
+-                            <li class="col-6 px-1">
+-                                <a href="register.html" class="btn btn-secondary col-12 ">
+-                                    <i class="fa fa-user-plus"></i> Register
+-                                </a>
+-                            </li>
++                        <!-- Drawer Footer Account Links (Kept as requested) -->
++                        <div class="d-flex justify-content-between pt-3 border-top mt-2">
++                            <a href="login.html"
++                                class="btn btn-outline-primary btn-sm flex-fill mr-2 py-2 font-weight-bold"
++                                id="mg_drawer_login_btn">
++                                <i class="fa fa-sign-in-alt mr-1"></i> Login
++                            </a>
++                            <a href="register.html"
++                                class="btn btn-secondary btn-sm flex-fill py-2 font-weight-bold text-dark"
++                                id="mg_drawer_reg_btn">
++                                <i class="fa fa-user-plus mr-1"></i> Register
++                            </a>
++                        </div>
+ 
+-                        </ul>
+-                    </ul>
++                    </div>
+                 </nav>
+ 
+                 <div class="menu-backdrop" id="menuBackdrop" tabindex="-1" aria-hidden="true"></div>
+@@ -722,7 +693,9 @@
+ 
+                         <a href="contact.html" class="nav-item nav-link ">Contact</a>
+ 
+-                        <a href="shop-location.html" class="nav-item nav-link {{  @$shop_location }}"> Shop Location
++                        <a href="shop-location.html" class="nav-item nav-link"> Shop Location
++                        </a>
++                        <a href="profile.html" class="nav-item nav-link" id="nav_profile_link"> Profile
+                         </a>
+ 
+                     </div>
+@@ -752,7 +725,7 @@
+         </div>
+ 
+     </div>
+-    <div id="header_seprator" class="container-fluid">
++    <div id="header_seprator" class="container-fluid" style="height: 0px;">
+     </div>
+ 
+ 
+@@ -782,29 +755,32 @@
+     </div>
+ </div>
+ 
+-<div class="mg-rate-float-widget" id="rate_ticker_toggle_area">
+-    <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false">
+-        <i class="fa fa-angle-down mg-rate-chevron"></i> Todays Rate
++
++<!-- Floating Rate Badge (Desktop: constant right-side position; Mobile: animated entrance when rate ticker scrolls out of view) -->
++<div class="mg-rate-float-widget" id="rate_ticker_toggle_area" data-mobile-trigger="ticker-out-of-view">
++    <button type="button" class="mg-rate-float-btn" id="mg_rate_toggle_btn" aria-expanded="false"
++        aria-label="Toggle Today's Gold and Silver Rates">
++        <i class="fa fa-angle-down mg-rate-chevron"></i> Today's Rate
+     </button>
+     <div class="mg-rate-panel" id="mg_rate_panel">
+         <div class="mg-rate-col">
+             <h6>GOLD <small>(10Gm)</small></h6>
+             <ul>
+-                <li><b>24K</b> <span>₹<span class="rate-gold-24k">-</span></span></li>
+-                <li><b>22K</b> <span>₹<span class="rate-gold-22k">-</span></span></li>
+-                <li><b>20K</b> <span>₹<span class="rate-gold-20k">-</span></span></li>
+-                <li><b>18K</b> <span>₹<span class="rate-gold-18k">-</span></span></li>
++                <li><b>24K</b> <span>₹<span id="rate_gold_24k_panel">-</span></span></li>
++                <li><b>22K</b> <span>₹<span id="rate_gold_22k_panel">-</span></span></li>
++                <li><b>20K</b> <span>₹<span id="rate_gold_20k_panel">-</span></span></li>
++                <li><b>18K</b> <span>₹<span id="rate_gold_18k_panel">-</span></span></li>
+             </ul>
+         </div>
+         <div class="mg-rate-col">
+             <h6>SILVER</h6>
+             <ul>
+-                <li><b>1Kg</b> <span>₹<span class="rate-silver-1kg">-</span></span></li>
+-                <li><b>10Gm</b> <span>₹<span class="rate-silver-10g">-</span></span></li>
+-                <li><b>1Gm</b> <span>₹<span class="rate-silver-1g">-</span></span></li>
++                <li><b>1Kg</b> <span>₹<span id="rate_silver_1kg_panel">-</span></span></li>
++                <li><b>10Gm</b> <span>₹<span id="rate_silver_10g_panel">-</span></span></li>
++                <li><b>1Gm</b> <span>₹<span id="rate_silver_1g_panel">-</span></span></li>
+             </ul>
+         </div>
+-        <div class="mg-rate-updated">Update: <i class="rate-update">--/--/----</i></div>
++        <div class="mg-rate-updated">Update: <i id="rate_update_panel">--/--/----</i></div>
+     </div>
+ </div>
+ 

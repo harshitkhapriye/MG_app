@@ -1,0 +1,2051 @@
+diff --git a/ecom/each_css/about-style.css b/ecom/each_css/about-style.css
+index 7f5a5cf..429019c 100644
+--- a/ecom/each_css/about-style.css
++++ b/ecom/each_css/about-style.css
+@@ -21,7 +21,7 @@
+ 
+ #about_section_page .about-img {
+     border-radius: 30% 0;
+-    border: 3px solid rgba(217, 181, 102, 0.5);
++    border: 3px solid rgba(var(--mg-gold-champagne-rgb), 0.5);
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.15);
+     width: 100%;
+     transition: transform 0.5s cubic-bezier(.22, .9, .32, 1);
+@@ -62,8 +62,8 @@
+ }
+ 
+ #about_section_page .about-content-card {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.25) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.25) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 0 5rem 0 5rem;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+     padding: 45px 50px;
+@@ -77,7 +77,7 @@
+     left: 10px;
+     right: 10px;
+     bottom: 10px;
+-    border: 1px dashed rgba(217, 181, 102, 0.4);
++    border: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
+     border-radius: 0 4.5rem 0 4.5rem;
+     pointer-events: none;
+ }
+@@ -108,7 +108,7 @@
+     color: var(--mg-ink) !important;
+     border-color: transparent;
+     transform: translateY(-3px);
+-    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 10px 20px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ @media (max-width: 767.98px) {
+@@ -127,8 +127,8 @@
+ 
+ /* ---------- Why Choose Us ---------- */
+ #why_choose_us .why-card {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.35) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.35) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 16px;
+     padding: 32px 24px;
+     text-align: center;
+@@ -139,7 +139,7 @@
+ 
+ #why_choose_us .why-card:hover {
+     transform: translateY(-8px);
+-    box-shadow: 0 20px 34px rgba(212, 175, 55, 0.25);
++    box-shadow: 0 20px 34px rgba(var(--mg-gold-2-rgb), 0.25);
+ }
+ 
+ #why_choose_us .why-icon {
+diff --git a/ecom/each_css/catalogue-gallery-style.css b/ecom/each_css/catalogue-gallery-style.css
+index 70ee5d0..87a9b47 100644
+--- a/ecom/each_css/catalogue-gallery-style.css
++++ b/ecom/each_css/catalogue-gallery-style.css
+@@ -10,8 +10,8 @@
+ 
+ /* ---------- Left intro panel ---------- */
+ #catalogue_gallery_page .gallery-intro-card {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.25) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.25) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 36px 32px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+@@ -76,7 +76,7 @@
+     color: var(--mg-ink) !important;
+     border-color: transparent;
+     transform: translateY(-3px);
+-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ /* ---------- Image grid (2 columns) ---------- */
+@@ -84,7 +84,7 @@
+     position: relative;
+     border-radius: 16px;
+     overflow: hidden;
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     box-shadow: 0 12px 26px rgba(14, 25, 50, 0.10);
+     transition: transform 0.4s cubic-bezier(.22, .9, .32, 1), box-shadow 0.4s ease;
+     aspect-ratio: 4 / 3;
+@@ -92,7 +92,7 @@
+ 
+ #catalogue_gallery_page .gallery-item:hover {
+     transform: translateY(-6px);
+-    box-shadow: 0 20px 34px rgba(212, 175, 55, 0.25);
++    box-shadow: 0 20px 34px rgba(var(--mg-gold-2-rgb), 0.25);
+ }
+ 
+ #catalogue_gallery_page .gallery-item img {
+diff --git a/ecom/each_css/catalogue-style.css b/ecom/each_css/catalogue-style.css
+index 8dae9f7..b0fa241 100644
+--- a/ecom/each_css/catalogue-style.css
++++ b/ecom/each_css/catalogue-style.css
+@@ -6,264 +6,269 @@
+ 
+ /* ---------- Filter sidebar (same look as shop page) ---------- */
+ .filter_side_bar {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
+-    border-radius: 16px;
+-    padding: 24px 22px;
+-    box-shadow: 0 10px 30px rgba(14, 25, 50, 0.08);
+-    max-height: calc(100vh - 40px);
+-    overflow-y: auto;
+-    position: sticky;
+-    top: 20px;
++  background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.2) 100%);
++  border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
++  border-radius: 16px;
++  padding: 24px 22px;
++  box-shadow: 0 10px 30px rgba(14, 25, 50, 0.08);
++  max-height: calc(100vh - 40px);
++  overflow-y: auto;
++  position: sticky;
++  top: 20px;
+ }
+ 
+ .filter_side_bar::-webkit-scrollbar {
+-    width: 6px;
++  width: 6px;
+ }
+ 
+ .filter_side_bar::-webkit-scrollbar-thumb {
+-    background: var(--mg-gold-2);
+-    border-radius: 10px;
++  background: var(--mg-gold-2);
++  border-radius: 10px;
+ }
+ 
+ .filter_side_bar h5 {
+-    color: var(--mg-ink);
+-    font-family: 'Cormorant Garamond', serif;
+-    font-weight: 700;
+-    font-size: 1.2rem;
+-    position: relative;
+-    padding-bottom: 10px;
++  color: var(--mg-ink);
++  font-family: "Cormorant Garamond", serif;
++  font-weight: 700;
++  font-size: 1.2rem;
++  position: relative;
++  padding-bottom: 10px;
+ }
+ 
+ .filter_side_bar h5::after {
+-    content: "";
+-    position: absolute;
+-    left: 0;
+-    bottom: 0;
+-    width: 40px;
+-    height: 2px;
+-    background: linear-gradient(90deg, var(--mg-gold-2), var(--mg-gold-3));
++  content: "";
++  position: absolute;
++  left: 0;
++  bottom: 0;
++  width: 40px;
++  height: 2px;
++  background: linear-gradient(90deg, var(--mg-gold-2), var(--mg-gold-3));
+ }
+ 
+ .filter_side_bar .border-bottom {
+-    border-bottom: 1px dashed rgba(217, 181, 102, 0.4) !important;
++  border-bottom: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
+ }
+ 
+ .filter_side_bar .custom-control-label {
+-    color: #6c757d;
+-    font-size: 0.9rem;
+-    cursor: pointer;
++  color: #6c757d;
++  font-size: 0.9rem;
++  cursor: pointer;
+ }
+ 
+ .filter_side_bar .custom-control-input:checked ~ .custom-control-label {
+-    color: var(--mg-gold-1);
+-    font-weight: 600;
++  color: var(--mg-gold-1);
++  font-weight: 600;
+ }
+ 
+ .filter_side_bar .cat_block_toggle {
+-    background: linear-gradient(120deg, var(--mg-gold-3), var(--mg-gold-2));
+-    color: var(--mg-ink);
+-    border: none;
+-    border-radius: 30px;
+-    font-size: 0.85rem;
+-    font-weight: 600;
+-    padding: 8px 14px;
+-    transition: transform 0.3s ease, box-shadow 0.3s ease;
++  background: linear-gradient(120deg, var(--mg-gold-3), var(--mg-gold-2));
++  color: var(--mg-ink);
++  border: none;
++  border-radius: 30px;
++  font-size: 0.85rem;
++  font-weight: 600;
++  padding: 8px 14px;
++  transition:
++    transform 0.3s ease,
++    box-shadow 0.3s ease;
+ }
+ 
+ .filter_side_bar .cat_block_toggle:hover {
+-    transform: translateY(-2px);
+-    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.35);
++  transform: translateY(-2px);
++  box-shadow: 0 8px 16px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ .filter_toggle_btn {
+-    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1)) !important;
+-    border: none !important;
+-    border-radius: 10px !important;
+-    font-weight: 600;
++  background: linear-gradient(
++    120deg,
++    var(--mg-gold-2),
++    var(--mg-gold-1)
++  ) !important;
++  border: none !important;
++  border-radius: 10px !important;
++  font-weight: 600;
+ }
+ 
+ /* Collapsible lists: show ~5-6 by default, "More" reveals rest,
+    sidebar itself scrolls (see .filter_side_bar overflow-y above) */
+ .categorey_block.collapse_block {
+-    max-height: 260px;
+-    overflow: hidden;
+-    position: relative;
+-    transition: max-height 0.4s ease;
++  max-height: 260px;
++  overflow: hidden;
++  position: relative;
++  transition: max-height 0.4s ease;
+ }
+ 
+ .categorey_block.collapse_block::after {
+-    content: "";
+-    position: absolute;
+-    left: 0;
+-    right: 0;
+-    bottom: 0;
+-    height: 40px;
+-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 90%);
+-    pointer-events: none;
++  content: "";
++  position: absolute;
++  left: 0;
++  right: 0;
++  bottom: 0;
++  height: 40px;
++  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 90%);
++  pointer-events: none;
+ }
+ 
+ .categorey_block.expande_block {
+-    max-height: none;
+-    overflow: visible;
++  max-height: none;
++  overflow: visible;
+ }
+ 
+ .categorey_block.expande_block::after {
+-    display: none;
++  display: none;
+ }
+ 
+ @media (max-width: 991.98px) {
+-    .filter_side_bar {
+-        position: static;
+-        max-height: none;
+-        overflow-y: visible;
+-    }
++  .filter_side_bar {
++    position: static;
++    max-height: none;
++    overflow-y: visible;
++  }
+ }
+ 
+ /* ---------- Search bar ---------- */
+ .shop_keyword_filter {
+-    border-radius: 30px !important;
+-    border: 1.5px solid rgba(14, 25, 50, 0.15) !important;
+-    overflow: hidden;
++  border-radius: 30px !important;
++  border: 1.5px solid rgba(14, 25, 50, 0.15) !important;
++  overflow: hidden;
+ }
+ 
+ .shop_keyword_filter .form-control {
+-    border: none !important;
++  border: none !important;
+ }
+ 
+ .shop_keyword_filter:focus-within {
+-    border-color: var(--mg-gold-2) !important;
+-    box-shadow: 0 0 0 3px rgba(217, 181, 102, 0.2);
++  border-color: var(--mg-gold-2) !important;
++  box-shadow: 0 0 0 3px rgba(var(--mg-gold-champagne-rgb), 0.2);
+ }
+ 
+ /* ---------- 3 x 3 Catalogue grid ---------- */
+ #shop_data {
+-    display: grid;
+-    grid-template-columns: repeat(3, 1fr);
+-    gap: 20px;
++  display: grid;
++  grid-template-columns: repeat(3, 1fr);
++  gap: 20px;
+ }
+ 
+ #shop_data .product-item {
+-    border-radius: 14px !important;
+-    overflow: hidden;
+-    border-color: rgba(217, 181, 102, 0.35) !important;
+-    transition: transform 0.35s cubic-bezier(.22, .9, .32, 1), box-shadow 0.35s ease;
+-    margin-bottom: 0 !important;
++  border-radius: 14px !important;
++  overflow: hidden;
++  border-color: rgba(var(--mg-gold-champagne-rgb), 0.35) !important;
++  transition:
++    transform 0.35s cubic-bezier(0.22, 0.9, 0.32, 1),
++    box-shadow 0.35s ease;
++  margin-bottom: 0 !important;
+ }
+ 
+ #shop_data .product-item:hover {
+-    transform: translateY(-6px);
+-    box-shadow: 0 18px 30px rgba(212, 175, 55, 0.22);
++  transform: translateY(-6px);
++  box-shadow: 0 18px 30px rgba(var(--mg-gold-2-rgb), 0.22);
+ }
+ 
+ #shop_data .product-item .product-img {
+-    overflow: hidden;
++  overflow: hidden;
+ }
+ 
+ #shop_data .product-item .product-img img {
+-    transition: transform 0.5s cubic-bezier(.22, .9, .32, 1);
+-    aspect-ratio: 1 / 1;
+-    object-fit: cover;
++  transition: transform 0.5s cubic-bezier(0.22, 0.9, 0.32, 1);
++  aspect-ratio: 1 / 1;
++  object-fit: cover;
+ }
+ 
+ #shop_data .product-item:hover .product-img img {
+-    transform: scale(1.08);
++  transform: scale(1.08);
+ }
+ 
+ #shop_data .product-item .card-body h6 {
+-    color: var(--mg-ink);
+-    font-weight: 600;
++  color: var(--mg-ink);
++  font-weight: 600;
+ }
+ 
+ @media (max-width: 991.98px) {
+-    #shop_data {
+-        grid-template-columns: repeat(2, 1fr);
+-        gap: 14px;
+-    }
+-}
++  #shop_data {
++    grid-template-columns: repeat(2, 1fr);
++    gap: 12px;
++  }
+ 
+-@media (max-width: 991.98px) {
+-    #shop_data {
+-        grid-template-columns: repeat(2, 1fr);
+-        gap: 12px;
+-    }
+-
+-    #shop_data .product-item {
+-        position: relative;
+-        border-radius: 10px !important;
+-    }
+-
+-    #shop_data .product-item .product-img {
+-        position: relative;
+-        aspect-ratio: 3 / 4;
+-    }
+-
+-    #shop_data .product-item .product-img img {
+-        width: 100%;
+-        height: 100%;
+-        object-fit: cover;
+-        aspect-ratio: unset;
+-    }
+-
+-    #shop_data .product-item .card-body {
+-        position: absolute;
+-        left: 0;
+-        right: 0;
+-        bottom: 0;
+-        background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1));
+-        border: none !important;
+-        padding: 8px 10px !important;
+-        text-align: center;
+-    }
+-
+-    #shop_data .product-item .card-body h6 {
+-        color: #fff !important;
+-        margin: 0 !important;
+-        font-size: 0.85rem;
+-    }
++  #shop_data .product-item {
++    position: relative;
++    border-radius: 10px !important;
++  }
++
++  #shop_data .product-item .product-img {
++    position: relative;
++    aspect-ratio: 3 / 4;
++  }
++
++  #shop_data .product-item .product-img img {
++    width: 100%;
++    height: 100%;
++    object-fit: cover;
++    aspect-ratio: unset;
++  }
++
++  #shop_data .product-item .card-body {
++    position: absolute;
++    left: 0;
++    right: 0;
++    bottom: 0;
++    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1));
++    border: none !important;
++    padding: 8px 10px !important;
++    text-align: center;
++  }
++
++  #shop_data .product-item .card-body h6 {
++    color: #fff !important;
++    margin: 0 !important;
++    font-size: 0.85rem;
++  }
+ }
+ 
+ /* ---------- No Product Found ---------- */
+ #no_product_found i {
+-    color: var(--mg-gold-2);
++  color: var(--mg-gold-2);
+ }
+ 
+ #no_product_found h4 {
+-    color: var(--mg-ink);
+-    margin-top: 10px;
++  color: var(--mg-ink);
++  margin-top: 10px;
+ }
+ 
+ /* ---------- Pagination (same look as shop page) ---------- */
+ .pagination {
+-    gap: 6px;
++  gap: 6px;
+ }
+ 
+ .pagination .page-link {
+-    border-radius: 10px !important;
+-    border: 1px solid rgba(217, 181, 102, 0.4);
+-    color: var(--mg-ink);
+-    font-weight: 600;
+-    min-width: 42px;
+-    text-align: center;
++  border-radius: 10px !important;
++  border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
++  color: var(--mg-ink);
++  font-weight: 600;
++  min-width: 42px;
++  text-align: center;
+ }
+ 
+ .pagination .page-item.active .page-link {
+-    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1)) !important;
+-    border-color: var(--mg-gold-1) !important;
+-    color: #fff !important;
++  background: linear-gradient(
++    120deg,
++    var(--mg-gold-2),
++    var(--mg-gold-1)
++  ) !important;
++  border-color: var(--mg-gold-1) !important;
++  color: #fff !important;
+ }
+ 
+ .pagination .page-item.disabled .page-link {
+-    opacity: 0.4;
++  opacity: 0.4;
+ }
+ 
+ .pagination .page-link:hover {
+-    background: rgba(217, 181, 102, 0.15);
++  background: rgba(var(--mg-gold-champagne-rgb), 0.15);
+ }
+ 
+ @media (max-width: 767.98px) {
+-    .filter_side_bar {
+-        border-radius: 12px;
+-        padding: 18px 16px;
+-    }
+-}
+\ No newline at end of file
++  .filter_side_bar {
++    border-radius: 12px;
++    padding: 18px 16px;
++  }
++}
+diff --git a/ecom/each_css/checkout-style.css b/ecom/each_css/checkout-style.css
+index b3b3846..ee1de1d 100644
+--- a/ecom/each_css/checkout-style.css
++++ b/ecom/each_css/checkout-style.css
+@@ -47,14 +47,14 @@
+ #checkout_section_page .form-control:focus,
+ #checkout_section_page .custom-select:focus {
+     border-color: var(--mg-gold-2);
+-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
++    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
+     transform: translateY(-2px);
+     outline: none;
+ }
+ 
+ /* ---------- Order Total & Payment cards ---------- */
+ #checkout_section_page .card.border-secondary {
+-    border: 1px solid rgba(217, 181, 102, 0.4) !important;
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
+     border-radius: 18px;
+     overflow: hidden;
+     box-shadow: 0 15px 30px rgba(14, 25, 50, 0.08);
+@@ -88,12 +88,12 @@
+ }
+ 
+ #checkout_section_page .card-body hr {
+-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
++    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
+ }
+ 
+ #checkout_section_page .card-footer {
+-    border-top: 1px dashed rgba(217, 181, 102, 0.4) !important;
+-    background: rgba(242, 221, 154, 0.10);
++    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
++    background: rgba(var(--mg-gold-3-rgb), 0.10);
+ }
+ 
+ #checkout_section_page .card-footer h5 {
+@@ -108,7 +108,7 @@
+ }
+ 
+ #checkout_section_page .custom-radio:hover {
+-    background: rgba(217, 181, 102, 0.10);
++    background: rgba(var(--mg-gold-champagne-rgb), 0.10);
+ }
+ 
+ #checkout_section_page .custom-control-label {
+@@ -126,13 +126,40 @@
+ 
+ #checkout_section_page .card-footer .btn-primary:hover {
+     transform: translateY(-3px);
+-    box-shadow: 0 14px 28px rgba(212, 175, 55, 0.4);
++    box-shadow: 0 14px 28px rgba(var(--mg-gold-2-rgb), 0.4);
+ }
+ 
+-@media (max-width: 767.98px) {
++/* ============================================================
++   MOBILE SCOPED STYLES (Scope: <= 991.98px)
++   Restyles Order Total & Payment card headers to match gold/ivory theme
++   and eliminates legacy teal/blue overlay and pseudo-elements.
++   ============================================================ */
++@media (max-width: 991.98px) {
+     #checkout_section_page .card-body,
+     #checkout_section_page .card-header,
+     #checkout_section_page .card-footer {
+         padding: 18px 16px;
+     }
++
++    #checkout_section_page .card-header.bg-secondary {
++        background: linear-gradient(135deg, rgba(var(--mg-gold-champagne-rgb), 0.16) 0%, rgba(var(--mg-gold-3-rgb), 0.28) 100%) !important;
++        border-bottom: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35) !important;
++        padding: 16px 20px !important;
++    }
++
++    #checkout_section_page .card-header.bg-secondary::before,
++    #checkout_section_page .card-header.bg-secondary::after {
++        display: none !important;
++    }
++
++    #checkout_section_page .card-header.bg-secondary h4 {
++        color: var(--mg-ink) !important;
++        font-family: 'Poppins', sans-serif;
++        font-size: 1.15rem;
++        font-weight: 700 !important;
++        letter-spacing: 0.3px;
++        position: relative;
++        z-index: 2;
++        margin: 0;
++    }
+ }
+\ No newline at end of file
+diff --git a/ecom/each_css/contact-style.css b/ecom/each_css/contact-style.css
+index 04a94be..8c55783 100644
+--- a/ecom/each_css/contact-style.css
++++ b/ecom/each_css/contact-style.css
+@@ -11,8 +11,8 @@
+ 
+ /* ---------- Contact form card ---------- */
+ #contact_section_page .contact-form {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 40px 36px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+@@ -47,7 +47,7 @@
+ 
+ #contact_section_page .form-control:focus {
+     border-color: var(--mg-gold-2);
+-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
++    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
+     transform: translateY(-2px);
+     outline: none;
+ }
+@@ -78,7 +78,7 @@
+     color: var(--mg-ink) !important;
+     border-color: transparent;
+     transform: translateY(-3px);
+-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ #contact_section_page #success .alert {
+@@ -87,8 +87,8 @@
+ 
+ /* ---------- Contact info card ---------- */
+ #contact_info_area {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 36px 32px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+@@ -154,7 +154,7 @@
+ 
+ /* Store block spacing */
+ #contact_info_area .d-flex.flex-column {
+-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
++    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
+     padding-top: 20px;
+     margin-top: 6px;
+ }
+diff --git a/ecom/each_css/legacy-page-style.css b/ecom/each_css/legacy-page-style.css
+new file mode 100644
+index 0000000..d0617cd
+--- /dev/null
++++ b/ecom/each_css/legacy-page-style.css
+@@ -0,0 +1,360 @@
++/* ================================================================
++   OUR-LEGACY PAGE — full dedicated page styles
++   Loaded only on our-legacy.html.
++   Follows AGENTS.md guidelines & theme design tokens.
++   ================================================================ */
++
++/* Page container & luminous ambient background */
++#our_legacy_page {
++    position: relative;
++    background-color: var(--mg-ivory, #faf8f5);
++    min-height: 100vh;
++    overflow-x: hidden;
++}
++
++#our_legacy_page::before {
++    content: "";
++    position: fixed;
++    top: 0; left: 0; right: 0; bottom: 0;
++    background: radial-gradient(circle at 10% 15%, rgba(var(--mg-gold-3-rgb), 0.18) 0%, transparent 40%),
++                radial-gradient(circle at 90% 85%, rgba(var(--mg-gold-champagne-rgb), 0.14) 0%, transparent 45%),
++                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.7) 0%, transparent 70%);
++    pointer-events: none;
++    z-index: 0;
++}
++
++#our_legacy_page > * {
++    position: relative;
++    z-index: 1;
++}
++
++/* Close (X) button — takes user back to the teaser section on index.html */
++#our_legacy_page .legacy-close-btn {
++    position: fixed;
++    top: 90px;
++    right: 22px;
++    z-index: 1040;
++    width: 44px;
++    height: 44px;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    border-radius: 50%;
++    background: linear-gradient(135deg, var(--mg-gold-1, #c5a059), var(--mg-gold-2, #e2c98a));
++    color: #ffffff !important;
++    font-size: 1.15rem;
++    box-shadow: 0 8px 24px rgba(var(--mg-gold-champagne-rgb), 0.4);
++    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
++    border: 1px solid rgba(255, 255, 255, 0.4);
++    text-decoration: none !important;
++}
++
++#our_legacy_page .legacy-close-btn:hover {
++    transform: rotate(90deg) scale(1.08);
++    box-shadow: 0 12px 28px rgba(var(--mg-gold-champagne-rgb), 0.55);
++    color: #ffffff !important;
++}
++
++/* Optional hero block */
++#our_legacy_page .legacy-hero {
++    border-radius: 18px;
++    overflow: hidden;
++    margin-bottom: 28px;
++    box-shadow: 0 15px 35px rgba(26, 23, 20, 0.08);
++    max-height: 280px;
++    border: 1px solid var(--mg-card-border, rgba(var(--mg-gold-champagne-rgb), 0.22));
++}
++
++#our_legacy_page .legacy-hero img {
++    width: 100%;
++    height: 280px;
++    object-fit: cover;
++    display: block;
++}
++
++/* Header subtext */
++#our_legacy_page .legacy-lead-subtext {
++    font-size: 0.96rem;
++    color: #6a645b !important;
++    max-width: 580px;
++    margin: 0 auto;
++    line-height: 1.6;
++}
++
++/* Story Blocks */
++#our_legacy_page .legacy-block {
++    background: #ffffff;
++    border: 1px solid var(--mg-card-border, rgba(var(--mg-gold-champagne-rgb), 0.22));
++    border-radius: 20px;
++    padding: 30px 32px;
++    margin-bottom: 28px;
++    box-shadow: 0 10px 30px rgba(26, 23, 20, 0.05);
++    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
++    position: relative;
++    overflow: hidden;
++}
++
++#our_legacy_page .legacy-block::after {
++    content: "";
++    position: absolute;
++    top: 0;
++    left: 0;
++    width: 4px;
++    height: 100%;
++    background: linear-gradient(180deg, var(--mg-gold-1, #c5a059), var(--mg-gold-2, #e2c98a));
++    opacity: 0.85;
++}
++
++#our_legacy_page .legacy-block:hover {
++    transform: translateY(-3px);
++    box-shadow: 0 18px 40px rgba(var(--mg-gold-champagne-rgb), 0.16);
++    border-color: var(--mg-card-border-hover, rgba(var(--mg-gold-champagne-rgb), 0.55));
++}
++
++/* Era Pill Badge */
++#our_legacy_page .legacy-era-badge {
++    display: inline-flex;
++    align-items: center;
++    padding: 4px 14px;
++    border-radius: 20px;
++    background: linear-gradient(135deg, rgba(var(--mg-gold-champagne-rgb), 0.12), rgba(var(--mg-gold-3-rgb), 0.22));
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.38);
++    color: var(--mg-gold-dark, #8c6d2d);
++    font-size: 0.74rem;
++    font-weight: 700;
++    letter-spacing: 1.5px;
++    text-transform: uppercase;
++    margin-bottom: 12px;
++}
++
++/* Story Block Image Frame */
++#our_legacy_page .legacy-img-frame {
++    position: relative;
++    border-radius: 16px;
++    overflow: hidden;
++    box-shadow: 0 8px 22px rgba(26, 23, 20, 0.1);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.25);
++    background: #fdfbf7;
++}
++
++#our_legacy_page .legacy-block-img {
++    width: 100%;
++    height: 250px;
++    object-fit: cover;
++    display: block;
++    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
++}
++
++#our_legacy_page .legacy-block:hover .legacy-block-img {
++    transform: scale(1.04);
++}
++
++/* Block Typography */
++#our_legacy_page .legacy-block h4 {
++    color: var(--mg-ink, #1a1714);
++    font-family: 'Cormorant Garamond', Georgia, serif;
++    font-weight: 700;
++    font-size: 1.55rem;
++    letter-spacing: 0.5px;
++    margin-top: 4px;
++    margin-bottom: 12px;
++    line-height: 1.3;
++}
++
++#our_legacy_page .legacy-block p {
++    color: #4a453e;
++    line-height: 1.8;
++    text-align: left;
++    font-size: 0.94rem;
++    margin-bottom: 0;
++    font-weight: 400;
++}
++
++/* Brochure Download Section */
++#our_legacy_page .legacy-download-wrap {
++    padding: 10px 0 20px;
++}
++
++#our_legacy_page .legacy-download-btn {
++    display: inline-flex;
++    align-items: center;
++    justify-content: center;
++    gap: 10px;
++    background: linear-gradient(120deg, var(--mg-gold-1, #c5a059), var(--mg-gold-2, #e2c98a)) !important;
++    color: #ffffff !important;
++    border: none !important;
++    border-radius: 30px;
++    padding: 14px 34px;
++    font-size: 0.92rem;
++    font-weight: 600;
++    letter-spacing: 0.8px;
++    text-transform: uppercase;
++    box-shadow: 0 10px 24px rgba(var(--mg-gold-champagne-rgb), 0.35);
++    transition: transform 0.3s ease, box-shadow 0.3s ease;
++}
++
++#our_legacy_page .legacy-download-btn:hover {
++    transform: translateY(-3px);
++    box-shadow: 0 16px 32px rgba(var(--mg-gold-champagne-rgb), 0.48);
++    color: #ffffff !important;
++}
++
++#our_legacy_page .legacy-download-subtext {
++    font-size: 0.82rem;
++    color: #7d756b !important;
++    letter-spacing: 0.3px;
++}
++
++/* ================================================================
++   DISCOVER MORE SECTION — 2x2 luxury card grid linking key pages
++   ================================================================ */
++#our_legacy_page .legacy-discover-section {
++    border-top: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.22);
++    margin-top: 40px;
++    padding-top: 36px;
++}
++
++#our_legacy_page .legacy-discover-kicker {
++    display: inline-block;
++    font-size: 0.72rem;
++    font-weight: 700;
++    letter-spacing: 2.2px;
++    text-transform: uppercase;
++    color: var(--mg-gold-dark, #8c6d2d);
++    margin-bottom: 6px;
++}
++
++#our_legacy_page .legacy-discover-subheading {
++    font-size: 0.9rem;
++    color: #6d665d !important;
++    max-width: 520px;
++    margin: 0 auto;
++}
++
++#our_legacy_page .legacy-discover-card {
++    display: flex;
++    flex-direction: column;
++    height: 100%;
++    background: #ffffff;
++    border: 1px solid var(--mg-card-border, rgba(var(--mg-gold-champagne-rgb), 0.22));
++    border-radius: 16px;
++    padding: 22px 18px;
++    text-decoration: none !important;
++    color: inherit;
++    box-shadow: 0 8px 24px rgba(26, 23, 20, 0.05);
++    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
++    position: relative;
++}
++
++#our_legacy_page .legacy-discover-card:hover {
++    transform: translateY(-4px);
++    box-shadow: 0 14px 30px rgba(var(--mg-gold-champagne-rgb), 0.18);
++    border-color: var(--mg-card-border-hover, rgba(var(--mg-gold-champagne-rgb), 0.55));
++    background-color: #fffdf9;
++}
++
++#our_legacy_page .legacy-discover-icon-wrap {
++    width: 44px;
++    height: 44px;
++    border-radius: 12px;
++    background: linear-gradient(135deg, rgba(var(--mg-gold-champagne-rgb), 0.12), rgba(var(--mg-gold-3-rgb), 0.25));
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    color: var(--mg-gold-dark, #8c6d2d);
++    font-size: 1.15rem;
++    margin-bottom: 14px;
++    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
++}
++
++#our_legacy_page .legacy-discover-card:hover .legacy-discover-icon-wrap {
++    transform: scale(1.1);
++    background: linear-gradient(135deg, var(--mg-gold-1, #c5a059), var(--mg-gold-2, #e2c98a));
++    color: #ffffff;
++}
++
++#our_legacy_page .legacy-discover-title {
++    font-family: 'Cormorant Garamond', Georgia, serif;
++    font-weight: 700;
++    font-size: 1.18rem;
++    color: var(--mg-ink, #1a1714);
++    margin-bottom: 6px;
++    line-height: 1.3;
++}
++
++#our_legacy_page .legacy-discover-desc {
++    font-size: 0.82rem;
++    color: #6a645b;
++    line-height: 1.5;
++    margin-bottom: 14px;
++    flex-grow: 1;
++}
++
++#our_legacy_page .legacy-discover-arrow {
++    font-size: 0.78rem;
++    font-weight: 700;
++    letter-spacing: 0.8px;
++    text-transform: uppercase;
++    color: var(--mg-gold-dark, #8c6d2d);
++    display: inline-flex;
++    align-items: center;
++    transition: color 0.2s ease, transform 0.2s ease;
++}
++
++#our_legacy_page .legacy-discover-card:hover .legacy-discover-arrow {
++    color: var(--mg-gold-1, #c5a059);
++    transform: translateX(3px);
++}
++
++/* ================================================================
++   RESPONSIVE (Mobile & Tablet)
++   ================================================================ */
++@media (max-width: 767.98px) {
++    #our_legacy_page .legacy-block {
++        padding: 20px 16px;
++        margin-bottom: 20px;
++    }
++    #our_legacy_page .legacy-block-img {
++        height: 190px;
++    }
++    #our_legacy_page .legacy-block h4 {
++        font-size: 1.28rem;
++    }
++    #our_legacy_page .legacy-block p {
++        font-size: 0.88rem;
++        line-height: 1.7;
++    }
++    #our_legacy_page .legacy-download-btn {
++        width: 100%;
++        padding: 13px 18px;
++        font-size: 0.86rem;
++    }
++    #our_legacy_page .legacy-discover-card {
++        padding: 16px 12px;
++    }
++    #our_legacy_page .legacy-discover-title {
++        font-size: 1.02rem;
++    }
++    #our_legacy_page .legacy-discover-desc {
++        font-size: 0.76rem;
++        line-height: 1.4;
++        margin-bottom: 10px;
++    }
++    #our_legacy_page .legacy-discover-arrow {
++        font-size: 0.72rem;
++    }
++    #our_legacy_page .legacy-close-btn {
++        top: 80px;
++        right: 14px;
++        width: 38px;
++        height: 38px;
++        font-size: 1rem;
++    }
++    #our_legacy_page .legacy-hero {
++        max-height: 180px;
++    }
++    #our_legacy_page .legacy-hero img {
++        height: 180px;
++    }
++}
+\ No newline at end of file
+diff --git a/ecom/each_css/login-style.css b/ecom/each_css/login-style.css
+index 1bfdb85..6353cbd 100644
+--- a/ecom/each_css/login-style.css
++++ b/ecom/each_css/login-style.css
+@@ -36,8 +36,8 @@
+ 
+ /* ---------- Login form card ---------- */
+ .customer_in_ui {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 40px 36px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+@@ -76,7 +76,7 @@
+ 
+ .customer_in_ui .form-control:focus {
+     border-color: var(--mg-gold-2);
+-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
++    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
+     transform: translateY(-2px);
+     outline: none;
+ }
+@@ -91,9 +91,9 @@
+ }
+ 
+ #action_response.alert-success {
+-    background: rgba(212, 175, 55, 0.15);
++    background: rgba(var(--mg-gold-2-rgb), 0.15);
+     color: var(--mg-gold-1);
+-    border: 1px solid rgba(217, 181, 102, 0.4);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
+ }
+ 
+ #action_response.alert-danger {
+@@ -117,7 +117,7 @@
+     color: var(--mg-ink) !important;
+     border-color: transparent;
+     transform: translateY(-3px);
+-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ .customer_in_ui a {
+@@ -131,8 +131,8 @@
+ 
+ /* ---------- Store info panel (right side) ---------- */
+ .custo_entry_block_right {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 36px 32px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+diff --git a/ecom/each_css/product-detail-style.css b/ecom/each_css/product-detail-style.css
+index f96ae57..8005042 100644
+--- a/ecom/each_css/product-detail-style.css
++++ b/ecom/each_css/product-detail-style.css
+@@ -19,7 +19,7 @@
+     border-radius: 18px;
+     overflow: hidden;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.12);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+ }
+ 
+ #product-carousel .carousel-inner {
+@@ -76,7 +76,7 @@
+     height: 68px;
+     border-radius: 10px;
+     overflow: hidden;
+-    border: 2px solid rgba(217, 181, 102, 0.35);
++    border: 2px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     cursor: pointer;
+     opacity: 0.7;
+     transition: opacity 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+@@ -96,7 +96,7 @@
+ #pd_thumbnails .pd-thumb.active {
+     opacity: 1;
+     border-color: var(--mg-gold-2);
+-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 4px 12px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ /* ---------- Product info panel ---------- */
+@@ -116,7 +116,7 @@
+ }
+ 
+ #product_detail_page .pd-info hr {
+-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
++    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
+ }
+ 
+ /* Price box */
+@@ -183,7 +183,7 @@
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 4px;
+-    border-bottom: 1px dashed rgba(217, 181, 102, 0.3);
++    border-bottom: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.3);
+     color: #6c757d;
+     font-weight: 500;
+ }
+@@ -205,7 +205,7 @@
+ #product_detail_page .pd-quantity {
+     display: inline-flex;
+     align-items: center;
+-    border: 1.5px solid rgba(217, 181, 102, 0.4);
++    border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
+     border-radius: 30px;
+     overflow: hidden;
+     margin: 0 8px 8px 0;
+@@ -223,15 +223,15 @@
+ }
+ 
+ #product_detail_page .pd-quantity .quant_btn:hover {
+-    background: rgba(217, 181, 102, 0.15);
++    background: rgba(var(--mg-gold-champagne-rgb), 0.15);
+ }
+ 
+ #product_detail_page .pd-quantity input {
+     width: 44px;
+     text-align: center;
+     border: none;
+-    border-left: 1.5px solid rgba(217, 181, 102, 0.3);
+-    border-right: 1.5px solid rgba(217, 181, 102, 0.3);
++    border-left: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.3);
++    border-right: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.3);
+     font-weight: 700;
+     color: var(--mg-ink);
+     background: #fff;
+@@ -251,7 +251,7 @@
+ #product_detail_page #addtowishlist:hover,
+ #product_detail_page #addtokart:hover {
+     transform: translateY(-3px);
+-    box-shadow: 0 12px 22px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 12px 22px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ #product_detail_page #addtowishlist {
+@@ -308,8 +308,8 @@
+ 
+ #product_detail_page .pd-labour-note {
+     display: inline-block;
+-    border: 1px dashed rgba(217, 181, 102, 0.5);
+-    background: rgba(242, 221, 154, 0.15);
++    border: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.5);
++    background: rgba(var(--mg-gold-3-rgb), 0.15);
+     color: var(--mg-gold-1);
+     padding: 4px 12px;
+     border-radius: 20px;
+diff --git a/ecom/each_css/register-style.css b/ecom/each_css/register-style.css
+index 07c868a..b2036fc 100644
+--- a/ecom/each_css/register-style.css
++++ b/ecom/each_css/register-style.css
+@@ -64,8 +64,8 @@ button.button_anchor:active {
+ 
+ /* ---------- Registration form card ---------- */
+ .customer_in_ui {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 40px 36px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+@@ -104,7 +104,7 @@ button.button_anchor:active {
+ 
+ .customer_in_ui .form-control:focus {
+     border-color: var(--mg-gold-2);
+-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
++    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
+     transform: translateY(-2px);
+     outline: none;
+ }
+@@ -124,7 +124,7 @@ button.button_anchor:active {
+     color: var(--mg-ink) !important;
+     border-color: transparent;
+     transform: translateY(-3px);
+-    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ /* ---------- OTP verification step ---------- */
+@@ -135,7 +135,7 @@ button.button_anchor:active {
+ }
+ 
+ .varify_step hr {
+-    border-top: 1px dashed rgba(217, 181, 102, 0.4);
++    border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4);
+ }
+ 
+ #back_to_reg {
+@@ -147,7 +147,7 @@ button.button_anchor:active {
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+-    box-shadow: 0 6px 14px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 6px 14px rgba(var(--mg-gold-2-rgb), 0.35);
+     transition: transform 0.3s ease;
+ }
+ 
+@@ -160,7 +160,7 @@ button.button_anchor:active {
+ #progressBarContainer {
+     border-radius: 30px;
+     overflow: hidden;
+-    background: rgba(217, 181, 102, 0.15);
++    background: rgba(var(--mg-gold-champagne-rgb), 0.15);
+ }
+ 
+ #progressBar {
+@@ -170,9 +170,9 @@ button.button_anchor:active {
+ 
+ /* ---------- Success / Error alerts ---------- */
+ #success-alert {
+-    background: rgba(212, 175, 55, 0.15);
++    background: rgba(var(--mg-gold-2-rgb), 0.15);
+     color: var(--mg-gold-1);
+-    border: 1px solid rgba(217, 181, 102, 0.4);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
+     border-radius: 12px;
+ }
+ 
+@@ -185,8 +185,8 @@ button.button_anchor:active {
+ 
+ /* ---------- Store info panel (right side) ---------- */
+ .custo_entry_block_right {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 20px;
+     padding: 36px 32px;
+     box-shadow: 0 20px 40px rgba(14, 25, 50, 0.10);
+diff --git a/ecom/each_css/scheme-details-style.css b/ecom/each_css/scheme-details-style.css
+index 8fe30a2..fc2c532 100644
+--- a/ecom/each_css/scheme-details-style.css
++++ b/ecom/each_css/scheme-details-style.css
+@@ -17,20 +17,20 @@
+     padding: 12px 34px;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+-    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.30);
++    box-shadow: 0 10px 22px rgba(var(--mg-gold-2-rgb), 0.30);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ #scheme_details_page .scheme-cta-btn:hover {
+     transform: translateY(-3px);
+-    box-shadow: 0 16px 30px rgba(212, 175, 55, 0.42);
++    box-shadow: 0 16px 30px rgba(var(--mg-gold-2-rgb), 0.42);
+ }
+ 
+ /* ---------- Scheme brochure image gallery ---------- */
+ #scheme_details_page .scheme-gallery-item {
+     border-radius: 16px;
+     overflow: hidden;
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     box-shadow: 0 15px 30px rgba(14, 25, 50, 0.10);
+     margin-bottom: 30px;
+     transition: transform 0.4s cubic-bezier(.22, .9, .32, 1), box-shadow 0.4s ease;
+@@ -38,7 +38,7 @@
+ 
+ #scheme_details_page .scheme-gallery-item:hover {
+     transform: translateY(-6px);
+-    box-shadow: 0 20px 36px rgba(212, 175, 55, 0.22);
++    box-shadow: 0 20px 36px rgba(var(--mg-gold-2-rgb), 0.22);
+ }
+ 
+ #scheme_details_page .scheme-gallery-item img {
+@@ -50,7 +50,7 @@
+ #exampleModal .modal-content {
+     border-radius: 18px;
+     overflow: hidden;
+-    border: 1px solid rgba(217, 181, 102, 0.4);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
+ }
+ 
+ #exampleModal .modal-header {
+@@ -86,7 +86,7 @@
+ 
+ #exampleModal .modal-body .form-control:focus {
+     border-color: var(--mg-gold-2);
+-    box-shadow: 0 0 0 4px rgba(217, 181, 102, 0.2);
++    box-shadow: 0 0 0 4px rgba(var(--mg-gold-champagne-rgb), 0.2);
+     outline: none;
+ }
+ 
+diff --git a/ecom/each_css/shop-style.css b/ecom/each_css/shop-style.css
+index 9ddcaa1..00b6aaf 100644
+--- a/ecom/each_css/shop-style.css
++++ b/ecom/each_css/shop-style.css
+@@ -7,8 +7,8 @@
+ 
+ /* ---------- Filter sidebar: fixed page-height, scrolls internally ---------- */
+ .filter_side_bar {
+-    background: linear-gradient(160deg, #fff 0%, rgba(242, 221, 154, 0.20) 100%);
+-    border: 1px solid rgba(217, 181, 102, 0.35);
++    background: linear-gradient(160deg, #fff 0%, rgba(var(--mg-gold-3-rgb), 0.20) 100%);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
+     border-radius: 16px;
+     padding: 24px 22px;
+     box-shadow: 0 10px 30px rgba(14, 25, 50, 0.08);
+@@ -47,7 +47,7 @@
+ }
+ 
+ .filter_side_bar .border-bottom {
+-    border-bottom: 1px dashed rgba(217, 181, 102, 0.4) !important;
++    border-bottom: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.4) !important;
+ }
+ 
+ .filter_side_bar .custom-control-label {
+@@ -75,7 +75,7 @@
+ 
+ .filter_side_bar .cat_block_toggle:hover {
+     transform: translateY(-2px);
+-    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.35);
++    box-shadow: 0 8px 16px rgba(var(--mg-gold-2-rgb), 0.35);
+ }
+ 
+ .filter_toggle_btn {
+@@ -100,20 +100,20 @@
+ 
+ .shop_keyword_filter:focus-within {
+     border-color: var(--mg-gold-2) !important;
+-    box-shadow: 0 0 0 3px rgba(217, 181, 102, 0.2);
++    box-shadow: 0 0 0 3px rgba(var(--mg-gold-champagne-rgb), 0.2);
+ }
+ 
+ /* ---------- Product cards ---------- */
+ #shop_data .product-item {
+     border-radius: 14px !important;
+     overflow: hidden;
+-    border-color: rgba(217, 181, 102, 0.35) !important;
++    border-color: rgba(var(--mg-gold-champagne-rgb), 0.35) !important;
+     transition: transform 0.35s cubic-bezier(.22, .9, .32, 1), box-shadow 0.35s ease;
+ }
+ 
+ #shop_data .product-item:hover {
+     transform: translateY(-6px);
+-    box-shadow: 0 18px 30px rgba(212, 175, 55, 0.22);
++    box-shadow: 0 18px 30px rgba(var(--mg-gold-2-rgb), 0.22);
+ }
+ 
+ #shop_data .product-item .card-body h6 {
+@@ -130,7 +130,7 @@
+     font-size: 0.95rem;
+     font-weight: 700;
+     margin-top: 8px;
+-    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
++    box-shadow: 0 4px 10px rgba(var(--mg-gold-2-rgb), 0.3);
+ }
+ 
+ #shop_data .product-item .product-img {
+@@ -184,7 +184,7 @@
+ 
+ .pagination .page-link {
+     border-radius: 10px !important;
+-    border: 1px solid rgba(217, 181, 102, 0.4);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
+     color: var(--mg-ink);
+     font-weight: 600;
+     min-width: 42px;
+@@ -202,7 +202,7 @@
+ }
+ 
+ .pagination .page-link:hover {
+-    background: rgba(217, 181, 102, 0.15);
++    background: rgba(var(--mg-gold-champagne-rgb), 0.15);
+ }
+ 
+ /* ---------- Filter: collapsible lists (5-6 by default, then "More") ---------- */
+@@ -247,6 +247,105 @@
+         max-height: none;
+         overflow-y: visible;
+     }
++
++    .shop_cost_filter {
++        font-size: 0.82rem !important;
++        padding: 6px 12px !important;
++        min-height: 40px !important;
++        background-color: #fff !important;
++        border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.45) !important;
++        border-radius: 20px !important;
++        cursor: pointer;
++        font-weight: 600;
++        color: var(--mg-ink) !important;
++        box-shadow: 0 2px 6px rgba(14, 25, 50, 0.05);
++    }
++
++    .shop_keyword_filter {
++        border-radius: 20px !important;
++        border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.45) !important;
++        background-color: #fff !important;
++        min-height: 40px !important;
++        overflow: hidden;
++        box-shadow: 0 2px 6px rgba(14, 25, 50, 0.05);
++    }
++
++    .shop_keyword_filter input#term {
++        font-size: 0.85rem !important;
++        padding-left: 14px !important;
++        height: 38px !important;
++        border: none !important;
++        background: transparent !important;
++    }
++
++    .shop_keyword_filter .input-group-append .input-group-text {
++        background: transparent !important;
++        border: none !important;
++        color: var(--mg-gold-1) !important;
++        padding-right: 14px !important;
++    }
++
++    /* Hide social share icons bar from product cards in mobile view */
++    #shop_data #shop_social_share,
++    .product-item #shop_social_share {
++        display: none !important;
++    }
++
++    /* Clean bottom border rounding on product actions when share bar is hidden */
++    .product-item .product_action_div {
++        border-bottom-left-radius: 6px;
++        border-bottom-right-radius: 6px;
++    }
++}
++
++/* ==========================================================================
++   Shimmering Animated Page Heading ("Shop Products")
++   Overrides legacy text-shadow blur & applies luminous animated gold shimmer
++   ========================================================================== */
++.cstm-section-title {
++    text-shadow: none !important;
++    position: relative;
++    font-family: "Cormorant Garamond", "Poppins", serif;
++    font-weight: 700;
++    font-style: italic;
++    letter-spacing: 0.5px;
++    display: inline-block;
++}
++
++.cstm-section-title span {
++    text-shadow: none !important;
++    background: linear-gradient(100deg,
++        var(--mg-gold-1, #b8860b) 0%,
++        var(--mg-gold-2, #d4af37) 22%,
++        #fff3b0 45%,
++        var(--mg-gold-2, #d4af37) 68%,
++        #fff9db 85%,
++        var(--mg-gold-1, #b8860b) 100%) !important;
++    background-size: 220% 100% !important;
++    -webkit-background-clip: text !important;
++    background-clip: text !important;
++    -webkit-text-fill-color: transparent !important;
++    color: var(--mg-gold-1, #b8860b) !important;
++    display: inline-block;
++    animation: mg-shimmer 4.5s ease-in-out infinite !important;
++    filter: drop-shadow(0 1px 2px rgba(var(--mg-gold-2-rgb), 0.2));
++}
++
++.cstm-section-title > span::before,
++.cstm-section-title > span::after {
++    display: none !important;
++}
++
++@keyframes mg-shimmer {
++    0% {
++        background-position: 0% 50%;
++    }
++    50% {
++        background-position: 100% 50%;
++    }
++    100% {
++        background-position: 0% 50%;
++    }
+ }
+ 
+ @media (max-width: 767.98px) {
+@@ -254,4 +353,153 @@
+         border-radius: 12px;
+         padding: 18px 16px;
+     }
++}
++
++/* ==========================================================================
++   Empty State UI & Reset Filters CTA (Sub-step 3.4)
++   Consistent with MG theme tokens: --mg-gold-1, --mg-gold-2, --mg-ink
++   ========================================================================== */
++.mg-empty-state {
++    width: 100%;
++    min-height: 380px;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    animation: mgFadeIn 0.35s ease-in-out;
++}
++
++@keyframes mgFadeIn {
++    from {
++        opacity: 0;
++        transform: translateY(8px);
++    }
++    to {
++        opacity: 1;
++        transform: translateY(0);
++    }
++}
++
++.mg-empty-state-card {
++    max-width: 520px;
++    background: #ffffff;
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.3);
++    border-radius: 16px;
++    padding: 40px 28px;
++    box-shadow: 0 8px 24px rgba(14, 25, 50, 0.06);
++}
++
++.mg-empty-illustration-wrap {
++    position: relative;
++    display: inline-block;
++}
++
++.mg-empty-icon-circle {
++    width: 88px;
++    height: 88px;
++    border-radius: 50%;
++    background: linear-gradient(135deg, rgba(var(--mg-gold-champagne-rgb), 0.15) 0%, rgba(14, 25, 50, 0.04) 100%);
++    border: 2px dashed rgba(var(--mg-gold-champagne-rgb), 0.5);
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    position: relative;
++    margin: 0 auto;
++}
++
++.mg-empty-search-icon {
++    font-size: 32px;
++    color: var(--mg-gold-1);
++    opacity: 0.85;
++}
++
++.mg-empty-gem-badge {
++    position: absolute;
++    bottom: -4px;
++    right: -4px;
++    width: 32px;
++    height: 32px;
++    border-radius: 50%;
++    background: linear-gradient(135deg, var(--mg-gold-2) 0%, var(--mg-gold-1) 100%);
++    color: #ffffff;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    font-size: 14px;
++    box-shadow: 0 2px 6px rgba(var(--mg-gold-champagne-rgb), 0.4);
++}
++
++.mg-empty-title {
++    font-size: 1.35rem;
++    color: var(--mg-ink);
++    letter-spacing: -0.01em;
++}
++
++.mg-empty-desc {
++    font-size: 0.92rem;
++    line-height: 1.55;
++    color: #6c757d;
++    max-width: 400px;
++}
++
++.mg-btn-reset-filters {
++    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-1));
++    color: var(--mg-ink) !important;
++    font-weight: 600;
++    font-size: 0.92rem;
++    border: none;
++    border-radius: 25px;
++    transition: all 0.25s ease;
++    box-shadow: 0 4px 12px rgba(var(--mg-gold-champagne-rgb), 0.3);
++    cursor: pointer;
++}
++
++.mg-btn-reset-filters:hover {
++    background: linear-gradient(120deg, var(--mg-gold-1), var(--mg-gold-2));
++    color: #000 !important;
++    transform: translateY(-2px);
++    box-shadow: 0 6px 16px rgba(var(--mg-gold-champagne-rgb), 0.45);
++}
++
++.mg-btn-reset-filters:active {
++    transform: translateY(0);
++}
++
++@media (max-width: 991.98px) {
++    .mg-empty-state {
++        min-height: 300px;
++        padding: 30px 15px;
++    }
++
++    .mg-empty-state-card {
++        padding: 28px 16px;
++        border-radius: 12px;
++    }
++
++    .mg-empty-icon-circle {
++        width: 76px;
++        height: 76px;
++    }
++
++    .mg-empty-search-icon {
++        font-size: 28px;
++    }
++
++    .mg-empty-gem-badge {
++        width: 28px;
++        height: 28px;
++        font-size: 12px;
++    }
++
++    .mg-empty-title {
++        font-size: 1.2rem;
++    }
++
++    .mg-empty-desc {
++        font-size: 0.85rem;
++    }
++
++    .mg-btn-reset-filters {
++        font-size: 0.85rem;
++        padding: 8px 20px !important;
++    }
+ }
+\ No newline at end of file
+diff --git a/ecom/each_css/teaser-style.css b/ecom/each_css/teaser-style.css
+new file mode 100644
+index 0000000..60e4716
+--- /dev/null
++++ b/ecom/each_css/teaser-style.css
+@@ -0,0 +1,82 @@
++/* ================================================================
++   INDEX PAGE — "Our Legacy" teaser section styles
++   Loaded only on index.html. Sits between Schemes and Shop By
++   Category — deliberately compact, this is a small preview only.
++   ================================================================ */
++
++#shop_brochure_teaser_section {
++    padding-top: 1.5rem !important;
++}
++
++#shop_brochure_teaser_section .shop-brochure-teaser-wrap {
++    max-width: 1500px;
++    margin: 0 auto;
++}
++
++#shop_brochure_teaser_section .shop-brochure-teaser-img {
++    border-radius: 16px;
++    overflow: hidden;
++    box-shadow: 0 14px 28px rgba(14, 25, 50, 0.15);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
++    max-height: 320px;
++}
++
++#shop_brochure_teaser_section .shop-brochure-teaser-img img {
++    width: 100%;
++    height: 420px;
++    object-fit: cover;
++    display: block;
++    transition: transform 0.6s cubic-bezier(.22, .9, .32, 1);
++}
++
++#shop_brochure_teaser_section .shop-brochure-teaser-img:hover img {
++    transform: scale(1.05);
++}
++
++#shop_brochure_teaser_section .shop-brochure-teaser-content h3 {
++    font-family: 'Cormorant Garamond', serif;
++    font-weight: 700;
++    color: var(--mg-ink);
++    font-size: 1.3rem;
++    margin-bottom: 10px;
++}
++
++#shop_brochure_teaser_section .shop-brochure-teaser-content p {
++    color: #6c757d;
++    line-height: 1.65;
++    font-size: 0.9rem;
++    margin-bottom: 16px;
++}
++
++.shop-brochure-cta {
++    display: inline-block;
++    border: 2px solid var(--mg-gold-2);
++    color: var(--mg-gold-2);
++    background: transparent;
++    border-radius: 30px;
++    padding: 10px 30px;
++    font-weight: 600;
++    letter-spacing: 0.5px;
++    transition: all 0.35s ease;
++}
++
++.shop-brochure-cta:hover {
++    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3));
++    color: var(--mg-ink) !important;
++    border-color: transparent;
++    transform: translateY(-3px);
++    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
++}
++
++@media (max-width: 767.98px) {
++    #shop_brochure_teaser_section .shop-brochure-teaser-img {
++        max-height: 160px;
++        margin-bottom: 16px;
++    }
++    #shop_brochure_teaser_section .shop-brochure-teaser-img img {
++        height: 160px;
++    }
++    #shop_brochure_teaser_section .shop-brochure-teaser-content h3 {
++        font-size: 1.15rem;
++    }
++}
+\ No newline at end of file
+diff --git a/ecom/each_css/wishlist-style.css b/ecom/each_css/wishlist-style.css
+index b5ee9cc..ab4f235 100644
+--- a/ecom/each_css/wishlist-style.css
++++ b/ecom/each_css/wishlist-style.css
+@@ -29,12 +29,12 @@
+ }
+ 
+ #wishlist_section_page .table tbody tr:hover {
+-    background: rgba(217, 181, 102, 0.08);
++    background: rgba(var(--mg-gold-champagne-rgb), 0.08);
+ }
+ 
+ #wishlist_section_page .table td {
+     vertical-align: middle;
+-    border-color: rgba(217, 181, 102, 0.25);
++    border-color: rgba(var(--mg-gold-champagne-rgb), 0.25);
+ }
+ 
+ #wishlist_section_page .table td p {
+@@ -47,7 +47,7 @@
+ 
+ #wishlist_section_page .table td img {
+     border-radius: 10px;
+-    border: 1px solid rgba(217, 181, 102, 0.4);
++    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.4);
+ }
+ 
+ /* ---------- Quantity stepper ---------- */
+@@ -71,7 +71,7 @@
+ }
+ 
+ #wishlist_section_page .quantity input {
+-    border: 1.5px solid rgba(217, 181, 102, 0.35) !important;
++    border: 1.5px solid rgba(var(--mg-gold-champagne-rgb), 0.35) !important;
+     background: #fff !important;
+     font-weight: 600;
+ }
+@@ -106,7 +106,7 @@
+ 
+ #wishlist_section_page td .btn-sm.btn-primary:has(.fa-cart-plus):hover {
+     transform: translateY(-3px);
+-    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.4);
++    box-shadow: 0 8px 16px rgba(var(--mg-gold-2-rgb), 0.4);
+ }
+ 
+ /* ---------- Totals footer row (built into the table) ---------- */
+@@ -129,4 +129,237 @@
+     #wishlist_section_page .table td img {
+         width: 44px !important;
+     }
++
++    /* ============================================================
++       MOBILE WISHLIST CARDS (Scope: <= 767.98px)
++       Uses theme design tokens: --mg-gold-1, --mg-gold-2, --mg-gold-3,
++       --mg-ivory, --mg-ink, --mg-wine-soft
++       ============================================================ */
++    #mg_mobile_wishlist_container {
++        padding: 0 2px;
++    }
++
++    .mg-mobile-wishlist-header {
++        display: flex;
++        align-items: center;
++        justify-content: space-between;
++        margin-bottom: 16px;
++        padding: 4px 2px;
++    }
++
++    .mg-mobile-wishlist-title {
++        font-family: 'Poppins', sans-serif;
++        font-weight: 700;
++        font-size: 1.25rem;
++        color: var(--mg-ink);
++        margin: 0;
++        display: flex;
++        align-items: center;
++        gap: 8px;
++    }
++
++    .mg-mobile-wishlist-title i {
++        color: var(--mg-gold-2);
++        font-size: 1.15rem;
++    }
++
++    .mg-wishlist-count-badge {
++        background: rgba(var(--mg-gold-2-rgb), 0.15);
++        color: var(--mg-gold-1);
++        font-size: 0.8rem;
++        font-weight: 600;
++        padding: 4px 12px;
++        border-radius: 20px;
++        border: 1px solid rgba(var(--mg-gold-2-rgb), 0.35);
++    }
++
++    /* Individual Wishlist Card */
++    .mg-wishlist-card {
++        background: #ffffff;
++        border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
++        border-radius: 18px;
++        padding: 14px;
++        margin-bottom: 14px;
++        box-shadow: 0 8px 24px rgba(14, 25, 50, 0.05);
++        position: relative;
++        transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s ease;
++    }
++
++    .mg-wishlist-card:active {
++        transform: scale(0.99);
++    }
++
++    .mg-wishlist-card-top {
++        display: flex;
++        align-items: flex-start;
++        gap: 12px;
++    }
++
++    .mg-wishlist-thumb-wrap {
++        width: 78px;
++        height: 78px;
++        flex-shrink: 0;
++        border-radius: 14px;
++        overflow: hidden;
++        border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
++        background: var(--mg-ivory);
++        display: flex;
++        align-items: center;
++        justify-content: center;
++    }
++
++    .mg-wishlist-thumb {
++        width: 100%;
++        height: 100%;
++        object-fit: cover;
++    }
++
++    .mg-wishlist-info {
++        flex: 1;
++        min-width: 0;
++        padding-right: 4px;
++    }
++
++    .mg-wishlist-category {
++        font-size: 0.72rem;
++        font-weight: 600;
++        text-transform: uppercase;
++        letter-spacing: 0.6px;
++        color: var(--mg-gold-1);
++        display: block;
++        margin-bottom: 2px;
++    }
++
++    .mg-wishlist-title {
++        font-size: 0.92rem;
++        font-weight: 600;
++        color: var(--mg-ink);
++        margin: 0 0 6px 0;
++        line-height: 1.35;
++        overflow: hidden;
++        text-overflow: ellipsis;
++        display: -webkit-box;
++        -webkit-line-clamp: 2;
++        -webkit-box-orient: vertical;
++    }
++
++    .mg-wishlist-price-wrap {
++        display: flex;
++        align-items: baseline;
++        gap: 8px;
++        flex-wrap: wrap;
++    }
++
++    .mg-wishlist-current-price {
++        font-size: 1.05rem;
++        font-weight: 700;
++        color: var(--mg-ink);
++        letter-spacing: -0.2px;
++    }
++
++    /* Remove item button */
++    .mg-wishlist-remove-btn {
++        flex-shrink: 0;
++        width: 30px;
++        height: 30px;
++        border-radius: 50%;
++        border: 1px solid rgba(192, 80, 92, 0.25);
++        background: transparent;
++        color: #c0505c;
++        display: flex;
++        align-items: center;
++        justify-content: center;
++        font-size: 0.8rem;
++        cursor: pointer;
++        transition: all 0.2s ease;
++        margin-left: auto;
++    }
++
++    .mg-wishlist-remove-btn:hover,
++    .mg-wishlist-remove-btn:active {
++        background: #c0505c;
++        color: #fff;
++    }
++
++    /* Card Action: Move to Cart */
++    .mg-wishlist-card-actions {
++        margin-top: 12px;
++        padding-top: 10px;
++        border-top: 1px dashed rgba(var(--mg-gold-champagne-rgb), 0.3);
++    }
++
++    .mg-btn-move-to-cart {
++        background: linear-gradient(120deg, var(--mg-gold-1), var(--mg-gold-2)) !important;
++        color: #ffffff !important;
++        border: none !important;
++        border-radius: 30px !important;
++        font-size: 0.88rem !important;
++        font-weight: 600 !important;
++        padding: 9px 18px !important;
++        box-shadow: 0 4px 14px rgba(var(--mg-gold-2-rgb), 0.3) !important;
++        display: flex !important;
++        align-items: center !important;
++        justify-content: center !important;
++        gap: 8px !important;
++        width: 100%;
++        transition: all 0.25s ease !important;
++        letter-spacing: 0.3px;
++    }
++
++    .mg-btn-move-to-cart:active {
++        transform: translateY(1px);
++        box-shadow: 0 2px 8px rgba(var(--mg-gold-2-rgb), 0.3) !important;
++    }
++
++    .mg-btn-move-to-cart.added {
++        background: linear-gradient(120deg, #2e7d32, #43a047) !important;
++        box-shadow: 0 4px 14px rgba(46, 125, 50, 0.3) !important;
++    }
++
++    /* Toast Notification */
++    .mg-wishlist-toast {
++        position: fixed;
++        bottom: 84px;
++        left: 50%;
++        transform: translateX(-50%) translateY(30px);
++        background: var(--mg-ink);
++        color: #ffffff;
++        border: 1px solid var(--mg-gold-2);
++        border-radius: 30px;
++        padding: 10px 18px;
++        font-size: 0.82rem;
++        display: flex;
++        align-items: center;
++        gap: 10px;
++        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
++        z-index: 10000;
++        opacity: 0;
++        pointer-events: none;
++        transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
++        max-width: 90%;
++        width: max-content;
++    }
++
++    .mg-wishlist-toast.show {
++        transform: translateX(-50%) translateY(0);
++        opacity: 1;
++        pointer-events: auto;
++    }
++
++    .mg-wishlist-toast .mg-toast-icon {
++        color: var(--mg-gold-3);
++        font-size: 1.15rem;
++    }
++
++    .mg-wishlist-toast .mg-toast-btn {
++        background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3));
++        color: var(--mg-ink);
++        font-weight: 700;
++        font-size: 0.75rem;
++        border-radius: 20px;
++        padding: 4px 10px;
++        text-decoration: none;
++        white-space: nowrap;
++        margin-left: 6px;
++    }
+ }
+\ No newline at end of file

@@ -1,0 +1,684 @@
+{
+  "header.html": [
+    {
+      "index": 1,
+      "header": "@@ -37,6 +37,9 @@",
+      "removedCount": 0,
+      "addedCount": 3,
+      "removedSnippet": "",
+      "addedSnippet": "\n\n"
+    },
+    {
+      "index": 2,
+      "header": "@@ -78,6 +81,11 @@",
+      "removedCount": 0,
+      "addedCount": 5,
+      "removedSnippet": "",
+      "addedSnippet": "                <li>\n                    <a href=\"profile.html\" class=\"card-wish\" title=\"My Profile\" id=\"head_profile_icon\">\n                        <i class=\"fas fa-user text-primary\"></i>\n                    </a>\n                </li>"
+    },
+    {
+      "index": 3,
+      "header": "@@ -381,41 +389,54 @@",
+      "removedCount": 23,
+      "addedCount": 36,
+      "removedSnippet": "                    class=\"mbl d-lg-none m-0\">\n                    <li id=\"mob_search_btn\"><a href=\"#mob_search_bar\" id=\"mob_search_toggle\"><i\n                                class=\"fa fa-search\"></i></a></li>\n                        <a href=\"wishlist.html\" class=\"card-wish card-wish-mbl\">\n                            <i class=\"fas fa-heart text-primary\"></i>",
+      "addedSnippet": "\n\n                    class=\"mbl d-lg-none m-0 align-items-center\">\n                    <!-- Mobile Search Bar Toggle Button (Replaces old location icon) -->\n                    <li id=\"mob_search_btn_item\">"
+    },
+    {
+      "index": 4,
+      "header": "@@ -423,12 +444,12 @@",
+      "removedCount": 6,
+      "addedCount": 6,
+      "removedSnippet": "                                <a href=\"https://justudhari.com/shop/gold\">Gold</a>\n                                <a href=\"https://justudhari.com/shop/silver\">Silver</a>\n                                <a href=\"https://justudhari.com/shop/rings\">Rings</a>\n                                <a href=\"https://justudhari.com/shop/necklaces\">Necklaces</a>\n                                <a href=\"https://justudhari.com/shop/earrings\">Earrings</a>",
+      "addedSnippet": "                                <a href=\"shop.html\">Gold</a>\n                                <a href=\"shop.html\">Silver</a>\n                                <a href=\"shop.html\">Rings</a>\n                                <a href=\"shop.html\">Necklaces</a>\n                                <a href=\"shop.html\">Earrings</a>"
+    },
+    {
+      "index": 5,
+      "header": "@@ -437,271 +458,221 @@",
+      "removedCount": 253,
+      "addedCount": 203,
+      "removedSnippet": "                <!--------test code ---->\n                <link rel=\"stylesheet\"\n                    href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n                <nav class=\"mobile-menu\" id=\"mobileMenu\" aria-hidden=\"true\" role=\"navigation\">",
+      "addedSnippet": "                <!-- Slide-in Drawer Menu (Tanishq Reference Image 2 - Restructured & Polished) -->\n                <nav class=\"mobile-menu mg-app-drawer\" id=\"mobileMenu\" aria-hidden=\"true\" role=\"navigation\">\n                    <!-- Drawer Header: User Avatar & Greeting (No underline mark, No redeem circle) -->\n                    <div class=\"mg-drawer-header p-3 border-bottom\">\n                        <div class=\"d-flex align-items-center justify-content-between\">"
+    },
+    {
+      "index": 6,
+      "header": "@@ -722,7 +693,9 @@",
+      "removedCount": 1,
+      "addedCount": 3,
+      "removedSnippet": "                        <a href=\"shop-location.html\" class=\"nav-item nav-link {{  @$shop_location }}\"> Shop Location",
+      "addedSnippet": "                        <a href=\"shop-location.html\" class=\"nav-item nav-link\"> Shop Location\n                        </a>\n                        <a href=\"profile.html\" class=\"nav-item nav-link\" id=\"nav_profile_link\"> Profile"
+    },
+    {
+      "index": 7,
+      "header": "@@ -752,7 +725,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "    <div id=\"header_seprator\" class=\"container-fluid\">",
+      "addedSnippet": "    <div id=\"header_seprator\" class=\"container-fluid\" style=\"height: 0px;\">"
+    },
+    {
+      "index": 8,
+      "header": "@@ -782,29 +755,32 @@",
+      "removedCount": 11,
+      "addedCount": 14,
+      "removedSnippet": "<div class=\"mg-rate-float-widget\" id=\"rate_ticker_toggle_area\">\n    <button type=\"button\" class=\"mg-rate-float-btn\" id=\"mg_rate_toggle_btn\" aria-expanded=\"false\">\n        <i class=\"fa fa-angle-down mg-rate-chevron\"></i> Todays Rate\n                <li><b>24K</b> <span>₹<span class=\"rate-gold-24k\">-</span></span></li>\n                <li><b>22K</b> <span>₹<span class=\"rate-gold-22k\">-</span></span></li>",
+      "addedSnippet": "\n<!-- Floating Rate Badge (Desktop: constant right-side position; Mobile: animated entrance when rate ticker scrolls out of view) -->\n<div class=\"mg-rate-float-widget\" id=\"rate_ticker_toggle_area\" data-mobile-trigger=\"ticker-out-of-view\">\n    <button type=\"button\" class=\"mg-rate-float-btn\" id=\"mg_rate_toggle_btn\" aria-expanded=\"false\"\n        aria-label=\"Toggle Today's Gold and Silver Rates\">"
+    }
+  ],
+  "footer.html": [
+    {
+      "index": 1,
+      "header": "@@ -1,19 +1,18 @@",
+      "removedCount": 6,
+      "addedCount": 5,
+      "removedSnippet": "<div class=\"container-fluid bg-secondary text-dark pt-0\">\n\n\n\n",
+      "addedSnippet": "<!-- ==========================================\n     1. DESKTOP WEBSITE FOOTER (>= 992px)\n     Restored exactly as before for desktop view\n     ========================================== -->\n<div class=\"container-fluid bg-secondary text-dark pt-0 d-none d-lg-block\" id=\"desktop_footer\">"
+    },
+    {
+      "index": 2,
+      "header": "@@ -73,7 +72,6 @@",
+      "removedCount": 1,
+      "addedCount": 0,
+      "removedSnippet": "",
+      "addedSnippet": ""
+    },
+    {
+      "index": 3,
+      "header": "@@ -90,90 +88,174 @@",
+      "removedCount": 60,
+      "addedCount": 144,
+      "removedSnippet": "\n<!-- Footer End -->\n\n<!-- Help Widget -->\n<div id=\"help-widget\">",
+      "addedSnippet": "<!-- Desktop Help Widget -->\n<div id=\"help-widget\" class=\"d-none d-lg-block\">\n        <a target=\"_blank\" id=\"whatsapp_out_desktop\" href=\"https://web.whatsapp.com/send?phone=917974488285&text=Hello,%20I%20want%20more%20details%20about%20your%20services.\">\n        <a href=\"mailto:mgjewellers.bpl@gmail.com?subject=Inquiry&body=Hello,%20I%20want%20more%20details.\">\n    </div>"
+    }
+  ],
+  "cateloge.html": [
+    {
+      "index": 1,
+      "header": "@@ -3,20 +3,18 @@",
+      "removedCount": 7,
+      "addedCount": 5,
+      "removedSnippet": "  <title>\n    MG Jwellers\n  </title>\n\n  <meta content=\"jewellers, jewelry, mg jewellers\" name=\"keywords\">",
+      "addedSnippet": "  <title>Catalogue & Lookbooks - MG Jewellers</title>\n  <meta content=\"jewellers, jewelry, mg jewellers, categories, catalogue\" name=\"keywords\">\n  <meta content=\"Browse all jewellery categories at MG Jewellers\" name=\"description\">\n  <link\n    href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap\""
+    },
+    {
+      "index": 2,
+      "header": "@@ -27,28 +25,25 @@",
+      "removedCount": 15,
+      "addedCount": 12,
+      "removedSnippet": "  <link href=\"assets/ecomm/css/own_custom_black.css\" rel=\"stylesheet\">\n  <link href=\"ecom/each_css/catalogue-style.css\" rel=\"stylesheet\">\n\n \n<body>",
+      "addedSnippet": "    <!-- Multi-Vendor Theming Engine -->\n    <script src=\"assets/ecomm/js/vendor-config.js\"></script>\n    <script src=\"assets/ecomm/js/theme-injector.js\"></script>\n<body class=\"mg-app-body\">\n  <!-- Topbar / App Header -->"
+    },
+    {
+      "index": 3,
+      "header": "@@ -774,8 +769,8 @@",
+      "removedCount": 2,
+      "addedCount": 2,
+      "removedSnippet": "      \n                        ",
+      "addedSnippet": "\n"
+    },
+    {
+      "index": 4,
+      "header": "@@ -796,150 +791,121 @@",
+      "removedCount": 122,
+      "addedCount": 93,
+      "removedSnippet": "           \n                            <div class=\"card product-item border-1 mb-4\">\n                                <div\n                                    class=\"text-center card-header product-img position-relative overflow-hidden bg-transparent border p-0\">\n",
+      "addedSnippet": "            <div class=\"card product-item border-1 mb-4\">\n              <div\n                class=\"text-center card-header product-img position-relative overflow-hidden bg-transparent border p-0\">\n                <img class=\"img-fluid w-100\" src=\"assets/ecomm/images/about/about_img_1723115094.webp\"\n                  alt=\"Pure 22K Gold Textured Oval Link Chain for Men\" loading=\"lazy\">"
+    },
+    {
+      "index": 5,
+      "header": "@@ -967,384 +933,421 @@",
+      "removedCount": 332,
+      "addedCount": 369,
+      "removedSnippet": "<div class=\"container-fluid pb-5\">\n        <ul class=\"pagination justify-content-center mb-3\"></ul>\n</div>\n  <div id=\"footer-placeholder\"></div>\n  <!-- Back to Top -->",
+      "addedSnippet": "  <div class=\"container-fluid pb-5\">\n      <ul class=\"pagination justify-content-center mb-3\"></ul>\n  </div>\n  \n  </div>"
+    }
+  ],
+  "shop.html": [
+    {
+      "index": 1,
+      "header": "@@ -32,6 +32,9 @@",
+      "removedCount": 0,
+      "addedCount": 3,
+      "removedSnippet": "",
+      "addedSnippet": "    <!-- Multi-Vendor Theming Engine -->\n    <script src=\"assets/ecomm/js/vendor-config.js\"></script>\n    <script src=\"assets/ecomm/js/theme-injector.js\"></script>"
+    },
+    {
+      "index": 2,
+      "header": "@@ -763,9 +766,8 @@",
+      "removedCount": 3,
+      "addedCount": 2,
+      "removedSnippet": "                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"\"\n                                    value=\"\" checked>\n                                <label class=\"custom-control-label category_label\" for=\"\">Rings</label>",
+      "addedSnippet": "                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"cat_rings_extra\" value=\"rings\">\n                                <label class=\"custom-control-label category_label\" for=\"cat_rings_extra\">Rings</label>"
+    },
+    {
+      "index": 3,
+      "header": "@@ -805,9 +807,8 @@",
+      "removedCount": 3,
+      "addedCount": 2,
+      "removedSnippet": "                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"\"\n                                    value=\"\" checked>\n                                <label class=\"custom-control-label category_label\" for=\"\">RINGS10</label>",
+      "addedSnippet": "                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"cat_rings10\" value=\"rings\">\n                                <label class=\"custom-control-label category_label\" for=\"cat_rings10\">RINGS10</label>"
+    },
+    {
+      "index": 4,
+      "header": "@@ -827,30 +828,26 @@",
+      "removedCount": 12,
+      "addedCount": 8,
+      "removedSnippet": "                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"\"\n                                    value=\"\" checked>\n                                <label class=\"custom-control-label category_label\" for=\"\">Murti</label>\n                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"\"\n                                    value=\"\" checked>",
+      "addedSnippet": "                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"cat_murti\" value=\"murti\">\n                                <label class=\"custom-control-label category_label\" for=\"cat_murti\">Murti</label>\n                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"cat_rings_lower\" value=\"rings\">\n                                <label class=\"custom-control-label category_label\" for=\"cat_rings_lower\">rings</label>\n                                <input type=\"checkbox\" name=\"cat\" class=\"category-all custom-control-input\" id=\"cat_murti2\" value=\"murti\">"
+    },
+    {
+      "index": 5,
+      "header": "@@ -938,6 +935,27 @@",
+      "removedCount": 0,
+      "addedCount": 21,
+      "removedSnippet": "",
+      "addedSnippet": "\n                <!-- Recently Viewed Section (Personalization - Desktop & Mobile) -->\n                <!-- ========================================================================= -->\n                <!-- BACKEND INTEGRATION POINT: Replace client-side render with user history -->\n                <!-- Target Endpoint: GET /api/v1/user/recently-viewed -->"
+    },
+    {
+      "index": 6,
+      "header": "@@ -970,7 +988,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_1\" data-product-id=\"MG-P-001\" data-material=\"gold\" data-category=\"chains\" data-collection=\"mens\" data-price=\"173433.33\" data-name=\"Pure 22K Gold Textured Oval Link Chain for Men\">"
+    },
+    {
+      "index": 7,
+      "header": "@@ -1034,7 +1052,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_2\" data-product-id=\"MG-P-002\" data-material=\"gold\" data-category=\"chains\" data-collection=\"mens\" data-price=\"70950\" data-name=\"Pure 22K Gold Figaro Chain for Men\">"
+    },
+    {
+      "index": 8,
+      "header": "@@ -1098,7 +1116,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_3\" data-product-id=\"MG-P-003\" data-material=\"gold\" data-category=\"necklaces\" data-collection=\"womens\" data-price=\"126133.33\" data-name=\"Pure 22K Gold Designer Heart Motif Necklace for Women\">"
+    },
+    {
+      "index": 9,
+      "header": "@@ -1163,7 +1181,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_4\" data-product-id=\"MG-P-004\" data-material=\"gold\" data-category=\"necklaces,earrings,necklace-and-earring-sets\" data-collection=\"traditional,womens\" data-price=\"149783.33\" data-name=\"Traditional 22K Gold Filigree Necklace Set with Matching Earrings\">"
+    },
+    {
+      "index": 10,
+      "header": "@@ -1229,7 +1247,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_5\" data-product-id=\"MG-P-005\" data-material=\"gold\" data-category=\"necklaces,earrings,necklace-and-earring-sets\" data-collection=\"womens\" data-price=\"134016.67\" data-name=\"Elegant 22K Gold Teardrop Necklace Set with Matching Earrings\">"
+    },
+    {
+      "index": 11,
+      "header": "@@ -1295,7 +1313,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_6\" data-product-id=\"MG-P-006\" data-material=\"gold\" data-category=\"bangles,bangle\" data-collection=\"womens\" data-price=\"134016.67\" data-name=\"Elegant 22K Gold Twisted Bangles with Dual-Tone Finish\">"
+    },
+    {
+      "index": 12,
+      "header": "@@ -1360,7 +1378,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_7\" data-product-id=\"MG-P-007\" data-material=\"gold\" data-category=\"earrings,jhumka,earing\" data-collection=\"traditional,womens\" data-price=\"126133.33\" data-name=\"Traditional 22K Gold Jhumka Earrings with Intricate Design\">"
+    },
+    {
+      "index": 13,
+      "header": "@@ -1419,7 +1437,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_8\" data-product-id=\"MG-P-008\" data-material=\"gold\" data-category=\"bangles,bangle\" data-collection=\"womens\" data-price=\"134016.67\" data-name=\"Elegant 22K Gold Bangles with Matte & Glossy Finish\">"
+    },
+    {
+      "index": 14,
+      "header": "@@ -1478,7 +1496,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_9\" data-product-id=\"MG-P-009\" data-material=\"gold\" data-category=\"bangles,bangle\" data-collection=\"traditional,womens\" data-price=\"134016.67\" data-name=\"Traditional 22K Gold Bangles with Black Enamel Detailing\">"
+    },
+    {
+      "index": 15,
+      "header": "@@ -1543,7 +1561,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_10\" data-product-id=\"MG-P-010\" data-material=\"gold\" data-category=\"rings,fancy-ring,diamond-rings\" data-collection=\"womens,diamond\" data-price=\"102483.33\" data-name=\"Elegant Gold & Diamond Statement Ring for Womend Cocktail Ring\">"
+    },
+    {
+      "index": 16,
+      "header": "@@ -1609,7 +1627,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_11\" data-product-id=\"MG-P-011\" data-material=\"gold\" data-category=\"rings,fancy-ring\" data-collection=\"womens\" data-price=\"118250\" data-name=\"Stylish Gold Designer Ring for Women\">"
+    },
+    {
+      "index": 17,
+      "header": "@@ -1673,7 +1691,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_12\" data-product-id=\"MG-P-012\" data-material=\"gold\" data-category=\"rings,fancy-ring\" data-collection=\"womens\" data-price=\"110366.67\" data-name=\"Elegant Floral Gold Ring for Women\">"
+    },
+    {
+      "index": 18,
+      "header": "@@ -1737,7 +1755,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_13\" data-product-id=\"MG-P-013\" data-material=\"gold\" data-category=\"rings,vintage\" data-collection=\"womens,vintage\" data-price=\"102483.33\" data-name=\"Antique Gold Oval Filigree Ring for Women\">"
+    },
+    {
+      "index": 19,
+      "header": "@@ -1801,7 +1819,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_14\" data-product-id=\"MG-P-014\" data-material=\"gold\" data-category=\"necklaces\" data-collection=\"bridal-collection,traditional\" data-price=\"185000\" data-name=\"Traditional Gold Bridal Choker Necklace\">"
+    },
+    {
+      "index": 20,
+      "header": "@@ -1822,7 +1840,10 @@",
+      "removedCount": 1,
+      "addedCount": 4,
+      "removedSnippet": "                                    <h6 class=\"text-truncate mb-0\">Traditional Gold Bridal Choker Necklace</h6>",
+      "addedSnippet": "                                    <h6 class=\"mg-cart-product-title text-truncate mb-0\">Traditional Gold Bridal Choker Necklace</h6>\n                                    <div class=\"d-flex justify-content-center\">\n                                        <h6 class=\"mg-product-price\">185000/- Rs.</h6>\n                                    </div>"
+    },
+    {
+      "index": 21,
+      "header": "@@ -1861,7 +1882,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_15\" data-product-id=\"MG-P-015\" data-material=\"gold\" data-category=\"earrings,jhumka,earing\" data-collection=\"traditional,womens\" data-price=\"94600\" data-name=\"Traditional Gold Jhumka Earrings\">"
+    },
+    {
+      "index": 22,
+      "header": "@@ -1925,7 +1946,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_16\" data-product-id=\"MG-P-016\" data-material=\"gold\" data-category=\"necklaces,necklace-and-earring-sets\" data-collection=\"traditional\" data-price=\"141900\" data-name=\"Traditional Gold & Red Thread Necklace Set\">"
+    },
+    {
+      "index": 23,
+      "header": "@@ -1989,7 +2010,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_17\" data-product-id=\"MG-P-017\" data-material=\"gold\" data-category=\"necklaces,pendants\" data-collection=\"womens\" data-price=\"94600\" data-name=\"Elegant Gold Floral Necklace Set with Hanging Pendant\">"
+    },
+    {
+      "index": 24,
+      "header": "@@ -2054,7 +2075,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_18\" data-product-id=\"MG-P-018\" data-material=\"gold\" data-category=\"necklaces\" data-collection=\"traditional\" data-price=\"94600\" data-name=\"Traditional Temple Gold Necklace with Coin & Beaded Detailing\">"
+    },
+    {
+      "index": 25,
+      "header": "@@ -2120,7 +2141,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_19\" data-product-id=\"MG-P-019\" data-material=\"gold\" data-category=\"necklaces,necklace-and-earring-sets\" data-collection=\"womens\" data-price=\"94600\" data-name=\"Elegant Gold & Diamond Cut Necklace Set with Teardrop Motifs\">"
+    },
+    {
+      "index": 26,
+      "header": "@@ -2186,7 +2207,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_20\" data-product-id=\"MG-P-020\" data-material=\"gold\" data-category=\"necklaces\" data-collection=\"luxury,bridal-collection\" data-price=\"252266.67\" data-name=\"Royal Gold Choker Necklace Set with Intricate Net Design\">"
+    },
+    {
+      "index": 27,
+      "header": "@@ -2251,7 +2272,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_21\" data-product-id=\"MG-P-021\" data-material=\"gold\" data-category=\"necklaces\" data-collection=\"womens\" data-price=\"118250\" data-name=\"Pure Gold Multi-Layered Beaded Necklace\">"
+    },
+    {
+      "index": 28,
+      "header": "@@ -2315,7 +2336,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1\">",
+      "addedSnippet": "                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-6 pb-1 mg-product-col\" id=\"shop_product_col_22\" data-product-id=\"MG-P-022\" data-material=\"gold\" data-category=\"necklaces,haar\" data-collection=\"traditional,bridal-collection\" data-price=\"215000\" data-name=\"Queens Haar\">"
+    },
+    {
+      "index": 29,
+      "header": "@@ -2336,7 +2357,10 @@",
+      "removedCount": 1,
+      "addedCount": 4,
+      "removedSnippet": "                                    <h6 class=\"text-truncate mb-0\">Queens Haar</h6>",
+      "addedSnippet": "                                    <h6 class=\"mg-cart-product-title text-truncate mb-0\">Queens Haar</h6>\n                                    <div class=\"d-flex justify-content-center\">\n                                        <h6 class=\"mg-product-price\">215000/- Rs.</h6>\n                                    </div>"
+    },
+    {
+      "index": 30,
+      "header": "@@ -2372,16 +2396,201 @@",
+      "removedCount": 7,
+      "addedCount": 192,
+      "removedSnippet": "                        \n                       \n                    <div id=\"no_product_found\" class=\"text-center py-5\" style=\"display:none;\">\n    <i class=\"fa fa-search-minus fa-3x mb-3\" style=\"color: var(--mg-gold-2);\"></i>\n    <h4 class=\"text-uppercase font-weight-semi-bold\">No Product Found !</h4>",
+      "addedSnippet": "\n\n                    \n                        <!-- ========================================================================= -->\n                        <!-- BACKEND INTEGRATION POINT: Sample Catalog Items (Silver / Artificial / Stone) -->"
+    },
+    {
+      "index": 31,
+      "header": "@@ -2396,10 +2605,10 @@",
+      "removedCount": 3,
+      "addedCount": 3,
+      "removedSnippet": "                            <nav aria-label=\"Page navigation\">\n                                <ul class=\"pagination justify-content-center mb-3\">\n                                    <!-- <li class=\"page-item disabled\">",
+      "addedSnippet": "        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination justify-content-center mb-3\">\n                <!-- <li class=\"page-item disabled\">"
+    },
+    {
+      "index": 32,
+      "header": "@@ -2414,19 +2623,15 @@",
+      "removedCount": 8,
+      "addedCount": 4,
+      "removedSnippet": "                                </ul>\n                            </nav>\n                        </div>\n    <!-- Back to Top -->\n",
+      "addedSnippet": "            </ul>\n        </nav>\n    </div>\n<!------------------INDEX PAGE JS---------------------------------------------------->"
+    },
+    {
+      "index": 33,
+      "header": "@@ -2688,61 +2893,64 @@",
+      "removedCount": 32,
+      "addedCount": 35,
+      "removedSnippet": "    <script>\n            $(\".cat_block_toggle\").click(function (e) {\n                var text = $(this).find('strong').text();\n                var now_text = text.replace('More', 'Less') ? text.replace('More', 'Less') : text.replace('Less', 'More');\n                $(this).find('strong').text(now_text);",
+      "addedSnippet": "        <script>\n        // =========================================================================\n        // BACKEND INTEGRATION POINT: Client-Side Filter Engine (Sub-step 3.1)\n        // Target Endpoint: GET /api/v1/products?material=...&category=...\n        // Guidelines: Strict adherence to AGENTS.md modular action functions"
+    },
+    {
+      "index": 34,
+      "header": "@@ -2762,27 +2970,220 @@",
+      "removedCount": 17,
+      "addedCount": 210,
+      "removedSnippet": "            function getFilteredItems() {\n                var val = ($(\"#term\").val() || \"\").toLowerCase();\n                var checkedMaterial = $(\"input[name='type']:checked\").val();\n                var order = $(\"#triggerId\").val();\n",
+      "addedSnippet": "            /**\n             * Extract active checked values for a given checkbox group name\n             * @param {string} name - Checkbox group name ('type' for material, 'cat' for category)\n             * @returns {string[]} Selected lowercase filter slugs\n             */"
+    },
+    {
+      "index": 35,
+      "header": "@@ -2810,34 +3211,36 @@",
+      "removedCount": 10,
+      "addedCount": 12,
+      "removedSnippet": "                // ---- No Product Found handling ----\n                    $(\"#shop_data\").hide();\n                    $(\"#no_product_found\").show();\n                    $(\".pagination\").empty();\n                    $(\"#shop_data\").show();",
+      "addedSnippet": "                // Zero matches: hide shop data and show empty state placeholder\n                    $('#shop_data').hide();\n                    $('#no_product_found').show();\n                    $('.pagination').empty();\n                    syncSidebarHeight();"
+    },
+    {
+      "index": 36,
+      "header": "@@ -2850,24 +3253,45 @@",
+      "removedCount": 11,
+      "addedCount": 32,
+      "removedSnippet": "            // Initial render on page load\n            renderPage();\n            syncSidebarHeight();\n        });\n        ",
+      "addedSnippet": "            // =========================================================================\n            // BACKEND INTEGRATION POINT: Reset Catalog Action (Sub-step 3.4)\n            // Target Action: Reset all search params, category & material filters, sort order\n            // Guidelines: Strict adherence to AGENTS.md modular action functions\n            // ========================================================================="
+    }
+  ],
+  "cart.html": [
+    {
+      "index": 1,
+      "header": "@@ -27,7 +27,6 @@",
+      "removedCount": 1,
+      "addedCount": 0,
+      "removedSnippet": "    <link href=\"assets/ecomm/css/own_custom_black.css\" rel=\"stylesheet\">",
+      "addedSnippet": ""
+    },
+    {
+      "index": 2,
+      "header": "@@ -190,8 +189,317 @@",
+      "removedCount": 0,
+      "addedCount": 309,
+      "removedSnippet": "",
+      "addedSnippet": "\n            /* ============================================================\n               MOBILE CART CARDS (Scope: <= 767.98px)\n               Uses theme design tokens: --mg-gold-1, --mg-gold-2, --mg-gold-3,\n               --mg-ivory, --mg-ink, --mg-wine-soft"
+    },
+    {
+      "index": 3,
+      "header": "@@ -205,7 +513,8 @@",
+      "removedCount": 1,
+      "addedCount": 2,
+      "removedSnippet": "            <div class=\"col-lg-8 table-responsive mb-5\">",
+      "addedSnippet": "            <!-- Desktop Table View -->\n            <div class=\"col-lg-8 table-responsive mb-5 d-none d-md-block\">"
+    },
+    {
+      "index": 4,
+      "header": "@@ -219,10 +528,9 @@",
+      "removedCount": 3,
+      "addedCount": 2,
+      "removedSnippet": "                                <p><img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"\" style=\"width: 60px;\"\n                                        style=\"float:left;\"> Colorful Stylish Shirt</p>\n                            <td class=\"align-middle\">Rs. 150/-</td>",
+      "addedSnippet": "                                <p><img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"\" style=\"width: 60px; float:left;\"> 22K Royal Gold Filigree Ring</p>\n                            <td class=\"align-middle\">Rs. 24,500/-</td>"
+    },
+    {
+      "index": 5,
+      "header": "@@ -239,16 +547,15 @@",
+      "removedCount": 4,
+      "addedCount": 3,
+      "removedSnippet": "                            <td class=\"align-middle\">Rs. 150/-</td>\n                                <p><img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"\" style=\"width: 60px;\n                                        float:left;\"> Colorful Stylish Shirt</p>\n                            <td class=\"align-middle base_price\">Rs. <span class=\"unit_price\">150</span>/-</td>",
+      "addedSnippet": "                            <td class=\"align-middle\">Rs. 24,500/-</td>\n                                <p><img src=\"assets/ecomm/products/bangels/bangels_1.webp\" alt=\"\" style=\"width: 60px; float:left;\"> Pure 22K Gold Handcrafted Bangles</p>\n                            <td class=\"align-middle base_price\">Rs. <span class=\"unit_price\">78,200</span>/-</td>"
+    },
+    {
+      "index": 6,
+      "header": "@@ -266,40 +573,118 @@",
+      "removedCount": 12,
+      "addedCount": 90,
+      "removedSnippet": "                            <td class=\"align-middle final_price\">Rs. <span class=\"sum_price\">150</span>/-</td>\n            <div class=\"col-lg-4\">\n                <!-- <form class=\"mb-5\" action=\"\">\n                <div class=\"input-group\">\n                    <input type=\"text\" class=\"form-control p-4\" placeholder=\"Coupon Code\">",
+      "addedSnippet": "                            <td class=\"align-middle final_price\">Rs. <span class=\"sum_price\">78,200</span>/-</td>\n\n            <!-- Mobile View: Luxury Cart Cards (Scoped to mobile) -->\n            <div class=\"col-12 d-block d-md-none\" id=\"mg_mobile_cart_container\">\n                <!-- Mobile Cart Header -->"
+    },
+    {
+      "index": 7,
+      "header": "@@ -309,6 +694,16 @@",
+      "removedCount": 0,
+      "addedCount": 10,
+      "removedSnippet": "",
+      "addedSnippet": "    <!-- Floating Toast Notification -->\n    <div id=\"mg_cart_toast\" class=\"mg-cart-toast\" role=\"alert\" aria-live=\"assertive\">\n        <i class=\"fa fa-heart mg-toast-icon\"></i>\n        <div class=\"mg-toast-content\">\n            <strong id=\"mg_cart_toast_title\">Moved to Wishlist!</strong>"
+    },
+    {
+      "index": 8,
+      "header": "@@ -316,9 +711,7 @@",
+      "removedCount": 3,
+      "addedCount": 1,
+      "removedSnippet": "    <a href=\"#\" class=\"btn btn-primary back-to-top\"><i class=\"fa fa-angle-double-up\"></i></a>\n\n    <!------------------INDEX PAGE JS---------------------------------------------------->",
+      "addedSnippet": "<!------------------INDEX PAGE JS---------------------------------------------------->"
+    },
+    {
+      "index": 9,
+      "header": "@@ -333,124 +726,12 @@",
+      "removedCount": 113,
+      "addedCount": 1,
+      "removedSnippet": "    <script src=\"assets/ecomm/js/main.js\" defer></script>\n    <script src=\"assets/ecomm/js/include.js\" defer></script>\n\n\n        function checkOrientation() {",
+      "addedSnippet": "    <script src=\"assets/ecomm/js/include.js\"></script>"
+    },
+    {
+      "index": 10,
+      "header": "@@ -523,6 +804,130 @@",
+      "removedCount": 0,
+      "addedCount": 124,
+      "removedSnippet": "",
+      "addedSnippet": "    <!-- Mobile Cart Interactive Logic -->\n    <script>\n        var mgCartToastTimeout = null;\n\n        function showCartToast(title, desc) {"
+    }
+  ],
+  "wishlist.html": [
+    {
+      "index": 1,
+      "header": "@@ -27,11 +27,14 @@",
+      "removedCount": 1,
+      "addedCount": 4,
+      "removedSnippet": "    <link href=\"assets/ecomm/css/own_custom_black.css\" rel=\"stylesheet\">",
+      "addedSnippet": "\n    <!-- Multi-Vendor Theming Engine -->\n    <script src=\"assets/ecomm/js/vendor-config.js\"></script>\n    <script src=\"assets/ecomm/js/theme-injector.js\"></script>"
+    },
+    {
+      "index": 2,
+      "header": "@@ -44,7 +47,8 @@",
+      "removedCount": 1,
+      "addedCount": 2,
+      "removedSnippet": "            <div class=\"col-lg-12 table-responsive mb-5\">",
+      "addedSnippet": "            <!-- Desktop Table View -->\n            <div class=\"col-lg-12 table-responsive mb-5 d-none d-md-block\">"
+    },
+    {
+      "index": 3,
+      "header": "@@ -60,9 +64,9 @@",
+      "removedCount": 2,
+      "addedCount": 2,
+      "removedSnippet": "                                        style=\"width: 60px; float:left;\"> Colorful Stylish Shirt</p>\n                            <td class=\"align-middle\">Rs. 150/-</td>",
+      "addedSnippet": "                                        style=\"width: 60px; float:left;\"> 22K Royal Gold Filigree Ring</p>\n                            <td class=\"align-middle\">Rs. 24,500/-</td>"
+    },
+    {
+      "index": 4,
+      "header": "@@ -79,21 +83,21 @@",
+      "removedCount": 5,
+      "addedCount": 5,
+      "removedSnippet": "                            <td class=\"align-middle\">Rs. 150/-</td>\n                                <a href=\"index.html\" class=\"btn btn-sm btn-primary text-white\">\n                                <p><img src=\"assets/ecomm/products/rings/ring_1.webp\" alt=\"\"\n                                        style=\"width: 60px; float:left;\"> Colorful Stylish Shirt</p>\n                            <td class=\"align-middle base_price\">Rs. <span class=\"unit_price\">150</span>/-</td>",
+      "addedSnippet": "                            <td class=\"align-middle\">Rs. 24,500/-</td>\n                                <a href=\"cart.html\" class=\"btn btn-sm btn-primary text-white\">\n                                <p><img src=\"assets/ecomm/products/bangels/bangels_1.webp\" alt=\"\"\n                                        style=\"width: 60px; float:left;\"> Pure 22K Gold Handcrafted Bangles</p>\n                            <td class=\"align-middle base_price\">Rs. <span class=\"unit_price\">78,200</span>/-</td>"
+    },
+    {
+      "index": 5,
+      "header": "@@ -111,11 +115,11 @@",
+      "removedCount": 2,
+      "addedCount": 2,
+      "removedSnippet": "                            <td class=\"align-middle final_price\">Rs. <span class=\"sum_price\">150</span>/-</td>\n                                <a href=\"index.html\" class=\"btn btn-sm btn-primary text-white\">",
+      "addedSnippet": "                            <td class=\"align-middle final_price\">Rs. <span class=\"sum_price\">78,200</span>/-</td>\n                                <a href=\"cart.html\" class=\"btn btn-sm btn-primary text-white\">"
+    },
+    {
+      "index": 6,
+      "header": "@@ -124,26 +128,118 @@",
+      "removedCount": 8,
+      "addedCount": 100,
+      "removedSnippet": "                            <td class=\"total_base_price\">Rs. <span class=\"total_unit_price\">1000</span>/-</td>\n                            <td class=\"total_quantity\">100</td>\n                            <td class=\"total_final_price\">Rs. <span class=\"total_sum_price\">2000</span>/-</td>\n    <div id=\"footer-placeholder\"></div>\n",
+      "addedSnippet": "                            <td class=\"total_base_price\">Rs. <span class=\"total_unit_price\">1,02,700</span>/-</td>\n                            <td class=\"total_quantity\">2</td>\n                            <td class=\"total_final_price\">Rs. <span class=\"total_sum_price\">1,02,700</span>/-</td>\n\n            <!-- Mobile View: Luxury Wishlist Cards (Scoped to mobile) -->"
+    },
+    {
+      "index": 7,
+      "header": "@@ -151,203 +247,101 @@",
+      "removedCount": 182,
+      "addedCount": 80,
+      "removedSnippet": "    <!-- Contact Javascript File -->\n    <!--<script src=\"assets/ecomm/mail/jqBootstrapValidation.min.js\"></script>\n    <script src=\"assets/ecomm/mail/contact.js\"></script>-->\n\n",
+      "addedSnippet": "    <script src=\"assets/ecomm/js/include.js\"></script>\n    <!-- Wishlist Interactive Logic -->\n        var mgToastTimeout = null;\n\n        function showWishlistToast(title, desc) {"
+    }
+  ],
+  "checkout.html": [
+    {
+      "index": 1,
+      "header": "@@ -27,13 +27,15 @@",
+      "removedCount": 1,
+      "addedCount": 3,
+      "removedSnippet": "  <link href=\"assets/ecomm/css/own_custom_black.css\" rel=\"stylesheet\">",
+      "addedSnippet": "    <!-- Multi-Vendor Theming Engine -->\n    <script src=\"assets/ecomm/js/vendor-config.js\"></script>\n    <script src=\"assets/ecomm/js/theme-injector.js\"></script>"
+    },
+    {
+      "index": 2,
+      "header": "@@ -248,11 +250,7 @@",
+      "removedCount": 5,
+      "addedCount": 1,
+      "removedSnippet": "  <!-- Back to Top -->\n\n  <a href=\"#\" class=\"btn btn-primary back-to-top\"><i class=\"fa fa-angle-double-up\"></i></a>\n\n  <!------------------INDEX PAGE JS---------------------------------------------------->",
+      "addedSnippet": "<!------------------INDEX PAGE JS---------------------------------------------------->"
+    },
+    {
+      "index": 3,
+      "header": "@@ -266,199 +264,9 @@",
+      "removedCount": 193,
+      "addedCount": 3,
+      "removedSnippet": "\n  <script src=\"assets/ecomm/js/main.js\" defer></script>\n  <script src=\"assets/ecomm/js/include.js\" defer></script>\n  <script src=\"assets/ecomm/js/theme-animations.js\" defer></script>\n",
+      "addedSnippet": "    <script src=\"assets/ecomm/js/include.js\"></script>\n    <script src=\"assets/ecomm/js/theme-animations.js\" defer></script>\n</html>"
+    }
+  ],
+  "login.html": [
+    {
+      "index": 1,
+      "header": "@@ -27,13 +27,15 @@",
+      "removedCount": 1,
+      "addedCount": 3,
+      "removedSnippet": "    <link href=\"assets/ecomm/css/own_custom_black.css\" rel=\"stylesheet\">",
+      "addedSnippet": "    <!-- Multi-Vendor Theming Engine -->\n    <script src=\"assets/ecomm/js/vendor-config.js\"></script>\n    <script src=\"assets/ecomm/js/theme-injector.js\"></script>"
+    },
+    {
+      "index": 2,
+      "header": "@@ -65,6 +67,15 @@",
+      "removedCount": 0,
+      "addedCount": 9,
+      "removedSnippet": "",
+      "addedSnippet": "                    </div>\n                    <div\n                        class=\"d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom mg-login-top-bar\">\n                        <span class=\"small text-muted\"><i class=\"fa fa-shield-alt text-primary mr-1\"></i> Customer\n                            Login</span>"
+    },
+    {
+      "index": 3,
+      "header": "@@ -82,19 +93,33 @@",
+      "removedCount": 7,
+      "addedCount": 21,
+      "removedSnippet": "                            <div class=\"col-6\">\n                                <label for=\"remember\">\n                                <button class=\"btn btn-outline-primary py-2 px-4\" type=\"submit\" name=\"do\" value=\"login\"\n                                    id=\"loginbutton\">Login</button>\n                            <div class=\"col-6 text-center\">",
+      "addedSnippet": "                            <div class=\"col-12 col-sm-7 mb-2 mb-sm-0\">\n                                <label for=\"remember\" class=\"d-block mb-2\">\n                                <div class=\"d-flex align-items-center flex-wrap\" style=\"gap: 8px;\">\n                                    <button class=\"btn btn-outline-primary py-2 px-4\" type=\"submit\" name=\"do\"\n                                        value=\"login\" id=\"loginbutton\">Login</button>"
+    },
+    {
+      "index": 4,
+      "header": "@@ -129,11 +154,7 @@",
+      "removedCount": 5,
+      "addedCount": 1,
+      "removedSnippet": "    <!-- Back to Top -->\n\n    <a href=\"#\" class=\"btn btn-primary back-to-top\"><i class=\"fa fa-angle-double-up\"></i></a>\n\n    <!------------------INDEX PAGE JS---------------------------------------------------->",
+      "addedSnippet": "<!------------------INDEX PAGE JS---------------------------------------------------->"
+    },
+    {
+      "index": 5,
+      "header": "@@ -148,8 +169,7 @@",
+      "removedCount": 2,
+      "addedCount": 1,
+      "removedSnippet": "    <script src=\"assets/ecomm/js/main.js\" defer></script>\n    <script src=\"assets/ecomm/js/include.js\" defer></script>",
+      "addedSnippet": "    <script src=\"assets/ecomm/js/include.js\"></script>"
+    },
+    {
+      "index": 6,
+      "header": "@@ -166,30 +186,37 @@",
+      "removedCount": 11,
+      "addedCount": 18,
+      "removedSnippet": "                var data = $(this).serializeArray()\n                    if (response.valid) {\n                        //alert(response.msg);\n                            $(\"#action_response\").empty().text(response.msg);\n                            window.location.href = \"https://justudhari.com/dashboard\";",
+      "addedSnippet": "                var data = $(this).serializeArray();\n                    if (response && response.valid) {\n                            $(\"#action_response\").empty().text(response.msg || \"Login successful!\");\n                            sessionStorage.setItem('mg_user_logged', 'true');\n                            setTimeout(function () {"
+    },
+    {
+      "index": 7,
+      "header": "@@ -213,192 +240,6 @@",
+      "removedCount": 186,
+      "addedCount": 0,
+      "removedSnippet": "    <script>\n\n\n        function checkOrientation() {\n            if (window.orientation === 0 || $(window).width() < $(window).height()) {",
+      "addedSnippet": ""
+    }
+  ],
+  "about.html": [
+    {
+      "index": 1,
+      "header": "@@ -27,11 +27,13 @@",
+      "removedCount": 1,
+      "addedCount": 3,
+      "removedSnippet": "    <!-- <link href=\"assets/ecomm/css/own_custom_black.css\" rel=\"stylesheet\"> -->",
+      "addedSnippet": "    <!-- Multi-Vendor Theming Engine -->\n    <script src=\"assets/ecomm/js/vendor-config.js\"></script>\n    <script src=\"assets/ecomm/js/theme-injector.js\"></script>"
+    },
+    {
+      "index": 2,
+      "header": "@@ -39,7 +41,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "<div class=\"container-fluid offer py-5\" id=\"about_section_page\">",
+      "addedSnippet": "    <div class=\"container-fluid offer py-5\" id=\"about_section_page\">"
+    },
+    {
+      "index": 3,
+      "header": "@@ -49,7 +51,7 @@",
+      "removedCount": 1,
+      "addedCount": 1,
+      "removedSnippet": "                    ",
+      "addedSnippet": ""
+    },
+    {
+      "index": 4,
+      "header": "@@ -70,61 +72,61 @@",
+      "removedCount": 37,
+      "addedCount": 37,
+      "removedSnippet": "    \n<!-- Why Choose Us Start -->\n<div class=\"container-fluid pt-3 pb-5\" id=\"why_choose_us\">\n    <div class=\"text-center mb-4\">\n        <h2 class=\"cstm-section-title px-5 mb-3\"><span class=\"\">Why Choose Us</span></h2>",
+      "addedSnippet": "    <!-- Why Choose Us Start -->\n    <div class=\"container-fluid pt-3 pb-5\" id=\"why_choose_us\">\n        <div class=\"text-center mb-4\">\n            <h2 class=\"cstm-section-title px-5 mb-3\"><span class=\"\">Why Choose Us</span></h2>\n        </div>"
+    }
+  ]
+}
