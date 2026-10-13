@@ -777,6 +777,7 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 20px;
 }
 
 .col {
@@ -8453,7 +8454,7 @@ button.bg-dark:focus {
 
 
 
-.pt-5{
+.pt-5 {
   padding-top: 3rem !important;
 }
 

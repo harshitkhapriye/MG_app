@@ -15,6 +15,8 @@ const MOCK_VENDOR_CONFIG = {
     tagline: "Certified Hallmark Jewellery",
     logoUrl: "assets/ecomm/logos/1755865437532699141.png",
     faviconUrl: "assets/ecomm/logos/1755865437532699141.png",
+    // TEMPORARY PLACEHOLDER - replace with the real Play Store link (backend will provide per vendor)
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.placeholder",
     colors: {
       "--mg-gold-1": "#a8802a",
       "--mg-gold-1-rgb": "168, 128, 42",
@@ -34,6 +36,8 @@ const MOCK_VENDOR_CONFIG = {
     tagline: "Royal Heritage & Solitaires",
     logoUrl: "assets/ecomm/logos/demo_vendor_logo.svg",
     faviconUrl: "assets/ecomm/logos/demo_vendor_logo.svg",
+    // TEMPORARY PLACEHOLDER - replace with the real Play Store link (backend will provide per vendor)
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.placeholder",
     colors: {
       "--mg-gold-1": "#800f2f",          // Deep ruby / garnet
       "--mg-gold-1-rgb": "128, 15, 47",
@@ -54,6 +58,8 @@ const MOCK_VENDOR_CONFIG = {
     tagline: "Fine Jewellery & Solitaires",
     logoUrl: "assets/ecomm/logos/blue_vendor_logo.svg",
     faviconUrl: "assets/ecomm/logos/blue_vendor_logo.svg",
+    // TEMPORARY PLACEHOLDER - replace with the real Play Store link (backend will provide per vendor)
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.placeholder",
     colors: {
       "--mg-gold-1": "#0c2444",          // Deep royal midnight sapphire
       "--mg-gold-1-rgb": "12, 36, 68",

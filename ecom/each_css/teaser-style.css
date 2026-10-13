@@ -1,82 +1,310 @@
 /* ================================================================
-   INDEX PAGE — "Our Legacy" teaser section styles
-   Loaded only on index.html. Sits between Schemes and Shop By
-   Category — deliberately compact, this is a small preview only.
+   INDEX PAGE — "Our Legacy" teaser section (premium)
+   File: ecom/each_css/teaser-style.css
+   Sirf #shop_brochure_teaser_section ko style karta hai.
+   Back-to-top ya kisi aur section ko nahi chhedta.
    ================================================================ */
 
 #shop_brochure_teaser_section {
-    padding-top: 1.5rem !important;
+    padding-top: 2rem !important;
 }
 
+/* ---------------- Card ---------------- */
 #shop_brochure_teaser_section .shop-brochure-teaser-wrap {
-    max-width: 1500px;
+    position: relative;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 40px 42px;
+    border-radius: 20px;
+    overflow: visible;
+    border: 1px solid rgba(var(--mg-gold-2-rgb), 0.4);
+    background:
+        radial-gradient(circle at 0% 0%, rgba(var(--mg-gold-3-rgb), 0.35), transparent 45%),
+        radial-gradient(circle at 100% 100%, rgba(var(--mg-gold-2-rgb), 0.18), transparent 50%),
+        linear-gradient(160deg, #FFFDF8 0%, #FBF5E8 100%);
+    box-shadow:
+        0 18px 40px rgba(27, 42, 65, 0.08),
+        0 3px 10px rgba(var(--mg-gold-2-rgb), 0.15),
+        inset 0 0 0 6px rgba(255, 255, 255, 0.6);
 }
 
+/* Card ke kono par gold ornament (upar-left + neeche-right) */
+#shop_brochure_teaser_section .shop-brochure-teaser-wrap::before,
+#shop_brochure_teaser_section .shop-brochure-teaser-wrap::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--mg-gold-2);
+    pointer-events: none;
+    z-index: 2;
+}
+
+#shop_brochure_teaser_section .shop-brochure-teaser-wrap::before {
+    top: 12px;
+    left: 12px;
+    border-right: 0;
+    border-bottom: 0;
+    border-top-left-radius: 12px;
+}
+
+#shop_brochure_teaser_section .shop-brochure-teaser-wrap::after {
+    right: 12px;
+    bottom: 12px;
+    border-left: 0;
+    border-top: 0;
+    border-bottom-right-radius: 12px;
+}
+
+/* ---------------- Image ---------------- */
 #shop_brochure_teaser_section .shop-brochure-teaser-img {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 14px 28px rgba(14, 25, 50, 0.15);
-    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.35);
-    max-height: 320px;
+    position: relative;
+    z-index: 1;
+    margin: 10px 14px 10px 10px;
+    border-radius: 160px 160px 16px 16px;
+    /* upar arch */
+}
+
+/* Peeche gold double frame */
+#shop_brochure_teaser_section .shop-brochure-teaser-img::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 170px 170px 18px 18px;
+    border: 1.5px solid var(--mg-gold-2);
+    box-shadow:
+        inset 0 0 0 5px #FFFDF8,
+        inset 0 0 0 6px rgba(var(--mg-gold-2-rgb), 0.45);
+    pointer-events: none;
+    transition: transform 0.5s cubic-bezier(.22, .9, .32, 1);
+}
+
+#shop_brochure_teaser_section .shop-brochure-teaser-img:hover::before {
+    transform: translate(-4px, -4px);
+}
+
+/* "Since 1973" badge */
+#shop_brochure_teaser_section .shop-brochure-teaser-img::after {
+    content: "Since\A 1973";
+    white-space: pre;
+    position: absolute;
+    right: -10px;
+    bottom: 22px;
+    z-index: 3;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--mg-gold-1) 0%, var(--mg-gold-2) 55%, var(--mg-gold-3) 100%);
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+    border: 3px solid #FFFDF8;
+    box-shadow: 0 8px 18px rgba(var(--mg-gold-1-rgb), 0.35);
 }
 
 #shop_brochure_teaser_section .shop-brochure-teaser-img img {
     width: 100%;
-    height: 420px;
+    height: 320px;
     object-fit: cover;
     display: block;
-    transition: transform 0.6s cubic-bezier(.22, .9, .32, 1);
+    border-radius: 160px 160px 16px 16px;
+    border: 1px solid rgba(var(--mg-gold-champagne-rgb), 0.5);
+    box-shadow: 0 14px 30px rgba(27, 42, 65, 0.18);
+    transition: transform 0.7s cubic-bezier(.22, .9, .32, 1);
 }
 
 #shop_brochure_teaser_section .shop-brochure-teaser-img:hover img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
+/* ---------------- Text ---------------- */
+#shop_brochure_teaser_section .shop-brochure-teaser-content {
+    position: relative;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+/* Heading ke upar "OUR STORY" */
+#shop_brochure_teaser_section .shop-brochure-teaser-content h2::before,
+#shop_brochure_teaser_section .shop-brochure-teaser-content h3::before {
+    content: "Our Story";
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--mg-gold-1);
+}
+
+#shop_brochure_teaser_section .shop-brochure-teaser-content h2,
 #shop_brochure_teaser_section .shop-brochure-teaser-content h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
     font-weight: 700;
     color: var(--mg-ink);
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 2.3rem;
+    line-height: 1.18;
+    margin-bottom: 8px;
+    letter-spacing: 0.2px;
+}
+
+/* Heading ke neeche: line + gold diamond + line */
+#shop_brochure_teaser_section .shop-brochure-teaser-content h2::after,
+#shop_brochure_teaser_section .shop-brochure-teaser-content h3::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 10px;
+    margin: 14px 0 18px;
+    background:
+        linear-gradient(45deg, transparent 40%, var(--mg-gold-2) 40%, var(--mg-gold-2) 60%, transparent 60%) center / 10px 10px no-repeat,
+        linear-gradient(-45deg, transparent 40%, var(--mg-gold-2) 40%, var(--mg-gold-2) 60%, transparent 60%) center / 10px 10px no-repeat,
+        linear-gradient(90deg, var(--mg-gold-2), var(--mg-gold-3)) left center / 48px 1.5px no-repeat,
+        linear-gradient(90deg, var(--mg-gold-3), var(--mg-gold-2)) right center / 48px 1.5px no-repeat;
 }
 
 #shop_brochure_teaser_section .shop-brochure-teaser-content p {
-    color: #6c757d;
-    line-height: 1.65;
-    font-size: 0.9rem;
-    margin-bottom: 16px;
+    position: relative;
+    color: #4a453e;
+    line-height: 1.75;
+    font-size: 0.97rem;
+    margin-bottom: 26px;
+    max-width: 560px;
+    padding-left: 14px;
+    border-left: 2px solid rgba(var(--mg-gold-2-rgb), 0.45);
 }
 
+/* ---------------- Button ---------------- */
 .shop-brochure-cta {
-    display: inline-block;
-    border: 2px solid var(--mg-gold-2);
-    color: var(--mg-gold-2);
-    background: transparent;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--mg-gold-1) 0%, var(--mg-gold-2) 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(var(--mg-gold-2-rgb), 0.6);
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 12px 28px;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: all 0.35s ease;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    box-shadow: 0 6px 18px rgba(var(--mg-gold-1-rgb), 0.3);
+    transition: transform 0.35s cubic-bezier(.22, .9, .32, 1), box-shadow 0.35s ease, color 0.35s ease;
+    text-decoration: none !important;
+}
+
+/* Arrow */
+.shop-brochure-cta::after {
+    content: "→";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.05rem;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+/* Chamak jo button par guzarti hai */
+.shop-brochure-cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.55) 50%, transparent 100%);
+    transform: skewX(-20deg);
+    animation: mgTeaserShine 3.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes mgTeaserShine {
+
+    0%,
+    60% {
+        left: -60%;
+    }
+
+    100% {
+        left: 130%;
+    }
 }
 
 .shop-brochure-cta:hover {
-    background: linear-gradient(120deg, var(--mg-gold-2), var(--mg-gold-3));
-    color: var(--mg-ink) !important;
-    border-color: transparent;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(var(--mg-gold-2-rgb), 0.35);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(var(--mg-gold-2-rgb), 0.45);
 }
 
+.shop-brochure-cta:hover::after {
+    transform: translateX(5px);
+}
+
+/* ---------------- Mobile ---------------- */
 @media (max-width: 767.98px) {
+    #shop_brochure_teaser_section .shop-brochure-teaser-wrap {
+        padding: 30px 20px 26px;
+        margin: 0 4px;
+    }
+
+    #shop_brochure_teaser_section .shop-brochure-teaser-wrap::before,
+    #shop_brochure_teaser_section .shop-brochure-teaser-wrap::after {
+        width: 32px;
+        height: 32px;
+    }
+
     #shop_brochure_teaser_section .shop-brochure-teaser-img {
-        max-height: 160px;
-        margin-bottom: 16px;
+        margin: 10px 12px 26px 10px;
     }
+
     #shop_brochure_teaser_section .shop-brochure-teaser-img img {
-        height: 160px;
+        height: 230px;
     }
+
+    #shop_brochure_teaser_section .shop-brochure-teaser-img::after {
+        width: 64px;
+        height: 64px;
+        font-size: 13px;
+        right: -8px;
+        bottom: 16px;
+    }
+
+    #shop_brochure_teaser_section .shop-brochure-teaser-content {
+        padding-left: 0;
+    }
+
+    #shop_brochure_teaser_section .shop-brochure-teaser-content h2,
     #shop_brochure_teaser_section .shop-brochure-teaser-content h3 {
-        font-size: 1.15rem;
+        font-size: 1.65rem;
+    }
+
+    #shop_brochure_teaser_section .shop-brochure-teaser-content p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-bottom: 22px;
+    }
+
+    .shop-brochure-cta {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Motion band ho to chamak bhi band */
+@media (prefers-reduced-motion: reduce) {
+    .shop-brochure-cta::before {
+        animation: none;
+        display: none;
     }
 }

@@ -324,10 +324,26 @@
     </div>
   </div>
 </li>
-                
 
+<!-- Highlighted Premium Tile: Download the App (Mobile Only, Just above Login / Register) -->
+<li class="px-2 mb-3" style="list-style:none;" id="drawer_download_app_wrap">
+    <a href="#" target="_blank" rel="noopener noreferrer" class="mg-drawer-app-tile" id="drawer_download_app_link" data-action="download-app" title="Download the App">
+        <div class="d-flex align-items-center">
+            <div class="mg-drawer-app-tile-icon">
+                <i class="fab fa-google-play"></i>
+            </div>
+            <div class="mg-drawer-app-tile-text text-left">
+                <span class="mg-drawer-app-badge-pill">Mobile Experience</span>
+                <h6 class="mg-drawer-app-title mb-0">Download the App</h6>
+            </div>
+        </div>
+        <div class="mg-drawer-app-tile-arrow">
+            <i class="fa fa-arrow-right"></i>
+        </div>
+    </a>
+</li>
 
-                                @if(!Auth::guard('custo')->check())
+@if(!Auth::guard('custo')->check())
                                     <ul class="d-lg-none text-center row p-0" style="list-style:none;" id="mob_user_sign">
                                         <li class="col-12"><hr></li>
 

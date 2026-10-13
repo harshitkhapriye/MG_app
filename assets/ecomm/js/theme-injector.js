@@ -100,6 +100,62 @@
       if (chatWelcome && chatWelcome.textContent.includes('MG Jewellers')) {
         chatWelcome.textContent = chatWelcome.textContent.replace('MG Jewellers', vendor.shopName);
       }
+
+      // 6. Update App Download Links
+      updateAppDownloadLinks(vendor);
+    }
+  }
+
+  /**
+   * Helper: Retrieve active vendor configuration.
+   * If URL has ?vendor=xxx, returns that vendor; otherwise defaults to 'mg-jewellers'.
+   * @returns {Object|null}
+   */
+  function getActiveVendor() {
+    var slug = getVendorSlug() || 'mg-jewellers';
+    var catalog = window.MOCK_VENDOR_CONFIG || {};
+    return catalog[slug] || catalog['mg-jewellers'] || null;
+  }
+
+  /**
+   * Step 3: Update App Download links for Desktop Footer and Mobile Drawer.
+   * Sets href of both #footer_download_app_link and #drawer_download_app_link
+   * from active vendor's playStoreUrl. If missing or empty, hides elements completely.
+   * @param {Object} vendor
+   */
+  function updateAppDownloadLinks(vendor) {
+    var active = vendor || getActiveVendor();
+    var footerLink = document.getElementById('footer_download_app_link');
+    var drawerLink = document.getElementById('drawer_download_app_link');
+    var footerWrap = document.getElementById('footer_download_app_wrap');
+    var drawerWrap = document.getElementById('drawer_download_app_wrap');
+
+    var playUrl = (active && active.playStoreUrl && typeof active.playStoreUrl === 'string' && active.playStoreUrl.trim() !== '')
+      ? active.playStoreUrl.trim()
+      : '';
+
+    if (footerLink) {
+      if (playUrl) {
+        footerLink.href = playUrl;
+        footerLink.style.display = '';
+        if (footerWrap) footerWrap.style.display = '';
+      } else {
+        footerLink.href = '#';
+        footerLink.style.display = 'none';
+        if (footerWrap) footerWrap.style.display = 'none';
+      }
+    }
+
+    if (drawerLink) {
+      if (playUrl) {
+        drawerLink.href = playUrl;
+        drawerLink.style.display = '';
+        if (drawerWrap) drawerWrap.style.display = '';
+      } else {
+        drawerLink.href = '#';
+        drawerLink.style.display = 'none';
+        if (drawerWrap) drawerWrap.style.display = 'none';
+      }
     }
   }
 
@@ -108,10 +164,22 @@
    */
   function initThemeInjector() {
     var vendorSlug = getVendorSlug();
+    var activeVendor = getActiveVendor();
 
-    // RULE: If no ?vendor= parameter is present, do nothing!
-    // The page remains 100% unaltered with default MG Jewellers styling.
+    // Initial pass for download links on static / existing DOM
+    updateAppDownloadLinks(activeVendor);
+
+    // RULE: If no ?vendor= parameter is present, keep default MG Jewellers styling
     if (!vendorSlug) {
+      // Ensure download links are populated once header.html & footer.html finish injecting
+      document.addEventListener('headerFooterReady', function () {
+        updateAppDownloadLinks(getActiveVendor());
+      });
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+          updateAppDownloadLinks(getActiveVendor());
+        });
+      }
       return;
     }
 
@@ -171,5 +239,6 @@
         console.error('[ThemeInjector] Invalid vendor slug:', slug);
       }
     };
+    window.updateAppDownloadLinks = updateAppDownloadLinks;
   }
 })();

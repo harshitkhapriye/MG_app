@@ -26,7 +26,7 @@
 
 @endphp
 
-<div class="container-fluid bg-secondary text-dark pt-0"> 
+<div class="container-fluid bg-secondary text-dark pt-0" id="desktop_footer_section"> 
     <div class="row px-xl-5 pt-5">
 
         <div class="col-lg-3 col-md-12 mb-5 pr-3 pr-xl-5">
@@ -102,6 +102,20 @@
                         {{ $head_fone }}
                     </a>
                 </p>
+
+                <!-- Download the App Badge (Desktop Only) -->
+                <div class="mt-4 pt-1" id="footer_download_app_wrap">
+                    <span class="d-block mb-2 font-weight-bold text-uppercase mg-app-download-label">Download the App</span>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="mg-app-download-badge" id="footer_download_app_link" data-action="download-app" title="Get it on Google Play">
+                        <div class="mg-app-download-icon">
+                            <i class="fab fa-google-play"></i>
+                        </div>
+                        <div class="mg-app-download-text">
+                            <span class="mg-app-badge-subtitle">GET IT ON</span>
+                            <span class="mg-app-badge-title">Google Play</span>
+                        </div>
+                    </a>
+                </div>
 
         </div>
     </div>

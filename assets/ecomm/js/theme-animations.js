@@ -1160,6 +1160,10 @@
                 }
             });
         }
+
+        if (typeof window.updateAppDownloadLinks === 'function') {
+            window.updateAppDownloadLinks();
+        }
     }
     initFooterWidgets();
     document.addEventListener('headerFooterReady', initFooterWidgets);
@@ -1630,8 +1634,8 @@
             toast.innerHTML =
                 '<div class="mg-cart-toast-icon"><i class="fa fa-check"></i></div>' +
                 '<div class="mg-cart-toast-content">' +
-                    '<span class="mg-cart-toast-title">&#10003; Added to Cart</span>' +
-                    '<span class="mg-cart-toast-desc" id="mg_cart_toast_desc">Item added to your bag</span>' +
+                '<span class="mg-cart-toast-title">&#10003; Added to Cart</span>' +
+                '<span class="mg-cart-toast-desc" id="mg_cart_toast_desc">Item added to your bag</span>' +
                 '</div>';
             document.body.appendChild(toast);
         }
@@ -1819,15 +1823,15 @@
 
             html +=
                 '<div class="mg-recent-card" data-product-id="' + (item.id || '') + '">' +
-                    '<a href="' + safeUrl + '" class="mg-recent-card-link">' +
-                        '<div class="mg-recent-img-box">' +
-                            '<img src="' + safeImg + '" alt="' + safeTitle + '" loading="lazy" onerror="this.src=\'assets/ecomm/products/rings/ring_1.webp\'">' +
-                        '</div>' +
-                        '<div class="mg-recent-body">' +
-                            '<h6 class="mg-recent-title" title="' + safeTitle + '">' + safeTitle + '</h6>' +
-                            '<div class="mg-recent-price">' + safePrice + '</div>' +
-                        '</div>' +
-                    '</a>' +
+                '<a href="' + safeUrl + '" class="mg-recent-card-link">' +
+                '<div class="mg-recent-img-box">' +
+                '<img src="' + safeImg + '" alt="' + safeTitle + '" loading="lazy" onerror="this.src=\'assets/ecomm/products/rings/ring_1.webp\'">' +
+                '</div>' +
+                '<div class="mg-recent-body">' +
+                '<h6 class="mg-recent-title" title="' + safeTitle + '">' + safeTitle + '</h6>' +
+                '<div class="mg-recent-price">' + safePrice + '</div>' +
+                '</div>' +
+                '</a>' +
                 '</div>';
         });
 
@@ -1842,7 +1846,7 @@
                 e.preventDefault();
                 try {
                     localStorage.removeItem(RECENT_STORAGE_KEY);
-                } catch (err) {}
+                } catch (err) { }
                 section.style.transition = 'opacity 0.25s ease';
                 section.style.opacity = '0';
                 setTimeout(function () {
@@ -2010,3 +2014,249 @@
 })();
 
 
+/* =========================================================
+   SHOP BY GENDER SECTION
+   File: shop-by-gender.js
+   Kaam: card ki image load na ho to toota icon na dikhe,
+   sirf halka gold box dikhe. Koi dependency nahi (jQuery nahi chahiye).
+   Load: </body> se pehle, baaki scripts ke baad.
+   ========================================================= */
+(function () {
+    function init() {
+        document.querySelectorAll(".sbg-card__img img").forEach(function (img) {
+            // Image pehle hi fail ho chuki ho
+            if (img.complete && img.naturalWidth === 0) {
+                img.classList.add("sbg-img-fallback");
+                return;
+            }
+            // Baad mein fail ho
+            img.addEventListener("error", function () {
+                img.classList.add("sbg-img-fallback");
+            }, { once: true });
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
+})();
+
+
+
+/* =========================================================
+   GIFTING SECTION
+   File: gifting.js
+   Kaam:
+   1. Har card ke liye dot banana
+   2. Swipe/scroll par active dot badalna
+   3. Dot click par us card par jaana
+   4. Har 4 second mein apne aap agla card (touch/hover par ruk jata hai)
+   5. Image fail ho to toota icon na dikhe
+   Koi dependency nahi (jQuery nahi chahiye).
+   ========================================================= */
+(function () {
+    function init() {
+        var track = document.getElementById("gftTrack");
+        var dotsWrap = document.getElementById("gftDots");
+        if (!track || !dotsWrap) return; // section page par nahi hai to kuch mat karo
+
+        var cards = Array.prototype.slice.call(track.querySelectorAll(".gft-card"));
+        if (!cards.length) return;
+
+        var AUTOPLAY_MS = 4000;
+        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var current = 0;
+        var timer = null;
+
+        /* ---------- Image fallback ---------- */
+        track.querySelectorAll("img").forEach(function (img) {
+            if (img.complete && img.naturalWidth === 0) {
+                img.classList.add("gft-img-fallback");
+                return;
+            }
+            img.addEventListener("error", function () {
+                img.classList.add("gft-img-fallback");
+            }, { once: true });
+        });
+
+        /* ---------- Card tak scroll ---------- */
+        function goTo(index) {
+            var padLeft = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+            track.scrollTo({
+                left: cards[index].offsetLeft - padLeft,
+                behavior: reduceMotion ? "auto" : "smooth"
+            });
+        }
+
+        /* ---------- Dots banao ---------- */
+        cards.forEach(function (card, i) {
+            var dot = document.createElement("button");
+            dot.type = "button";
+            dot.setAttribute("aria-label", "Gift " + (i + 1));
+            dot.addEventListener("click", function () {
+                goTo(i);
+                restart();
+            });
+            dotsWrap.appendChild(dot);
+        });
+        var dots = Array.prototype.slice.call(dotsWrap.children);
+
+        /* ---------- Scroll par active dot ---------- */
+        function updateActive() {
+            var padLeft = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+            var pos = track.scrollLeft;
+            var nearest = 0;
+            var best = Infinity;
+            cards.forEach(function (card, i) {
+                var diff = Math.abs(card.offsetLeft - padLeft - pos);
+                if (diff < best) { best = diff; nearest = i; }
+            });
+            // End tak scroll ho gaya ho to aakhri dot
+            if (pos + track.clientWidth >= track.scrollWidth - 4) nearest = cards.length - 1;
+
+            current = nearest;
+            dots.forEach(function (d, i) {
+                d.classList.toggle("is-active", i === current);
+                d.setAttribute("aria-current", i === current ? "true" : "false");
+            });
+        }
+
+        var ticking = false;
+        track.addEventListener("scroll", function () {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(function () {
+                updateActive();
+                ticking = false;
+            });
+        }, { passive: true });
+
+        /* ---------- Autoplay ---------- */
+        function next() {
+            var maxScroll = track.scrollWidth - track.clientWidth;
+            if (track.scrollLeft >= maxScroll - 4) goTo(0); // end par pahunch gaye to wapas pehla
+            else goTo(Math.min(current + 1, cards.length - 1));
+        }
+        function start() {
+            if (reduceMotion || timer) return;
+            timer = setInterval(next, AUTOPLAY_MS);
+        }
+        function stop() {
+            clearInterval(timer);
+            timer = null;
+        }
+        function restart() { stop(); start(); }
+
+        // User haath lagaye ya mouse le aaye to ruko
+        track.addEventListener("touchstart", stop, { passive: true });
+        track.addEventListener("touchend", start, { passive: true });
+        track.addEventListener("mouseenter", stop);
+        track.addEventListener("mouseleave", start);
+
+        // Tab chhupa ho to autoplay band
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) stop(); else start();
+        });
+
+        window.addEventListener("resize", updateActive);
+
+        updateActive();
+        start();
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
+})();
+
+
+/* =========================================================
+   PROMO BANNERS
+   File: promo-banners.js
+   Kaam: banner ki image load na ho to toota icon na dikhe.
+   Koi dependency nahi.
+   ========================================================= */
+(function () {
+    function init() {
+        document.querySelectorAll(".mgpb img").forEach(function (img) {
+            if (img.complete && img.naturalWidth === 0) {
+                img.classList.add("mgpb-img-fallback");
+                return;
+            }
+            img.addEventListener("error", function () {
+                img.classList.add("mgpb-img-fallback");
+            }, { once: true });
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
+})();
+
+
+
+/* ===== Shop By Categories slider START ===== */
+(function () {
+    function init() {
+        var track = document.getElementById("mgCatTrack");
+        var dotsWrap = document.getElementById("mgCatDots");
+        if (!track || !dotsWrap) return;
+
+        var slides = track.querySelectorAll(".mg-cat-slide");
+        if (slides.length < 2) return;
+
+        var current = 0;
+        var timer = null;
+        var AUTOPLAY_MS = 4000; // 4 second mein agli slide
+
+        function goTo(i) {
+            track.scrollTo({ left: track.clientWidth * i, behavior: "smooth" });
+        }
+
+        // Har slide ke liye ek dot
+        slides.forEach(function (_, i) {
+            var dot = document.createElement("button");
+            dot.type = "button";
+            dot.setAttribute("aria-label", "Slide " + (i + 1));
+            dot.addEventListener("click", function () { goTo(i); restart(); });
+            dotsWrap.appendChild(dot);
+        });
+        var dots = dotsWrap.querySelectorAll("button");
+
+        // Swipe par active dot
+        function update() {
+            current = Math.round(track.scrollLeft / track.clientWidth);
+            dots.forEach(function (d, i) { d.classList.toggle("is-active", i === current); });
+        }
+        track.addEventListener("scroll", function () { requestAnimationFrame(update); }, { passive: true });
+        window.addEventListener("resize", update);
+
+        // Autoplay (aakhri ke baad wapas pehli)
+        function start() {
+            if (timer) return;
+            timer = setInterval(function () { goTo((current + 1) % slides.length); }, AUTOPLAY_MS);
+        }
+        function stop() { clearInterval(timer); timer = null; }
+        function restart() { stop(); start(); }
+
+        track.addEventListener("touchstart", stop, { passive: true });
+        track.addEventListener("touchend", start, { passive: true });
+
+        update();
+        start();
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
+})();
+/* ===== Shop By Categories slider END ===== */

@@ -117,8 +117,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid"
-                            src="assets/ecomm/images/unsplash/hero_slide_bridal.jpg"
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/hero_slide_bridal.jpg"
                             alt="Slide 2 - Bridal Collection 2025" width="1920" height="1080">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
@@ -129,8 +128,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid"
-                            src="assets/ecomm/images/unsplash/hero_slide_gold.jpg"
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/hero_slide_gold.jpg"
                             alt="Slide 3 - Certified Hallmark Gold" width="1920" height="1080">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
@@ -155,37 +153,140 @@
         </div>
     </div>
 
-    <!-- 3. 2x2 Image Campaign Grid Section (Tanishq Reference Image 3) -->
+    <!-- 3. 2x2 Image Campaign Grid Section (Slider) -->
     <div class="mg-campaign-section mb-4 px-2 d-block d-lg-none">
         <div class="text-center mb-3 mt-1">
             <h2 class="cstm-section-title px-4 mb-0"><span>Shop By Categories</span></h2>
         </div>
-        <div class="mg-campaign-2x2-grid">
-            <a href="shop.html" class="mg-campaign-cell">
-                <img src="ecom/products/17400513551934096853.jpg" alt="Rings">
-                <span class="mg-campaign-label">Rings</span>
-            </a>
-            <a href="shop.html" class="mg-campaign-cell">
-                <img src="ecom/products/1740125364316255900.jpg" alt="Bangles">
-                <span class="mg-campaign-label">Bangles</span>
-            </a>
-            <a href="shop.html" class="mg-campaign-cell">
-                <img src="ecom/products/17401354321760572244.jpg" alt="Necklaces">
-                <span class="mg-campaign-label">Necklaces</span>
-            </a>
-            <a href="shop.html" class="mg-campaign-cell">
-                <img src="ecom/products/1740135726115621763.jpg" alt="Bridal Sets">
-                <span class="mg-campaign-label">Bridal Sets</span>
-            </a>
+
+        <!-- ===== Slider START: har slide ek 2x2 grid hai ===== -->
+        <div class="mg-cat-slider">
+            <div class="mg-cat-slider__track" id="mgCatTrack">
+
+                <!-- Slide 1 -->
+                <div class="mg-campaign-2x2-grid mg-cat-slide">
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/17400513551934096853.jpg" alt="Rings">
+                        <span class="mg-campaign-label">Rings</span>
+                    </a>
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/1740125364316255900.jpg" alt="Bangles">
+                        <span class="mg-campaign-label">Bangles</span>
+                    </a>
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/17401354321760572244.jpg" alt="Necklaces">
+                        <span class="mg-campaign-label">Necklaces</span>
+                    </a>
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/1740135726115621763.jpg" alt="Bridal Sets">
+                        <span class="mg-campaign-label">Bridal Sets</span>
+                    </a>
+                </div>
+
+                <!-- Slide 2 (naye 4 items) -->
+                <div class="mg-campaign-2x2-grid mg-cat-slide">
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/17401334792081403700.jpg" alt="Earrings">
+                        <span class="mg-campaign-label">Earrings</span>
+                    </a>
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/1740122848901485459.jpg" alt="Chains">
+                        <span class="mg-campaign-label">Chains</span>
+                    </a>
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="assets/ecomm/images/gold_coins.webp" alt="Gold Coins">
+                        <span class="mg-campaign-label">Gold Coins</span>
+                    </a>
+                    <a href="shop.html" class="mg-campaign-cell">
+                        <img src="ecom/products/17401325061200865613.jpg" alt="Diamond">
+                        <span class="mg-campaign-label">Diamond</span>
+                    </a>
+                </div>
+
+                <!-- Aur slide chahiye to upar wala poora "Slide" block copy karke yahan paste karo -->
+            </div>
+
+            <!-- Slider ke dots: JS apne aap banata hai -->
+            <div class="mg-cat-slider__dots" id="mgCatDots"></div>
         </div>
+        <!-- ===== Slider END ===== -->
+
         <!-- Campaign Text Card -->
         <div class="mg-campaign-card text-center p-3">
             <p class="mg-campaign-italic mb-1">For marriages crafted by you</p>
-            <h3 class="mg-campaign-title mb-1">MG VIVAAH</h3>
             <p class="mg-campaign-subtitle text-muted mb-3">Wedding Signatures & Hallmark Heritage</p>
             <a href="shop.html" class="btn mg-campaign-explore-btn">EXPLORE NOW</a>
         </div>
+
+        <!-- Slider ke dots: JS apne aap banata hai -->
+        <div class="mg-cat-slider__dots" id="mgCatDots"></div>
     </div>
+
+
+    <!-- ===== Earrings Section (Stunning Every Ear) START ===== -->
+    <section class="mge" aria-labelledby="mge-title">
+
+        <!-- Heading -->
+        <div class="mge__head">
+            <h2 class="mge__title" id="mge-title">Stunning Everything</h2>
+            <p class="mge__sub">Look at our brand new Jewellery collection just for you</p>
+            <div class="mge__flourish" aria-hidden="true">
+                <span></span>
+                <svg viewBox="0 0 80 16">
+                    <path d="M2 8c10-8 22-8 30 0s20 8 30 0M18 8c10 6 26 6 44 0M40 2c-6 4-6 8 0 12" />
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badi banner (fix rahegi) | TODO: href aur image badlo -->
+        <a href="shop.html" class="mge-banner">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1000&q=80"
+                alt="Woman wearing gold earrings" loading="lazy">
+            <div class="mge-banner__copy">
+                <span class="mge-banner__brand">MG Jewellers</span>
+                <span class="mge-banner__line">Stunning every <em>Look</em></span>
+                <span class="mge-banner__btn">Explore the collection</span>
+            </div>
+        </a>
+
+        <!-- Neeche slide hone wale cards -->
+        <div class="mge-track">
+            <!-- Card 1 | TODO: href aur image -->
+            <a href="shop.html" class="mge-card">
+                <img src="ecom/products/17401334792081403700.jpg" alt="Jhumkas" loading="lazy">
+                <span class="mge-card__name">GOLD</span>
+            </a>
+            <!-- Card 2 -->
+            <a href="shop.html" class="mge-card">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Drops"
+                    loading="lazy">
+                <span class="mge-card__name">DIAMOND</span>
+            </a>
+            <!-- Card 3 -->
+            <a href="shop.html" class="mge-card">
+                <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=600&q=80" alt="Studs"
+                    loading="lazy">
+                <span class="mge-card__name">STONE</span>
+            </a>
+            <!-- Card 4 -->
+            <a href="shop.html" class="mge-card">
+                <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600&q=80" alt="Hoops"
+                    loading="lazy">
+                <span class="mge-card__name">MINIMAL</span>
+            </a>
+            <!-- Card 5 -->
+            <a href="shop.html" class="mge-card">
+                <img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=600&q=80" alt="Chandbalis"
+                    loading="lazy">
+                <span class="mge-card__name">SILVER</span>
+            </a>
+            <!-- Aur card chahiye to upar wala ek <a class="mge-card"> block copy karke yahan paste karo -->
+        </div>
+
+    </section>
+    <!-- ===== Earrings Section END ===== -->
+
 
     <div class="container-fluid offer pt-5 d-none d-lg-block">
         <div class="text-center mb-4">
@@ -335,12 +436,96 @@
     <!-- Shop Brochure Teaser End -->
 
 
+    <!-- ===== Dream List Banner START ===== -->
+    <section class="mgdl" aria-labelledby="mgdl-title">
+
+        <!-- Upar: brand -->
+        <div class="mgdl__top">
+            <span class="mgdl__tag">MG Jewellers</span>
+            <span class="mgdl__logo">MG</span>
+        </div>
+
+        <!-- Beech ka design (sirf sajawat) -->
+        <div class="mgdl__stage" aria-hidden="true">
+
+            <!-- Tairte hue heart / like -->
+            <span class="mgdl-bub mgdl-bub--heart mgdl-bub--a"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 21s-7.5-4.6-9.6-9.6C1 8 3.4 4 7.2 4c2.1 0 3.6 1.1 4.8 2.8C13.2 5.1 14.7 4 16.8 4 20.6 4 23 8 21.6 11.4 19.5 16.4 12 21 12 21z" />
+                </svg></span>
+            <span class="mgdl-bub mgdl-bub--like mgdl-bub--b"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M2 10h4v11H2zM8 21h9.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 19 10h-5.2l.8-4.1A2.2 2.2 0 0 0 12.4 3L8 9.5z" />
+                </svg></span>
+            <span class="mgdl-bub mgdl-bub--heart mgdl-bub--c"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 21s-7.5-4.6-9.6-9.6C1 8 3.4 4 7.2 4c2.1 0 3.6 1.1 4.8 2.8C13.2 5.1 14.7 4 16.8 4 20.6 4 23 8 21.6 11.4 19.5 16.4 12 21 12 21z" />
+                </svg></span>
+            <span class="mgdl-bub mgdl-bub--like mgdl-bub--d"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M2 10h4v11H2zM8 21h9.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 19 10h-5.2l.8-4.1A2.2 2.2 0 0 0 12.4 3L8 9.5z" />
+                </svg></span>
+            <span class="mgdl-bub mgdl-bub--like mgdl-bub--e"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M2 10h4v11H2zM8 21h9.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 19 10h-5.2l.8-4.1A2.2 2.2 0 0 0 12.4 3L8 9.5z" />
+                </svg></span>
+
+            <!-- Review card -->
+            <div class="mgdl-review">
+                <div class="mgdl-review__head">
+                    <span class="mgdl-review__avatar">R</span>
+                    <span class="mgdl-review__chat"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 4c4.7 0 8.5 3.1 8.5 7s-3.8 7-8.5 7c-1 0-2-.1-2.9-.4L4.5 20l1.2-3.6C4.3 15 3.5 13.1 3.5 11c0-3.9 3.8-7 8.5-7z" />
+                        </svg></span>
+                </div>
+                <p>Dream List made planning my jewellery so easy — saved my favourites, shared with family, and got
+                    great ideas from others.</p>
+                <span class="mgdl-bub mgdl-bub--like mgdl-bub--onreview"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M2 10h4v11H2zM8 21h9.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 19 10h-5.2l.8-4.1A2.2 2.2 0 0 0 12.4 3L8 9.5z" />
+                    </svg></span>
+            </div>
+
+            <!-- Model photo card | TODO: apni model photo -->
+            <div class="mgdl-photo">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80" alt=""
+                    loading="lazy">
+                <span class="mgdl-photo__label">Festive Must-Haves<br>Dream List</span>
+                <span class="mgdl-bub mgdl-bub--heart mgdl-bub--onphoto"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 21s-7.5-4.6-9.6-9.6C1 8 3.4 4 7.2 4c2.1 0 3.6 1.1 4.8 2.8C13.2 5.1 14.7 4 16.8 4 20.6 4 23 8 21.6 11.4 19.5 16.4 12 21 12 21z" />
+                    </svg></span>
+            </div>
+
+            <!-- Maroon folder | TODO: apni ring / necklace photos -->
+            <div class="mgdl-folder">
+                <span class="mgdl-folder__back"></span>
+                <span class="mgdl-folder__card mgdl-folder__card--1">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300&q=80" alt=""
+                        loading="lazy">
+                </span>
+                <span class="mgdl-folder__card mgdl-folder__card--2">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&q=80" alt=""
+                        loading="lazy">
+                </span>
+                <span class="mgdl-folder__front"></span>
+            </div>
+        </div>
+
+        <!-- Text + button | TODO: href -->
+        <h2 class="mgdl__title" id="mgdl-title">Discover expert curated dreamlists,</h2>
+        <p class="mgdl__sub">view styled looks &amp; save your favourites</p>
+        <a href="wishlist.html" class="mgdl__btn">Explore now</a>
+    </section>
+    <!-- ===== Dream List Banner END ===== -->
+
 
     <!-- Products Start -->
     <div class="container-fluid pt-5 " id="home_category_shop">
         <div class="text-center mb-4">
             <!--<h2 class="section-title px-5"><span class="px-2">Shop By Category</span></h2>-->
-            <h2 class="cstm-section-title px-5 mb-3"><span class="">Shop By Category</span></h2>
+            <h2 class="cstm-section-title px-5 mb-3"><span class="">Shop By Products</span></h2>
         </div>
         <div class="row px-xl-5 py-5 content">
             <div class="col-lg-3 col-md-6 col-sm-12 col-6">
@@ -423,11 +608,71 @@
     </div>
     <!-- Products End -->
 
+    <!-- Shop By Gender Start -->
+    <div class="container-fluid pt-5" id="shop_by_gender">
+        <div class="text-center mb-2">
+            <h2 class="cstm-section-title px-5 mb-2"><span>A Perfect Match for You</span></h2>
+            <p class="mg-gender-subtitle mb-3">First-class jewellery for first-class Men, Women &amp; Children.</p>
+            <div class="mg-gender-divider d-flex align-items-center justify-content-center">
+                <span class="mg-gender-divider-line"></span>
+                <span class="mg-gender-flourish">
+                    <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M21 7C16 7 13 1 6 1C2.5 1 0 3.5 0 7C0 10.5 2.5 13 6 13C13 13 16 7 21 7Z"
+                            stroke="currentColor" stroke-width="1.2" />
+                        <path d="M21 7C26 7 29 1 36 1C39.5 1 42 3.5 42 7C42 10.5 39.5 13 36 13C29 13 26 7 21 7Z"
+                            stroke="currentColor" stroke-width="1.2" />
+                        <circle cx="21" cy="7" r="2" fill="currentColor" />
+                    </svg>
+                </span>
+                <span class="mg-gender-divider-line"></span>
+            </div>
+        </div>
+        <div class="row px-xl-5 px-3 py-3 content mg-gender-grid" id="mg_gender_cards_grid">
+            <!-- Row 1 (Mobile) / Col 1 (Desktop): Men -->
+            <div class="col-6 col-lg-4 mb-4 mg-gender-col">
+                <div class="mg-gender-card mg-reveal-auto" id="gender_card_men" data-gender="men">
+                    <div class="mg-gender-img-wrap">
+                        <img class="img-fluid w-100" src="assets/ecomm/images/unsplash/gender_men.jpg"
+                            alt="Pure 22K Gold Chain for Men" loading="lazy">
+                    </div>
+                    <div class="mg-gender-footer">
+                        <span class="mg-gender-name">Gold</span>
+                        <span class="mg-gender-explore">Explore <i class="fas fa-chevron-right ml-1"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 1 (Mobile) / Col 2 (Desktop): Kids -->
+            <div class="col-6 col-lg-4 mb-4 mg-gender-col">
+                <div class="mg-gender-card mg-reveal-auto" id="gender_card_kids" data-gender="kids">
+                    <div class="mg-gender-img-wrap">
+                        <img class="img-fluid w-100" src="assets/ecomm/images/unsplash/gender_kids.jpg"
+                            alt="Dainty Gold Heart Earrings for Kids" loading="lazy">
+                    </div>
+                    <div class="mg-gender-footer">
+                        <span class="mg-gender-name">Silver</span>
+                        <span class="mg-gender-explore">Explore <i class="fas fa-chevron-right ml-1"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 (Mobile, full width) / Col 3 (Desktop): Women -->
+            <div class="col-12 col-lg-4 mb-4 mg-gender-col mg-gender-col-women">
+                <div class="mg-gender-card mg-reveal-auto" id="gender_card_women" data-gender="women">
+                    <div class="mg-gender-img-wrap">
+                        <img class="img-fluid w-100" src="assets/ecomm/images/unsplash/gender_women.jpg"
+                            alt="Traditional 22K Gold Bridal Necklace Set for Women" loading="lazy">
+                    </div>
+                    <div class="mg-gender-footer">
+                        <span class="mg-gender-name">Diamond</span>
+                        <span class="mg-gender-explore">Explore <i class="fas fa-chevron-right ml-1"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop By Gender End -->
 
-
-    <!-- Offer End -->
-
-    <!-- Categories Start -->
+    <!-- Material Start -->
 
     <div class="container-fluid pt-5" id="shop_by_metal">
         <div class="text-center mb-4">
@@ -453,8 +698,8 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_silver" data-material="silver">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_silver.jpg" alt="Silver Jewellery"
-                            loading="lazy">
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_silver.jpg"
+                            alt="Silver Jewellery" loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">
                         <h5 class="font-weight-semi-bold m-0">Silver</h5>
@@ -466,8 +711,8 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_artificial" data-material="artificial">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_artificial.jpg" alt="Artificial Jewellery"
-                            loading="lazy">
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_artificial.jpg"
+                            alt="Artificial Jewellery" loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">
                         <h5 class="font-weight-semi-bold m-0">Artificial</h5>
@@ -479,8 +724,8 @@
                 <a href="shop.html" class="cat-item d-flex flex-column border mb-4 matterial_block"
                     id="mg_mat_card_stone" data-material="stone">
                     <div class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_stone.jpg" alt="Stone Jewellery"
-                            loading="lazy">
+                        <img class="img-fluid" src="assets/ecomm/images/unsplash/material_stone.jpg"
+                            alt="Stone Jewellery" loading="lazy">
                     </div>
                     <div class="mg-mat-overlay">
                         <h5 class="font-weight-semi-bold m-0">Stone</h5>
@@ -495,7 +740,266 @@
         </div> -->
         </div>
     </div>
-    <!-- Categories End -->
+    <!-- Material End -->
+
+
+    <!-- =========================================================
+     PROMO BANNERS SECTION (Ring Size + Silver Idols)
+     File: promo-banners-section.html
+
+     Is file ka <section class="mgpb"> block page mein jahan
+     dikhana hai, wahan paste karna hai.
+
+     CSS: promo-banners.css ka code theme-style.css ke END mein
+          paste karo  (ya alag file link karo:
+          <link href="assets/ecomm/css/promo-banners.css" rel="stylesheet">)
+
+     JS:  promo-banners.js ka code theme-animations.js ke END mein
+          paste karo, kisi function ke BAHAR  (ya alag file link karo:
+          <script src="assets/ecomm/js/promo-banners.js"></script>)
+
+     Dono mein se ek hi tareeka use karna, dono nahi.
+     ========================================================= -->
+    <h2 class="cstm-section-title px-4 mb-0"><span>All in One Shop Collections</span></h2>
+    <section class="mgpb" aria-label="Offers">
+
+        <!-- ===== Banner 1: Find your ring size ===== -->
+        <div class="mgpb-ring">
+            <div class="mgpb-ring__img">
+                <!-- TODO: apni ring ki image -->
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&q=80"
+                    alt="Gold ring with stones" loading="lazy" />
+            </div>
+            <div class="mgpb-ring__copy">
+                <span class="mgpb-ring__mark">MG</span>
+                <span class="mgpb-ring__brand">Jewellers</span>
+                <!-- TODO: ring size guide page ka link -->
+                <a href="#" class="mgpb-btn mgpb-btn--navy">Find your ring size</a>
+            </div>
+        </div>
+
+        <!-- ===== Banner 2: Silver idols ===== -->
+        <div class="mgpb-silver">
+            <span class="mgpb-silver__eyebrow">MG Jewellers · Pure Silver</span>
+            <h2 class="mgpb-silver__title">Blessings that shine in silver</h2>
+            <p class="mgpb-silver__sub">Bring home beautifully crafted silver idols.</p>
+
+            <!-- Podium + idol image -->
+            <div class="mgpb-silver__stage" aria-hidden="false">
+                <span class="mgpb-podium mgpb-podium--left"></span>
+                <span class="mgpb-podium mgpb-podium--right"></span>
+                <div class="mgpb-silver__frame">
+                    <!-- TODO: apni silver idol ki image (white/plain background wali best lagegi) -->
+                    <img src="https://images.unsplash.com/photo-1567878874157-3031230f8071?w=700&q=80" alt="Silver idol"
+                        loading="lazy" />
+                </div>
+                <span class="mgpb-podium mgpb-podium--center"></span>
+            </div>
+
+            <!-- TODO: silver idols page ka link -->
+            <a href="#" class="mgpb-btn mgpb-btn--gold">Shop now</a>
+        </div>
+
+    </section>
+    <!-- PROMO BANNERS SECTION KHATAM -->
+
+
+    <!-- =========================================================
+     SHOP BY GENDER SECTION
+     File: shop-by-gender-section.html
+
+     Is file ka poora <section> block page mein jahan section
+     dikhana hai, wahan paste karna hai.
+
+     <head> mein (theme-style.css ke BAAD):
+       <link rel="stylesheet" href="assets/ecomm/css/shop-by-gender.css" />
+
+     Fonts (sirf agar Poppins / Cormorant Garamond pehle se load nahi hain):
+       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+     </body> se pehle (baaki scripts ke BAAD):
+       <script src="assets/ecomm/js/shop-by-gender.js"></script>
+
+     Note: paths apne project ke folder structure ke hisaab se badlein.
+     ========================================================= -->
+
+    <section class="sbg" aria-labelledby="sbg-title">
+
+        <!-- Heading -->
+        <div class="sbg__head">
+            <h2 class="sbg__title" id="sbg-title">Shop by Gender</h2>
+            <p class="sbg__sub">Everything here for You</p>
+
+            <!-- Gold design line -->
+            <div class="sbg__flourish" aria-hidden="true">
+                <span></span>
+                <svg viewBox="0 0 80 16">
+                    <path d="M2 8c10-8 22-8 30 0s20 8 30 0M18 8c10 6 26 6 44 0M40 2c-6 4-6 8 0 12" />
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="sbg__grid">
+
+            <!-- Card 1: Men  | TODO: href mein Men category page ka link, src mein Men image -->
+            <a href="#" class="sbg-card">
+                <div class="sbg-card__img">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80"
+                        alt="Men's jewellery" loading="lazy" />
+                </div>
+                <div class="sbg-card__foot">
+                    <span class="sbg-card__name">Men</span>
+                    <path d="M9 6l6 6-6 6" />
+                    </svg></span>
+                </div>
+            </a>
+
+            <!-- Card 2: Kids  | TODO: href mein Kids category page ka link, src mein Kids image -->
+            <a href="#" class="sbg-card">
+                <div class="sbg-card__img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLIxAPwwASsvW9Zx1tkmqB8FTajq7oqtJBVxoCxnRpOQ&s=10"
+                        alt="Kids' jewellery" loading="lazy" />
+                </div>
+                <div class="sbg-card__foot">
+                    <span class="sbg-card__name">Kids</span>
+                    <path d="M9 6l6 6-6 6" />
+                    </svg></span>
+                </div>
+            </a>
+
+            <!-- Card 3: Women (mobile par poori width) | TODO: href mein Women category page ka link, src mein Women image -->
+            <a href="#" class="sbg-card sbg-card--wide">
+                <div class="sbg-card__img">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=900&q=80"
+                        alt="Women's jewellery" loading="lazy" />
+                </div>
+                <div class="sbg-card__foot">
+                    <span class="sbg-card__name">Women</span>
+                    <path d="M9 6l6 6-6 6" />
+                    </svg></span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <!-- SHOP BY GENDER SECTION KHATAM -->
+
+
+    <!-- =========================================================
+     GIFTING SECTION
+     File: gifting-section.html
+
+     Is file ka <section class="gft"> block page mein jahan
+     section dikhana hai, wahan paste karna hai.
+
+     <head> mein (theme-style.css ke BAAD):
+       <link href="assets/ecomm/css/gifting.css" rel="stylesheet">
+
+     </body> se pehle (baaki scripts ke BAAD):
+       <script src="assets/ecomm/js/gifting.js"></script>
+
+     Fonts: Poppins + Cormorant Garamond (MG app mein pehle se load hain).
+     Note: paths apne project ke folder ke hisaab se badlein.
+     ========================================================= -->
+
+    <section class="gft" aria-labelledby="gft-title">
+
+        <!-- Heading -->
+        <div class="gft__head">
+            <h2 class="gft__title" id="gft-title">Gifting</h2>
+            <p class="gft__sub">Find the perfect gift</p>
+
+            <!-- Gold design line -->
+            <div class="gft__flourish" aria-hidden="true">
+                <span></span>
+                <svg viewBox="0 0 80 16">
+                    <path d="M2 8c10-8 22-8 30 0s20 8 30 0M18 8c10 6 26 6 44 0M40 2c-6 4-6 8 0 12" />
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Slider: swipe / scroll karke cards badalte hain -->
+        <div class="gft__track" id="gftTrack">
+
+            <!-- Card 1 | TODO: href mein page ka link, src mein apni image -->
+            <a href="#" class="gft-card">
+                <div class="gft-card__img">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=900&q=80"
+                        alt="Necklace gift for her" loading="lazy" />
+                </div>
+                <div class="gft-card__foot">
+                    <span class="gft-card__name">Surprise for Her</span>
+                    <span class="gft-card__link">Explore <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg></span>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#" class="gft-card">
+                <div class="gft-card__img">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900&q=80"
+                        alt="Gold ring gift for him" loading="lazy" />
+                </div>
+                <div class="gft-card__foot">
+                    <span class="gft-card__name">Surprise for Him</span>
+                    <span class="gft-card__link">Explore <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg></span>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#" class="gft-card">
+                <div class="gft-card__img">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=900&q=80"
+                        alt="Anniversary ring" loading="lazy" />
+                </div>
+                <div class="gft-card__foot">
+                    <span class="gft-card__name">Anniversary Gifts</span>
+                    <span class="gft-card__link">Explore <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg></span>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="#" class="gft-card">
+                <div class="gft-card__img">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=900&q=80"
+                        alt="Earrings birthday gift" loading="lazy" />
+                </div>
+                <div class="gft-card__foot">
+                    <span class="gft-card__name">Birthday Gifts</span>
+                    <span class="gft-card__link">Explore <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg></span>
+                </div>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="#" class="gft-card">
+                <div class="gft-card__img">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=900&q=80"
+                        alt="Festive jewellery gift" loading="lazy" />
+                </div>
+                <div class="gft-card__foot">
+                    <span class="gft-card__name">Festive Gifts</span>
+                    <span class="gft-card__link">Explore <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg></span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Dots: JS apne aap har card ke liye ek dot banata hai -->
+        <div class="gft__dots" id="gftDots"></div>
+    </section>
+    <!-- GIFTING SECTION KHATAM -->
 
 
 
